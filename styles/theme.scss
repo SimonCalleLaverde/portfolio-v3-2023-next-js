@@ -1,0 +1,612 @@
+//----------------------------------General Styles----------------------------------//
+
+// General
+*, *::before, *::after {//As Per B4
+  //margin:0;
+  //padding:0;
+  box-sizing:border-box;
+}
+// NextJS Original Fonts
+// html, body {
+//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+// }
+html, body {
+  margin:0;//As Per B4
+  padding:0;//As Per B4
+}
+html {
+  //background-color:theme-color("beige");
+  text-rendering:optimizeLegibility;//geometricPrecision
+  font-smooth:always;
+  -webkit-font-smoothing:subpixel-antialiased;//antialiased
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-text-size-adjust:100%;//As Per B4
+  -webkit-tap-highlight-color:transparent;//As Per B4
+  ::-webkit-scrollbar {//As Per B4
+    display:none;//As Per B4
+  }
+}
+body {
+  position:relative;//As Per B4
+  min-height:100vh;
+  font-family:$font-light;
+  font-weight:400;//Temporary As Per B4
+  font-size:15px;//17px
+  background-color:theme-color("beige");
+  color:theme-color("grey-dark");
+  line-height:1.8;
+  letter-spacing:0.5px;
+  .text-italic {
+    font-family:$font-light-italic!important;
+  }
+}
+
+// Main, Header, Section, Footer
+main, header, section, footer {
+  position:relative;
+  text-align:center;
+}
+
+// Fonts
+h1, h2, h3, h4, h5, h6, .font-headline {
+  //letter-spacing:0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:$font-headline;
+}
+.font-headline {
+  font-family:$font-headline!important;
+}
+.font-regular {
+  font-family:$font-regular!important;
+  &.text-italic {
+    font-family:$font-regular-italic!important;
+  }
+}
+.font-light {
+  font-family:$font-light!important;
+  &.text-italic {
+    font-family:$font-light-italic!important;
+  }
+}
+.font-ultra-light {
+  font-family:$font-ultra-light!important;
+  &.text-italic {
+    font-family:$font-ultra-light-italic!important;
+  }
+}
+
+// Headline, Title, Subtitle
+.headline, .title, .subtitle {
+}
+.headline {//Targets 768px Down & 576px All The Way Up If No Styles Are Added/Overriding In Tablet-And-Desktop Or Down Here
+  font-size:2.85rem;
+  line-height:1.02;
+}
+.text-hero {
+  font-size:4.3rem;
+  line-height:1.5;
+}
+.text-gigantic {
+  font-size:3.7rem;
+  line-height:0.88;
+}
+.text-intro, .text-huge {
+  font-size:2.85rem;
+
+  font-weight:500;//New
+
+}
+.text-intro {
+  line-height:1.19;
+}
+.text-huge {
+  line-height:1.02;
+}
+.text-big {
+  font-size:2rem;
+}
+.text-medium {
+  font-size:1.7rem;//1.2rem
+}
+.text-small {
+  font-size:1.1rem;
+}
+// .text-stroke-rosybrown {
+//   color:transparent!important;
+//   -webkit-text-fill-color:theme-color("transparent");//Will Override Color (Regardless Of Order)
+//   -webkit-text-stroke-width:1px;
+//   -webkit-text-stroke-color:theme-color("rosybrown");
+// }
+// .text-stroke-chocolate {
+//   color:transparent!important;
+//   -webkit-text-fill-color:theme-color("transparent");//Will Override Color (Regardless Of Order)
+//   -webkit-text-stroke-width:1px;
+//   -webkit-text-stroke-color:theme-color("chocolate");
+// }
+@media only screen and (max-width:576px) {//Down
+  .headline {
+    font-size:2.5rem;
+  }
+  .text-hero {
+    font-size:3.4rem;
+  }
+  .text-gigantic {
+    font-size:3rem;
+  }
+  .text-gigantic {
+    line-height:1;
+  }
+  .text-intro, .text-huge {
+    font-size:2.5rem;
+  }
+  .text-big {
+    font-size:1.8rem;
+  }
+  .text-medium {
+    font-size:1.6rem;
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  .headline {
+    font-size:1.6rem;
+  }
+  .text-hero {//, .text-gigantic
+    font-size:2.5rem;
+  }
+  .text-gigantic {//.text-hero,
+    font-size:2.1rem;
+  }
+  .text-intro {//, .text-huge
+    font-size:1.8rem;
+  }
+  .text-huge {//.text-intro,
+    font-size:1.6rem;
+  }
+  .text-big {
+    font-size:1.4rem;
+  }
+  .text-medium {
+    font-size:1.2rem;
+  }
+}
+
+// Website Colours
+.text-rosybrown {
+  color:theme-color("rosybrown")!important;//lighten(theme-color("rosybrown"),10)!important;
+}
+
+// Link Override Styles
+a {
+  color:lighten(theme-color("rosybrown"),10);
+  background-color:transparent;//As Per B4
+  text-decoration:none;//As Per B4
+  @include transition(all ease 0.5s);//ease-out
+  &:hover, &:active, &:focus {
+    color:lighten(theme-color("rosybrown"),20);
+    text-decoration:none;
+  }
+  // &.text-black {
+  //   &:hover, &:active, &:focus {
+  //     color:lighten(#000,15)!important;
+  //   }
+  // }
+  // &.text-white {
+  //   &:hover, &:active, &:focus {
+  //     color:darken(#FFF,15)!important;
+  //   }
+  // }
+  // &.text-grey-dark {
+  //   &:hover, &:active, &:focus {
+  //     color:lighten(theme-color("grey-dark"),15)!important;
+  //   }
+  // }
+  // &.text-grey-mid {
+  //   &:hover, &:active, &:focus {
+  //     color:lighten($theme-color-grey-mid,15)!important;
+  //   }
+  // }
+  // &.text-grey-light {
+  //   &:hover, &:active, &:focus {
+  //     color:darken($theme-color-grey-light,15)!important;
+  //   }
+  // }
+  &.text-rosybrown {
+    &:hover, &:active, &:focus {
+      color:lighten(theme-color("rosybrown"),10)!important;
+    }
+  }
+}
+
+
+
+
+// Link Line Throught
+a.link-line-throught {
+  position:relative;
+  &::before {
+    content:'';
+    position:absolute;
+    height:2px;//30%
+    width:0;
+    //top:50%;//40%
+    right:0;
+    bottom:0;//
+    //left:0;
+    background-color:theme-color("rosybrown");//#CE1352
+    border-bottom:1px solid theme-color("chocolate");//rosybrown
+    pointer-events:none;
+    //mix-blend-mode:difference;
+    @include filter(opacity(0.8));//0.4//0.3//0.8
+    @include transition(width 0.4s ease-in-out);
+  }
+  &:hover, &:active, &:focus, &.active-link {
+    &::before {
+      width:100%;
+      right:auto;
+      left:0;
+    }
+  }
+}
+
+
+
+
+// Buttons
+button, a.button {
+  cursor:pointer;
+  //line-height:30px;
+}
+
+// Selection Styles
+::selection {//webkit, opera, IE9
+  background-color:rgba(105,169,179,0.7);
+}
+::-moz-selection {//mozilla firefox
+  background-color:rgba(105,169,179,0.7);
+}
+
+//----------------------------------Layout Styles----------------------------------//
+
+// (To Revise/Check A 'Layout' Component To Wrap Everything | Or ¿To Use React-Bootstrap? ¿To Use Reactstrap? ¿To Use Material-UI? Let's See)
+// Container
+.container {//Might Be Temporary
+  width:100%;//Temporary, As Per B4
+  //max-width:...;
+  margin-right:auto;//Temporary, As Per B4
+  margin-left:auto;//Temporary, As Per B4
+  //padding:0 2rem;//Was Starting With NextJS
+  padding-right:15px;//Temporary, As Per B4
+  padding-left:15px;//Temporary, As Per B4
+}
+//// Other Media Queries Here
+
+// Grid
+.grid {//To Consider//Was Starting With NextJS
+  display:flex;//Was Starting With NextJS
+  align-items:center;//Was Starting With NextJS
+  justify-content:center;//Was Starting With NextJS
+  flex-wrap:wrap;//Was Starting With NextJS
+  max-width:800px;//Was Starting With NextJS
+}
+@media (max-width:600px) {//Down//Was Starting With NextJS
+  .grid {//To Consider//Was Starting With NextJS
+    width:100%;//Was Starting With NextJS
+    flex-direction:column;//Was Starting With NextJS
+  }
+}
+
+//----------------------------------Form Styles----------------------------------//
+
+// Input Placeholders
+::-webkit-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+:-moz-placeholder {//Firefox 18-
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+::-moz-placeholder {//Firefox 19+
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+:-ms-input-placeholder {
+  font-family:$font-ultra-light;
+  font-size:20px;
+  color:$theme-color-chocolate;
+}
+
+// Forms
+form {
+  select {
+    // -webkit-appearance:none;
+    // -moz-appearance:none;
+    // appearance:none;
+    > option {
+    }
+  }
+}
+
+//----------------------------------Section Styles----------------------------------//
+
+// Nav
+nav {
+}
+
+// Header
+header {
+  //flex:1;
+  min-height:100vh;
+  padding:4rem 0;//Temporary
+  .headline {//.title//Temporary
+    margin:0;
+  }
+}
+
+// Main
+main {
+  //display:flex;//Was Starting With NextJS
+  //flex:1;//Was Starting With NextJS
+  //flex-direction:column;//Was Starting With NextJS
+  //justify-content:center;//Was Starting With NextJS
+  //align-items:center;//Was Starting With NextJS
+  min-height:100vh;//Temporary
+}
+
+// Section
+section {
+  min-height:100vh;//Temporary
+  border-top:1px dashed purple;//Temporary
+  border-bottom:1px dashed green;//Temporary
+}
+
+// Footer
+footer {
+  //display:flex;//Was Starting With NextJS
+  //flex:1;//Was Starting With NextJS
+  //justify-content:center;//Was Starting With NextJS
+  //align-items:center;//Was Starting With NextJS
+  margin:0;////Was To Reset In B4
+
+
+
+  background-color:theme-color("chocolate");////Temporary (To see styles better, line-through, dark-mode)
+
+
+
+  > .container {//Desktop & Mobile
+    //flex-grow:1;//Was Starting With NextJS
+    min-height:100vh;
+    > div {
+      pointer-events:none;//From "row", To All Elements Inside <a>
+      h1, h2, h3, h4, h5, h6 {
+        margin-top:0;//New//Temporary
+        margin-bottom:0;//New//Temporary
+      }
+      p {
+        margin-top:0;//New//Temporary
+        font-size:23px;
+        line-height:1.2;
+      }
+    }
+  }
+  > aside.footer-aside-info-elements {
+    @include filter(opacity(0.9));
+    .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+      position:absolute;
+      font-size:12px;
+    }
+    .footer-email-or-call, .footer-copyright, .footer-created-by {
+      bottom:30.5px;//To be 30px
+    }
+    .footer-email-or-call {
+      left:50%;
+      text-align:center;
+      @include transform(translateX(-50%));
+    }
+    .footer-availability, .footer-office, .footer-social-media-business, .footer-copyright {
+      left:37px;
+      text-align:left;
+    }
+    .footer-availability, .footer-credits {
+      bottom:310px;
+      line-height:1.5;////To remove maybe
+    }
+    .footer-office {
+      bottom:180px;
+    }
+    .footer-credits, nav.footer-nav, .footer-social-media-personal, .footer-created-by {
+      right:37px;
+      text-align:right;
+    }
+    nav.footer-nav {//.navbar
+      padding:0;
+      top:auto;
+      bottom:188px;
+      line-height:1.5!important;
+
+
+
+      li {//Temporary As Per B4
+        display: list-item;//Temporary As Per B4
+        text-align: -webkit-match-parent;//Temporary As Per B4
+      }
+      //pointer-events: none;////I had it as "general" above before, for various elements
+      ol, ul, dl {//Temporary As Per B4
+        margin-top: 0;//Temporary As Per B4
+        margin-bottom: 1rem;//Temporary As Per B4
+      }
+
+
+
+      ul.footer-nav-ul {//navbar-nav
+
+
+
+        display: flex;//Temporary As Per B4
+        flex-direction: column;//Temporary As Per B4
+        padding-left: 0;//Temporary As Per B4
+        margin-bottom: 0;//Temporary As Per B4
+        list-style: none;//Temporary As Per B4
+
+
+
+        li.footer-nav-li {//nav-item
+          a.footer-nav-link {//nav-link
+            display:inline-block;
+            margin:0.1rem auto;
+            padding:0 0.1rem;
+            font-family:$font-ultra-light;
+            font-size:12px;
+            color:theme-color("rosybrown");
+            //text-transform:uppercase;
+            // &::before {
+            //   display:none;
+            // }
+            &:hover, &:active, &:focus, &.active-link {
+              color:lighten(theme-color("rosybrown"),10);
+              @include transform(scale(1));
+            }
+            &.active-link {
+              filter:opacity(1);//0.7
+            }
+            &.link-line-throught {
+              &::before {
+                bottom:2px;//
+              }
+            }
+          }
+        }
+
+
+
+      }
+    }
+    .footer-social-media-business {
+      a {
+        padding-right:3.7px;//New
+        > span {
+          &::before {
+            top:-3.1px;//Was -2.8px
+          }
+        }
+      }
+    }
+    .footer-social-media-personal {
+      a {
+        padding-left:3.7px;//New
+        > span {
+          &::before {
+            top:-2.9px;//Was -2.8px
+          }
+        }
+      }
+    }
+    .footer-social-media-business, .footer-social-media-personal {
+      padding:0 7px 5px;
+      bottom:95px;
+      overflow:hidden;
+      a {
+        // &::before {
+        //   display:none;
+        // }
+        > span {
+          position:relative;
+          font-size:15.5px;
+          //pointer-events:none;
+          &::before {
+            content:'';
+            position:absolute;
+            width:27px;
+            height:27px;
+
+            //top:-3.1px;//Was -2.8px
+            left:-5px;//To be -6px for most centering all icons, for now matching old site exactly
+
+            background-color:theme-color("rosybrown");
+            z-index:20;
+            @include border-radius(50%);
+            @include filter(opacity(0));
+            @include transform(translateY(30px));
+            //@include transform-origin(center bottom);
+            @include transition(filter ease-out 0.4s, transform ease-out 0.4s);
+          }
+          > svg {
+            position:relative;
+            width:17px;
+            //font-size:1.2rem;//To remove
+            fill:theme-color("rosybrown");
+            z-index:21;
+            @include transition(fill ease-out 0.5s);//all
+          }
+          &.icon-linkedin {//√
+            > svg {
+              width:14px;
+              top:1.8px;//Was "margin-top:-1px"
+              margin-left:2px;//Affects the others too
+            }
+          }
+          &.icon-behance {//√
+            > svg {
+              width:18px;
+              top:4.4px;//New
+            }
+          }
+          &.icon-angel {//√
+            > svg {
+              width:14px;
+              top:5.5px;//New
+              margin-left:1px;//Was "margin-left:1px"//Affects githubs too//To remove, for now matching old site
+            }
+          }
+          &.icon-github {//√
+            > svg {
+              top:3.8px;//New
+            }
+          }
+          &.icon-dribbble, &.icon-pinterest, &.icon-instagram {//√//√//√
+            > svg {
+              top:4.3px;//New
+            }
+          }
+          &.icon-facebook {//√
+            > svg {
+              width:15px;
+              top:3.2px;//New
+            }
+          }
+        }
+        &:hover, &:active, &:focus {
+          span {
+            &::before {
+              @include filter(opacity(1));
+              @include transform(translateY(0));
+            }
+            svg {
+              fill:theme-color("chocolate");
+            }
+          }
+        }
+      }
+    }
+    .footer-social-media-business {
+      left:30px;//37px
+    }
+    .footer-social-media-personal {
+      right:30px;//37px
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  footer {
+    > aside.footer-aside-info-elements {
+      .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+        font-size:11px;
+      }
+    }
+  }
+}

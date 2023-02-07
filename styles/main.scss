@@ -1,0 +1,91 @@
+// WILL RENDER ALL STYLES AS "<style></style>" WITHIN THE "<head></head>"
+
+//----------------------------------Brand Colors Variables----------------------------------//
+
+// Black & White Colors
+$theme-color-black:#000000;
+$theme-color-white:#FFFFFF;
+
+// Grey Colors
+$theme-color-grey-dark:#1A1A1A;//Grey Dark //rgba(26,26,26,1)
+$theme-color-grey-mid:darken(#CCC,5);//Grey Mid //(Logo's Hover Effect (ContactPage))
+$theme-color-grey-light:#FEFEFE;//Grey Light //rgba(254,254,254,1)
+
+// Brand Colors
+$theme-color-beige:lighten(#B89C92,4);//Beige-Background/Beige-Contrast
+$theme-color-chocolate:#231F20;//Chocolate-Contrast/Chocolate-Background
+$theme-color-rosybrown:lighten(#FFE8E4,1);//Rosybrown Texts
+
+// Website's Complementary Colors
+$theme-color-aqua:#004743;//Aqua //(Logo's Hover Effect (HomePage))
+$theme-color-blue:#69A9B3;//Blue //(Logo's Hover Effect (AboutPage)) (Text Selection Styles)
+$theme-color-cherry:#CE1352;//Cherry //(Logo's Hover Effect (ProjectsPage)) (Hire Button (Old/Removed))
+$theme-color-azalea:rgba(248,198,198,1);//Azalea //(Logo's Hover Effect (HireAProjectPage))
+$theme-color-redish:#B36F68;//Redish //(Footer's Hover Cursor Circle)
+
+// Third Party Companies' Brand Colors (https://brandcolors.net/)
+$theme-color-facebook:#3B5998;//Facebook Official
+$theme-color-instagram:#E1306C;//Instagram Official
+$theme-color-whatsapp:#075E54;//WhatsApp Official
+$theme-color-youtube:#FF0000;//Youtube Official
+$theme-color-twitter:#1DA1F2;//Twitter Official
+$theme-color-linkedin:#8D6CAB;//LinkedIn Official//Option 2 #0077B5
+$theme-color-behance:#1769FF;//Behance Official
+$theme-color-pinterest:#BD081C;//Pinterest Official
+$theme-color-google-plus:#DD4B39;//Google Plus Official
+
+//----------------------------------Theme Colors Map----------------------------------//
+
+// Mapping Colors
+$theme-colors: (
+  "black":$theme-color-black,
+  "white":$theme-color-white,
+
+  "grey-dark":$theme-color-grey-dark,
+  "grey-mid":$theme-color-grey-mid,
+  "grey-light":$theme-color-grey-light,
+
+  "beige":$theme-color-beige,
+  "chocolate":$theme-color-chocolate,
+  "rosybrown":$theme-color-rosybrown,
+  
+  "aqua":$theme-color-aqua,
+  "blue":$theme-color-blue,
+  "cherry":$theme-color-cherry,
+  "azalea":$theme-color-azalea,
+  "redish":$theme-color-redish,
+
+  "facebook":$theme-color-facebook,
+  "instagram":$theme-color-instagram,
+  "whatsapp":$theme-color-whatsapp,
+  "youtube":$theme-color-youtube,
+  "twitter":$theme-color-twitter,
+  "linkedin":$theme-color-linkedin,
+  "behance":$theme-color-behance,
+  "pinterest":$theme-color-pinterest,
+  "google-plus":$theme-color-google-plus
+);
+
+// Retrieving "$theme-colors" Sass Map
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+//----------------------------------Base Styles----------------------------------//
+
+// Mixins Styles
+@import "styles/mixins";
+
+// Fonts Styles
+@import "styles/fonts";
+
+// Utility Classes Styles
+@import "styles/utility_classes";
+
+//----------------------------------Custom Styles----------------------------------//
+
+// Theme (Mobile & General) Styles
+@import "styles/theme";
+
+// Tablet & Desktop Styles
+@import "styles/tablet_and_desktop";

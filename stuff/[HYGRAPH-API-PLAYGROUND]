@@ -1,0 +1,30 @@
+query {
+  projects {
+
+    id
+    title
+    slug
+    nameForThumbnail
+    client
+    thumbnailImage {
+      url
+    }
+    headerImage {
+      url
+    }
+    platforms
+    year
+    roles
+    webLaunchUrl
+    webImages {
+      url
+    }
+    type
+    category
+    tags
+    content {
+      text
+    }
+
+  }
+}

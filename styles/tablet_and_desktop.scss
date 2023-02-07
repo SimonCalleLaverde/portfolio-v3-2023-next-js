@@ -1,0 +1,135 @@
+@media only screen and (min-width:768px) {//Up
+
+  //----------------------------------General Styles----------------------------------//
+
+  // General
+  body {
+  }
+
+  // Main, Header, Section, Footer
+  main, header, section, footer {
+    text-align:left;
+  }
+
+  // Headline, Title, Subtitle
+  .headline {//Targets From 768px All The Way Up, Or Up To 850px If Styles Are Added/Overriding Down Here
+    font-size:2.6rem;
+    line-height:1.15;
+  }
+  .text-hero, .text-gigantic {
+    font-size:4.3rem;
+  }
+  .text-hero {
+    line-height:1.5;
+  }
+  .text-gigantic {
+    line-height:0.88;
+  }
+  .text-intro, .text-huge {
+    font-size:2.6rem;//2.3rem
+  }
+  .text-intro {
+    line-height:1.23;
+  }
+  .text-huge {
+    line-height:1.02;
+  }
+  .text-big {
+    font-size:2rem;//1.5rem
+  }
+  .text-medium {
+    font-size:1.7rem;//1.2rem
+  }
+  .text-small {
+    font-size:1.2rem;
+  }
+  @media only screen and (min-width:850px) {//Up
+    .headline {
+      font-size:2.85rem;
+    }
+    .text-hero, .text-gigantic {
+      font-size:5.3rem;
+    }
+    .text-intro, .text-huge {
+      font-size:2.85rem;
+    }
+    .text-intro {
+      line-height:1.19;
+    }
+  }
+  @media only screen and (min-width:992px) {//Up
+    .headline {
+      font-size:3.35rem;
+    }
+    .text-hero, .text-gigantic {
+      font-size:5.8rem;
+    }
+    .text-intro, .text-huge {
+      font-size:3.35rem;
+    }
+    .text-big {
+      font-size:2rem;
+    }
+    .text-medium {
+      font-size:1.7rem;
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up
+    .headline {
+      font-size:4rem;//3.85rem
+    }
+    .text-hero {
+      font-size:6.3rem;
+    }
+    .text-gigantic {
+      font-size:5.3rem;
+      line-height:0.93;
+    }
+    .text-intro, .text-huge {
+      font-size:3.85rem;
+    }
+    .text-big {
+      font-size:2.5rem;
+    }
+    .text-medium {
+      font-size:2.2rem;
+    }
+    .text-small {
+      font-size:1.4rem;
+    }
+  }
+
+  //----------------------------------Layout Styles----------------------------------//
+
+  // Container
+  .container {
+    //max-width:...;
+  }
+  // Other Media Queries
+  @media only screen and (min-width:1200px) {//Up
+    .container {
+      max-width:988px;//Temporary, As Per B4
+    }
+  }//@Media
+
+  //----------------------------------Section Styles----------------------------------//
+
+  // Footer
+  footer {
+    > aside.footer-aside-info-elements {
+      .footer-availability, .footer-credits {
+        bottom:370.5px;//To be 370px
+      }
+      .footer-office, nav.footer-nav {
+        bottom:220.5px;//To be 220px
+      }
+      .footer-social-media-business, .footer-social-media-personal {
+        bottom:115px;//To be 115px
+      }
+      .footer-social-media-personal {//To mix above
+        bottom:115.5px;//To be 115px and mixed above again
+      }
+    }
+  }
+
+}//@Media
