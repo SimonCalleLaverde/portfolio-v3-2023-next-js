@@ -1,5 +1,4 @@
-// T O   B A S E   I N   "pages/blog/[blogPost].js"   O R   "stuff/[[SLUG]].js"
-// Dynamic Route Result: "/projects/[project]" (E.g: "/projects/lambo", "/projects/tesla", "/projects/ford")
+// T O   B A S E   I N   "pages/blog/[slug].js"
 
 // Imports
 import Head from "next/head";

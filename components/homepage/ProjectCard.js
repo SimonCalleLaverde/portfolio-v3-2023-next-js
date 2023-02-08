@@ -17,21 +17,17 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 
 			<div className="project-caption">
 				<h4>Client: {client}</h4>
-				<br/>
 
 				<Image src={thumbnailImage.url} alt={`${title} Project's Thumbnail Image`} width="200" height="120"/>
 				<h4>Name For Thumbnail: {nameForThumbnail}</h4>
-				<br/>
 
 				<h4>Year: {year}</h4>
 				<h4>Type: {type}</h4>
 				<h4>Category: {category}</h4>
 				<h4>Slug: {slug}</h4>
 				<h4>Web Launch URL: {webLaunchUrl}</h4>
-				<br/>
 
 				<p>Content: {content.text}</p>
-				<br/>
 
 				<h6 style={{marginBottom:"0px", color: "green"}}>Multiple Values:</h6>
 				<h5 style={{marginTop:"0px"}}>
@@ -43,7 +39,6 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 						</div>
 					))}
 				</h5>
-				<br/>
 
 				<h6 style={{marginBottom:"0px", color: "green"}}>Multiple Values:</h6>
 				<h5 style={{marginTop:"0px"}}>
@@ -54,7 +49,6 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 						</div>
 					))}
 				</h5>
-				<br/>
 
 				<h6 style={{marginBottom:"0px", color: "green"}}>Multiple Values:</h6>
 				<h5 style={{marginTop:"0px"}}>
@@ -65,7 +59,6 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 						</div>
 					))}
 				</h5>
-				<br/>
 
 				<h6 style={{marginBottom:"0px", color: "green"}}>Multiple Values:</h6>
 				<h5 style={{marginTop:"0px"}}>

@@ -1,5 +1,5 @@
 // - - - - - - - B A S E D   I N   G R A P H   C M S   D E V   E D ' S   E X A M P L E   "stuff/[[SLUG]].js" - - - - - - - //
-// - - - - - - - &   N O W   I N   "pages/blog.js"   T O O - - - - - - - //
+// - - - - - - - &   N O W   I N   "pages/index.js", "pages/projects.js", "pages/blog.js"   A S   W E L L - - - - - - - //
 
 // Imports
 import Head from "next/head";
@@ -50,10 +50,12 @@ const graphCMSQuery = gql`
 `;
 
 // Getting All The Projects' Slugs
-const SLUGLIST = gql`
+const graphCMSQuerySLUGLIST = gql`
   {
     projects {
+
       slug
+
     }
   }
 `;
@@ -62,7 +64,7 @@ const SLUGLIST = gql`
 
 // GET STATIC PATHS
 export async function getStaticPaths() {
-  const { projects } = await graphCMSRequestAPI.request(SLUGLIST);
+  const { projects } = await graphCMSRequestAPI.request(graphCMSQuerySLUGLIST);
 
   return {
     paths: projects.map(project => ({ params: { slug: project.slug } })),
@@ -90,9 +92,10 @@ export async function getStaticProps({ params }) {
 export default function BlogPostPage({ projectData }) {
   return (
     <>
-      {/* <Head></Head> Will Go Here */}
+      {/* <HeadComponent/> Will Go Here */}
       <Head>
         <title>{ projectData.title }</title>
+        <link href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/>
       </Head>
 
       <Header/>
@@ -104,38 +107,25 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-            {/* AS PER MY "NextJS Blog GraphCMS" EXAMPLE */}
-            <h1>{ projectData.title }</h1>
-
-            <div dangerouslySetInnerHTML={{ __html: projectData.content.text }}>
-            </div>
-
-
-
-
             {/* AS PER HOMEPAGE */}
             <h1>Title: { projectData.title }</h1>
 
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
-            <img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`}/>
+            <img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`} style={{width:"100%"}}/>
 
             <div className="project-caption">
               <h4>Client: {projectData.client}</h4>
-              <br/>
 
-              <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="120" height="90"/>
+              <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="200" height="120"/>
               <h4>Name For Thumbnail: {projectData.nameForThumbnail}</h4>
-              <br/>
 
               <h4>Year: {projectData.year}</h4>
               <h4>Type: {projectData.type}</h4>
               <h4>Category: {projectData.category}</h4>
               <h4>Slug: {projectData.slug}</h4>
               <h4>Web Launch URL: {projectData.webLaunchUrl}</h4>
-              <br/>
 
               <p>Content: {projectData.content.text}</p>
-              <br/>
 
               <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
               <h5 className="mt-0">
@@ -147,7 +137,6 @@ export default function BlogPostPage({ projectData }) {
                   </div>
                 ))}
               </h5>
-              <br/>
 
               <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
               <h5 className="mt-0">
@@ -158,7 +147,6 @@ export default function BlogPostPage({ projectData }) {
                   </div>
                 ))}
               </h5>
-              <br/>
 
               <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
               <h5 className="mt-0">
@@ -169,7 +157,6 @@ export default function BlogPostPage({ projectData }) {
                   </div>
                 ))}
               </h5>
-              <br/>
 
               <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
               <h5 className="mt-0">

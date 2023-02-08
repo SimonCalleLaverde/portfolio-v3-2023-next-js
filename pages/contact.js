@@ -1,7 +1,7 @@
 // Imports
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/contact/Header.js";
 import Footer from "../components/Footer.js";
 
@@ -9,20 +9,17 @@ import Footer from "../components/Footer.js";
 export default function ContactPage() {
 	return (
 		<>
+			<HeadComponent/>
 
-			{/* Temporary */}
       <Header/>
 
-			{/* Temporary */}
       <main>
         <div className="container">
 					<h1>Contact (Page) Component</h1>
         </div>
       </main>
 
-			{/* Temporary */}
       <Footer/>
-
 		</>
 	)
 };
