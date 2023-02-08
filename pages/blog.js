@@ -1,7 +1,7 @@
 // Imports
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/blog/Header.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -66,31 +66,11 @@ export async function getStaticProps() {
 export default function BlogPage({ allProjects }) {
 	return (
 		<>
-      {/* <Head></Head> Will Go Here */}
+      <HeadComponent/>
 
       <Header/>
 
       <main>
-        <section className="OLD-example-section">
-          <div className="container">
-
-
-
-
-						{["1", "2", "3"].map(item => (
-							<div key={item}>
-								<Link href="/blog/blog-post-dynamic">
-									Blog Post Dynamic
-								</Link>
-							</div>
-						))}
-
-
-
-
-          </div>
-        </section>
-
         <section className="blogpage-articles-section">
           <div className="container">
             {/* Mapping through "allProjects" and displaying each "project", in a "ProjectCard" component */}

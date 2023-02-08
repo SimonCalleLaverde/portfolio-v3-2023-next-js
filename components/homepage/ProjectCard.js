@@ -12,14 +12,14 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 
 			<Link href={`/projects/${slug}`}>
 				{/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
-				<img src={headerImage.url} alt={`${title} Project's Header Image`}/>
+				<img src={headerImage.url} alt={`${title} Project's Header Image`} style={{width:"100%"}}/>
 			</Link>
 
 			<div className="project-caption">
 				<h4>Client: {client}</h4>
 				<br/>
 
-				<Image src={thumbnailImage.url} alt={`${title} Project's Thumbnail Image`} width="120" height="90"/>
+				<Image src={thumbnailImage.url} alt={`${title} Project's Thumbnail Image`} width="200" height="120"/>
 				<h4>Name For Thumbnail: {nameForThumbnail}</h4>
 				<br/>
 

@@ -17,7 +17,7 @@ import IconFacebook from "../components/icons/IconFacebook.js";
 // Footer (Sitewide) Component
 export default function Footer() {
 	return (
-		<footer>{/*clearfix*/}
+		<footer>
       {/* Desktop | Screen Readers */}
       <a className="container display-flex justify-content-center align-items-center text-align-center" href="/contact">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
         <div className="row-box">{/*row*/}

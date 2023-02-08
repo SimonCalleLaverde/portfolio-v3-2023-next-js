@@ -1,7 +1,7 @@
 // Imports
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/projects/Header.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -66,41 +66,11 @@ export async function getStaticProps() {
 export default function ProjectsPage({ allProjects }) {
 	return (
 		<>
-      {/* <Head></Head> Will Go Here */}
+      <HeadComponent/>
 
       <Header/>
 
       <main>
-        <section className="OLD-example-section">
-          <div className="container">
-
-
-
-
-            <div>
-              <Link href="/projects/tesla">
-                Tesla Car
-              </Link>
-            </div>
-
-            <div>
-              <Link href="/projects/ford">
-                Ford Car
-              </Link>
-            </div>
-
-            <div>
-              <Link href="/projects/lambo">
-                Lambo Car
-              </Link>
-            </div>
-
-
-
-
-          </div>
-        </section>
-
         <section className="projectspage-projects-section">
           <div className="container">
             {/* Mapping through "allProjects" and displaying each "project", in a "ProjectCard" component */}
