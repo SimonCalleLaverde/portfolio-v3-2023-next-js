@@ -206,7 +206,7 @@ export default function Footer() {
 
         {/* Desktop | Screen Readers */}
         <div className="footer-copyright font-ultra-light">
-          © {/*{{ "now" | date: "%Y" }}*/}2022 Simón Calle Laverde
+          © {/*{{ "now" | date: "%Y" }}*/}2023 Simón Calle Laverde
           <br/>All rights reserved
         </div>
 
