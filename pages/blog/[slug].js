@@ -139,13 +139,17 @@ export default function BlogPostPage({ projectData }) {
 
             <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
             <h5 className="mt-0">
-              {/*Web Image [Index "0"]:<br/>{webImages[0].url}*/}
-
               {projectData.webImages.map(image => (
                 <div key={image.url}>
                   {image.url}
                 </div>
               ))}
+            </h5>
+
+            {/* Repeated: Index "0" Only */}
+            <h4 className="mb-0">WEB IMAGES [INDEX "0" ONLY]: <span style={{color: "brown"}}>{" "} (First Value Only)</span></h4>
+            <h5 className="mt-0">
+              {projectData.webImages[0].url}
             </h5>
 
             <h4 className="mb-0">WEB IMAGE FONTS:</h4>
