@@ -54,7 +54,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      allProjects: projects//,
+      allProjectsData: projects//,
     }//,
     //revalidate: 10,
   }
@@ -63,7 +63,7 @@ export async function getStaticProps() {
 //----------------------------------THIS PART ABOVE IS FETCHING CONTENT USING GRAPHCMS [END]----------------------------------//
 
 // Home (Page) Component
-export default function HomePage({ allProjects }) {
+export default function HomePage({ allProjectsData }) {
   return (
     <>
       <HeadComponent/>
@@ -76,8 +76,8 @@ export default function HomePage({ allProjects }) {
 
         <section className="homepage-projects-section">
           <div className="container">
-            {/* Mapping through "allProjects" and displaying each "project", in a "ProjectCard" component */}
-            {allProjects.map(project => (
+            {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
+            {allProjectsData.map(project => (
               <ProjectCard
                 key={project.id}
                 title={project.title}

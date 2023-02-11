@@ -2,9 +2,9 @@
 // - - - - - - - &   N O W   I N   "pages/index.js", "pages/projects.js", "pages/blog.js"   A S   W E L L - - - - - - - //
 
 // Imports
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";//To Be (import HeadComponent from "../components/HeadComponent.js";)
 import Header from "../../components/blogpost/Header.js";
 import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -36,6 +36,9 @@ const graphCMSQuery = gql`
       roles
       webLaunchUrl
       webImages {
+        url
+      }
+      webImageFonts {
         url
       }
       type
@@ -101,73 +104,79 @@ export default function BlogPostPage({ projectData }) {
       <Header/>
 
       <main>
-        <section className="blogpostpage-articles-section">
+        <section className="blogpostpage-article-section">
           <div className="container">
 
 
 
 
-            {/* AS PER HOMEPAGE */}
-            <h1>Title: { projectData.title }</h1>
+            <h4 className="mb-0">TITLE:</h4>
+            <h1 className="mt-0">{ projectData.title }</h1>
 
+            <h4 className="mb-0">HEADER IMAGE:</h4>
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
             <img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`} style={{width:"100%"}}/>
 
-            <div className="project-caption">
-              <h4>Client: {projectData.client}</h4>
+            <h4>CLIENT:<br/>{projectData.client}</h4>
 
-              <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="200" height="120"/>
-              <h4>Name For Thumbnail: {projectData.nameForThumbnail}</h4>
+            <h4 className="mb-0">THUMBNAIL IMAGE:</h4>
+            <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="200" height="120"/>
 
-              <h4>Year: {projectData.year}</h4>
-              <h4>Type: {projectData.type}</h4>
-              <h4>Category: {projectData.category}</h4>
-              <h4>Slug: {projectData.slug}</h4>
-              <h4>Web Launch URL: {projectData.webLaunchUrl}</h4>
+            <h4>NAME FOR THUMBNAIL:<br/>{projectData.nameForThumbnail}</h4>
 
-              <p>Content: {projectData.content.text}</p>
+            <h4>YEAR:<br/>{projectData.year}</h4>
 
-              <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
-              <h5 className="mt-0">
-                {/*Web Image [Index "0"]:<br/>{webImages[0].url}*/}
-                WEB IMAGES:
-                {projectData.webImages.map(image => (
-                  <div key={image.url}>
-                    {image.url}
-                  </div>
-                ))}
-              </h5>
+            <h4>TYPE:<br/>{projectData.type}</h4>
 
-              <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
-              <h5 className="mt-0">
-                PLATFORMS:
-                {projectData.platforms.map(platform => (
-                  <div key={platform}>
-                    {platform}
-                  </div>
-                ))}
-              </h5>
+            <h4>CATEGORY:<br/>{projectData.category}</h4>
 
-              <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
-              <h5 className="mt-0">
-                ROLES:
-                {projectData.roles.map(role => (
-                  <div key={role}>
-                    {role}
-                  </div>
-                ))}
-              </h5>
+            <h4>SLUG:<br/>{projectData.slug}</h4>
 
-              <h6 className="mb-0" style={{color: "green"}}>Multiple Values:</h6>
-              <h5 className="mt-0">
-                TAGS:
-                {projectData.tags.map(tag => (
-                  <div key={tag}>
-                    {tag}
-                  </div>
-                ))}
-              </h5>
-            </div>
+            <h4>WEB LAUNCH URL:<br/>{projectData.webLaunchUrl}</h4>
+
+            <h4 className="mb-0">CONTENT:</h4>
+            <p className="mt-0">{projectData.content.text}</p>
+
+            <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
+            <h5 className="mt-0">
+              {/*Web Image [Index "0"]:<br/>{webImages[0].url}*/}
+
+              {projectData.webImages.map(image => (
+                <div key={image.url}>
+                  {image.url}
+                </div>
+              ))}
+            </h5>
+
+            <h4 className="mb-0">WEB IMAGE FONTS:</h4>
+            <h5 className="mt-0">{projectData.webImageFonts.url}</h5>
+
+            <h4 className="mb-0">PLATFORMS: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
+            <h5 className="mt-0">
+              {projectData.platforms.map(platform => (
+                <div key={platform}>
+                  {platform}
+                </div>
+              ))}
+            </h5>
+
+            <h4 className="mb-0">ROLES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
+            <h5 className="mt-0">
+              {projectData.roles.map(role => (
+                <div key={role}>
+                  {role}
+                </div>
+              ))}
+            </h5>
+
+            <h4 className="mb-0">TAGS: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
+            <h5 className="mt-0">
+              {projectData.tags.map(tag => (
+                <div key={tag}>
+                  {tag}
+                </div>
+              ))}
+            </h5>
 
 
 
