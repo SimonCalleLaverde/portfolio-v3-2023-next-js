@@ -47,6 +47,12 @@ const graphCMSQuery = gql`
       content {
         text
       }
+      contentTwoLeft {
+        text
+      }
+      contentTwoRight {
+        text
+      }
 
     }
   }
@@ -148,44 +154,30 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-
-
-
-            
-
-
-
-
-
             <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
             {projectData.webImages.map(image => (
               <div key={image.url}>
-
-
-
                 <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
-
-
-
               </div>
             ))}
 
+
+
             {/* Repeated: Index "0" Only */}
             <h4 className="mb-0">WEB IMAGES [INDEX "0" ONLY]: <span style={{color: "purple"}}>{" "} (First Value Only)</span></h4>
-
-
-
             <Image src={projectData.webImages[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
 
 
 
-
             <h4 className="mb-0">WEB IMAGE FONTS:</h4>
-
-
-
             <img src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} style={{width:"80%"}}/>
             {/*<Image src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} width="300" height="300"/>*/}
+
+
+
+            <p>{projectData.contentTwoLeft.text}</p>
+
+            <p>{projectData.contentTwoRight.text}</p>
 
 
 
