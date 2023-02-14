@@ -33,7 +33,7 @@ const graphCMSQuery = gql`
       year
       roles
       webLaunchUrl
-      webImages {
+      webImagesFirst {
         url
       }
       type
@@ -87,7 +87,7 @@ export default function BlogPage({ allProjectsData }) {
                 year={project.year}
                 roles={project.roles}
                 webLaunchUrl={project.webLaunchUrl}
-                webImages={project.webImages}
+                webImagesFirst={project.webImagesFirst}
                 type={project.type}
                 category={project.category}
                 tags={project.tags}

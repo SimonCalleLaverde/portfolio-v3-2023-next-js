@@ -35,9 +35,29 @@ const graphCMSQuery = gql`
       year
       roles
       webLaunchUrl
+
       webImagesFirst {
         url
       }
+      webImagesSecond {
+        url
+      }
+      webImagesThird {
+        url
+      }
+      webImagesFourth {
+        url
+      }
+      webImagesFifth {
+        url
+      }
+      webImagesSixth {
+        url
+      }
+      webImagesSeventh {
+        url
+      }
+
       webImageFonts {
         url
       }
@@ -48,16 +68,25 @@ const graphCMSQuery = gql`
         text
       }
 
-      contentSecond {
+      captionFirst {
         text
       }
-      contentThird {
+      captionSecond {
         text
       }
-      contentFourth {
+      captionThird {
         text
       }
-      contentFifth {
+      captionFourth {
+        text
+      }
+      captionFifth {
+        text
+      }
+      captionSixth {
+        text
+      }
+      captionSeventh {
         text
       }
 
@@ -153,11 +182,7 @@ export default function BlogPostPage({ projectData }) {
 
             <p>{projectData.content.text}</p>
 
-
-
-
-            <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-            {/*{projectData.webImagesFirst.map(image => (
+            {/*{projectData.webImages.map(image => (
               <div key={image.url}>
                 <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
               </div>
@@ -171,37 +196,97 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-            <Image src={projectData.webImagesFirst[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
 
-            {projectData.contentSecond &&
-              <p>{projectData.contentSecond.text}</p>
-            }
+            {projectData.webImagesFirst && projectData.webImagesFirst.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+            {/*<Image src={projectData.webImagesFirst[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>*/}
 
-            <Image src={projectData.webImagesFirst[1].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
-
-            {projectData.contentThird &&
-              <p>{projectData.contentThird.text}</p>
-            }
-
-            <Image src={projectData.webImagesFirst[2].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
-
-            {projectData.contentFourth &&
-              <p>{projectData.contentFourth.text}</p>
-            }
-
-            <Image src={projectData.webImagesFirst[3].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
-
-            {projectData.contentFifth &&
-              <p>{projectData.contentFifth.text}</p>
+            {projectData.captionFirst &&
+              <p>{projectData.captionFirst.text}</p>
             }
 
 
 
-            <h4 className="mb-0">WEB IMAGE FONTS:</h4>
-            <img src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} style={{width:"70%"}}/>
+            {projectData.webImagesSecond && projectData.webImagesSecond.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionSecond &&
+              <p>{projectData.captionSecond.text}</p>
+            }
+
+
+
+            {projectData.webImagesThird && projectData.webImagesThird.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionThird &&
+              <p>{projectData.captionThird.text}</p>
+            }
+
+
+
+            {projectData.webImagesFourth && projectData.webImagesFourth.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionFourth &&
+              <p>{projectData.captionFourth.text}</p>
+            }
+
+
+
+            {projectData.webImagesFifth && projectData.webImagesFifth.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionFifth &&
+              <p>{projectData.captionFifth.text}</p>
+            }
+
+
+
+            {projectData.webImagesSixth && projectData.webImagesSixth.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionSixth &&
+              <p>{projectData.captionSixth.text}</p>
+            }
+
+
+
+            {projectData.webImagesSeventh && projectData.webImagesSeventh.map(image => (
+              <div key={image.url}>
+                <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+              </div>
+            ))}
+
+            {projectData.captionSeventh &&
+              <p>{projectData.captionSeventh.text}</p>
+            }
+
+
+
+
+            {projectData.webImageFonts &&
+              <img src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} style={{width:"70%"}}/>
+            }
             {/*<Image src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} width="300" height="300"/>*/}
-
-
 
             {projectData.contentLastLeft &&
               <p>{projectData.contentLastLeft.text}</p>
@@ -210,9 +295,6 @@ export default function BlogPostPage({ projectData }) {
             {projectData.contentLastRight &&
               <p>{projectData.contentLastRight.text}</p>
             }
-
-
-
 
             {/*<h4>NAME FOR THUMBNAIL: {projectData.nameForThumbnail}</h4>*/}
 

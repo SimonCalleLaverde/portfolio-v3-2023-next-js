@@ -5,7 +5,7 @@ import styles from "../../styles/ProjectCard.module.scss";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ title, slug, nameForThumbnail, client, thumbnailImage, headerImage, platforms, year, roles, webLaunchUrl, webImages, type, category, tags, content }) {
+export default function ProjectCard({ title, slug, nameForThumbnail, client, thumbnailImage, headerImage, platforms, year, roles, webLaunchUrl, webImagesFirst, type, category, tags, content }) {
 	return (
 		<article className={styles.article}>
 			<h1>Title: {title}</h1>
@@ -31,9 +31,9 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 
 				<h6 style={{marginBottom:"0px", color: "green"}}>Multiple Values:</h6>
 				<h5 style={{marginTop:"0px"}}>
-					{/*Web Image [Index "0"]:<br/>{webImages[0].url}*/}
+					{/*Web Image [Index "0"]:<br/>{webImagesFirst[0].url}*/}
 					WEB IMAGES:
-					{webImages.map(image => (
+					{webImagesFirst.map(image => (
 						<div key={image.url}>
 							{image.url}
 						</div>
