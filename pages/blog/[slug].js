@@ -47,10 +47,13 @@ const graphCMSQuery = gql`
       content {
         text
       }
-      contentTwoLeft {
+      contentMultiple {
         text
       }
-      contentTwoRight {
+      contentLastLeft {
+        text
+      }
+      contentLastRight {
         text
       }
 
@@ -155,17 +158,31 @@ export default function BlogPostPage({ projectData }) {
 
 
             <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-            {projectData.webImages.map(image => (
+            {/*{projectData.webImages.map(image => (
               <div key={image.url}>
                 <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
               </div>
-            ))}
+            ))}*/}
+
+            {/*{projectData.contentMultiple.map(content => (
+              <div key={content.text}>
+                <p>{content.text}</p>
+              </div>
+            ))}*/}
 
 
 
-            {/* Repeated: Index "0" Only */}
-            <h4 className="mb-0">WEB IMAGES [INDEX "0" ONLY]: <span style={{color: "purple"}}>{" "} (First Value Only)</span></h4>
             <Image src={projectData.webImages[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+
+            <p>{projectData.contentMultiple[0].text}</p>
+
+            <Image src={projectData.webImages[1].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+
+            <p>{projectData.contentMultiple[1].text}</p>
+
+            <Image src={projectData.webImages[2].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+
+            <p>{projectData.contentMultiple[2].text}</p>
 
 
 
@@ -175,9 +192,9 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-            <p>{projectData.contentTwoLeft.text}</p>
+            <p>{projectData.contentLastLeft.text}</p>
 
-            <p>{projectData.contentTwoRight.text}</p>
+            <p>{projectData.contentLastRight.text}</p>
 
 
 
