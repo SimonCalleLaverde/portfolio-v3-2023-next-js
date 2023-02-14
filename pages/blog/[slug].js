@@ -35,7 +35,7 @@ const graphCMSQuery = gql`
       year
       roles
       webLaunchUrl
-      webImages {
+      webImagesFirst {
         url
       }
       webImageFonts {
@@ -47,9 +47,20 @@ const graphCMSQuery = gql`
       content {
         text
       }
-      contentMultiple {
+
+      contentSecond {
         text
       }
+      contentThird {
+        text
+      }
+      contentFourth {
+        text
+      }
+      contentFifth {
+        text
+      }
+
       contentLastLeft {
         text
       }
@@ -116,10 +127,6 @@ export default function BlogPostPage({ projectData }) {
       <main>
         <section className="blogpostpage-article-section">
           <div className="container">
-
-
-
-
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
             {/*<img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`} style={{width:"100%"}}/>*/}
 
@@ -144,21 +151,13 @@ export default function BlogPostPage({ projectData }) {
 
             <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="600" height="380"/>
 
-            {/*<h4>NAME FOR THUMBNAIL: {projectData.nameForThumbnail}</h4>*/}
-
-            {/*<h4>TYPE: {projectData.type}</h4>*/}
-
-            {/*<h4>CATEGORY: {projectData.category}</h4>*/}
-
-            {/*<h4>SLUG: {projectData.slug}</h4>*/}
-
             <p>{projectData.content.text}</p>
 
 
 
 
             <h4 className="mb-0">WEB IMAGES: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-            {/*{projectData.webImages.map(image => (
+            {/*{projectData.webImagesFirst.map(image => (
               <div key={image.url}>
                 <Image src={image.url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
               </div>
@@ -172,32 +171,56 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-            <Image src={projectData.webImages[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+            <Image src={projectData.webImagesFirst[0].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
 
-            <p>{projectData.contentMultiple[0].text}</p>
+            {projectData.contentSecond &&
+              <p>{projectData.contentSecond.text}</p>
+            }
 
-            <Image src={projectData.webImages[1].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+            <Image src={projectData.webImagesFirst[1].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
 
-            <p>{projectData.contentMultiple[1].text}</p>
+            {projectData.contentThird &&
+              <p>{projectData.contentThird.text}</p>
+            }
 
-            <Image src={projectData.webImages[2].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+            <Image src={projectData.webImagesFirst[2].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
 
-            <p>{projectData.contentMultiple[2].text}</p>
+            {projectData.contentFourth &&
+              <p>{projectData.contentFourth.text}</p>
+            }
+
+            <Image src={projectData.webImagesFirst[3].url} alt={`${projectData.title} Case Study's Image`} width="400" height="220"/>
+
+            {projectData.contentFifth &&
+              <p>{projectData.contentFifth.text}</p>
+            }
 
 
 
             <h4 className="mb-0">WEB IMAGE FONTS:</h4>
-            <img src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} style={{width:"80%"}}/>
+            <img src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} style={{width:"70%"}}/>
             {/*<Image src={projectData.webImageFonts.url} alt={`${projectData.title} Case Study's Fonts Image`} width="300" height="300"/>*/}
 
 
 
-            <p>{projectData.contentLastLeft.text}</p>
+            {projectData.contentLastLeft &&
+              <p>{projectData.contentLastLeft.text}</p>
+            }
 
-            <p>{projectData.contentLastRight.text}</p>
+            {projectData.contentLastRight &&
+              <p>{projectData.contentLastRight.text}</p>
+            }
 
 
 
+
+            {/*<h4>NAME FOR THUMBNAIL: {projectData.nameForThumbnail}</h4>*/}
+
+            {/*<h4>TYPE: {projectData.type}</h4>*/}
+
+            {/*<h4>CATEGORY: {projectData.category}</h4>*/}
+
+            {/*<h4>SLUG: {projectData.slug}</h4>*/}
 
             {/*<h4 className="mb-0">PLATFORMS: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
             <h5 className="mt-0">
@@ -216,10 +239,6 @@ export default function BlogPostPage({ projectData }) {
                 </div>
               ))}
             </h5>*/}
-
-
-
-
           </div>
         </section>
       </main>
