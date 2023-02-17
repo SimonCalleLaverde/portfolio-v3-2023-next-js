@@ -114,6 +114,68 @@
 
   //----------------------------------Section Styles----------------------------------//
 
+
+
+
+
+
+
+
+  // Project Header
+  header.project-header {
+    min-height:100vh;
+    padding:203px 0 0;
+    span.page-order {
+      //top:-70px;
+      right:auto;
+      //left:0;
+    }
+    .page-image-wrapper {
+      .container {
+        .row {
+          > div {
+            .page-project-image {
+              height:320px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
+    header.project-header {
+      .page-image-wrapper {
+        .container {
+          .row {
+            > div {
+              .page-project-image {
+                height:350px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Project Page
+  section.project-page {
+    padding:65px 0 100px;
+    img {
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
+    section.project-page {
+      padding:105px 0 100px;
+    }
+  }
+
+
+
+
+
+
+
   // Footer
   footer {
     > aside.footer-aside-info-elements {

@@ -148,12 +148,140 @@ export default function BlogPostPage({ projectData }) {
         title={ projectData.title }
       />
 
-      <Header
+      {/*<Header
         title={ projectData.title }
         client={ projectData.client }
-      />
+      />*/}
 
       <main>
+
+
+
+
+        <header className="project-header text-rosybrown clearfix" id="project_header" data-scene>
+          <div className="container">
+
+            <div className="row">
+              <div className="col-md-6">
+
+                <div className="row">
+                  <div className="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-12">
+                    <div className="position-relative">
+                      <span className="page-order font-headline" aria-hidden="true">
+                        03{/*{{ page.order }}*/}
+
+                        {/*{% assign sorted_projects = site.projects %}
+                        {% assign projects_total_count = 0 %}
+
+                        {% for project in sorted_projects %}
+                          {% assign projects_total_count = projects_total_count | plus:1 %}
+                        {% endfor %}*/}
+
+                        <small className="font-ultra-light">
+                          {" "}/30{/*{{ projects_total_count }}*/}
+                        </small>
+                      </span>
+                    </div>
+
+                    <h1 className="page-title text-huge text-rosybrown text-uppercase">
+                      { projectData.title }
+                    </h1>
+                  </div>
+                </div>
+
+                <div className="row text-left mt-5less">
+                  <div className="col-5 offset-2">
+                    <div className="page-client font-ultra-light mb-2 pb-1">
+                      <span className="font-light">
+                        Client
+                      </span>
+                      { projectData.client ? projectData.client : projectData.title }
+                    </div>
+
+                    <div className="page-roles font-ultra-light mb-2 pb-1">
+                      <span className="font-light">
+                        Roles
+                      </span>
+                      { projectData.roles.map(role => (
+                        <span key={ role }>
+                          { role }{" "}·{" "}{/*&middot;*/}
+                        </span>
+                      )) }
+                    </div>
+                  </div>
+
+                  <div className="col-4 offset-1">
+                    <div className="page-year font-ultra-light">
+                      <span className="font-light">
+                        Year
+                      </span>
+                      { projectData.year }
+                    </div>
+                  </div>
+                </div>
+
+                <div className="row mt-5less">
+                  <div className="col-md-8 offset-md-2">
+                    <div className="page-launcher font-light">
+                      <a className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
+                        View the site
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Desktop Lg | Screen Readers */}
+                <div className="row mt-5 d-none d-lg-block">
+                  <div className="col-md-12 col-lg-10 offset-lg-1 col-xl-10 mt-2">{/*col-md-8 offset-md-2*/}
+                    <div className="page-content font-ultra-light">
+                      { projectData.content.text }
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          {/* Desktop Lg | Screen Readers */}
+          <div className="page-image-wrapper d-none d-md-block">
+            <div className="container">
+
+              <div className="row">
+                <div className="col-md-6 offset-md-6 d-flex flex-row align-items-end">
+                  <div className="page-project-image" id="page_project_thumbnail_{ projectData.slug }" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Mobile */}
+          <div className="container d-block d-md-none mt-5 pt-3">
+            <div className="row">
+              <div className="col-12">
+                <img src="{ projectData.thumbnailImage.url }" alt={`Main Image Case Study: ${ projectData.title }`}/>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Lg */}
+          <div className="container d-block d-lg-none mt-5 pt-3" aria-hidden="true">
+            <div className="row">
+              <div className="col-md-8 col-lg-10 offset-lg-1 col-xl-10">{/*col-md-8 offset-md-2*/}
+                <div className="page-content font-ultra-light">
+                  { projectData.content.text }
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+
+
+
         <section className="blogpostpage-article-section">
           <div className="container">
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
@@ -174,7 +302,7 @@ export default function BlogPostPage({ projectData }) {
 
             <h4>Year<br/>{projectData.year}</h4>
 
-            <Link className="button" href="{projectData.webLaunchUrl}" target="_blank">
+            <Link className="button" href={projectData.webLaunchUrl} target="_blank">
               <h4>{projectData.webLaunchUrl}</h4>
             </Link>
 
