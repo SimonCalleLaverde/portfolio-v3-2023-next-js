@@ -203,7 +203,7 @@ export default function BlogPostPage({ projectData }) {
                         Roles
                       </span>
                       { projectData.roles.map(role => (
-                        <span key={ role }>
+                        <span key={ role }>{/* They didn't had <span/> in older site. Here for the key. Should check styles */}
                           { role }{" "}·{" "}{/*&middot;*/}
                         </span>
                       )) }
