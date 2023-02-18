@@ -5,7 +5,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadComponent from "../../components/HeadComponent.js";
-import Header from "../../components/blogpost/Header.js";
+import Header from "../../components/project/Header.js";
 import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -127,8 +127,8 @@ export async function getStaticPaths() {
 // GET STATIC PROPS
 export async function getStaticProps({ params }) {
   const slug = params.slug;
-  const requestBlogPost = await graphCMSRequestAPI.request(graphCMSQuery, { slug });
-  const projectData = requestBlogPost.project;
+  const requestProject = await graphCMSRequestAPI.request(graphCMSQuery, { slug });
+  const projectData = requestProject.project;
 
   return {
     props: {
@@ -140,8 +140,8 @@ export async function getStaticProps({ params }) {
 
 //----------------------------------THIS PART ABOVE IS FETCHING CONTENT USING GRAPHCMS [END]----------------------------------//
 
-// BlogPost (Page) (Dynamic) Component
-export default function BlogPostPage({ projectData }) {
+// Project (Page) (Dynamic) Component
+export default function ProjectPage({ projectData }) {
   return (
     <>
       <HeadComponent
@@ -282,7 +282,7 @@ export default function BlogPostPage({ projectData }) {
 
 
 
-        <section className="blogpostpage-article-section">
+        <section className="projectpage-article-section">
           <div className="container">
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
             {/*<img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`} style={{width:"100%"}}/>*/}

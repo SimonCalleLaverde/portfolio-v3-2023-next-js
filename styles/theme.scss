@@ -367,9 +367,6 @@ section {
 
 
 
-
-
-
 // Project Header
 header.project-header {
   padding:105px 20px 25px;
@@ -443,9 +440,6 @@ section.project-page {
 
 
 
-
-
-
 // Footer
 footer {
   //display:flex;//Was Starting With NextJS
@@ -453,13 +447,7 @@ footer {
   //justify-content:center;//Was Starting With NextJS
   //align-items:center;//Was Starting With NextJS
   margin:0;////Was To Reset In B4
-
-
-
   background-color:theme-color("chocolate");////Temporary (To see styles better, line-through, dark-mode)
-
-
-
   > .container {//Desktop & Mobile
     //flex-grow:1;//Was Starting With NextJS
     min-height:100vh;
@@ -505,40 +493,15 @@ footer {
       right:37px;
       text-align:right;
     }
-    nav.footer-nav {//.navbar
+    nav.footer-nav {//nav.navbar
       padding:0;
       top:auto;
       bottom:188px;
       line-height:1.5!important;
-
-
-
-      li {//Temporary As Per B4
-        display: list-item;//Temporary As Per B4
-        text-align: -webkit-match-parent;//Temporary As Per B4
-      }
-      //pointer-events: none;////I had it as "general" above before, for various elements
-      ol, ul, dl {//Temporary As Per B4
-        margin-top: 0;//Temporary As Per B4
-        margin-bottom: 1rem;//Temporary As Per B4
-      }
-
-
-
-      ul.footer-nav-ul {//navbar-nav
-
-
-
-        display: flex;//Temporary As Per B4
-        flex-direction: column;//Temporary As Per B4
-        padding-left: 0;//Temporary As Per B4
-        margin-bottom: 0;//Temporary As Per B4
-        list-style: none;//Temporary As Per B4
-
-
-
-        li.footer-nav-li {//nav-item
-          a.footer-nav-link {//nav-link
+      ul.footer-nav-ul {//ul.navbar-nav
+        list-style:none;//Temporary As Per B4//Needed While Not-Having "navbar-nav"
+        li.footer-nav-li {//li.nav-item
+          a.footer-nav-link {//a.nav-link
             display:inline-block;
             margin:0.1rem auto;
             padding:0 0.1rem;
@@ -558,14 +521,11 @@ footer {
             }
             &.link-line-throught {
               &::before {
-                bottom:2px;//
+                bottom:2px;
               }
             }
           }
         }
-
-
-
       }
     }
     .footer-social-media-business {
@@ -605,10 +565,8 @@ footer {
             position:absolute;
             width:27px;
             height:27px;
-
             //top:-3.1px;//Was -2.8px
-            left:-5px;//To be -6px for most centering all icons, for now matching old site exactly
-
+            left:-5px;
             background-color:theme-color("rosybrown");
             z-index:20;
             @include border-radius(50%);
@@ -625,40 +583,35 @@ footer {
             z-index:21;
             @include transition(fill ease-out 0.5s);//all
           }
-          &.icon-linkedin {//√
+          &.icon-linkedin {
             > svg {
               width:14px;
-              top:1.8px;//Was "margin-top:-1px"
+              top:-0.5px;//Was "margin-top:-1px"
               margin-left:2px;//Affects the others too
             }
           }
-          &.icon-behance {//√
+          &.icon-behance {
             > svg {
               width:18px;
-              top:4.4px;//New
             }
           }
-          &.icon-angel {//√
+          &.icon-angel {
             > svg {
               width:14px;
-              top:5.5px;//New
-              margin-left:1px;//Was "margin-left:1px"//Affects githubs too//To remove, for now matching old site
+              margin-left:1px;//Affects githubs too
             }
           }
-          &.icon-github {//√
+          &.icon-github {
             > svg {
-              top:3.8px;//New
             }
           }
-          &.icon-dribbble, &.icon-pinterest, &.icon-instagram {//√//√//√
+          &.icon-dribbble, &.icon-pinterest, &.icon-instagram {
             > svg {
-              top:4.3px;//New
             }
           }
-          &.icon-facebook {//√
+          &.icon-facebook {
             > svg {
               width:15px;
-              top:3.2px;//New
             }
           }
         }

@@ -1,9 +1,9 @@
 // MISSING TO IMPLEMENT "<LINK/>'S" COMPONENT IN EVERY FOOTER NAV'S "<a></a>" HERE
+// MISSING "MOBILE" VERSIONS
 
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-//import styles from "../styles/Footer.module.scss";//Maybe, maybe not, that's the question
 // Must be a better way to import all this below I guess // To look up
 import IconLinkedIn from "../components/icons/IconLinkedIn.js";
 import IconBehance from "../components/icons/IconBehance.js";
@@ -20,8 +20,8 @@ export default function Footer() {
 		<footer>
       {/* Desktop | Screen Readers */}
       <a className="container display-flex justify-content-center align-items-center text-align-center" href="/contact">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
-        <div className="row-box">{/*row*/}
-          <div className="column-12">{/*col-md-12*/}
+        <div className="row">
+          <div className="col-md-12">
 
             <h3 className="text-huge text-rosybrown text-transform-uppercase">{/*mb-0*/}
               Let's create
@@ -92,9 +92,6 @@ export default function Footer() {
         {/*javascript:delay('/hire_a_project')*/}
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <nav className="footer-nav" aria-hidden="true">{/*navbar*/}
-
-
-
           <ul className="footer-nav-ul">{/*navbar-nav*/}
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'home' %} active-link{% endif %}*/}
@@ -131,9 +128,6 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-
-
-
         </nav>
 
         {/* Desktop | Mobile | Screen Readers */}
