@@ -216,29 +216,25 @@ a {
   }
 }
 
-
-
-
-// Link Line Throught
-a.link-line-throught {
+// Link Line Through
+a.link-line-through {
   position:relative;
   &::before {
     content:'';
     position:absolute;
-    height:2px;//30%
     width:0;
+    height:2px;//30%
     //top:50%;//40%
     right:0;
-    bottom:0;//
+    bottom:0;
     //left:0;
-    background-color:theme-color("rosybrown");//#CE1352
-    border-bottom:1px solid theme-color("chocolate");//rosybrown
+    background-color:theme-color("rosybrown");
+    border-bottom:1px solid theme-color("chocolate");
     pointer-events:none;
-    //mix-blend-mode:difference;
-    @include filter(opacity(0.8));//0.4//0.3//0.8
+    @include filter(opacity(0.8));
     @include transition(width 0.4s ease-in-out);
   }
-  &:hover, &:active, &:focus, &.active-link {
+  &:hover, &:active, &:focus {//&.active-link
     &::before {
       width:100%;
       right:auto;
@@ -246,9 +242,6 @@ a.link-line-throught {
     }
   }
 }
-
-
-
 
 // Buttons
 $btn-normal-padding:0.2rem 1rem;
@@ -660,7 +653,7 @@ footer {
             &.active-link {
               filter:opacity(1);//0.7
             }
-            &.link-line-throught {
+            &.link-line-through {
               &::before {
                 bottom:2px;
               }

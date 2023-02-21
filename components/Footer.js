@@ -19,7 +19,7 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <a className="container display-flex justify-content-center align-items-center text-align-center" href="/contact">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="/contact">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
         <div className="row">
           <div className="col-md-12">
 
@@ -36,7 +36,7 @@ export default function Footer() {
 
           </div>
         </div>
-      </a>
+      </Link>
 
       {/* Mobile (Missing (".container")) (To look up in my Jekyll's "Portfolio 2021") */}
 
@@ -46,7 +46,7 @@ export default function Footer() {
           Or just email me or call me
           <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
-            <br/><a className="link-line-throught text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</a>{/*{{ site.email }}*/}
+            <br/><Link className="link-line-through text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
         </div>
 
@@ -80,7 +80,7 @@ export default function Footer() {
           Credits
           <span className="font-ultra-light">
             <br/>Icon Illustrations by
-            <br/><a className="link-line-throught text-rosybrown" href="https://absurd.design/" target="_blank">absurd.design</a>
+            <br/><Link className="link-line-through text-rosybrown" href="https://absurd.design/" target="_blank">absurd.design</Link>
           </span>
         </div>
 
@@ -95,37 +95,37 @@ export default function Footer() {
           <ul className="footer-nav-ul">{/*navbar-nav*/}
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'home' %} active-link{% endif %}*/}
-              <a className="footer-nav-link link-line-throught" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-line-through" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Home</span>
-              </a>
+              </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
-              <a className="footer-nav-link link-line-throught" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-line-through" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>About{/* me*/}</span>
-              </a>
+              </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <a className="footer-nav-link link-line-throught" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-line-through" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>All projects</span>
-              </a>
+              </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
-              <a className="footer-nav-link link-line-throught" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-line-through" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Contact{/* me*/}</span>
-              </a>
+              </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'hire_a_project' %} active-link{% endif %}*/}
-              <a className="footer-nav-link link-line-throught" href="/hire-a-project">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-line-through" href="/hire-a-project">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Hire a project</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -137,30 +137,30 @@ export default function Footer() {
           </span>
 
           <div className="mt-1">
-            <a className="mr-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank">{/*link*/}{/*link-line-throught*/}
+            <Link className="mr-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-linkedin">
                 {/*{% include icon_linkedin.xml %}*/}
                 <IconLinkedIn/>
               </span>
-            </a>
-            <a className="mr-3" href="https://www.behance.net/simoncallelaverde" target="_blank">{/*link*/}{/*link-line-throught*/}
+            </Link>
+            <Link className="mr-3" href="https://www.behance.net/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-behance">
                 {/*{% include icon_behance.xml %}*/}
                 <IconBehance/>
               </span>
-            </a>
-            <a className="mr-3" href="https://angel.co/u/simoncallelaverde" target="_blank">{/*link*/}{/*link-line-throught*/}
+            </Link>
+            <Link className="mr-3" href="https://angel.co/u/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-angel">
                 {/*{% include icon_angel.xml %}*/}
                 <IconAngel/>
               </span>
-            </a>
-            <a className="" href="https://github.com/SimonCalleLaverde" target="_blank">{/*link*/}{/*link-line-throught*/}
+            </Link>
+            <Link className="" href="https://github.com/SimonCalleLaverde" target="_blank">{/*link*/}
               <span className="icon-github">
                 {/*{% include icon_github.xml %}*/}
                 <IconGithub/>
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -171,30 +171,30 @@ export default function Footer() {
           </span>
 
           <div className="mt-1">
-            <a className="" href="https://dribbble.com/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="" href="https://dribbble.com/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-dribbble">
                 {/*{% include icon_dribbble.xml %}*/}
                 <IconDribbble/>
               </span>
-            </a>
-            <a className="ml-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank">{/*link*/}
+            </Link>
+            <Link className="ml-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-pinterest">
                 {/*{% include icon_pinterest.xml %}*/}
                 <IconPinterest/>
               </span>
-            </a>
-            <a className="ml-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank">{/*link*/}
+            </Link>
+            <Link className="ml-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank">{/*link*/}
               <span className="icon-instagram">
                 {/*{% include icon_instagram.xml %}*/}
                 <IconInstagram/>
               </span>
-            </a>
-            <a className="ml-3" href="https://www.facebook.com/simoncio/" target="_blank">{/*link*/}
+            </Link>
+            <Link className="ml-3" href="https://www.facebook.com/simoncio/" target="_blank">{/*link*/}
               <span className="icon-facebook">
                 {/*{% include icon_facebook.xml %}*/}
                 <IconFacebook/>
               </span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -209,20 +209,12 @@ export default function Footer() {
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-created-by">{/*d-none d-md-block*/}
           Designed & developed by
-          <br/><a className="link-line-throught font-ultra-light text-rosybrown" href="/">Simón Calle Laverde</a>{/*{{ site.client_name }}*/}
+          <br/><Link className="link-line-through font-ultra-light text-rosybrown" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
+          {/*href="https://simoncallelaverde.github.io/" target="_blank"*/}
         </div>
 
         {/* Mobile (Missing (".footer-created-by")) (To look up in my Jekyll's "Portfolio 2021") */}
       </aside>
-      {/*
-        <span>
-          Designed & Developed by{" "}
-        </span>
-
-        <a href="https://simoncallelaverde.github.io/" target="_blank">
-          Simón Calle Laverde
-        </a>
-      */}
 		</footer>
 	)
 };
