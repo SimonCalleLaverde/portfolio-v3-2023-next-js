@@ -153,13 +153,13 @@ export default function BlogPostPage({ projectData }) {
       />*/}
 
       <main>
-        <header className="project-header text-rosybrown clearfix" id="project_header" data-scene>
+        <header className="blogpost-header text-rosybrown clearfix" id="blogpost_header" data-scene>
           <div className="container">
             {/* MORE */}
           </div>
         </header>
 
-        <section className="blogpostpage-article-section">
+        <section className="blogpost-page text-rosybrown clearfix" id="blogpost_page" data-scene>
           <div className="container">
             {/* MORE */}
           </div>
