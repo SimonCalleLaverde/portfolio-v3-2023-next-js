@@ -203,7 +203,7 @@ export default function ProjectPage({ projectData }) {
                         Roles
                       </span>
                       { projectData.roles.map(role => (
-                        <span key={ role }>{/* They didn't had <span/> in older site. Here for the key. Should check styles */}
+                        <span key={ role } className="reverse-styles">{/* It didn't had <span/> in older site. Here for the key. Should check styles */}
                           { role }{" "}·{" "}{/*&middot;*/}
                         </span>
                       )) }
@@ -223,9 +223,9 @@ export default function ProjectPage({ projectData }) {
                 <div className="row mt-5less">
                   <div className="col-md-8 offset-md-2">
                     <div className="page-launcher font-light">
-                      <a className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
+                      <Link className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
                         View the site
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -250,7 +250,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="row">
                 <div className="col-md-6 offset-md-6 d-flex flex-row align-items-end">
-                  <div className="page-project-image" id="page_project_thumbnail_{ projectData.slug }" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
+                  <div className="page-project-image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
                   </div>
                 </div>
               </div>
@@ -287,28 +287,13 @@ export default function ProjectPage({ projectData }) {
             {/*<Image src={headerImage.url} alt={`${title} Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
             {/*<img src={projectData.headerImage.url} alt={`${projectData.title} Project's Header Image`} style={{width:"100%"}}/>*/}
 
-            <h1>{ projectData.title }</h1>
 
-            <h4>Client<br/>{projectData.client}</h4>
 
-            <h4 className="mb-0">Roles</h4>
-            <h5 className="mt-0">
-              {projectData.roles.map(role => (
-                <span key={role}>
-                  {role}{" "}·{" "}
-                </span>
-              ))}
-            </h5>
-
-            <h4>Year<br/>{projectData.year}</h4>
-
-            <Link className="button" href={projectData.webLaunchUrl} target="_blank">
-              <h4>{projectData.webLaunchUrl}</h4>
-            </Link>
 
             <Image src={projectData.thumbnailImage.url} alt={`${projectData.title} Project's Thumbnail Image`} width="600" height="380"/>
 
-            <p>{projectData.content.text}</p>
+
+
 
             {/*{projectData.webImages.map(image => (
               <div key={image.url}>

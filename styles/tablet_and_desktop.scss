@@ -99,6 +99,22 @@
     }
   }
 
+  // Buttons
+  $btn-normal-padding:0.5rem 1.3rem;
+  $btn-lg-padding:1rem 2.6rem;
+  .btn {
+    padding:$btn-normal-padding;
+    &::before {
+      padding:$btn-normal-padding;//Same As Button
+    }
+    &.btn-60 {
+      width:60%;
+    }
+    &.btn-lg {
+      padding:$btn-lg-padding;
+    }
+  }
+
   //----------------------------------Layout Styles----------------------------------//
 
   // Container

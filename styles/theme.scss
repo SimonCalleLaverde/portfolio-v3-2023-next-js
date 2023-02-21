@@ -93,9 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text-intro, .text-huge {
   font-size:2.85rem;
-
   font-weight:500;//New
-
 }
 .text-intro {
   line-height:1.19;
@@ -253,9 +251,146 @@ a.link-line-throught {
 
 
 // Buttons
-button, a.button {
-  cursor:pointer;
-  //line-height:30px;
+$btn-normal-padding:0.2rem 1rem;
+$btn-lg-padding:0.7rem 2.3rem;
+.btn {
+  position:relative;
+  padding:$btn-normal-padding;
+  font-family:$font-light;
+  font-size:14px;//13px//11.5px
+  background-color:transparent;
+  color:theme-color('rosybrown');//transparent
+  border:1px solid theme-color('rosybrown');
+  @include border-radius(1rem);
+  @include filter(opacity(1));
+  @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
+  &.btn-chocolate {
+    color:theme-color('chocolate');
+    border:1px solid theme-color('chocolate');
+    &::before {
+      border:1px solid theme-color('chocolate');
+    }
+    &:hover {//, &:active, &:focus
+      color:theme-color('chocolate');//transparent
+      border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+      &::before {
+        border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+      }
+    }
+  }
+  &.btn-aqua {
+    color:theme-color('aqua');
+    border:1px solid theme-color('aqua');
+    &::before {
+      border:1px solid theme-color('aqua');
+    }
+    &:hover {//, &:active, &:focus
+      color:theme-color('aqua');//transparent
+      border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+      &::before {
+        border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+      }
+    }
+  }
+  &::before {
+    content:"";
+    position:absolute;
+    padding:$btn-normal-padding;//Same As Button
+    top:0;
+    right:-2px;
+    bottom:-2px;
+    left:0;
+    color:transparent;//theme-color('rosybrown')
+    border:1px solid theme-color('rosybrown');
+    text-align:center;
+    white-space:nowrap;
+    pointer-events:none;
+    @include border-radius(1rem);
+    @include transform(translate(3px,3px));
+    @include transition(border-color ease-out 0.4s, transform ease-out 0.4s);
+  }
+  // &.btn-view-the-site {
+  //   &::before {
+  //     content:"View the site";
+  //   }
+  // }
+  // &.btn-read-more {
+  //   &::before {
+  //     content:"Read more";
+  //   }
+  // }
+  // &.btn-send {
+  //   &::before {
+  //     content:"Send";
+  //   }
+  // }
+  &:hover {//, &:active, &:focus
+    background-color:theme-color('rosybrown')!important;//transparent!important
+    color:theme-color('chocolate');//transparent
+    border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
+    //@include filter(opacity(0.8));
+    //@include transform(scale(1.03));
+    @include transform(translate(1.5px,1.5px));
+    @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);//0 5px 15px rgba(0,0,0,0.4)
+    //@include box-shadow(none!important);
+    &::before {
+      right:0;
+      bottom:0;
+      border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
+      @include transform(translate(0,0));
+    }
+  }
+  &:hover, &:active, &:focus {
+    outline:none;
+    @include box-shadow(none);
+  }
+  &.btn-longer {
+    padding-right:2em;
+    padding-left:2em;
+  }
+  &.btn-lg {
+    padding:$btn-lg-padding;
+    &.btn-longer {
+      padding-right:3em;
+      padding-left:3em;
+    }
+  }
+  &.btn-60 {
+    width:100%;//Mobile
+    text-align:center;
+  }
+  &.btn-100 {
+    width:100%;
+    text-align:center;
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  $btn-normal-padding:0.4rem 0.6rem 0.2rem;
+  $btn-lg-padding:0.6rem 1.5rem;
+  .btn {
+    padding:$btn-normal-padding;
+    font-size:13px;
+    &::before {
+      padding:$btn-normal-padding;//Same As Button
+    }
+    &.btn-lg {
+      padding:$btn-lg-padding;
+      &.btn-longer {
+        padding-right:2rem;
+        padding-left:2rem;
+      }
+    }
+  }
+  .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
+    > .custom-control {
+      &.custom-checkbox, &.custom-radio {
+        label.custom-control-label {
+          padding:$btn-normal-padding;
+          font-size:12px;//13px
+        }
+      }
+    }
+  }
 }
 
 // Selection Styles
@@ -370,6 +505,7 @@ section {
 // Project Header
 header.project-header {
   padding:105px 20px 25px;
+  background-color:theme-color("chocolate");////Temporary
   span.page-order {
     position:absolute;
     top:-70px;
@@ -388,6 +524,10 @@ header.project-header {
     span {
       display:block;
       font-size:11px;
+      &.reverse-styles {
+        display:inline;//New
+        font-size:13px;//New
+      }
     }
   }
   .page-content {
@@ -431,6 +571,7 @@ header.project-header {
 // Project Page
 section.project-page {
   padding:25px 20px 50px;
+  background-color:theme-color("chocolate");////Temporary
   .page-content-two {
     margin-top:3px;
     //font-size:13px;
