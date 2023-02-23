@@ -243,3 +243,11 @@
 .ml-5 {
   margin-left:3rem!important;
 }
+
+// Background Images
+.background-image-default {
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:scroll;
+  @include background-size(cover);
+}

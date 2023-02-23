@@ -188,18 +188,18 @@ export default function ProjectPage({ projectData }) {
                 <div className="row text-left mt-5less">
                   <div className="col-5 offset-2">
                     <div className="page-client font-ultra-light mb-2 pb-1">
-                      <span className="font-light">
+                      <span className="page-subtitles font-light">
                         Client
                       </span>
                       { projectData.client ? projectData.client : projectData.title }
                     </div>
 
                     <div className="page-roles font-ultra-light mb-2 pb-1">
-                      <span className="font-light">
+                      <span className="page-subtitles font-light">
                         Roles
                       </span>
                       { projectData.roles.map(role => (
-                        <span key={ role } className="reverse-styles">{/* It didn't had <span/> in older site. Here for the key. Should check styles */}
+                        <span key={ role }>{/* It didn't had this "<span/>" in older site. Here for the key. Had to create ".page-subtitles" Class */}
                           { role }{" "}·{" "}{/*&middot;*/}
                         </span>
                       )) }
@@ -208,7 +208,7 @@ export default function ProjectPage({ projectData }) {
 
                   <div className="col-4 offset-1">
                     <div className="page-year font-ultra-light">
-                      <span className="font-light">
+                      <span className="page-subtitles font-light">
                         Year
                       </span>
                       { projectData.year }
@@ -218,7 +218,7 @@ export default function ProjectPage({ projectData }) {
 
                 <div className="row mt-5less">
                   <div className="col-md-8 offset-md-2">
-                    <div className="page-launcher font-light">
+                    <div className="font-light">
                       <Link className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
                         View the site
                       </Link>
@@ -240,13 +240,13 @@ export default function ProjectPage({ projectData }) {
 
           </div>
 
-          {/* Desktop Lg | Screen Readers */}
+          {/* Desktop Md | Screen Readers */}
           <div className="page-image-wrapper d-none d-md-block">
             <div className="container">
 
               <div className="row">
-                <div className="col-md-6 offset-md-6 d-flex flex-row align-items-end">
-                  <div className="page-project-image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
+                <div className="col-md-6 offset-md-6 d-flex flex-column justify-content-end">{/*flex-row*/}{/*align-items-end*/}
+                  <div className="page-project-image background-image-default" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
                   </div>
                 </div>
               </div>

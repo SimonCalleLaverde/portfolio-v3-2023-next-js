@@ -130,23 +130,26 @@
 
   //----------------------------------Section Styles----------------------------------//
 
-
-
-
   // Project Header
   header.project-header {
     min-height:100vh;
     padding:203px 0 0;
     span.page-order {
-      //top:-70px;
       right:auto;
-      //left:0;
     }
     .page-image-wrapper {
+      position:absolute;
+      height:100vh;
+      top:0;
+      right:0;
+      bottom:auto;
+      left:0;
       .container {
         .row {
           > div {
+            height:100vh;
             .page-project-image {
+              width:100%;
               height:320px;
             }
           }
@@ -169,6 +172,9 @@
       }
     }
   }
+
+
+
 
   // Project Page
   section.project-page {
