@@ -173,23 +173,17 @@
     }
   }
 
-
-
-
   // Project Page
   section.project-page {
-    padding:65px 0 100px;
-    img {
-    }
+    padding:65px 0 60px;
+    // img {
+    // }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
     section.project-page {
       padding:105px 0 100px;
     }
   }
-
-
-
 
   // Footer
   footer {

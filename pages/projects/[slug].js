@@ -228,7 +228,7 @@ export default function ProjectPage({ projectData }) {
 
                 {/* Desktop Lg | Screen Readers */}
                 <div className="row mt-5 d-none d-lg-block">
-                  <div className="col-md-12 col-lg-10 offset-lg-1 col-xl-10 mt-2">{/*col-md-8 offset-md-2*/}
+                  <div className="col-lg-10 offset-lg-1 mt-2">
                     <div className="page-content font-ultra-light">
                       { projectData.content.text }
                     </div>
@@ -246,7 +246,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="row">
                 <div className="col-md-6 offset-md-6 d-flex flex-column justify-content-end">{/*flex-row*/}{/*align-items-end*/}
-                  <div className="page-project-image background-image-default" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} type="image" title={`Main Image Case Study: ${ projectData.title }`}>
+                  <div className="page-project-image background-image-default" type="image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} title={`Main Image Case Study: ${ projectData.title }`}>
                   </div>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function ProjectPage({ projectData }) {
           <div className="container d-block d-md-none mt-5 pt-3">
             <div className="row">
               <div className="col-12">
-                <img src="{ projectData.thumbnailImage.url }" alt={`Main Image Case Study: ${ projectData.title }`}/>
+                <img src={ projectData.thumbnailImage.url } alt={`Main Image Case Study: ${ projectData.title }`} style={{ width:"100%" }}/>
               </div>
             </div>
           </div>
@@ -266,7 +266,7 @@ export default function ProjectPage({ projectData }) {
           {/* Mobile Lg */}
           <div className="container d-block d-lg-none mt-5 pt-3" aria-hidden="true">
             <div className="row">
-              <div className="col-md-8 col-lg-10 offset-lg-1 col-xl-10">{/*col-md-8 offset-md-2*/}
+              <div className="col-md-8">{/*col-md-8 offset-md-2*/}
                 <div className="page-content font-ultra-light">
                   { projectData.content.text }
                 </div>
