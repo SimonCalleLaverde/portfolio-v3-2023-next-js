@@ -100,30 +100,30 @@ export default function Footer() {
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>About{/* me*/}</span>
+              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-line-through" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>Projects</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>All projects</span>
+              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-line-through" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>About me</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
               <Link className="footer-nav-link link-line-through" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Contact{/* me*/}</span>
+                <span>Contact me</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'hire_a_project' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/hire-a-project">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Hire a project</span>
+              {/*{% if page.slug == 'blog' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-line-through" href="/blog">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>Talking tech blog</span>
               </Link>
             </li>
           </ul>
