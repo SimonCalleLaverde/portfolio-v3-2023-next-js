@@ -322,7 +322,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }} loading="lazy"/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionFirst &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionFirst.text }</p>
                 }
@@ -336,7 +338,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionSecond &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionSecond.text }</p>
                 }
@@ -350,7 +354,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionThird &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionThird.text }</p>
                 }
@@ -364,7 +370,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionFourth &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionFourth.text }</p>
                 }
@@ -378,7 +386,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionFifth &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionFifth.text }</p>
                 }
@@ -392,7 +402,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionSixth &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionSixth.text }</p>
                 }
@@ -406,7 +418,9 @@ export default function ProjectPage({ projectData }) {
                     <img className="mb-3 mb-md-4 mb-lg-5less" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
+              </div>
 
+              <div className="col-md-6 offset-md-3">
                 { projectData.captionSeventh &&
                   <p className="mb-5 pb-3 pb-md-4more pb-lg-5">{ projectData.captionSeventh.text }</p>
                 }
