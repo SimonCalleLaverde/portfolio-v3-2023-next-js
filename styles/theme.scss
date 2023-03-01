@@ -525,16 +525,13 @@ header.project-header {
 section.project-page {
   padding:25px 20px 50px;
   background-color:theme-color("chocolate");////Temporary
-
-
-
-  .page-content-two {
+  .page-content-mid, .page-content-last {
+    font-size:20px;
+  }
+  .page-content-last {
     margin-top:3px;
     //font-size:13px;
   }
-
-
-
 }
 
 // Footer

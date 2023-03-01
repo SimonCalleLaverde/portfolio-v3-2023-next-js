@@ -1,0 +1,37 @@
+<!--TO RE-CREATE SOMEDAY THE LOGIC IN "PROJECT PAGE" IN THE "JEKYLL'S SITE" FOR THE BOTTOM TWO COLUMNS OF TEXT-->
+
+{% if page.content_two_left.size > 0 or page.content_two_right.size > 0 %}
+  <div class="row page-content-two text-rosybrown">
+    {% if page.content_two_left.size > 0 and page.content_two_right.size > 0 %}
+      <!--Desktop Lg | Screen Readers-->
+      <div class="col-md-4 offset-md-2 d-none d-lg-block">
+        <div class="pr-4">
+          {{ page.content_two_left }}
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-none d-lg-block">
+        <div class="pl-4">
+          {{ page.content_two_right }}
+        </div>
+      </div>
+
+      <!--Mobile Lg-->
+      <div class="col-md-8 offset-md-2 d-block d-lg-none" aria-hidden="true">
+        {{ page.content_two_left }}
+        
+        {{ page.content_two_right }}
+      </div>
+      
+    {% elsif page.content_two_left.size > 0 %}
+      <div class="col-md-6 offset-md-3">
+        {{ page.content_two_left }}
+      </div>
+
+    {% elsif page.content_two_right.size > 0 %}
+      <div class="col-md-6 offset-md-3">
+        {{ page.content_two_right }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

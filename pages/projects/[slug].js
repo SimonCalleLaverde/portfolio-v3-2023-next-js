@@ -313,7 +313,7 @@ export default function ProjectPage({ projectData }) {
             {/*<Image src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} width="600" height="380"/>*/}
             {/*<img src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>*/}
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 {/*<Image src={ projectData.webImagesFirst[0].url } alt={`${ projectData.title } Case Study's Image`} width="400" height="220"/>*/}
                 { projectData.webImagesFirst && projectData.webImagesFirst.map(image => (
@@ -331,7 +331,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSecond && projectData.webImagesSecond.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -347,7 +347,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesThird && projectData.webImagesThird.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -363,7 +363,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFourth && projectData.webImagesFourth.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -379,7 +379,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFifth && projectData.webImagesFifth.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -395,7 +395,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSixth && projectData.webImagesSixth.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -411,7 +411,7 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-            <div className="row">
+            <div className="row page-content-mid font-ultra-light">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSeventh && projectData.webImagesSeventh.map(image => (
                   <div key={ image.url } className="mb-4">
@@ -427,24 +427,44 @@ export default function ProjectPage({ projectData }) {
               </div>
             </div>
 
-
-
-
             { projectData.webImageFonts &&
-              <img src={ projectData.webImageFonts.url } alt={`${ projectData.title } Case Study's Fonts Image`} style={{ width:"100%" }}/>
+              <div class="row mt-3 mb-5 pb-3 pb-md-4more pb-lg-5">
+                <div class="col-md-10 offset-md-1">
+                  <img src={ projectData.webImageFonts.url } alt="A display of the fonts used in the project" style={{ width:"100%" }} loading="lazy"/>
+                </div>
+              </div>
             }
-            {/*<Image src={ projectData.webImageFonts.url } alt={`${ projectData.title } Case Study's Fonts Image`} width="300" height="300"/>*/}
+            {/*<Image src={ projectData.webImageFonts.url } alt="A display of the fonts used in the project" width="300" height="300"/>*/}
 
-            { projectData.contentLastLeft &&
-              <p>{ projectData.contentLastLeft.text }</p>
-            }
+            <div class="row page-content-last font-ultra-light text-rosybrown">{/*To Check Logic In (stuff/content_two_left_right.html)*/}
+              {/* Desktop Lg | Screen Readers */}
+              <div class="col-md-4 offset-md-2 d-none d-lg-block">
+                <div class="pr-4">
+                  { projectData.contentLastLeft &&
+                    <p>{ projectData.contentLastLeft.text }</p>
+                  }
+                </div>
+              </div>
+              
+              <div class="col-md-4 d-none d-lg-block">
+                <div class="pl-4">
+                  { projectData.contentLastRight &&
+                    <p>{ projectData.contentLastRight.text }</p>
+                  }
+                </div>
+              </div>
 
-            { projectData.contentLastRight &&
-              <p>{ projectData.contentLastRight.text }</p>
-            }
-
-
-
+              {/* Mobile Lg */}
+              <div class="col-md-8 offset-md-2 d-block d-lg-none" aria-hidden="true">
+                { projectData.contentLastLeft &&
+                  <p>{ projectData.contentLastLeft.text }</p>
+                }
+                
+                { projectData.contentLastRight &&
+                  <p className="mt-4">{ projectData.contentLastRight.text }</p>
+                }
+              </div>
+            </div>
 
             {/*<h4>NAME FOR THUMBNAIL: {projectData.nameForThumbnail}</h4>*/}
 
