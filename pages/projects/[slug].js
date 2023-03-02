@@ -313,122 +313,122 @@ export default function ProjectPage({ projectData }) {
             {/*<Image src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} width="600" height="380"/>*/}
             {/*<img src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>*/}
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 {/*<Image src={ projectData.webImagesFirst[0].url } alt={`${ projectData.title } Case Study's Image`} width="400" height="220"/>*/}
                 { projectData.webImagesFirst && projectData.webImagesFirst.map(image => (
-                  <div key={ image.url } className="mb-4">
+                  <div key={ image.url } className="mb-5">
                     {/* {% if forloop.last %}mb-1 mb-md-1 mb-lg-4{% else %}mb-2 mb-md-3 mb-lg-5less{% endif %} */}
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }} loading="lazy"/>
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }} loading="lazy"/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionFirst &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5 pb-lg-5">{ projectData.captionFirst.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionFirst.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSecond && projectData.webImagesSecond.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionSecond &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionSecond.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionSecond.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesThird && projectData.webImagesThird.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionThird &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionThird.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionThird.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFourth && projectData.webImagesFourth.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionFourth &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionFourth.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionFourth.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFifth && projectData.webImagesFifth.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionFifth &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionFifth.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionFifth.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSixth && projectData.webImagesSixth.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionSixth &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionSixth.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionSixth.text }</p>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light">
+            <div className="row page-content-mid font-ultra-light mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSeventh && projectData.webImagesSeventh.map(image => (
-                  <div key={ image.url } className="mb-4">
-                    <img className="mb-3" src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
 
               <div className="col-md-6 offset-md-3">
                 { projectData.captionSeventh &&
-                  <p className="mt-4 mt-md-5 pt-md-5less mb-5 pb-3 pb-md-5less pb-lg-5">{ projectData.captionSeventh.text }</p>
+                  <p className="mt-4more mb-5 pb-5">{ projectData.captionSeventh.text }</p>
                 }
               </div>
             </div>
 
             { projectData.webImageFonts &&
-              <div class="row mt-3 mb-5 pb-3 pb-md-4more pb-lg-5">
+              <div class="row mb-5 pb-5">
                 <div class="col-md-10 offset-md-1">
                   <img src={ projectData.webImageFonts.url } alt="A display of the fonts used in the project" style={{ width:"100%" }} loading="lazy"/>
                 </div>
