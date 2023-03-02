@@ -439,7 +439,7 @@ export default function ProjectPage({ projectData }) {
             <div class="row page-content-last font-ultra-light text-rosybrown">{/*To Check Logic In (stuff/content_two_left_right.html)*/}
               {/* Desktop Lg | Screen Readers */}
               <div class="col-md-4 offset-md-2 d-none d-lg-block">
-                <div class="pr-4">
+                <div class="pe-4">
                   { projectData.contentLastLeft &&
                     <p>{ projectData.contentLastLeft.text }</p>
                   }
@@ -447,7 +447,7 @@ export default function ProjectPage({ projectData }) {
               </div>
               
               <div class="col-md-4 d-none d-lg-block">
-                <div class="pl-4">
+                <div class="ps-4">
                   { projectData.contentLastRight &&
                     <p>{ projectData.contentLastRight.text }</p>
                   }

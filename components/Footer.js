@@ -123,7 +123,7 @@ export default function Footer() {
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'blog' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-line-through" href="/blog">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Talking tech blog</span>
+                <span>Blog</span>
               </Link>
             </li>
           </ul>
@@ -136,19 +136,19 @@ export default function Footer() {
           </span>
 
           <div className="mt-1">
-            <Link className="mr-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-linkedin">
                 {/*{% include icon_linkedin.xml %}*/}
                 <IconLinkedIn/>
               </span>
             </Link>
-            <Link className="mr-3" href="https://www.behance.net/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://www.behance.net/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-behance">
                 {/*{% include icon_behance.xml %}*/}
                 <IconBehance/>
               </span>
             </Link>
-            <Link className="mr-3" href="https://angel.co/u/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://angel.co/u/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-angel">
                 {/*{% include icon_angel.xml %}*/}
                 <IconAngel/>
@@ -176,19 +176,19 @@ export default function Footer() {
                 <IconDribbble/>
               </span>
             </Link>
-            <Link className="ml-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank">{/*link*/}
               <span className="icon-pinterest">
                 {/*{% include icon_pinterest.xml %}*/}
                 <IconPinterest/>
               </span>
             </Link>
-            <Link className="ml-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank">{/*link*/}
               <span className="icon-instagram">
                 {/*{% include icon_instagram.xml %}*/}
                 <IconInstagram/>
               </span>
             </Link>
-            <Link className="ml-3" href="https://www.facebook.com/simoncio/" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://www.facebook.com/simoncio/" target="_blank">{/*link*/}
               <span className="icon-facebook">
                 {/*{% include icon_facebook.xml %}*/}
                 <IconFacebook/>
