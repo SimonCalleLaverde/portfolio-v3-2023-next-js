@@ -15,6 +15,9 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
       {/* BOOTSTRAP 5 (JS & POPPER) */}
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossOrigin="anonymous"/>
 
+      {/*<script type="text/javascript" src="/js/rolly.min.js"></script>*/}
+      {/*<script type="text/javascript" src="/js/custom_javascripts.js"></script>*/}
+
       <Component {...pageProps}/>
     </>
   )
