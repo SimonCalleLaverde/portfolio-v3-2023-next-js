@@ -59,20 +59,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 .font-regular {
   font-family:$font-regular!important;
-  &.text-italic {
+  &.text-italic, em {
     font-family:$font-regular-italic!important;
   }
 }
 .font-light {
   font-family:$font-light!important;
-  &.text-italic {
+  &.text-italic, em {
     font-family:$font-light-italic!important;
+    strong {
+      font-family:$font-regular-italic!important;
+    }
+  }
+  strong {
+    font-family:$font-regular!important;
   }
 }
 .font-ultra-light {
   font-family:$font-ultra-light!important;
-  &.text-italic {
+  &.text-italic, em {
     font-family:$font-ultra-light-italic!important;
+    strong {
+      font-family:$font-light-italic!important;
+    }
+  }
+  strong {
+    font-family:$font-light!important;
   }
 }
 
