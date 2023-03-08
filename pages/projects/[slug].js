@@ -319,7 +319,7 @@ export default function ProjectPage({ projectData }) {
             {/*<Image src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} width="600" height="380"/>*/}
             {/*<img src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>*/}
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 {/*<Image src={ projectData.webImagesFirst[0].url } alt={`${ projectData.title } Case Study's Image`} width="400" height="220"/>*/}
                 { projectData.webImagesFirst && projectData.webImagesFirst.map(image => (
@@ -330,14 +330,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFirst &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSecond && projectData.webImagesSecond.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -346,14 +346,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSecond &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesThird && projectData.webImagesThird.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -362,14 +362,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionThird &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFourth && projectData.webImagesFourth.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -378,14 +378,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFourth &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFifth && projectData.webImagesFifth.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -394,14 +394,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFifth &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSixth && projectData.webImagesSixth.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -410,14 +410,14 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSixth &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}></div>
                 }
               </div>
             </div>
 
-            <div className="row page-content-mid font-ultra-light mb-3">
+            <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSeventh && projectData.webImagesSeventh.map(image => (
                   <div key={ image.url } className="mb-5">
@@ -426,9 +426,9 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              <div className="col-md-6 offset-md-3">
+              <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSeventh &&
-                  <div className="mt-4more mb-5 pb-5" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}></div>
                 }
               </div>
             </div>
