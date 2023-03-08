@@ -8,6 +8,10 @@ export default function Header() {
         <h1 className="headline">
           Portfolio V3 2023 NextJS
         </h1>
+
+        <p>I'm a<br/>
+        UX/UI Product Designer & Front-end Developer<br/>
+        So that you don't have to</p>
       </div>
     </header>
   )

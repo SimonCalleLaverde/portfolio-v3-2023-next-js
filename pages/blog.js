@@ -5,7 +5,7 @@ import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/blog/Header.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
-import ProjectCard from "../components/homepage/ProjectCard.js";//Temporary (To Be "../components/blog/BlogPostCard.js")
+import ProjectCard from "../components/projects/ProjectCard.js";//Temporary (To Be "../components/blog/BlogPostCard.js")
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
 

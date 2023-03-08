@@ -71,9 +71,6 @@ export default function HomePage({ allProjectsData }) {
       <Header/>
 
       <main>
-        <section className="homepage-example-1-section">
-        </section>
-
         <section className="homepage-projects-section">
           <div className="container">
             {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
@@ -98,9 +95,6 @@ export default function HomePage({ allProjectsData }) {
               />
             ))}
           </div>
-        </section>
-
-        <section className="homepage-example-3-section">
         </section>
       </main>
 
