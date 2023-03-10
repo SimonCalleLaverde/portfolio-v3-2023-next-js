@@ -540,6 +540,14 @@ section.project-page {
   .page-content-mid, .page-content-last {
     font-size:18px;//20px
   }
+  .page-content-mid {
+    blockquote {
+      padding-right:10px;
+      padding-bottom:15px;
+      padding-left:10px;
+      font-size:16px;//18px
+    }
+  }
   .page-content-last {
     margin-top:3px;
     //font-size:13px;
