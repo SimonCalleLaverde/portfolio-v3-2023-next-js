@@ -14,7 +14,7 @@ const accessEndpoint = "https://api-us-east-1.hygraph.com/v2/cl5ketcvx2wnm01ta90
 const graphCMSRequestAPI = new GraphQLClient(accessEndpoint);
 
 // Querying With GraphQL //projects(where: { title_contains: "..." }) { //projects(where: { slug_contains: "..." }) { //projects(where: { slug: "jomaira-imagen" }) { //projects(where: { category_contains: "Recent Independent Project" }) { //projects(where: { roles_contains_all: "UX Research" }) { //projects(where: { type_contains: "Coaching Website Re-Design" }) { //projects(where: { tags_contains_all: "Home" }) {
-const graphCMSQuery = gql`
+const graphCMSQueryProjects = gql`
   {
     projects(where: { tags_contains_all: "Home" }) {
 
@@ -49,7 +49,7 @@ const graphCMSQuery = gql`
 
 
 
-const graphCMSQuery2 = gql`
+const graphCMSQuerySkills = gql`
   {
     skills {
 
@@ -68,8 +68,8 @@ const graphCMSQuery2 = gql`
 // GET STATIC PROPS
 export async function getStaticProps() {
   // Making The API Call/Request
-  const { projects } = await graphCMSRequestAPI.request(graphCMSQuery);
-  const { skills } = await graphCMSRequestAPI.request(graphCMSQuery2);
+  const { projects } = await graphCMSRequestAPI.request(graphCMSQueryProjects);
+  const { skills } = await graphCMSRequestAPI.request(graphCMSQuerySkills);
 
   return {
     props: {
@@ -127,7 +127,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
               {/* Mapping through "allSkillsData" and displaying each "skill" */}
               {/* for skill in sorted_skills */}
               { allSkillsData.map(skill => (
-                <div className="skill-row">
+                <div className="skill-row" key={ skill.id }>
                   <div className="row">
                     <div className="col-md-4">
                       <h3 className="text-medium text-rosybrown mb-4more mb-md-0">{/*text-huge*/}
