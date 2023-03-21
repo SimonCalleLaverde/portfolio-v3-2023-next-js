@@ -17,7 +17,7 @@ const graphCMSRequestAPI = new GraphQLClient(accessEndpoint);
 
 // Querying With GraphQL (The Specific Project That The Slug Matches)
 const graphCMSQuery = gql`
-  query Project($slug: String!) {
+  query GetProjectBySlug($slug: String!) {
     project(where: {slug: $slug}) {
 
       id
@@ -332,7 +332,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFirst &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -348,7 +349,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSecond &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -364,7 +366,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionThird &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -380,7 +383,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFourth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -396,7 +400,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFifth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -412,7 +417,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSixth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -428,7 +434,8 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSeventh &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}></div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}>
+                  </div>
                 }
               </div>
             </div>
