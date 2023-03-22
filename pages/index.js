@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/homepage/Header.js";
+import ProjectCard from "../components/homepage/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
-import ProjectCard from "../components/homepage/ProjectCard.js";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
 
@@ -13,7 +13,7 @@ import ProjectCard from "../components/homepage/ProjectCard.js";
 const accessEndpoint = "https://api-us-east-1.hygraph.com/v2/cl5ketcvx2wnm01ta90nhcdmy/master";
 const graphCMSRequestAPI = new GraphQLClient(accessEndpoint);
 
-// Querying With GraphQL //projects(where: { title_contains: "..." }) { //projects(where: { slug_contains: "..." }) { //projects(where: { slug: "jomaira-imagen" }) { //projects(where: { category_contains: "Recent Independent Project" }) { //projects(where: { roles_contains_all: "UX Research" }) { //projects(where: { type_contains: "Coaching Website Re-Design" }) { //projects(where: { tags_contains_all: "Home" }) {
+// Querying (Projects) With GraphQL //projects(where: { title_contains: "..." }) { //projects(where: { slug_contains: "..." }) { //projects(where: { slug: "jomaira-imagen" }) { //projects(where: { category_contains: "Recent Independent Project" }) { //projects(where: { roles_contains_all: "UX Research" }) { //projects(where: { type_contains: "Coaching Website Re-Design" }) { //projects(where: { tags_contains_all: "Home" }) {
 const graphCMSQueryProjects = gql`
   {
     projects(where: { tags_contains_all: "Home" }) {
@@ -47,8 +47,7 @@ const graphCMSQueryProjects = gql`
   }
 `;
 
-
-
+// Querying (Skills) With GraphQL
 const graphCMSQuerySkills = gql`
   {
     skills {
@@ -62,8 +61,6 @@ const graphCMSQuerySkills = gql`
     }
   }
 `;
-
-
 
 // GET STATIC PROPS
 export async function getStaticProps() {
@@ -91,39 +88,51 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <Header/>
 
       <main>
-        <section className="homepage-projects-section">
+        <section className="home-projects-section home-business-projects-section home-campaign-projects-section">
           <div className="container">
             {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-            {allProjectsData.map(project => (
+            { allProjectsData.map(project => (
               <ProjectCard
-                key={project.id}
-                title={project.title}
-                slug={project.slug}
-                nameForThumbnail={project.nameForThumbnail}
-                client={project.client}
-                thumbnailImage={project.thumbnailImage}
-                headerImage={project.headerImage}
-                platforms={project.platforms}
-                year={project.year}
-                roles={project.roles}
-                webLaunchUrl={project.webLaunchUrl}
-                webImagesFirst={project.webImagesFirst}
-                type={project.type}
-                category={project.category}
-                tags={project.tags}
-                content={project.content}
+                key={ project.id }
+                title={ project.title }
+                slug={ project.slug }
+                nameForThumbnail={ project.nameForThumbnail }
+                client={ project.client }
+                thumbnailImage={ project.thumbnailImage }
+                headerImage={ project.headerImage }
+                platforms={ project.platforms }
+                year={ project.year }
+                roles={ project.roles }
+                webLaunchUrl={ project.webLaunchUrl }
+                webImagesFirst={ project.webImagesFirst }
+                type={ project.type }
+                category={ project.category }
+                tags={ project.tags }
+                content={ project.content }
               />
-            ))}
+            )) }
           </div>
         </section>
 
-        <section className="home-skills-set-section clearfix" id="skills_set_section" data-scene>{/*data-scene="rotateZ"*/}
+        <section className="home-skills-headline-section">{/*data-scene="rotateZ"*/}
+          <div className="container">
+
+            <div className="row">
+              <div className="col-md-10 offset-md-1">
+                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">
+                  Some of my
+                  <br/>skills set
+                </h2>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="home-skills-set-section">{/*data-scene="rotateZ"*/}
           <div className="container">
 
             <div className="skills-set-table">
-
-
-
               {/* Mapping through "allSkillsData" and displaying each "skill" */}
               {/* for skill in sorted_skills */}
               { allSkillsData.map(skill => (
@@ -139,24 +148,15 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                     <div className="col-md-8">
                       {/* {{ skill.content }} */}
                       {/* { skill.skillDescription.html } */}
-
-
-
                       { skill.skillDescription &&
                         <div className="skill-content font-ultra-light text-rosybrown mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}>
                         </div>
                       }
-
-
-
                     </div>
                   </div>
                 </div>
               )) }
               {/* endfor */}
-
-
-
             </div>
 
           </div>

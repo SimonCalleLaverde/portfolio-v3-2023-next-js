@@ -130,10 +130,65 @@
 
   //----------------------------------Section Styles----------------------------------//
 
+  // Home Projects Section
+  section.home-projects-section {
+    //...
+  }
+
   // Home Skills Set Section
   section.home-skills-set-section {
    //...
   }
+
+
+
+
+
+
+  // Home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Home Three Phases Headline Section
+  section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.home-three-phases-headline-section {
+    padding:60px 0 37px;
+  }
+  @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
+    section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.home-three-phases-headline-section {
+      padding:100px 0 37px;//100px 0 67px
+    }
+  }
+
+  // Home Business Projects Section, Home Campaign Projects Section, Home Three Phases Section, Home Skills Set Section
+  section.home-business-projects-section, section.home-campaign-projects-section, section.home-three-phases-section, section.home-skills-set-section {
+    padding:39px 0 91px;
+  }
+  @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
+    section.home-business-projects-section, section.home-campaign-projects-section, section.home-three-phases-section, section.home-skills-set-section {
+      padding:59px 0 111px;//59px 0 91px//59px 0 71px
+    }
+  }
+
+  // Home Skills Set Section
+  section.home-skills-set-section {
+    padding-bottom:11px;
+    .skills-set-table {
+      .skill-row {
+        padding:45px 0 25px;
+      }
+    }
+  }
+  @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
+    section.home-skills-set-section {
+      padding-bottom:31px;//51px
+      .skills-set-table {
+        .skill-row {
+          padding:55px 0 35px;
+        }
+      }
+    }
+  }
+
+
+
+
+
 
   // Project Header
   header.project-header {

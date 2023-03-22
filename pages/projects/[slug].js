@@ -39,83 +39,66 @@ const graphCMSQuery = gql`
       webImagesFirst {
         url
       }
+      captionFirst {
+        html
+      }
+
       webImagesSecond {
         url
       }
+      captionSecond {
+        html
+      }
+
       webImagesThird {
         url
       }
+      captionThird {
+        html
+      }
+
       webImagesFourth {
         url
       }
+      captionFourth {
+        html
+      }
+
       webImagesFifth {
         url
       }
+      captionFifth {
+        html
+      }
+
       webImagesSixth {
         url
       }
+      captionSixth {
+        html
+      }
+
       webImagesSeventh {
         url
+      }
+      captionSeventh {
+        html
       }
 
       webImageFonts {
         url
       }
+
+      contentLastLeft {
+        text
+      }
+      contentLastRight {
+        text
+      }
+
       type
       category
       tags
-      content {
-        text,
-        html,
-        markdown
-      }
-
-      captionFirst {
-        text,
-        html,
-        markdown
-      }
-      captionSecond {
-        text,
-        html,
-        markdown
-      }
-      captionThird {
-        text,
-        html,
-        markdown
-      }
-      captionFourth {
-        text,
-        html,
-        markdown
-      }
-      captionFifth {
-        text,
-        html,
-        markdown
-      }
-      captionSixth {
-        text,
-        html,
-        markdown
-      }
-      captionSeventh {
-        text,
-        html,
-        markdown
-      }
-
-      contentLastLeft {
-        text,
-        html,
-        markdown
-      }
-      contentLastRight {
-        text,
-        html,
-        markdown
-      }
 
     }
   }

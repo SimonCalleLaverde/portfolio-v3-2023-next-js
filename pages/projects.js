@@ -3,9 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/projects/Header.js";
+import ProjectCard from "../components/projects/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
-import ProjectCard from "../components/projects/ProjectCard.js";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
 

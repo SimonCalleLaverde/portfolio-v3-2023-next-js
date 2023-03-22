@@ -499,15 +499,108 @@ main {
 
 // Section
 section {
-  min-height:100vh;//Temporary
-  //border-top:1px dashed purple;//Temporary
-  //border-bottom:1px dashed green;//Temporary
+  //min-height:100vh;//Temporary
+}
+
+// Home Projects Section
+section.home-projects-section {
+  border-top:1px dashed purple;//Temporary
+  border-bottom:1px dashed purple;//Temporary
+}
+
+// Home Skills Headline Section
+section.home-skills-headline-section {
+  background-color:theme-color("chocolate");////Temporary
 }
 
 // Home Skills Set Section
 section.home-skills-set-section {
- //...
+  background-color:theme-color("chocolate");////Temporary
 }
+
+
+
+
+
+
+// Home Businesses Headline Section, Home Campaigns Headline Section, Home Skills Headline Section, Home Three Phases Headline Section
+section.home-businesses-headline-section, section.home-campaigns-headline-section, section.home-skills-headline-section, section.home-three-phases-headline-section {
+  padding:50px 20px 30px;
+}
+
+// Home Business Projects Section, Home Campaign Projects Section, Home Three Phases Section, Home Skills Set Section
+section.home-business-projects-section, section.home-campaign-projects-section, section.home-three-phases-section, section.home-skills-set-section {
+  padding:25px 20px 35px;//25px 20px 90px
+}
+
+// Home Skills Set Section
+section.home-skills-set-section {
+  padding-bottom:60px;
+}
+
+// Home Skills Set Section
+section.home-skills-set-section {
+  .skills-set-table {
+    // width:calc(100% + 30px);
+    // margin-left:-15px;
+    .skill-row {
+      padding:55px 0 30px;
+      border-bottom:1px solid theme-color('rosybrown');
+      &:first-child {
+        border-top:1px solid theme-color('rosybrown');
+      }
+      .skill-content {
+        //text-align:left;
+        p {
+          margin-bottom:15px;//1px
+          font-size:15px;
+          line-height:1.9;
+        }
+      }
+    }
+  }
+  a {
+    position:relative;
+    display:inline-block;
+    &::before {
+      content:'';
+      position:absolute;
+      width:98%;//100%
+      height:3px;
+      bottom:5.5px;
+      left:0;
+      background-color:theme-color('rosybrown');
+      border-top:1px solid theme-color('beige');
+      border-bottom:1px solid theme-color('beige');
+      pointer-events:none;
+    }
+    &:hover {
+      @include filter(opacity(0.9));
+      &::before {
+        @include animation(lineThroughtBack98Anim 0.9s linear forwards);
+      }
+    }
+  }
+}
+
+// Theme Dark
+body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.contact_me, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
+  // MISSING A BUNCH OF STYLES FROM ORIGINAL PORTFOLIO STILL
+  section.home-skills-set-section, header.projects-header {
+    a {
+      &::before {
+        border-top:1px solid theme-color('chocolate');
+        border-bottom:1px solid theme-color('chocolate');
+      }
+    }
+  }
+  // MISSING A BUNCH OF STYLES FROM ORIGINAL PORTFOLIO STILL
+}
+
+
+
+
+
 
 // Project Header
 header.project-header {
