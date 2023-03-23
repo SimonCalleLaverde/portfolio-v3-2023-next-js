@@ -88,7 +88,23 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <Header/>
 
       <main>
-        <section className="home-projects-section home-business-projects-section home-campaign-projects-section">
+        <section className="home-projects-headline-section">
+          <div className="container">
+
+            <div className="row">
+              <div className="col-md-10 offset-md-1">
+                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
+                  Recent
+                  <br/>Independent
+                  <br/>Projects{/*Recent Business Projects*/}
+                </h2>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section className="home-projects-cards-section">
           <div className="container">
             {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
             { allProjectsData.map(project => (
@@ -114,14 +130,14 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="home-skills-headline-section">{/*data-scene="rotateZ"*/}
+        <section className="home-skills-headline-section">
           <div className="container">
 
             <div className="row">
               <div className="col-md-10 offset-md-1">
                 <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">
-                  Some of my
-                  <br/>skills set
+                  Some Of My
+                  <br/>Skills Set
                 </h2>
               </div>
             </div>
@@ -129,7 +145,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="home-skills-set-section">{/*data-scene="rotateZ"*/}
+        <section className="home-skills-set-section">
           <div className="container">
 
             <div className="skills-set-table">
