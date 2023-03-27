@@ -71,29 +71,29 @@ export default function ProjectsPage({ allProjectsData }) {
       <Header/>
 
       <main>
-        <section className="projectspage-projects-section">
+        <section className="projectspage-projects-cards-section">
           <div className="container">
             {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-            {allProjectsData.map(project => (
+            { allProjectsData.map(project => (
               <ProjectCard
-                key={project.id}
-                title={project.title}
-                slug={project.slug}
-                nameForThumbnail={project.nameForThumbnail}
-                client={project.client}
-                thumbnailImage={project.thumbnailImage}
-                headerImage={project.headerImage}
-                platforms={project.platforms}
-                year={project.year}
-                roles={project.roles}
-                webLaunchUrl={project.webLaunchUrl}
-                webImagesFirst={project.webImagesFirst}
-                type={project.type}
-                category={project.category}
-                tags={project.tags}
-                content={project.content}
+                key={ project.id }
+                title={ project.title }
+                slug={ project.slug }
+                nameForThumbnail={ project.nameForThumbnail }
+                client={ project.client }
+                thumbnailImage={ project.thumbnailImage }
+                headerImage={ project.headerImage }
+                platforms={ project.platforms }
+                year={ project.year }
+                roles={ project.roles }
+                webLaunchUrl={ project.webLaunchUrl }
+                webImagesFirst={ project.webImagesFirst }
+                type={ project.type }
+                category={ project.category }
+                tags={ project.tags }
+                content={ project.content }
               />
-            ))}
+            )) }
           </div>
         </section>
       </main>

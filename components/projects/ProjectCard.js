@@ -1,13 +1,13 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../../styles/ProjectCard.module.scss";
+//import styles from "../../styles/ProjectCard.module.scss";
 //import moment from "moment";
 
 // Project (Card) Component
 export default function ProjectCard({ title, slug, nameForThumbnail, client, thumbnailImage, headerImage, platforms, year, roles, webLaunchUrl, webImagesFirst, type, category, tags, content }) {
 	return (
-		<article className={styles.article}>
+		<article className="project-card">{/*{ styles.article }*/}
 			<h1>
 				{/*{title}*/}
 				<div className="" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}></div>
