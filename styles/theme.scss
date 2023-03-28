@@ -480,29 +480,26 @@ form {
 
 article.project-card {//.article
   margin:4rem 2rem;
-  padding:2rem;
-  border:1px dotted #000;//#eaeaea
-  @include border-radius(0.5rem);
+  //padding:2rem;
+  //border:1px dotted #000;//#eaeaea
   //text-align:left;//Was Starting With NextJS
-  @include transition(color 0.15s ease, border-color 0.15s ease);//Was Starting With NextJS
-  > img {
-    max-width:500px;
-    cursor:pointer;
-    opacity:1;
-    @include transition(opacity 0.3s ease);//ease-in-out
+  @include border-radius(0.5rem);
+  img {
+    @include transition(filter 0.3s ease);//Was Starting With NextJS
     &:hover, &:active, &:focus {
-      opacity:0.7;
+      @include filter(opacity(0.7));
     }
   }
-  &:hover, &:focus, &:active {
-    color:purple;//#0070f3//Was Starting With NextJS
-    border-color:purple;//#0070f3//Was Starting With NextJS
+  &:hover, &:active, &:focus {
+    //color:purple;//#0070f3//Was Starting With NextJS
+    //border-color:purple;//#0070f3//Was Starting With NextJS
+    //@include filter(opacity(0.5));
   }
 }
 @media only screen and (max-width:768px) {//Down
   article.project-card {//.article
     margin:3rem 1rem;
-    padding:1rem;
+    //padding:1rem;
   }
 }
 
