@@ -480,26 +480,17 @@ form {
 
 article.project-card {//.article
   margin:4rem 2rem;
-  //padding:2rem;
-  //border:1px dotted #000;//#eaeaea
-  //text-align:left;//Was Starting With NextJS
   @include border-radius(0.5rem);
   img {
-    @include transition(filter 0.3s ease);//Was Starting With NextJS
+    @include transition(filter 0.3s ease);
     &:hover, &:active, &:focus {
       @include filter(opacity(0.7));
     }
-  }
-  &:hover, &:active, &:focus {
-    //color:purple;//#0070f3//Was Starting With NextJS
-    //border-color:purple;//#0070f3//Was Starting With NextJS
-    //@include filter(opacity(0.5));
   }
 }
 @media only screen and (max-width:768px) {//Down
   article.project-card {//.article
     margin:3rem 1rem;
-    //padding:1rem;
   }
 }
 
