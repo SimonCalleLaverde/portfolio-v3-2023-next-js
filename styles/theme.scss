@@ -494,29 +494,12 @@ article.project-card {//.article
       opacity:0.7;
     }
   }
-
-
-
-  .project-caption {
-    span {
-      > img {
-        //width:120px;
-        //height:90px;
-        //border-radius:50%!important;//Can't add as per <Image/> component styles, neither to span. Should experiment
-        object-fit:cover;
-      }
-    }
-  }
-
-
-
   &:hover, &:focus, &:active {
     color:purple;//#0070f3//Was Starting With NextJS
     border-color:purple;//#0070f3//Was Starting With NextJS
   }
 }
-
-@media screen and (max-width:768px) {//Down
+@media only screen and (max-width:768px) {//Down
   article.project-card {//.article
     margin:3rem 1rem;
     padding:1rem;

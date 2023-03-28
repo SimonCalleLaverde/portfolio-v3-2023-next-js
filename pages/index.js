@@ -19,32 +19,17 @@ const graphCMSQueryProjects = gql`
     projects(where: { tags_contains_all: "Home" }) {
 
       id
+      slug
       thumbnailImage {
         url
       }
+      title
       nameForThumbnail
-
-
-
-
-      slug
-      client
-      platforms
-      year
-      roles
-      webLaunchUrl
-      webImagesFirst {
-        url
-      }
       type
+      roles
+      year
       category
-      tags
-      content {
-        text
-      }
-
-
-
+      platforms
 
     }
   }
@@ -113,27 +98,15 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
             { allProjectsData.map(project => (
               <ProjectCard
                 key={ project.id }
-                thumbnailImage={ project.thumbnailImage }
-                nameForThumbnail={ project.nameForThumbnail }
-
-
-
-
                 slug={ project.slug }
-                client={ project.client }
-                platforms={ project.platforms }
-                year={ project.year }
-                roles={ project.roles }
-                webLaunchUrl={ project.webLaunchUrl }
-                webImagesFirst={ project.webImagesFirst }
+                thumbnailImage={ project.thumbnailImage }
+                title={ project.title }
+                nameForThumbnail={ project.nameForThumbnail }
                 type={ project.type }
+                roles={ project.roles }
+                year={ project.year }
                 category={ project.category }
-                tags={ project.tags }
-                content={ project.content }
-
-
-
-
+                platforms={ project.platforms }
               />
             )) }
           </div>

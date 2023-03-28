@@ -5,47 +5,55 @@ import Image from "next/image";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ title, slug, nameForThumbnail, client, thumbnailImage, headerImage, platforms, year, roles, webLaunchUrl, webImagesFirst, type, category, tags, content }) {
+export default function ProjectCard({ slug, thumbnailImage, title, nameForThumbnail, type, roles, year, category, platforms }) {
 	return (
 		<article className="project-card">{/*{ styles.article }*/}
-			<Link href={`/projects/${slug}`}>
+			{/* CARD IMAGE [START] */}
+			<Link href={ `/projects/${ slug }` }>
 				{/*<Image src={ headerImage.url } alt={`${ title } Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
-				{/*<img src={ headerImage.url } alt={`${ title } Project's Header Image`} style={{width:"100%"}}/>*/}
-				<img src={ thumbnailImage.url } alt={`${ title } Project's Thumbnail Image`} style={{width:"100%"}}/>
+				{/*<img src={ headerImage.url } alt={`${ title } Project's Header Image`} style={{ width:"100%" }}/>*/}
+				<img src={ thumbnailImage.url } alt={ `${ title } Project's Thumbnail Image` } style={{ width:"100%" }}/>
 				{/*<Image src={ thumbnailImage.url } alt={`${ title } Project's Thumbnail Image`} width="200" height="120"/>*/}
 			</Link>
+			{/* CARD IMAGE [END] */}
 
-			<h1>
-				{/*{ title }*/}
-				<div dangerouslySetInnerHTML={{ __html: nameForThumbnail }}></div>
+			{/* CARD BOTTOM [START] */}
+			{/*{ title }*/}
+			<h1 className="mt-4more" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
 			</h1>
 
-
-
-
-			<h4>Year: {year}</h4>
-
-			<h4>Type: {type}</h4>
-
-			<h4>Category: {category}</h4>
-
-			<h4 className="mb-0">Platforms: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-			<h5 style={{marginTop:"0px"}}>
-				{platforms.map(platform => (
-					<div key={platform}>
-						{platform}
-					</div>
-				))}
+			<h5 className="mt-4more">
+				[Type] { type }
 			</h5>
 
-			<h4 className="mb-0">Roles: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-			<h5 style={{marginTop:"0px"}}>
-				{roles.map(role => (
-					<div key={role}>
-						{role}
-					</div>
-				))}
+			<h5 className="mt-4more">
+				[Roles <span style={{ color: "green" }}>{" "} (Map)</span>]
 			</h5>
+			{ roles.map(role => (
+				<h5 key={ role }>
+					{ role }
+				</h5>
+			)) }
+			{/* CARD BOTTOM [END] */}
+
+			{/* CARD SIDE [START] */}
+			<h5 className="mt-4more">
+				[Year] { year }
+			</h5>
+
+			<h5 className="mt-4more">
+				[Category] { category }
+			</h5>
+
+			<h5 className="mt-4more">
+				[Platforms <span style={{ color: "green" }}>{" "} (Map)</span>]
+			</h5>
+			{ platforms.map(platform => (
+				<h5 key={ platform }>
+					{ platform }
+				</h5>
+			)) }
+			{/* CARD SIDE [END] */}
 
 
 
@@ -57,6 +65,10 @@ export default function ProjectCard({ title, slug, nameForThumbnail, client, thu
 				{/*<h3>{moment(datePublished).format("MMMM Do, YYYY")}</h3>*/}
 				{/*<h3>{moment(datePublished).format("MMMM D, YYYY")}</h3>*/}
 			</time>
+
+
+
+
 		</article>
 	)
 };
