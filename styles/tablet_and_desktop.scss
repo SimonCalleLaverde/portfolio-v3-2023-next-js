@@ -130,13 +130,13 @@
 
   //----------------------------------Section Styles----------------------------------//
 
-  // Home Projects Cards Section
-  section.home-projects-cards-section {
+  // HomePage Projects Cards Section
+  section.homepage-projects-cards-section {
     //...
   }
 
-  // Home Skills Set Section
-  section.home-skills-set-section {
+  // HomePage Skills Set Section
+  section.homepage-skills-set-section {
    //...
   }
 
@@ -145,28 +145,28 @@
 
 
 
-  // Home Projects Headline Section, Home Skills Headline Section
-  section.home-projects-headline-section, section.home-skills-headline-section {
+  // HomePage Projects Headline Section, HomePage Skills Headline Section
+  section.homepage-projects-headline-section, section.homepage-skills-headline-section {
     padding:60px 0 37px;
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
-    section.home-projects-headline-section, section.home-skills-headline-section {
+    section.homepage-projects-headline-section, section.homepage-skills-headline-section {
       padding:100px 0 37px;//100px 0 67px
     }
   }
 
-  // Home Projects Cards Section, Home Skills Set Section
-  section.home-projects-cards-section, section.home-skills-set-section {
+  // HomePage Projects Cards Section, HomePage Skills Set Section
+  section.homepage-projects-cards-section, section.homepage-skills-set-section {
     padding:39px 0 91px;
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
-    section.home-projects-cards-section, section.home-skills-set-section {
+    section.homepage-projects-cards-section, section.homepage-skills-set-section {
       padding:59px 0 111px;//59px 0 91px//59px 0 71px
     }
   }
 
-  // Home Skills Set Section
-  section.home-skills-set-section {
+  // HomePage Skills Set Section
+  section.homepage-skills-set-section {
     padding-bottom:11px;
     .skills-set-table {
       .skill-row {
@@ -175,7 +175,7 @@
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
-    section.home-skills-set-section {
+    section.homepage-skills-set-section {
       padding-bottom:31px;//51px
       .skills-set-table {
         .skill-row {

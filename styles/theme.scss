@@ -471,7 +471,7 @@ form {
   }
 }
 
-//----------------------------------Project Card Styles----------------------------------//
+//----------------------------------Cards Styles----------------------------------//
 
 // Project Card
 
@@ -491,6 +491,204 @@ article.project-card {//.article
 @media only screen and (max-width:768px) {//Down
   article.project-card {//.article
     margin:3rem 1rem;
+  }
+}
+
+
+
+
+// Project Article // To be mixed with "Project Card" above
+article.project-article {
+  &.home {
+    position:relative;
+    a {
+      figure {
+        position:relative;
+        height:280px;
+        .project-thumbnail, figcaption {
+          position:absolute;
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+        }
+        .project-thumbnail {
+          z-index:20;
+        }
+        figcaption {
+          font-size:11px;
+          letter-spacing:0.8px;
+          text-transform:uppercase;
+          .project-title {
+            //mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
+            h1, h2, h3, h4, h5, h6 {
+              //mix-blend-mode:screen;
+            }
+            .project-details {
+              width:100%;
+              bottom:-17px;
+            }
+          }
+          .project-info {
+            position:absolute;
+            width:20px;
+            height:100%;
+            padding-top:25px;
+            right:-9.5px;
+            text-align:left;
+            writing-mode:vertical-rl;
+            text-orientation:mixed;
+            pointer-events:none;
+            z-index:21;
+            > .project-data, > .project-platforms {
+              time, span {
+                margin-bottom:12px;
+              }
+            }
+          }
+        }
+      }
+      .project-title-mobile {
+        margin-top:-19.5px;//-18.5px
+        font-size:13px;
+        letter-spacing:0.5px;
+        h1, h2, h3, h4, h5, h6 {
+          position:relative;
+          z-index:21;
+          span {
+          }
+        }
+      }
+    }
+  }
+  &.projects {
+    position:relative;
+    margin-bottom:60px;
+    a {
+      figure {
+        position:relative;
+        height:280px;
+        .project-thumbnail {
+          position:absolute;
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+        }
+        figcaption {
+          position:absolute;
+          top:0;
+          right:0;
+          bottom:0;
+          left:0;
+          font-size:11px;
+          letter-spacing:0.8px;
+          text-transform:uppercase;
+          pointer-events:none;
+          .project-title {
+            position:absolute;
+            right:0;
+            bottom:-60px;
+            left:0;
+            mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
+            h1, h2, h3, h4, h5, h6 {
+              // font-size:35px;
+              // line-height:1.2;
+            }
+            .project-details {
+              position:relative;
+              width:100%;
+              height:20px;
+              overflow:hidden;
+              > .project-roles, > .project-data {
+                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s);
+              }
+              > .project-roles {
+                @include filter(opacity(1));
+                @include transform(translateY(0));
+              }
+              > .project-data {
+                position:absolute;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                @include filter(opacity(0));
+                @include transform(translateY(-20px));
+              }
+            }
+          }
+          time {
+            position:absolute;
+            top:25px;
+            right:-11.5px;
+            font-size:13px;
+            writing-mode:vertical-rl;
+            text-orientation:mixed;
+          }
+        }
+      }
+      .project-title-mobile {
+        margin-top:-18.5px;
+        font-size:13px;
+        letter-spacing:0.5px;
+        h1, h2, h3, h4, h5, h6 {
+          position:relative;
+          z-index:21;
+          span {
+          }
+        }
+      }
+      &:hover, &:active, &:focus {
+        figure {
+          .project-thumbnail {
+          }
+          figcaption {
+            .project-details {
+               > .project-roles, > .project-data {
+                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
+              }
+              > .project-roles {
+                @include filter(opacity(0));
+                @include transform(translateY(20px));
+              }
+              > .project-data {
+                @include filter(opacity(1));
+                @include transform(translateY(0));
+              }
+            }
+          }
+        }
+      }
+    }
+    &.forloop-last {
+      margin-bottom:0;
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  article.project-article {
+    &.home {
+      a {
+        figure {
+          height:180px;
+        }
+        .project-title-mobile {
+          margin-top:-13px;//-12px
+        }
+      }
+    }
+    &.projects {
+      margin-bottom:50px;
+      a {
+        figure {
+          height:180px;
+        }
+        .project-title-mobile {
+          margin-top:-13px;//-12px
+        }
+      }
+    }
   }
 }
 
@@ -530,18 +728,18 @@ section {
   //min-height:100vh;//Temporary
 }
 
-// Home Projects Headline Section
-section.home-projects-headline-section {
+// HomePage Projects Headline Section
+section.homepage-projects-headline-section {
   border-top:1px dashed purple;//Temporary
 }
 
-// Home Projects Cards Section
-section.home-projects-cards-section {
+// HomePage Projects Cards Section
+section.homepage-projects-cards-section {
   border-bottom:1px dashed purple;//Temporary
 }
 
-// Home Skills Headline Section, Home Skills Set Section
-section.home-skills-headline-section, section.home-skills-set-section {
+// HomePage Skills Headline Section, HomePage Skills Set Section
+section.homepage-skills-headline-section, section.homepage-skills-set-section {
   background-color:theme-color("chocolate");////Temporary
 }
 
@@ -550,23 +748,23 @@ section.home-skills-headline-section, section.home-skills-set-section {
 
 
 
-// Home Projects Headline Section, Home Skills Headline Section
-section.home-projects-headline-section, section.home-skills-headline-section {
+// HomePage Projects Headline Section, HomePage Skills Headline Section
+section.homepage-projects-headline-section, section.homepage-skills-headline-section {
   padding:50px 20px 30px;
 }
 
-// Home Projects Cards Section, Home Skills Set Section
-section.home-projects-cards-section, section.home-skills-set-section {
+// HomePage Projects Cards Section, HomePage Skills Set Section
+section.homepage-projects-cards-section, section.homepage-skills-set-section {
   padding:25px 20px 35px;//25px 20px 90px
 }
 
-// Home Skills Set Section
-section.home-skills-set-section {
+// HomePage Skills Set Section
+section.homepage-skills-set-section {
   padding-bottom:60px;
 }
 
-// Home Skills Set Section
-section.home-skills-set-section {
+// HomePage Skills Set Section
+section.homepage-skills-set-section {
   .skills-set-table {
     // width:calc(100% + 30px);
     // margin-left:-15px;
@@ -613,7 +811,7 @@ section.home-skills-set-section {
 // Theme Dark
 body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-type-feedback.theme-dark, body.page-type-basic.is-bottom, body.page-type-project.is-bottom, body.page-type-feedback.contact_me, body.page-type-basic.theme-dark-mobile-wide, body.page-type-project.theme-dark-mobile-wide, body.page-type-feedback.theme-dark-mobile-wide {//.hire_a_project
   // MISSING A BUNCH OF STYLES FROM ORIGINAL PORTFOLIO STILL
-  section.home-skills-set-section, header.projects-header {
+  section.homepage-skills-set-section, header.projects-header {
     a {
       &::before {
         border-top:1px solid theme-color('chocolate');

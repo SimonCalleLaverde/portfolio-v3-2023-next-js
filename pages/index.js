@@ -76,7 +76,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <Header/>
 
       <main>
-        <section className="home-projects-headline-section">
+        <section className="homepage-projects-headline-section">
           <div className="container">
 
             <div className="row">
@@ -92,7 +92,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="home-projects-cards-section">
+        <section className="homepage-projects-cards-section">
           <div className="container">
             {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
             { allProjectsData.map(project => (
@@ -112,7 +112,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="home-skills-headline-section">
+        <section className="homepage-skills-headline-section">
           <div className="container">
 
             <div className="row">
@@ -127,7 +127,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="home-skills-set-section">
+        <section className="homepage-skills-set-section">
           <div className="container">
 
             <div className="skills-set-table">
