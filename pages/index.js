@@ -20,6 +20,7 @@ const graphCMSQueryProjects = gql`
 
       id
       slug
+      order
       thumbnailImage {
         url
       }
@@ -105,6 +106,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
                   <ProjectCard
                     slug={ project.slug }
+                    order={ project.order }
                     thumbnailImage={ project.thumbnailImage }
                     title={ project.title }
                     nameForThumbnail={ project.nameForThumbnail }

@@ -4,75 +4,77 @@ import Image from "next/image";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ slug, thumbnailImage, title, nameForThumbnail, type, roles, year, category, platforms }) {
+export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles, year, category, platforms }) {
 	return (
 
 		<article className="project-card home">
 			<Link className="link-page-load" href={ `/projects/${ slug }` }>
 				<figure>
+					{/* Option 1 (Image Component): Must Use "width" & "height" Properties, Or "layout='fill'" Property */}
+					{/*<Image src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } layout="fill"/>*/}
+					{/*<Image src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } width="200" height="120"/>*/}
 
+					{/* Option 2 (Img) */}
+					{/*<img src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } style={{ width:"100%" }}/>*/}
 
-
-					{/*<Image src={ headerImage.url } alt={`${ title } Project's Header Image`} layout="fill"/>*/}{/* Must use "width" & "height" properties or "layout='fill'" property */}
-					{/*<img src={ headerImage.url } alt={`${ title } Project's Header Image`} style={{ width:"100%" }}/>*/}
-					<img src={ thumbnailImage.url } alt={ `${ title } Project's Thumbnail Image` } style={{ width:"100%" }}/>
-					{/*<Image src={ thumbnailImage.url } alt={`${ title } Project's Thumbnail Image`} width="200" height="120"/>*/}
-
-
-
-		      {/*loading="lazy"*/}
-		      {/*<div className="project-thumbnail background-image-default project-{{ project.order }} bg-image" id={ `project_thumbnail_${ slug }` } type="image" title="Website Project: {{ project.title }}">
-		      </div>
-
-					<div className="project-thumbnail background-image-default" type="image" style={{ backgroundImage:`url(${ thumbnailImage.url })` }} title={`Main Image Case Study: ${ title }`}>
-          </div>*/}
-
-
+					{/* Option 3 (Background-Image) */}
+					<div className={ `project-thumbnail background-image-default bg-image` } id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+					</div>
 
 					<figcaption className="font-ultra-light text-rosybrown">
+						{/* Desktop | Screen Readers */}
+						<div class="project-title d-none d-md-block">
+							<h3 className="text-huge text-uppercase text-rosybrown mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+							</h3>
+
+							<div class="project-details">
+								<div className="project-type">
+									{ type }
+								</div>
+
+								<div class="project-roles">
+									{ roles.map(role => (
+										<span key={ role }>{/* It didn't had this "<span/>" in old Portfolio. Here for the key. Had to create "page-subtitles" class */}
+											{ role }{" "}·{" "}{/*&middot;*/}
+										</span>
+									)) }
+									{/*{% unless forloop.last %} &middot;{% endunless %}*/}
+								</div>
+							</div>
+						</div>
+
+						<div class="project-info">
 
 
 
-						{/*{ title }*/}
-						<h1 className="mt-4more" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-						</h1>
 
-						<h5 className="mt-4more">
-							[Type] { type }
-						</h5>
-
-						<h5 className="mt-4more">
-							[Roles <span style={{ color: "green" }}>{" "} (Map)</span>]
-						</h5>
-						{ roles.map(role => (
-							<h5 key={ role }>
-								{ role }
+							{/* TO FOLLOW "stuff/project-card-[TO-DELETE].html" */}
+							<h5 className="mt-4more">
+								[Year] { year }
 							</h5>
-						)) }
 
-						<h5 className="mt-4more">
-							[Year] { year }
-						</h5>
-
-						<h5 className="mt-4more">
-							[Category] { category }
-						</h5>
-
-						<h5 className="mt-4more">
-							[Platforms <span style={{ color: "green" }}>{" "} (Map)</span>]
-						</h5>
-						{ platforms.map(platform => (
-							<h5 key={ platform }>
-								{ platform }
+							<h5 className="mt-4more">
+								[Category] { category }
 							</h5>
-						)) }
+
+							<h5 className="mt-4more">
+								[Platforms <span style={{ color: "green" }}>{" "} (Map)</span>]
+							</h5>
+							{ platforms.map(platform => (
+								<h5 key={ platform }>
+									{ platform }
+								</h5>
+							)) }
 
 
 
+
+        		</div>
 					</figcaption>
 				</figure>
 
 				{/* MISSING MOBILE FROM OLD PORTFOLIO */}
+				{/* TO FOLLOW "stuff/project-card-[TO-DELETE].html" */}
 
 				{/* TEMPORARY // TO REVISE "moment.js" FOR DATES // USED IN MY "next-js-blog-graphcms" */}
 				<time className="project-date">

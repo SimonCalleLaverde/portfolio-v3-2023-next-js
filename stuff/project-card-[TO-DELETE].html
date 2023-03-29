@@ -1,51 +1,32 @@
 
+      <!-- STUFF MISSING WITHIN "project-info" [START] -->
         <!--Desktop | Screen Readers-->
-        <div class="project-title d-none d-md-block">
-          <h3 class="text-huge text-uppercase text-rosybrown mb-0">
-            {{ project.name_for_thumbnail }}
-          </h3>
-          
-          <div class="project-details">
-            <div class="project-type">
-              {{ project.type }}
-            </div>
+        <div class="project-data d-none d-md-block">
+          <time class="font-light">
+            {{ project.year }}
+          </time>
 
-            <div class="project-roles">
-              {% for item in project.roles %}
-                {{ item }}{% unless forloop.last %} &middot;{% endunless %}
-              {% endfor %}
-            </div>
-          </div>
+          {{ project.category }}
         </div>
 
-        <div class="project-info">
-          <!--Desktop | Screen Readers-->
-          <div class="project-data d-none d-md-block">
-            <time class="font-light">
-              {{ project.year }}
-            </time>
-
-            {{ project.category }}
-          </div>
-
-          <!--Mobile-->
-          <div class="project-data text-left d-block d-md-none" aria-hidden="true"><!--text-right-->
-            <time class="font-light mb-0">
-              {{ project.year }}
-            </time>
-          </div>
-
-          <!--Desktop | Screen Readers-->
-          <div class="project-platforms d-none d-md-block">
-            <span class="font-light">
-              Using
-            </span>
-
-            {% for platform in project.platforms %}
-              {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
-            {% endfor %}
-          </div>
+        <!--Mobile-->
+        <div class="project-data text-left d-block d-md-none" aria-hidden="true"><!--text-right-->
+          <time class="font-light mb-0">
+            {{ project.year }}
+          </time>
         </div>
+
+        <!--Desktop | Screen Readers-->
+        <div class="project-platforms d-none d-md-block">
+          <span class="font-light">
+            Using
+          </span>
+
+          {% for platform in project.platforms %}
+            {{ platform }}{% unless forloop.last %} &middot;{% endunless %}
+          {% endfor %}
+        </div>
+      <!-- STUFF MISSING WITHIN "project-info" [END] -->
 
 
 
