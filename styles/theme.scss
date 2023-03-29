@@ -411,15 +411,7 @@ $btn-lg-padding:0.7rem 2.3rem;
 // (To Revise/Check A 'Layout' Component To Wrap Everything | Or ¿To Use React-Bootstrap? ¿To Use Reactstrap? ¿To Use Material-UI? Let's See)
 // Container
 .container {//Might Be Temporary
-  width:100%;//Temporary, As Per B4
-  //max-width:...;
-  margin-right:auto;//Temporary, As Per B4
-  margin-left:auto;//Temporary, As Per B4
-  //padding:0 2rem;//Was Starting With NextJS
-  padding-right:15px;//Temporary, As Per B4
-  padding-left:15px;//Temporary, As Per B4
 }
-//// Other Media Queries Here
 
 // Grid
 .grid {//To Consider//Was Starting With NextJS
@@ -474,32 +466,12 @@ form {
 //----------------------------------Cards Styles----------------------------------//
 
 // Project Card
-
-
-
-
 article.project-card {//.article
-  margin:4rem 2rem;
-  @include border-radius(0.5rem);
-  img {
-    @include transition(filter 0.3s ease);
-    &:hover, &:active, &:focus {
-      @include filter(opacity(0.7));
-    }
-  }
-}
-@media only screen and (max-width:768px) {//Down
-  article.project-card {//.article
-    margin:3rem 1rem;
-  }
-}
-
-
-
-
-// Project Article // To be mixed with "Project Card" above
-article.project-article {
   &.home {
+
+
+
+
     position:relative;
     a {
       figure {
@@ -560,115 +532,22 @@ article.project-article {
         }
       }
     }
+
+
+
+
   }
   &.projects {
-    position:relative;
-    margin-bottom:60px;
-    a {
-      figure {
-        position:relative;
-        height:280px;
-        .project-thumbnail {
-          position:absolute;
-          top:0;
-          right:0;
-          bottom:0;
-          left:0;
-        }
-        figcaption {
-          position:absolute;
-          top:0;
-          right:0;
-          bottom:0;
-          left:0;
-          font-size:11px;
-          letter-spacing:0.8px;
-          text-transform:uppercase;
-          pointer-events:none;
-          .project-title {
-            position:absolute;
-            right:0;
-            bottom:-60px;
-            left:0;
-            mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
-            h1, h2, h3, h4, h5, h6 {
-              // font-size:35px;
-              // line-height:1.2;
-            }
-            .project-details {
-              position:relative;
-              width:100%;
-              height:20px;
-              overflow:hidden;
-              > .project-roles, > .project-data {
-                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-              }
-              > .project-roles {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-              > .project-data {
-                position:absolute;
-                top:0;
-                right:0;
-                bottom:0;
-                left:0;
-                @include filter(opacity(0));
-                @include transform(translateY(-20px));
-              }
-            }
-          }
-          time {
-            position:absolute;
-            top:25px;
-            right:-11.5px;
-            font-size:13px;
-            writing-mode:vertical-rl;
-            text-orientation:mixed;
-          }
-        }
-      }
-      .project-title-mobile {
-        margin-top:-18.5px;
-        font-size:13px;
-        letter-spacing:0.5px;
-        h1, h2, h3, h4, h5, h6 {
-          position:relative;
-          z-index:21;
-          span {
-          }
-        }
-      }
-      &:hover, &:active, &:focus {
-        figure {
-          .project-thumbnail {
-          }
-          figcaption {
-            .project-details {
-               > .project-roles, > .project-data {
-                @include transition(transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
-              }
-              > .project-roles {
-                @include filter(opacity(0));
-                @include transform(translateY(20px));
-              }
-              > .project-data {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-            }
-          }
-        }
-      }
-    }
-    &.forloop-last {
-      margin-bottom:0;
-    }
+    // Missing Styles From Old Portfolio
   }
 }
 @media only screen and (max-width:400px) {//Down
   article.project-article {
     &.home {
+
+
+
+
       a {
         figure {
           height:180px;
@@ -677,23 +556,16 @@ article.project-article {
           margin-top:-13px;//-12px
         }
       }
+
+
+
+
     }
     &.projects {
-      margin-bottom:50px;
-      a {
-        figure {
-          height:180px;
-        }
-        .project-title-mobile {
-          margin-top:-13px;//-12px
-        }
-      }
+      // Missing Styles From Old Portfolio
     }
   }
 }
-
-
-
 
 //----------------------------------Section Styles----------------------------------//
 
@@ -730,12 +602,11 @@ section {
 
 // HomePage Projects Headline Section
 section.homepage-projects-headline-section {
-  border-top:1px dashed purple;//Temporary
 }
 
 // HomePage Projects Cards Section
 section.homepage-projects-cards-section {
-  border-bottom:1px dashed purple;//Temporary
+  border-top:1px dashed purple;//Temporary
 }
 
 // HomePage Skills Headline Section, HomePage Skills Set Section

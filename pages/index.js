@@ -71,6 +71,7 @@ export async function getStaticProps() {
 export default function HomePage({ allProjectsData, allSkillsData }) {
   return (
     <>
+
       <HeadComponent/>
 
       <Header/>
@@ -92,25 +93,34 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        <section className="homepage-projects-cards-section">
-          <div className="container">
-            {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-            { allProjectsData.map(project => (
-              <ProjectCard
-                key={ project.id }
-                slug={ project.slug }
-                thumbnailImage={ project.thumbnailImage }
-                title={ project.title }
-                nameForThumbnail={ project.nameForThumbnail }
-                type={ project.type }
-                roles={ project.roles }
-                year={ project.year }
-                category={ project.category }
-                platforms={ project.platforms }
-              />
-            )) }
-          </div>
-        </section>
+        {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
+        {/* Was {% include home/home_project_article.html %} */}
+        {/* To Be "HomeProjectCard" */}
+        { allProjectsData.map(project => (
+          <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
+            <div className="container">
+
+              <div className="row">
+                <div className="col-10 offset-1 col-md-8">{/*offset-md-2*/}
+
+                  <ProjectCard
+                    slug={ project.slug }
+                    thumbnailImage={ project.thumbnailImage }
+                    title={ project.title }
+                    nameForThumbnail={ project.nameForThumbnail }
+                    type={ project.type }
+                    roles={ project.roles }
+                    year={ project.year }
+                    category={ project.category }
+                    platforms={ project.platforms }
+                  />
+
+                </div>
+              </div>
+
+            </div>
+          </section>
+        )) }
 
         <section className="homepage-skills-headline-section">
           <div className="container">
@@ -162,6 +172,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       </main>
 
       <Footer/>
+
     </>
   )
 };

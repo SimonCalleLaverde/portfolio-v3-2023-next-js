@@ -21,20 +21,22 @@ const graphCMSQuery = gql`
     project(where: {slug: $slug}) {
 
       id
-      title
-      slug
-      nameForThumbnail
-      client
-      thumbnailImage {
-        url
-      }
       headerImage {
         url
       }
-      platforms
-      year
+
+      order
+      title
+      client
       roles
+      year
       webLaunchUrl
+      thumbnailImage {
+        url
+      }
+      content {
+        html
+      }
 
       webImagesFirst {
         url
@@ -96,10 +98,6 @@ const graphCMSQuery = gql`
         text
       }
 
-      type
-      category
-      tags
-
     }
   }
 `;
@@ -147,6 +145,7 @@ export async function getStaticProps({ params }) {
 export default function ProjectPage({ projectData }) {
   return (
     <>
+
       <HeadComponent
         title={ projectData.title }
       />
@@ -167,7 +166,7 @@ export default function ProjectPage({ projectData }) {
                   <div className="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-12">
                     <div className="position-relative">
                       <span className="page-order font-headline" aria-hidden="true">
-                        03{/*{{ page.order }}*/}
+                        0{ projectData.order }{/*03*/}{/*{{ page.order }}*/}
 
                         {/*{% assign sorted_projects = site.projects %}
                         {% assign projects_total_count = 0 %}
@@ -177,7 +176,7 @@ export default function ProjectPage({ projectData }) {
                         {% endfor %}*/}
 
                         <small className="font-ultra-light">
-                          {" "}/30{/*{{ projects_total_count }}*/}
+                          {" "}/03{/*{{ projects_total_count }}*/}
                         </small>
                       </span>
                     </div>
@@ -461,37 +460,12 @@ export default function ProjectPage({ projectData }) {
                 }
               </div>
             </div>
-
-            {/*<h4>NAME FOR THUMBNAIL: {projectData.nameForThumbnail}</h4>*/}
-
-            {/*<h4>TYPE: {projectData.type}</h4>*/}
-
-            {/*<h4>CATEGORY: {projectData.category}</h4>*/}
-
-            {/*<h4>SLUG: {projectData.slug}</h4>*/}
-
-            {/*<h4 className="mb-0">PLATFORMS: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-            <h5 className="mt-0">
-              {projectData.platforms.map(platform => (
-                <div key={platform}>
-                  {platform}
-                </div>
-              ))}
-            </h5>*/}
-
-            {/*<h4 className="mb-0">TAGS: <span style={{color: "green"}}>{" "} (Multiple Values)</span></h4>
-            <h5 className="mt-0">
-              {projectData.tags.map(tag => (
-                <div key={tag}>
-                  {tag}
-                </div>
-              ))}
-            </h5>*/}
           </div>
         </section>
       </main>
 
       <Footer/>
+
     </>
   )
 };

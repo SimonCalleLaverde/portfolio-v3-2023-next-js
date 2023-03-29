@@ -1,19 +1,4 @@
-<article class="project-article home">
-  <a class="link-page-load" href="javascript:delay('{{ project.url }}')">
-    <figure>
-      <style type="text/css">
-        #project_thumbnail_{{ project.slug }} {
-          background:url('{{ project.thumbnail_image | relative_url }}') no-repeat center center scroll;
-          -webkit-background-size:cover;
-          -moz-background-size:cover;
-          -o-background-size:cover;
-          background-size:cover;
-        }
-      </style>
-      <div class="project-thumbnail project-{{ project.order }} bg-image" id="project_thumbnail_{{ project.slug }}" type="image" title="Website Project: {{ project.title }}"><!--loading="lazy"-->
-      </div>
 
-      <figcaption class="font-ultra-light text-rosybrown">
         <!--Desktop | Screen Readers-->
         <div class="project-title d-none d-md-block">
           <h3 class="text-huge text-uppercase text-rosybrown mb-0">
@@ -61,8 +46,9 @@
             {% endfor %}
           </div>
         </div>
-      </figcaption>
-    </figure>
+
+
+
 
     <!--Mobile-->
     <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
@@ -86,5 +72,3 @@
         </div>
       </div>
     </div>
-  </a>
-</article>
