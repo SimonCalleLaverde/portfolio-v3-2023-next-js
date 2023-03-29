@@ -119,27 +119,33 @@
 
   // Container
   .container {
-    //max-width:...;
   }
-  // Other Media Queries
+  @media only screen and (min-width:992px) {//Up
+    .container {
+      max-width:988px;//I will keep it at "max-width:988px" for this Portfolio as it was in Bootstrap 4 after screen-size greater than "992px (lg)". Bootstrap 5 goes too wide, plus my new Mac isn't '1366px' width any more, but passes that 1400px breakpoint as well being '1440px' width. So ".container" gets too wide
+    }
+  }
   @media only screen and (min-width:1200px) {//Up
     .container {
-      max-width:988px;//Temporary, As Per B4
     }
-  }//@Media
+  }
+  @media only screen and (min-width:1400px) {//Up
+    .container {
+    }
+  }
 
   //----------------------------------Cards Styles----------------------------------//
 
   // Project Card
   article.project-card {//.article
     &.home {
-
-
-
-
       a {
         figure {
           height:320px;
+
+
+
+
           figcaption {
             .project-title {
               position:absolute;
@@ -197,9 +203,17 @@
               }
             }
           }
+
+
+
+
         }
         &:hover, &:active, &:focus {
           figure {
+
+
+
+
             figcaption {
               .project-title {
                 h1, h2, h3, h4, h5, h6 {
@@ -231,26 +245,26 @@
                 }
               }
             }
+
+
+
+
           }
         }
       }
-
-
-
-
     }
     &.projects {
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
-    article.project-article {
+    article.project-card {
       &.home {
-
-
-
-
         a {
           figure {
+
+
+
+
             width:calc(100% + 30px);
             height:403px;//450px With col-md-10//Mobile 250px
             margin-left:-15px;
@@ -259,56 +273,38 @@
                 bottom:-31px;//-26px
               }
             }
+
+
+
+
           }
         }
-
-
-
-
       }
       &.projects {
       }
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(xl) {//Up
-    article.project-article {
-
-
-
-
+    article.project-card {
       &.home {
         a {
           figure {
+
+
+
+
             figcaption {
               .project-title {
                 bottom:-35.5px;
               }
             }
+
+
+
+
           }
         }
       }
-
-
-
-
-      &.projects {
-      }
-    }
-  }
-  @media only screen and (max-width:992px) {//Down //@include media-breakpoint-down(lg) {//Down
-    article.project-article {
-      &.projects {
-      }
-    }
-  }
-  @media only screen and (max-width:1100px) {//Down
-    article.project-article {
-      &.projects {
-      }
-    }
-  }
-  @media only screen and (max-width:768px) {//Down //@include media-breakpoint-down(md) {//Down
-    article.project-article {
       &.projects {
       }
     }
@@ -318,12 +314,10 @@
 
   // HomePage Projects Cards Section
   section.homepage-projects-cards-section {
-    //...
   }
 
   // HomePage Skills Set Section
   section.homepage-skills-set-section {
-   //...
   }
 
 

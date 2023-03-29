@@ -471,12 +471,12 @@ article.project-card {//.article
     position:relative;
     a {
       figure {
-
-
-
-
         position:relative;
         height:280px;
+
+
+
+
         .project-thumbnail, figcaption {
           position:absolute;
           top:0;
@@ -608,17 +608,8 @@ section {
   //min-height:100vh;//Temporary
 }
 
-// HomePage Projects Headline Section
-section.homepage-projects-headline-section {
-}
-
-// HomePage Projects Cards Section
-section.homepage-projects-cards-section {
-  border-top:1px dashed purple;//Temporary
-}
-
-// HomePage Skills Headline Section, HomePage Skills Set Section
-section.homepage-skills-headline-section, section.homepage-skills-set-section {
+// HomePage Projects Headline Section, HomePage Projects Cards Section, HomePage Skills Headline Section, HomePage Skills Set Section
+section.homepage-projects-headline-section, section.homepage-projects-cards-section, section.homepage-skills-headline-section, section.homepage-skills-set-section {
   background-color:theme-color("chocolate");////Temporary
 }
 

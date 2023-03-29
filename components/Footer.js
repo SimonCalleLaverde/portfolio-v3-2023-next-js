@@ -37,7 +37,13 @@ export default function Footer() {
         </div>
       </Link>
 
-      {/* Mobile (Missing (".container")) (To look up in my Jekyll's "Portfolio 2021") */}
+
+
+
+      {/* Missing Mobile (".container") (From Old Portfolio) */}
+
+
+
 
       <aside className="footer-aside-info-elements text-rosybrown">
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
@@ -203,7 +209,13 @@ export default function Footer() {
           <br/>All rights reserved
         </div>
 
-        {/* Mobile (Missing (".footer-copyright")) (To look up in my Jekyll's "Portfolio 2021") */}
+
+
+
+        {/* Missing Mobile (".footer-copyright") (From Old Portfolio) */}
+
+
+
 
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-created-by">{/*d-none d-md-block*/}
@@ -212,7 +224,14 @@ export default function Footer() {
           {/*href="https://simoncallelaverde.github.io/" target="_blank"*/}
         </div>
 
-        {/* Mobile (Missing (".footer-created-by")) (To look up in my Jekyll's "Portfolio 2021") */}
+
+
+
+        {/* Missing Mobile (".footer-created-by") (From Old Portfolio) */}
+
+
+
+
       </aside>
 		</footer>
 	)
