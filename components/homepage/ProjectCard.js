@@ -23,16 +23,16 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 					<figcaption className="font-ultra-light text-rosybrown">
 						{/* Desktop | Screen Readers */}
-						<div class="project-title d-none d-md-block">
+						<div className="project-title d-none d-md-block">
 							<h3 className="text-huge text-uppercase text-rosybrown mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
 							</h3>
 
-							<div class="project-details">
+							<div className="project-details">
 								<div className="project-type">
 									{ type }
 								</div>
 
-								<div class="project-roles">
+								<div className="project-roles">
 									{ roles.map(role => (
 										<span key={ role }>{/* It didn't had this "<span/>" in old Portfolio. Here for the key. Had to create "page-subtitles" class */}
 											{ role }{" "}·{" "}{/*&middot;*/}
@@ -43,38 +43,69 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 							</div>
 						</div>
 
-						<div class="project-info">
+						<div className="project-info">
+							{/*Desktop | Screen Readers*/}
+							<div className="project-data d-none d-md-block">
+								<time className="font-light">
+									{ year }
+								</time>
 
+								{ category }
+							</div>
 
+							{/*Mobile*/}
+							<div className="project-data text-left d-block d-md-none" aria-hidden="true">{/*text-right*/}
+								<time className="font-light mb-0">
+									{ year }
+								</time>
+							</div>
 
+							{/*Desktop | Screen Readers*/}
+							<div className="project-platforms d-none d-md-block">
+								<span className="font-light">
+									Using
+								</span>
 
-							{/* TO FOLLOW "stuff/project-card-[TO-DELETE].html" */}
-							<h5 className="mt-4more">
-								[Year] { year }
-							</h5>
-
-							<h5 className="mt-4more">
-								[Category] { category }
-							</h5>
-
-							<h5 className="mt-4more">
-								[Platforms <span style={{ color: "green" }}>{" "} (Map)</span>]
-							</h5>
-							{ platforms.map(platform => (
-								<h5 key={ platform }>
-									{ platform }
-								</h5>
-							)) }
-
-
-
-
-        		</div>
+								{ platforms.map(platform => (
+									<span key={ platform }>
+										{ platform } &middot;{/* unless forloop.last  &middot; endunless */}
+									</span>
+								)) }
+							</div>
+						</div>
 					</figcaption>
 				</figure>
 
-				{/* MISSING MOBILE FROM OLD PORTFOLIO */}
-				{/* TO FOLLOW "stuff/project-card-[TO-DELETE].html" */}
+
+
+
+				{/*
+				<!--Mobile-->
+		    <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
+		      <h3 class="text-huge text-uppercase mb-0">
+		        <span class="text-rosybrown">
+		          {{ project.name_for_thumbnail }}
+		        </span>
+		      </h3>
+		      
+		      <div class="project-details">
+		        <!--{% comment %}
+		        <div class="project-type">
+		          {{ project.type }}
+		        </div>
+		        {% endcomment %}-->
+
+		        <div class="project-roles">
+		          {% for item in project.roles %}
+		            {{ item }}{% unless forloop.last %} &middot;{% endunless %}
+		          {% endfor %}
+		        </div>
+		      </div>
+		    </div>
+		    */}
+
+
+
 
 				{/* TEMPORARY // TO REVISE "moment.js" FOR DATES // USED IN MY "next-js-blog-graphcms" */}
 				<time className="project-date">

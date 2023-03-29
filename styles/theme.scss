@@ -468,13 +468,13 @@ form {
 // Project Card
 article.project-card {//.article
   &.home {
-
-
-
-
     position:relative;
     a {
       figure {
+
+
+
+
         position:relative;
         height:280px;
         .project-thumbnail, figcaption {
@@ -519,8 +519,16 @@ article.project-card {//.article
             }
           }
         }
+
+
+
+
       }
       .project-title-mobile {
+
+
+
+
         margin-top:-19.5px;//-18.5px
         font-size:13px;
         letter-spacing:0.5px;
@@ -531,11 +539,11 @@ article.project-card {//.article
           }
         }
       }
+
+
+
+
     }
-
-
-
-
   }
   &.projects {
     // Missing Styles From Old Portfolio
