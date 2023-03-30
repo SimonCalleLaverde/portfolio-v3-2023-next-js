@@ -6,7 +6,7 @@ import Image from "next/image";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles, year, category, platforms }) {
+export default function HomeProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
 	return (
 
 		<article className="project-card home">
@@ -35,44 +35,57 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 								</div>
 
 								<div className="project-roles">
+									{/* I didn't had this "<span/>" below in old Portfolio. Here for the key */}
+									{/*
 									{ roles.map(role => (
-										<span key={ role }>{/* It didn't had this "<span/>" in old Portfolio. Here for the key. Had to create "page-subtitles" class */}
-											{ role }{" "}·{" "}{/*&middot;*/}
+										<span key={ role }>
+											{ role }{" "}·{" "}
 										</span>
 									)) }
+									*/}
+									{/*&middot;*/}
 									{/*{% unless forloop.last %} &middot;{% endunless %}*/}
+									{ roles2 }
 								</div>
 							</div>
 						</div>
 
 						<div className="project-info">
-							{/*Desktop | Screen Readers*/}
+							{/* Desktop | Screen Readers */}
 							<div className="project-data d-none d-md-block">
 								<time className="font-light">
-									{ year }
+									{/*{ year }*/}
+									{ year2 }
 								</time>
 
 								{ category }
 							</div>
 
-							{/*Mobile*/}
+							{/* Mobile */}
 							<div className="project-data text-left d-block d-md-none" aria-hidden="true">{/*text-right*/}
 								<time className="font-light mb-0">
-									{ year }
+									{/*{ year }*/}
+									{ year2 }
 								</time>
 							</div>
 
-							{/*Desktop | Screen Readers*/}
+							{/* Desktop | Screen Readers */}
 							<div className="project-platforms d-none d-md-block">
 								<span className="font-light">
 									Using
 								</span>
 
+								{/* I didn't had this "<div/>" below in old Portfolio. Here for the key. Had to add some styles to it to make it "display:inline-block", as I can't use <span/> as it also has styles already for the above */}
+								{/*
 								{ platforms.map(platform => (
-									<span key={ platform }>
-										{ platform } &middot;{/* unless forloop.last  &middot; endunless */}
-									</span>
+									<div key={ platform }>
+										{ platform }{" "}·{" "}
+									</div>
 								)) }
+								*/}
+								{/*&middot;*/}
+								{/*{% unless forloop.last %} &middot;{% endunless %}*/}
+								{ platforms2 }
 							</div>
 						</div>
 					</figcaption>

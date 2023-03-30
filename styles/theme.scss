@@ -517,6 +517,12 @@ article.project-card {//.article
                 margin-bottom:12px;
               }
             }
+            > .project-platforms {//New
+              div {//New
+                display:inline-block;//New
+                margin-bottom:3px;//4px//New
+              }
+            }
           }
         }
 
@@ -734,6 +740,9 @@ section.project-page {
     font-size:18px;//20px
   }
   .page-content-mid {
+    img {
+      @include border-radius(0.8rem);
+    }
     blockquote {
       padding-right:10px;
       padding-bottom:15px;

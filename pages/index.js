@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadComponent from "../components/HeadComponent.js";
 import Header from "../components/homepage/Header.js";
-import ProjectCard from "../components/homepage/ProjectCard.js";
+import HomeProjectCard from "../components/homepage/HomeProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -27,10 +27,10 @@ const graphCMSQueryProjects = gql`
       title
       nameForThumbnail
       type
-      roles
-      year
+      roles2
+      year2
       category
-      platforms
+      platforms2
 
     }
   }
@@ -83,7 +83,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
             <div className="row">
               <div className="col-md-10 offset-md-1">
-                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
+                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">{/*text-center*/}
                   Recent
                   <br/>Independent
                   <br/>Projects{/*Recent Business Projects*/}
@@ -94,27 +94,26 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
+        {/* Mapping through "allProjectsData" and displaying each "project", in a "HomeProjectCard" component */}
         {/* Was {% include home/home_project_article.html %} */}
-        {/* To Be "HomeProjectCard" */}
         { allProjectsData.map(project => (
           <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
             <div className="container">
 
               <div className="row">
-                <div className="col-10 offset-1 col-md-8">{/*offset-md-2*/}
+                <div className="col-10 offset-1 col-md-8 offset-md-2">
 
-                  <ProjectCard
+                  <HomeProjectCard
                     slug={ project.slug }
                     order={ project.order }
                     thumbnailImage={ project.thumbnailImage }
                     title={ project.title }
                     nameForThumbnail={ project.nameForThumbnail }
                     type={ project.type }
-                    roles={ project.roles }
-                    year={ project.year }
+                    roles2={ project.roles2 }
+                    year2={ project.year2 }
                     category={ project.category }
-                    platforms={ project.platforms }
+                    platforms2={ project.platforms2 }
                   />
 
                 </div>

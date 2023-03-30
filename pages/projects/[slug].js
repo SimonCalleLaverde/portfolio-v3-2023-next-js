@@ -28,8 +28,8 @@ const graphCMSQuery = gql`
       order
       title
       client
-      roles
-      year
+      roles2
+      year2
       webLaunchUrl
       thumbnailImage {
         url
@@ -176,7 +176,7 @@ export default function ProjectPage({ projectData }) {
                         {% endfor %}*/}
 
                         <small className="font-ultra-light">
-                          {" "}/03{/*{{ projects_total_count }}*/}
+                          {" "}/09{/*{{ projects_total_count }}*/}
                         </small>
                       </span>
                     </div>
@@ -200,11 +200,16 @@ export default function ProjectPage({ projectData }) {
                       <span className="page-subtitles font-light">
                         Roles
                       </span>
+                      {/* I didn't had this "<span/>" below in older site. Here for the key. Had to create ".page-subtitles" class in "<span/> above" */}
+                      {/*
                       { projectData.roles.map(role => (
-                        <span key={ role }>{/* It didn't had this "<span/>" in older site. Here for the key. Had to create ".page-subtitles" Class */}
-                          { role }{" "}·{" "}{/*&middot;*/}
+                        <span key={ role }>
+                          { role }{" "}·{" "}
                         </span>
                       )) }
+                      */}
+                      {/*&middot;*/}
+                      { projectData.roles2 }
                     </div>
                   </div>
 
@@ -213,7 +218,8 @@ export default function ProjectPage({ projectData }) {
                       <span className="page-subtitles font-light">
                         Year
                       </span>
-                      { projectData.year }
+                      {/*{ projectData.year }*/}
+                      { projectData.year2 }
                     </div>
                   </div>
                 </div>

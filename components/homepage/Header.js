@@ -13,6 +13,8 @@ export default function Header() {
         <p>I'm a<br/>
         UX/UI Product Designer & Front-end Developer<br/>
         So that you don't have to</p>
+
+        <p>A DESIGNER WHO CODES</p>
       </div>
     </header>
   )
