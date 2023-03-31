@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadComponent from "../components/HeadComponent.js";
-import Header from "../components/homepage/Header.js";
+import Header from "../components/homepage/HomeHeader.js";
 import HomeProjectCard from "../components/homepage/HomeProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
