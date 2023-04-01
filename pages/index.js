@@ -1,7 +1,7 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadComponent from "../components/HeadComponent.js";
+import HeadConfig from "../components/HeadConfig.js";
 import Header from "../components/homepage/HomeHeader.js";
 import HomeProjectCard from "../components/homepage/HomeProjectCard.js";
 import Footer from "../components/Footer.js";
@@ -73,7 +73,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
   return (
     <>
 
-      <HeadComponent/>
+      <HeadConfig/>
 
       <Header/>
 

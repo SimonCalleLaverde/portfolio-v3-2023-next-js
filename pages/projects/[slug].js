@@ -4,7 +4,7 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadComponent from "../../components/HeadComponent.js";
+import HeadConfig from "../../components/HeadConfig.js";
 import Header from "../../components/project/Header.js";
 import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -146,7 +146,7 @@ export default function ProjectPage({ projectData }) {
   return (
     <>
 
-      <HeadComponent
+      <HeadConfig
         title={ projectData.title }
       />
 

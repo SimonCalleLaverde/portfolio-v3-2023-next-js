@@ -1,7 +1,7 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadComponent from "../components/HeadComponent.js";
+import HeadConfig from "../components/HeadConfig.js";
 import Header from "../components/about/Header.js";
 import Footer from "../components/Footer.js";
 
@@ -9,7 +9,7 @@ import Footer from "../components/Footer.js";
 export default function AboutPage() {
 	return (
 		<>
-			<HeadComponent/>
+			<HeadConfig/>
 
       <Header/>
 

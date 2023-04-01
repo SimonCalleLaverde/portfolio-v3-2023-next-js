@@ -1,7 +1,7 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadComponent from "../components/HeadComponent.js";
+import HeadConfig from "../components/HeadConfig.js";
 import Header from "../components/projects/Header.js";
 import ProjectCard from "../components/projects/ProjectCard.js";
 import Footer from "../components/Footer.js";
@@ -66,7 +66,7 @@ export async function getStaticProps() {
 export default function ProjectsPage({ allProjectsData }) {
 	return (
 		<>
-      <HeadComponent/>
+      <HeadConfig/>
 
       <Header/>
 

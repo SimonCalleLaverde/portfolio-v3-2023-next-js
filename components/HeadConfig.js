@@ -1,8 +1,8 @@
 // Imports
 import Head from "next/head";
 
-// HeadComponent (Sitewide) Component
-export default function HeadComponent({ title }) {
+// HeadConfig (Sitewide) Component
+export default function HeadConfig({ title }) {
   return (
     <Head>
       {/* To Later Revise <Head/> As I Was Doing In My "portfolio-V3-2022-next-js" In GitHub */}
