@@ -2,9 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import Header from "../components/projects/Header.js";
-import ProjectCard from "../components/projects/ProjectCard.js";
-import Footer from "../components/Footer.js";
+import ProjectsHeader from "../components/projects/ProjectsHeader.js";
+import ProjectsProjectCard from "../components/projects/ProjectsProjectCard.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
@@ -13,35 +12,24 @@ import { GraphQLClient, gql } from "graphql-request";
 const accessEndpoint = "https://api-us-east-1.hygraph.com/v2/cl5ketcvx2wnm01ta90nhcdmy/master";
 const graphCMSRequestAPI = new GraphQLClient(accessEndpoint);
 
-// Querying With GraphQL
-const graphCMSQuery = gql`
+// Querying (Projects) With GraphQL
+const graphCMSQueryProjects = gql`
   {
     projects {
 
       id
-      title
       slug
-      nameForThumbnail
-      client
+      order
       thumbnailImage {
         url
       }
-      headerImage {
-        url
-      }
-      platforms
-      year
-      roles
-      webLaunchUrl
-      webImagesFirst {
-        url
-      }
+      title
+      nameForThumbnail
       type
+      roles2
+      year2
       category
-      tags
-      content {
-        text
-      }
+      platforms2
 
     }
   }
@@ -50,7 +38,7 @@ const graphCMSQuery = gql`
 // GET STATIC PROPS
 export async function getStaticProps() {
   // Making The API Call/Request
-  const { projects } = await graphCMSRequestAPI.request(graphCMSQuery);
+  const { projects } = await graphCMSRequestAPI.request(graphCMSQueryProjects);
 
   return {
     props: {
@@ -66,39 +54,60 @@ export async function getStaticProps() {
 export default function ProjectsPage({ allProjectsData }) {
 	return (
 		<>
+
       <HeadConfig/>
 
-      <Header/>
+      <ProjectsHeader/>
 
       <main>
-        <section className="projectspage-projects-cards-section">
+        {/*<section className="homepage-projects-headline-section">
           <div className="container">
-            {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-            { allProjectsData.map(project => (
-              <ProjectCard
-                key={ project.id }
-                title={ project.title }
-                slug={ project.slug }
-                nameForThumbnail={ project.nameForThumbnail }
-                client={ project.client }
-                thumbnailImage={ project.thumbnailImage }
-                headerImage={ project.headerImage }
-                platforms={ project.platforms }
-                year={ project.year }
-                roles={ project.roles }
-                webLaunchUrl={ project.webLaunchUrl }
-                webImagesFirst={ project.webImagesFirst }
-                type={ project.type }
-                category={ project.category }
-                tags={ project.tags }
-                content={ project.content }
-              />
-            )) }
+
+            <div className="row">
+              <div className="col-md-10 offset-md-1">
+                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">
+                  Recent
+                  <br/>Independent
+                  <br/>Projects
+                </h2>
+              </div>
+            </div>
+
           </div>
-        </section>
+        </section>*/}
+
+        {/* Mapping through "allProjectsData" and displaying each "project", in a "HomeProjectCard" component */}
+        {/* Was {% include home/home_project_article.html %} */}
+        { allProjectsData.map(project => (
+          <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
+            <div className="container">
+
+              <div className="row">
+                <div className="col-10 offset-1 col-md-8 offset-md-2">
+
+                  <ProjectsProjectCard
+                    slug={ project.slug }
+                    order={ project.order }
+                    thumbnailImage={ project.thumbnailImage }
+                    title={ project.title }
+                    nameForThumbnail={ project.nameForThumbnail }
+                    type={ project.type }
+                    roles2={ project.roles2 }
+                    year2={ project.year2 }
+                    category={ project.category }
+                    platforms2={ project.platforms2 }
+                  />
+
+                </div>
+              </div>
+
+            </div>
+          </section>
+        )) }
       </main>
 
-      <Footer/>
+      {/*<Footer/>*/}
+
     </>
   )
 };

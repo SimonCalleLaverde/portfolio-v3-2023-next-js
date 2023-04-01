@@ -5,11 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 //import moment from "moment";
 
-// Project (Card) Component
-export default function HomeProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
+// Projects Project (Card) Component
+export default function ProjectsProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
 	return (
 
-		<article className="project-card home">
+		<article className="project-card home projects">{/*"home" Temporary*/}
 			<Link className="link-page-load" href={ `/projects/${ slug }` }>
 				<figure>
 					{/* Option 1 (Image Component): Must Use "width" & "height" Properties, Or "layout='fill'" Property */}

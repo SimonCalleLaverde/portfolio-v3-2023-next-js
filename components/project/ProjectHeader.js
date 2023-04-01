@@ -1,7 +1,7 @@
 // Imports
 
-// Header (ProjectPage) Component
-export default function Header({ title, client }) {
+// Project (Header) Component
+export default function ProjectHeader({ title, client }) {
   return (
     <header className="display-flex justify-content-center align-items-center text-align-center">{/*flex-direction-row*/}
       <div className="container">

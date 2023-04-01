@@ -2,16 +2,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import Header from "../components/about/Header.js";
-import Footer from "../components/Footer.js";
+import AboutHeader from "../components/about/AboutHeader.js";
 
 // About (Page) Component
 export default function AboutPage() {
 	return (
 		<>
+
 			<HeadConfig/>
 
-      <Header/>
+      <AboutHeader/>
 
       <main>
         <div className="container">
@@ -19,7 +19,8 @@ export default function AboutPage() {
         </div>
       </main>
 
-      <Footer/>
+      {/*<Footer/>*/}
+
 		</>
 	)
 };

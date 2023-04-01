@@ -5,8 +5,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../../components/HeadConfig.js";
-import Header from "../../components/project/Header.js";
-import Footer from "../../components/Footer.js";
+import ProjectHeader from "../../components/project/ProjectHeader.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
@@ -30,7 +29,10 @@ const graphCMSQuery = gql`
       client
       roles2
       year2
+
       webLaunchUrl
+      prototypeLaunchUrl
+
       thumbnailImage {
         url
       }
@@ -92,10 +94,10 @@ const graphCMSQuery = gql`
       }
 
       contentLastLeft {
-        text
+        html
       }
       contentLastRight {
-        text
+        html
       }
 
     }
@@ -150,7 +152,7 @@ export default function ProjectPage({ projectData }) {
         title={ projectData.title }
       />
 
-      {/*<Header
+      {/*<ProjectHeader
         title={ projectData.title }
         client={ projectData.client }
       />*/}
@@ -227,9 +229,17 @@ export default function ProjectPage({ projectData }) {
                 <div className="row mt-5less">
                   <div className="col-md-8 offset-md-2">
                     <div className="font-light">
-                      <Link className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
-                        View the site
-                      </Link>
+                      { projectData.webLaunchUrl &&
+                        <Link className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
+                          View the site
+                        </Link>
+                      }
+
+                      { projectData.prototypeLaunchUrl &&
+                        <Link className="btn btn-xs btn-rosybrown" href={ projectData.prototypeLaunchUrl } target="_blank">
+                          View prototype
+                        </Link>
+                      }
                     </div>
                   </div>
                 </div>
@@ -442,7 +452,8 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-4 offset-md-2 d-none d-lg-block">
                 <div className="pe-4">
                   { projectData.contentLastLeft &&
-                    <p>{ projectData.contentLastLeft.text }</p>
+                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}>
+                    </div>
                   }
                 </div>
               </div>
@@ -450,7 +461,8 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-4 d-none d-lg-block">
                 <div className="ps-4">
                   { projectData.contentLastRight &&
-                    <p>{ projectData.contentLastRight.text }</p>
+                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}>
+                    </div>
                   }
                 </div>
               </div>
@@ -458,11 +470,13 @@ export default function ProjectPage({ projectData }) {
               {/* Mobile Lg */}
               <div className="col-md-8 offset-md-2 d-block d-lg-none" aria-hidden="true">
                 { projectData.contentLastLeft &&
-                  <p>{ projectData.contentLastLeft.text }</p>
+                  <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}>
+                  </div>
                 }
-                
+
                 { projectData.contentLastRight &&
-                  <p className="mt-4">{ projectData.contentLastRight.text }</p>
+                  <div className="mt-4" dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}>
+                  </div>
                 }
               </div>
             </div>
@@ -470,7 +484,7 @@ export default function ProjectPage({ projectData }) {
         </section>
       </main>
 
-      <Footer/>
+      {/*<Footer/>*/}
 
     </>
   )

@@ -2,9 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import Header from "../components/homepage/HomeHeader.js";
-import HomeProjectCard from "../components/homepage/HomeProjectCard.js";
-import Footer from "../components/Footer.js";
+import HomeHeader from "../components/home/HomeHeader.js";
+import HomeProjectCard from "../components/home/HomeProjectCard.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//
@@ -75,7 +74,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
       <HeadConfig/>
 
-      <Header/>
+      <HomeHeader/>
 
       <main>
         <section className="homepage-projects-headline-section">
@@ -172,7 +171,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
         </section>
       </main>
 
-      <Footer/>
+      {/*<Footer/>*/}
 
     </>
   )
