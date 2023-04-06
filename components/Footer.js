@@ -23,14 +23,14 @@ export default function Footer() {
           <div className="col-md-12">
 
             <h3 className="text-huge text-rosybrown text-transform-uppercase">{/*mb-0*/}
-              Let's create
+              Let&apos;s create
               <br/>something
               <br/>special
             </h3>
 
             <p className="font-ultra-light text-rosybrown">
               If you want to work
-              <br/>with me, let's talk.
+              <br/>with me, let&apos;s talk.
             </p>
 
           </div>

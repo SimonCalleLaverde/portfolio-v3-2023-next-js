@@ -14,8 +14,8 @@ export default function HomeHeader() {
 
         <br/>
 
-        <p>I'm a <em>{` { `}UX/UI Product Designer & Front-end Developer{` } `}</em><br/>
-        So that you don't have to.</p>
+        <p>I&apos;m a <em>{` { `}UX/UI Product Designer & Front-end Developer{` } `}</em><br/>
+        So that you don&apos;t have to.</p>
 
         {/*Work on your work, until your work, gets you work - Chris do*/}
       </div>
