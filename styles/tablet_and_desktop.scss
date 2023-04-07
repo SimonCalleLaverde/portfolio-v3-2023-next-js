@@ -13,7 +13,7 @@
 
   // Headline, Title, Subtitle
   .headline {//Targets From 768px All The Way Up, Or Up To 850px If Styles Are Added/Overriding Down Here
-    font-size:2.6rem;
+    font-size:2rem;//New//2.6rem
     line-height:1.15;
   }
   .text-hero, .text-gigantic {
@@ -76,13 +76,13 @@
   }
   @media only screen and (min-width:1200px) {//Up
     .headline {
-      font-size:4rem;//3.85rem
+      font-size:3.3rem;//NEW//4rem//3.85rem
     }
     .text-hero {
       font-size:6.3rem;
     }
     .text-gigantic {
-      font-size:5.3rem;
+      font-size:4.5rem;//NEW//5.3rem
       line-height:0.93;
     }
     .text-intro, .text-huge {

@@ -303,7 +303,7 @@ export default function ProjectPage({ projectData }) {
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>
-                <Image src={ image.url } alt={`${ projectData.title } Case Study's Image`} width="400" height="220"/>
+                <Image src={ image.url } alt={ `${ projectData.title } Case Study's Image` } width="400" height="220"/>
               </div>
             )) }*/}
 
@@ -314,16 +314,16 @@ export default function ProjectPage({ projectData }) {
             )) }*/}
 
             {/* With "Image": Must use 'width=""' & 'height=""' properties, or 'layout="fill"' property */}
-            {/*<Image src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} width="600" height="380"/>*/}
-            {/*<img src={ projectData.thumbnailImage.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>*/}
+            {/*<Image src={ projectData.thumbnailImage.url } alt={ `${ projectData.title } Case Study's Image` } width="600" height="380"/>*/}
+            {/*<img src={ projectData.thumbnailImage.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>*/}
 
             <div className="row page-content-mid mb-3">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-                {/*<Image src={ projectData.webImagesFirst[0].url } alt={`${ projectData.title } Case Study's Image`} width="400" height="220"/>*/}
+                {/*<Image src={ projectData.webImagesFirst[0].url } alt={ `${ projectData.title } Case Study's Image` } width="400" height="220"/>*/}
                 { projectData.webImagesFirst && projectData.webImagesFirst.map(image => (
                   <div key={ image.url } className="mb-5">
                     {/* {% if forloop.last %}mb-1 mb-md-1 mb-lg-4{% else %}mb-2 mb-md-3 mb-lg-5less{% endif %} */}
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }} loading="lazy"/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }} loading="lazy"/>
                   </div>
                 ))}
               </div>
@@ -340,7 +340,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSecond && projectData.webImagesSecond.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
@@ -357,7 +357,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesThird && projectData.webImagesThird.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
@@ -374,7 +374,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFourth && projectData.webImagesFourth.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
@@ -391,7 +391,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesFifth && projectData.webImagesFifth.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
@@ -408,7 +408,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSixth && projectData.webImagesSixth.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>
@@ -425,7 +425,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
                 { projectData.webImagesSeventh && projectData.webImagesSeventh.map(image => (
                   <div key={ image.url } className="mb-5">
-                    <img src={ image.url } alt={`${ projectData.title } Case Study's Image`} style={{ width:"100%" }}/>
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
                   </div>
                 ))}
               </div>

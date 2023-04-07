@@ -81,12 +81,11 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           <div className="container">
 
             <div className="row">
-              <div className="col-md-10 offset-md-1">
-                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">{/*text-center*/}
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                <h3 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
                   Recent
-                  <br/>Independent
-                  <br/>Projects{/*Recent Business Projects*/}
-                </h2>
+                  <br/>Projects
+                </h3>
               </div>
             </div>
 
@@ -126,11 +125,11 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           <div className="container">
 
             <div className="row">
-              <div className="col-md-10 offset-md-1">
-                <h2 className="font-headline text-gigantic text-rosybrown text-uppercase text-center mb-0">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                <h3 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
                   Some Of My
                   <br/>Skills Set
-                </h2>
+                </h3>
               </div>
             </div>
 
