@@ -6,7 +6,7 @@ export default function HomeHeader() {
     <header className="display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
       <div className="container">
 
-        <div class="row">
+        <div class="row mt-md-5 pt-md-5">
           <div class="col-md-6">
             <p>Hello</p>
 
