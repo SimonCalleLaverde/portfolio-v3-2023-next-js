@@ -6,13 +6,13 @@ export default function HomeHeader() {
     <header className="display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
       <div className="container">
 
-        <div class="row mt-md-5 pt-md-5">
-          <div class="col-md-6">
+        <div className="row mt-md-5 pt-md-5">
+          <div className="col-md-6">
             <p>Hello</p>
 
             <h1 className="headline">
               {/*Portfolio V3 2023 NextJS*/}
-              Simón Calle is a UX, UI, & Product Designer who also has experience in Front-end.
+              Simón Calle -<br/>UX, UI, & Product Designer with experience in Front-end; graduated as a Publicist.
             </h1>
 
             {/*<p>A DESIGNER WHO CODES</p>*/}
@@ -22,7 +22,7 @@ export default function HomeHeader() {
             {/*Work on your work, until your work, gets you work - Chris do*/}
           </div>
 
-          <div class="col-md-5 offset-md-1">
+          <div className="col-md-5 offset-md-1">
             <img src="/profile-images/home-header-picture-(cropped).jpg" alt="Home header picture of Simón Calle Laverde with his glasses on his hair" style={{ width:"100%" }}/>
           </div>
         </div>

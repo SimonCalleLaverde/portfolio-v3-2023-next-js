@@ -97,39 +97,34 @@ export default function Footer() {
         {/*javascript:delay('/hire_a_project')*/}
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <nav className="footer-nav" aria-hidden="true">{/*navbar*/}
+          Menu
+
           <ul className="footer-nav-ul">{/*navbar-nav*/}
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'home' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-line-through" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Home</span>
+                <span>Welcome</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-line-through" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Projects</span>
+                <span>Work</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-line-through" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>About me</span>
+                <span>My story</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
               <Link className="footer-nav-link link-line-through" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Contact me</span>
-              </Link>
-            </li>
-
-            <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'blog' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/blog">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Blog</span>
+                <span>Drop a line</span>
               </Link>
             </li>
           </ul>

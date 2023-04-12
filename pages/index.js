@@ -77,46 +77,49 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <HomeHeader/>
 
       <main>
-
-
-
-
-        <section className="   homepage-projects-headline-section   ">
+        <section className="homepage-disclaimer-section text-rosybrown">
           <div className="container">
 
             <div className="row">
               <div className="col-md-12">
-                <h4 className="text-rosybrown mb-3">
+
+
+
+
+                <h4 className="mb-3">
                   This site is under construction
-                  <br/>Its latest version isn&apos;t live yet.
-                  <br/>Expect completion soon - 15.04.2023.
                 </h4>
 
-                <p className="text-rosybrown">
+                <p>
+                  {/*This site is under construction, its latest version isn&apos;t live yet. */}Completion due date: 04.20.2023.
+                </p>
+
+                <p>
                   In the meantime you can check out my previous Portfolio 2021 for
-                  <em>{" "}<Link className="link-line-through text-rosybrown" href="https://simoncallelaverde.github.io/about" target="_blank">more about me</Link>{" "}</em>
-                  or for a <em>{" "}<Link className="link-line-through text-rosybrown" href="https://simoncallelaverde.github.io/projects" target="_blank">projects page</Link>{" "}</em>.
+                  <em>{" "}<Link className="link-line-through" href="https://simoncallelaverde.github.io/about" target="_blank">more about me</Link>{" "}</em>
+                  or for a <em>{" "}<Link className="link-line-through" href="https://simoncallelaverde.github.io/projects" target="_blank">projects page</Link>{" "}</em>.
                   There I have 28 Front-end Development projects I helped build for a Australian based digital agency and 2
                   independent User Interfase (UI) Design projects I designed and developed.
                 </p>
 
-                <p className="text-rosybrown">
+                <p>
                   Although this new Portfolio 2023 will have the option to create better Case Studies and it has my latest
                   User Experience (UX) & Product Design real client project that I worked in a Product Design inc. UX & UI. course
                   I took in 2022 - 2023 in London, UK.
                 </p>
 
-                <p className="text-rosybrown">
+                <p>
                   - As of April 06, 2023
                 </p>
+
+
+
+
               </div>
             </div>
 
           </div>
         </section>
-
-
-
 
         <section className="homepage-projects-headline-section">
           <div className="container">

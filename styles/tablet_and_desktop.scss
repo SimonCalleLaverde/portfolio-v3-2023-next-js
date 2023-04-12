@@ -76,7 +76,7 @@
   }
   @media only screen and (min-width:1200px) {//Up
     .headline {
-      font-size:3.3rem;//NEW//4rem//3.85rem
+      font-size:3rem;//3.3rem//NEW//4rem//3.85rem
     }
     .text-hero {
       font-size:6.3rem;
@@ -325,12 +325,12 @@
 
 
 
-  // HomePage Projects Headline Section, HomePage Skills Headline Section
-  section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+  // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
+  section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
     padding:60px 0 37px;
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {
-    section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+    section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
       padding:100px 0 37px;//100px 0 67px
     }
   }

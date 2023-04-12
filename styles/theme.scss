@@ -231,6 +231,13 @@ a {
 // Link Line Through
 a.link-line-through {
   position:relative;
+
+
+
+  color:theme-color("rosybrown");
+
+
+
   &::before {
     content:'';
     position:absolute;
@@ -614,8 +621,8 @@ section {
   //min-height:100vh;//Temporary
 }
 
-// HomePage Projects Headline Section, HomePage Projects Cards Section, HomePage Skills Headline Section, HomePage Skills Set Section
-section.homepage-projects-headline-section, section.homepage-projects-cards-section, section.homepage-skills-headline-section, section.homepage-skills-set-section {
+// HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Projects Cards Section, HomePage Skills Headline Section, HomePage Skills Set Section
+section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-projects-cards-section, section.homepage-skills-headline-section, section.homepage-skills-set-section {
   background-color:theme-color("chocolate");////Temporary
 }
 
@@ -624,8 +631,8 @@ section.homepage-projects-headline-section, section.homepage-projects-cards-sect
 
 
 
-// HomePage Projects Headline Section, HomePage Skills Headline Section
-section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+// HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
+section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
   padding:50px 20px 30px;
 }
 
