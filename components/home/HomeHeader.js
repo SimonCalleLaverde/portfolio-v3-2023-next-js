@@ -8,11 +8,11 @@ export default function HomeHeader() {
 
         <div className="row mt-md-5 pt-md-5">
           <div className="col-md-6">
-            <p>Hello</p>
+            <p className="mb-4">Hello</p>
 
             <h1 className="headline">
               {/*Portfolio V3 2023 NextJS*/}
-              Simón Calle -<br/>UX, UI, & Product Designer with experience in Front-end; graduated as a Publicist.
+              Simón Calle —{/*Em Dash*/}<br/>UX, UI, & Product Designer with experience in Front-end; graduated as a Publicist.
             </h1>
 
             {/*<p>A DESIGNER WHO CODES</p>*/}

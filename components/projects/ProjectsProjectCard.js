@@ -7,9 +7,9 @@ import Image from "next/image";
 
 // Projects Project (Card) Component
 export default function ProjectsProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
-	return (
+  return (
 
-		<article className="project-card home projects">{/*"home" Temporary*/}
+		<article className="project-card projects">
 			<Link className="link-page-load" href={ `/projects/${ slug }` }>
 				<figure>
 					{/* Option 1 (Image Component): Must Use "width" & "height" Properties, Or "layout='fill'" Property */}
@@ -20,13 +20,13 @@ export default function ProjectsProjectCard({ slug, order, thumbnailImage, title
 					{/*<img src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } style={{ width:"100%" }}/>*/}
 
 					{/* Option 3 (Background-Image) */}
-					<div className={ `project-thumbnail background-image-default bg-image` } id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+					<div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
 					</div>
 
-					<figcaption className="font-ultra-light text-rosybrown">
+					<figcaption className="font-ultra-light text-uppercase">
 						{/* Desktop | Screen Readers */}
 						<div className="project-title d-none d-md-block">
-							<h3 className="text-huge text-uppercase text-rosybrown mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+							<h3 className="text-huge text-rosybrown mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
 							</h3>
 
 							<div className="project-details">
@@ -132,5 +132,5 @@ export default function ProjectsProjectCard({ slug, order, thumbnailImage, title
 			</Link>
 		</article>
 
-	)
+  )
 };

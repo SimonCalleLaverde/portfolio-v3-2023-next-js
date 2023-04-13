@@ -13,8 +13,8 @@ $theme-color-grey-light:#FEFEFE;//Grey Light //rgba(254,254,254,1)
 
 // Brand Colors
 $theme-color-beige:lighten(#B89C92,4);//Beige-Background/Beige-Contrast
-$theme-color-chocolate:#231F20;//Chocolate-Contrast/Chocolate-Background
-$theme-color-rosybrown:lighten(#FFE8E4,1);//Rosybrown Texts
+$theme-color-chocolate:#10001C;//BLUE/PURPLE (DARK) ....... #231F20//Chocolate-Contrast/Chocolate-Background
+$theme-color-rosybrown:#FDFDF4;//BEIGE/YELLOW (LIGHT) (Option 2: FDFDFD) ....... lighten(#FFE8E4,1);//Rosybrown Texts
 
 // Website's Complementary Colors
 $theme-color-aqua:#004743;//Aqua //(Logo's Hover Effect (HomePage))
@@ -81,6 +81,9 @@ $theme-colors: (
 
 // Utility Classes Styles
 @import "styles/utility_classes";
+
+// Animations Styles
+@import "styles/animations";
 
 //----------------------------------Custom Styles----------------------------------//
 

@@ -138,15 +138,14 @@
 
   // Project Card
   article.project-card {//.article
-    &.home {
+    &.home, &.projects {
       a {
         figure {
           height:320px;
-
-
-
-
           figcaption {
+
+
+
             .project-title {
               position:absolute;
               width:100%;//
@@ -202,19 +201,17 @@
                 @include transform(translateX(20px));
               }
             }
+
+
+
           }
-
-
-
-
         }
         &:hover, &:active, &:focus {
           figure {
-
-
-
-
             figcaption {
+
+
+
               .project-title {
                 h1, h2, h3, h4, h5, h6 {
                 }
@@ -244,68 +241,68 @@
                   @include transform(translateX(0));
                 }
               }
+
+
+
             }
-
-
-
-
           }
         }
       }
     }
-    &.projects {
+    &.home {
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
     article.project-card {
-      &.home {
+      &.home, &.projects {
         a {
           figure {
-
-
-
-
             width:calc(100% + 30px);
             height:403px;//450px With col-md-10//Mobile 250px
             margin-left:-15px;
             figcaption {
+
+
+
               .project-title {
                 bottom:-31px;//-26px
               }
+
+
+
             }
-
-
-
-
           }
         }
       }
-      &.projects {
+      &.home {
+        a {
+          figure {
+            height:500px;
+          }
+        }
       }
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(xl) {//Up
     article.project-card {
-      &.home {
+      &.home, &.projects {
         a {
           figure {
-
-
-
-
             figcaption {
+
+
+
               .project-title {
                 bottom:-35.5px;
               }
+
+
+
             }
-
-
-
-
           }
         }
       }
-      &.projects {
+      &.home {
       }
     }
   }
