@@ -77,7 +77,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <HomeHeader/>
 
       <main>
-        <section className="homepage-disclaimer-section text-rosybrown">
+        <section className="homepage-disclaimer-section font-ultra-light text-rosybrown">
           <div className="container">
 
             <div className="row">
@@ -94,9 +94,9 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 </p>
 
                 <p>
-                  In the meantime you can check out my previous Portfolio 2021 for
-                  <em>{" "}<Link className="link-line-through" href="https://simoncallelaverde.github.io/about" target="_blank">more about me</Link>{" "}</em>
-                  or for a <em>{" "}<Link className="link-line-through" href="https://simoncallelaverde.github.io/projects" target="_blank">projects page</Link>{" "}</em>.
+                  In the meantime you can check out my previous Portfolio 2021 for more
+                  {" "}<Link href="https://simoncallelaverde.github.io/about" target="_blank">about me</Link>{" "}
+                  or for a {" "}<Link href="https://simoncallelaverde.github.io/projects" target="_blank">projects page</Link>{" "}.
                   There I have 28 Front-end Development projects I helped build for a Australian based digital agency and 2
                   independent User Interfase (UI) Design projects I designed and developed.
                 </p>
@@ -108,7 +108,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 </p>
 
                 <p>
-                  - As of April 11, 2023
+                  —As of April 11, 2023
                 </p>
 
 

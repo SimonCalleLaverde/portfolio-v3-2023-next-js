@@ -183,47 +183,68 @@ h1, h2, h3, h4, h5, h6 {
 
 // Website Colours
 .text-rosybrown {
-  color:theme-color("rosybrown")!important;//lighten(theme-color("rosybrown"),10)!important;
+  color:theme-color("rosybrown")!important;
 }
 
-// Link Override Styles
+// Link Default Override
 a {
   color:darken(theme-color("rosybrown"),5);
   background-color:transparent;//As Per B4
   text-decoration:none;//As Per B4
-  @include transition(all ease 0.5s);//ease-out
+  @include transition(all ease-in-out 0.5s);//ease//ease-out
   &:hover, &:active, &:focus {
-    color:lighten(theme-color("rosybrown"),5);//Becomes White
+    color:lighten(theme-color("rosybrown"),5);//Becomes "white"
     text-decoration:none;
   }
 }
 
-// Link Line Through
-a.link-line-through {
+// Links Inside Paragraphs
+p {
+  > a {
+    position:relative;
+    display:inline-block;
+    &::before {
+      content:"";
+      position:absolute;
+      width:100%;//98%
+      height:3px;
+      bottom:5.5px;
+      left:0;
+      background-color:theme-color("rosybrown");
+      border-top:1px solid theme-color("chocolate");//beige
+      border-bottom:1px solid theme-color("chocolate");//beige
+      pointer-events:none;
+    }
+    &:hover, &:active, &:focus {
+      @include filter(opacity(0.8));
+      &::before {
+        @include animation(underlineBackAnim 0.8s linear forwards);
+      }
+    }
+  }
+}
+
+// Link Underline Class
+a.link-underline {
   position:relative;
-
-
-
-  color:theme-color("rosybrown");
-
-
-
+  display:inline-block;
   &::before {
-    content:'';
+    content:"";
     position:absolute;
     width:0;
-    height:2px;//30%
+    height:3px;//2px//30%
     //top:50%;//40%
     right:0;
-    bottom:0;
+    bottom:1.5px;//5.5px//0
     //left:0;
     background-color:theme-color("rosybrown");
+    border-top:1px solid theme-color("chocolate");
     border-bottom:1px solid theme-color("chocolate");
     pointer-events:none;
-    @include filter(opacity(0.8));
-    @include transition(width 0.4s ease-in-out);
+    @include transition(width 0.4s linear);//ease-in-out
   }
   &:hover, &:active, &:focus {//&.active-link
+    @include filter(opacity(0.8));
     &::before {
       width:100%;
       right:auto;
@@ -241,36 +262,36 @@ $btn-lg-padding:0.7rem 2.3rem;
   font-family:$font-light;
   font-size:14px;//13px//11.5px
   background-color:transparent;
-  color:theme-color('rosybrown');//transparent
-  border:1px solid theme-color('rosybrown');
+  color:theme-color("rosybrown");//transparent
+  border:1px solid theme-color("rosybrown");
   @include border-radius(1rem);
   @include filter(opacity(1));
   @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
   &.btn-chocolate {
-    color:theme-color('chocolate');
-    border:1px solid theme-color('chocolate');
+    color:theme-color("chocolate");
+    border:1px solid theme-color("chocolate");
     &::before {
-      border:1px solid theme-color('chocolate');
+      border:1px solid theme-color("chocolate");
     }
     &:hover {//, &:active, &:focus
-      color:theme-color('chocolate');//transparent
-      border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+      color:theme-color("chocolate");//transparent
+      border-color:theme-color("chocolate");//lighten(theme-color("rosybrown"),10)
       &::before {
-        border-color:theme-color('chocolate');//lighten(theme-color('rosybrown'),10)
+        border-color:theme-color("chocolate");//lighten(theme-color("rosybrown"),10)
       }
     }
   }
   &.btn-aqua {
-    color:theme-color('aqua');
-    border:1px solid theme-color('aqua');
+    color:theme-color("aqua");
+    border:1px solid theme-color("aqua");
     &::before {
-      border:1px solid theme-color('aqua');
+      border:1px solid theme-color("aqua");
     }
     &:hover {//, &:active, &:focus
-      color:theme-color('aqua');//transparent
-      border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+      color:theme-color("aqua");//transparent
+      border-color:theme-color("aqua");//lighten(theme-color("rosybrown"),10)
       &::before {
-        border-color:theme-color('aqua');//lighten(theme-color('rosybrown'),10)
+        border-color:theme-color("aqua");//lighten(theme-color("rosybrown"),10)
       }
     }
   }
@@ -282,8 +303,8 @@ $btn-lg-padding:0.7rem 2.3rem;
     right:-2px;
     bottom:-2px;
     left:0;
-    color:transparent;//theme-color('rosybrown')
-    border:1px solid theme-color('rosybrown');
+    color:transparent;//theme-color("rosybrown")
+    border:1px solid theme-color("rosybrown");
     text-align:center;
     white-space:nowrap;
     pointer-events:none;
@@ -307,9 +328,9 @@ $btn-lg-padding:0.7rem 2.3rem;
   //   }
   // }
   &:hover {//, &:active, &:focus
-    background-color:theme-color('rosybrown')!important;//transparent!important
-    color:theme-color('chocolate');//transparent
-    border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
+    background-color:theme-color("rosybrown")!important;//transparent!important
+    color:theme-color("chocolate");//transparent
+    border-color:theme-color("rosybrown");//lighten(theme-color("rosybrown"),10)
     //@include filter(opacity(0.8));
     //@include transform(scale(1.03));
     @include transform(translate(1.5px,1.5px));
@@ -318,7 +339,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &::before {
       right:0;
       bottom:0;
-      border-color:theme-color('rosybrown');//lighten(theme-color('rosybrown'),10)
+      border-color:theme-color("rosybrown");//lighten(theme-color("rosybrown"),10)
       @include transform(translate(0,0));
     }
   }
@@ -387,23 +408,23 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 // (To Revise/Check A 'Layout' Component To Wrap Everything | Or ¿To Use React-Bootstrap? ¿To Use Reactstrap? ¿To Use Material-UI? Let's See)
 // Container
-.container {//Might Be Temporary
+.container {
 }
 
-// Grid
-.grid {//To Consider//Was Starting With NextJS
-  display:flex;//Was Starting With NextJS
-  align-items:center;//Was Starting With NextJS
-  justify-content:center;//Was Starting With NextJS
-  flex-wrap:wrap;//Was Starting With NextJS
-  max-width:800px;//Was Starting With NextJS
-}
-@media (max-width:600px) {//Down//Was Starting With NextJS
-  .grid {//To Consider//Was Starting With NextJS
-    width:100%;//Was Starting With NextJS
-    flex-direction:column;//Was Starting With NextJS
-  }
-}
+// // Grid
+// .grid {//To Consider//Was Starting With NextJS
+//   display:flex;//Was Starting With NextJS
+//   align-items:center;//Was Starting With NextJS
+//   justify-content:center;//Was Starting With NextJS
+//   flex-wrap:wrap;//Was Starting With NextJS
+//   max-width:800px;//Was Starting With NextJS
+// }
+// @media (max-width:600px) {//Down//Was Starting With NextJS
+//   .grid {//To Consider//Was Starting With NextJS
+//     width:100%;//Was Starting With NextJS
+//     flex-direction:column;//Was Starting With NextJS
+//   }
+// }
 
 //----------------------------------Form Styles----------------------------------//
 
@@ -411,22 +432,22 @@ $btn-lg-padding:0.7rem 2.3rem;
 ::-webkit-input-placeholder {
   font-family:$font-ultra-light;
   font-size:20px;
-  color:$theme-color-chocolate;
+  color:theme-color("rosybrown");//chocolate
 }
 :-moz-placeholder {//Firefox 18-
   font-family:$font-ultra-light;
   font-size:20px;
-  color:$theme-color-chocolate;
+  color:theme-color("rosybrown");//chocolate
 }
 ::-moz-placeholder {//Firefox 19+
   font-family:$font-ultra-light;
   font-size:20px;
-  color:$theme-color-chocolate;
+  color:theme-color("rosybrown");//chocolate
 }
 :-ms-input-placeholder {
   font-family:$font-ultra-light;
   font-size:20px;
-  color:$theme-color-chocolate;
+  color:theme-color("rosybrown");//chocolate
 }
 
 // Forms
@@ -592,6 +613,12 @@ section {
   //min-height:100vh;//Temporary
 }
 
+// HomePage Disclaimer Section
+section.homepage-disclaimer-section {
+  font-size:15px;
+  line-height:1.9;
+}
+
 // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Projects Cards Section, HomePage Skills Headline Section, HomePage Skills Set Section
 section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-projects-cards-section, section.homepage-skills-headline-section, section.homepage-skills-set-section {
   background-color:theme-color("chocolate");////Temporary
@@ -624,9 +651,9 @@ section.homepage-skills-set-section {
     // margin-left:-15px;
     .skill-row {
       padding:55px 0 30px;
-      border-bottom:1px solid theme-color('rosybrown');
+      border-bottom:1px solid theme-color("rosybrown");
       &:first-child {
-        border-top:1px solid theme-color('rosybrown');
+        border-top:1px solid theme-color("rosybrown");
       }
       .skill-content {
         //text-align:left;
@@ -634,28 +661,6 @@ section.homepage-skills-set-section {
           margin-bottom:15px;//1px
           font-size:15px;
           line-height:1.9;
-          a {
-            position:relative;
-            display:inline-block;
-            &::before {
-              content:'';
-              position:absolute;
-              width:98%;//100%
-              height:3px;
-              bottom:5.5px;
-              left:0;
-              background-color:theme-color('rosybrown');
-              border-top:1px solid theme-color('chocolate');//beige
-              border-bottom:1px solid theme-color('chocolate');//beige
-              pointer-events:none;
-            }
-            &:hover {
-              @include filter(opacity(0.9));
-              &::before {
-                @include animation(lineThroughtBack98Anim 0.9s linear forwards);
-              }
-            }
-          }
         }
       }
     }
@@ -668,8 +673,8 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
   section.homepage-skills-set-section, header.projects-header {
     a {
       &::before {
-        border-top:1px solid theme-color('chocolate');
-        border-bottom:1px solid theme-color('chocolate');
+        border-top:1px solid theme-color("chocolate");
+        border-bottom:1px solid theme-color("chocolate");
       }
     }
   }
@@ -811,9 +816,9 @@ footer {
             &.active-link {
               filter:opacity(1);//0.7
             }
-            &.link-line-through {
+            &.link-underline {
               &::before {
-                bottom:2px;
+                //bottom:2px;
               }
             }
           }
@@ -853,7 +858,7 @@ footer {
           font-size:15.5px;
           //pointer-events:none;
           &::before {
-            content:'';
+            content:"";
             position:absolute;
             width:27px;
             height:27px;

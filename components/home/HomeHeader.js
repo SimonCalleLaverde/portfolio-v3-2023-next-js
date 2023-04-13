@@ -12,14 +12,14 @@ export default function HomeHeader() {
 
             <h1 className="headline">
               {/*Portfolio V3 2023 NextJS*/}
-              Simón Calle —{/*Em Dash*/}<br/>UX, UI, & Product Designer with experience in Front-end; graduated as a Publicist.
+              Simón Calle—{/*Em Dash*/}<br/>UX, UI, & Product Designer with experience in Front-end—{/*Em Dash*/}graduated as a Publicist.
             </h1>
 
             {/*<p>A DESIGNER WHO CODES</p>*/}
 
             {/*<p>I&apos;m a UX/UI Product Designer & Front-end Developer</p>*/}
 
-            {/*Work on your work, until your work, gets you work - Chris do*/}
+            {/*Work on your work, until your work, gets you work — Chris do*/}
           </div>
 
           <div className="col-md-5 offset-md-1">

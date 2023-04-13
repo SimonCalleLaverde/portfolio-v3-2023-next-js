@@ -51,7 +51,7 @@ export default function Footer() {
           Or just email me or call me
           <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
-            <br/><Link className="link-line-through text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
+            <br/><Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
         </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
           Credits
           <span className="font-ultra-light">
             <br/>Icon Illustrations by
-            <br/><Link className="link-line-through text-rosybrown" href="https://absurd.design/" target="_blank">absurd.design</Link>
+            <br/><Link className="link-underline text-rosybrown" href="https://absurd.design/" target="_blank">absurd.design</Link>
           </span>
         </div>
 
@@ -102,28 +102,28 @@ export default function Footer() {
           <ul className="footer-nav-ul">{/*navbar-nav*/}
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'home' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Welcome</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Work</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-line-through" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>My story</span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
-              <Link className="footer-nav-link link-line-through" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>Drop a line</span>
               </Link>
             </li>
@@ -215,7 +215,7 @@ export default function Footer() {
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-created-by">{/*d-none d-md-block*/}
           Designed & developed by
-          <br/><Link className="link-line-through font-ultra-light text-rosybrown" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-ultra-light text-rosybrown" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
           {/*href="https://simoncallelaverde.github.io/" target="_blank"*/}
         </div>
 

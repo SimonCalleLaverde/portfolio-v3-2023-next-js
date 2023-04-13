@@ -48,15 +48,15 @@
   }
 }//@keyframes
 
-@keyframes lineThroughtBackAnim {
+@keyframes underlineBackAnim {
   0% {
-    width:100%;
-    right:0;
+    width:100%;//98%
+    right:0;//2%
     left:auto;
   }
   45% {
     width:0;
-    right:0;
+    right:0;//2%
     left:auto;
   }
   55% {
@@ -65,36 +65,13 @@
     left:0;
   }
   100% {
-    width:100%;
+    width:100%;//98%
     right:auto;
     left:0;
   }
 }//@keyframes
 
-@keyframes lineThroughtBack98Anim {
-  0% {
-    width:98%;//100%
-    right:2%;//0
-    left:auto;
-  }
-  45% {
-    width:0;
-    right:2%;//0
-    left:auto;
-  }
-  55% {
-    width:0;
-    right:auto;
-    left:0;
-  }
-  100% {
-    width:98%;//100%
-    right:auto;
-    left:0;
-  }
-}//@keyframes
-
-@keyframes lineThorughLoopAnim {
+@keyframes lineThroughLoopAnim {
   0%, 80% {
     width:0;
     right:auto;
