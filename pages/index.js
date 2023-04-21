@@ -90,7 +90,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 </h4>
 
                 <p>
-                  This site is under construction,{/* its latest version isn&apos;t live yet.*/} completion due date: 04.20.2023.
+                  This site is under construction,{/* its latest version isn&apos;t live yet.*/} completion due date: 04.24.2023.
                 </p>
 
                 <p>
@@ -108,7 +108,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 </p>
 
                 <p>
-                  —As of April 11, 2023
+                  —As of {/*April 20, 2023*/}04.20.2023
                 </p>
 
 

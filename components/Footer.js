@@ -22,15 +22,25 @@ export default function Footer() {
         <div className="row">
           <div className="col-md-12">
 
-            <h3 className="text-huge text-rosybrown text-transform-uppercase">{/*mb-0*/}
-              Let&apos;s create
+            <h3 className="text-huge text-rosybrown">{/*mb-0*/}{/*text-transform-uppercase*/}
+              {/*Let&apos;s create
               <br/>something
-              <br/>special
+              <br/>special*/}
+
+
+
+              Get in touch
+              {/*Drop me a line*/}
+
+
+
             </h3>
 
             <p className="font-ultra-light text-rosybrown">
-              If you want to work
-              <br/>with me, let&apos;s talk.
+              {/*If you want to work
+              <br/>with me, let&apos;s talk.*/}
+
+              {/*Drop me a line*/}
             </p>
 
           </div>
@@ -48,7 +58,8 @@ export default function Footer() {
       <aside className="footer-aside-info-elements text-rosybrown">
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
-          Or just email me or call me
+          {/*Or just email me or call me*/}
+          Email me or call me
           <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
@@ -124,7 +135,7 @@ export default function Footer() {
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
               <Link className="footer-nav-link link-underline" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Drop a line</span>
+                <span>Drop me a line</span>
               </Link>
             </li>
           </ul>
@@ -132,7 +143,7 @@ export default function Footer() {
 
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-social-media-business">
-          <span className="font-ultra-light">
+          <span className="">{/*font-ultra-light*/}
             Business Social Media
           </span>
 
@@ -166,7 +177,7 @@ export default function Footer() {
 
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-social-media-personal">
-          <span className="font-ultra-light">
+          <span className="">{/*font-ultra-light*/}
             Personal Social Media
           </span>
 
