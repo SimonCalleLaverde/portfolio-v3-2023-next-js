@@ -90,21 +90,19 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 </h4>
 
                 <p>
-                  This site is under construction,{/* its latest version isn&apos;t live yet.*/} completion due date: 04.24.2023.
+                  I apologize for the inconvenience, my site is under construction,{/* its latest version isn&apos;t live yet.*/} completion due date: 04.24.2023.
                 </p>
 
                 <p>
-                  In the meantime you can check out my previous Portfolio 2021 for more
-                  {" "}<Link href="https://simoncallelaverde.github.io/about" target="_blank">about me</Link>{" "}
-                  or for a {" "}<Link href="https://simoncallelaverde.github.io/projects" target="_blank">projects page</Link>{" "}.
-                  There I have 28 Front-end Development projects I helped build for a Australian based digital agency and 2
-                  independent User Interfase (UI) Design projects I designed and developed.
+                  In the meantime you can check out my previous Portfolio (V2){/*II*/} 2021 for more <Link href="https://simoncallelaverde.github.io/about" target="_blank">about</Link> me
+                  or to see all the <Link href="https://simoncallelaverde.github.io/projects" target="_blank">work</Link> I've been a part of. There I have 28 Front-end Development projects
+                  I helped build for an Australian based digital agency, and 2 independent User Interfase (UI) Design projects I designed and developed.
                 </p>
 
                 <p>
-                  Although this new Portfolio 2023 will have the option to create better Case Studies and it has my latest
+                  Although this new Portfolio (V3) 2023 will have the option to create better case studies and it has my latest
                   User Experience (UX) & Product Design real client project that I worked in a Product Design inc. UX & UI. course
-                  I took in 2022 - 2023 in London, UK.
+                  I was taking in 2022 - 2023 in London, UK.
                 </p>
 
                 <p>
