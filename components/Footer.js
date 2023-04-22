@@ -15,6 +15,19 @@ import IconFacebook from "../components/icons/IconFacebook.js";
 
 // Footer (Sitewide) Component
 export default function Footer() {
+  // Full Date Formatted As Per: "https://www.reactshark.com/blog/guide-react-date-format"
+  //let today = new Date()
+  //let date = today.getDate() + '-' + parseInt(today.getMonth() + 1) + '-' + today.getFullYear()
+  //console.log(date)
+
+  // Getting Just "Year" Of Current Date (Just Modifying The Above Example)
+  let currentDate = new Date()
+  //let currentFullDate = currentDate.getDate() + "." + parseInt(currentDate.getMonth() + 1) + "." + currentDate.getFullYear()
+
+  //let currentDay = currentDate.getDate()
+  //let currentMonth = parseInt(currentDate.getMonth() + 1)
+  let currentYear = currentDate.getFullYear()
+
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
@@ -211,7 +224,7 @@ export default function Footer() {
 
         {/* Desktop | Screen Readers */}
         <div className="footer-copyright font-ultra-light">
-          © {/*{{ "now" | date: "%Y" }}*/}2023 Simón Calle Laverde
+          © {/*{{ "now" | date: "%Y" }}*/}{/*2023*/}{ currentYear } Simón Calle Laverde
           <br/>All rights reserved
         </div>
 
