@@ -32,7 +32,7 @@ body {
   font-family:$font-light;
   font-weight:400;//Temporary As Per B4
   font-size:15px;//17px
-  background-color:theme-color("beige");
+  background-color:theme-color("chocolate");//beige
   color:theme-color("grey-dark");
   line-height:1.8;
   letter-spacing:0.5px;
@@ -404,6 +404,66 @@ $btn-lg-padding:0.7rem 2.3rem;
   background-color:rgba(105,169,179,0.7);
 }
 
+
+
+
+// Cube 3D Scene Container
+.cube-3d-scene-container {
+  width:200px;
+  height:200px;
+  perspective:1000px;
+  margin:100px auto 0;////
+  .cube {
+    position:relative;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    animation:spin 10s infinite linear;//ease
+    .face {
+      position:absolute;
+      width:100%;
+      height:100%;
+      border:1px #000 solid;
+      //filter:opacity(90%);
+      &.front {
+        background-color:#000;
+        transform:rotateX(0deg) translateZ(100px);
+      }
+      &.top {
+        background-color:purple;
+        transform:rotateX(90deg) translateZ(100px);
+      }
+      &.right {
+        background-color:darkorange;
+        transform:rotateY(90deg) translateZ(100px);
+      }
+      &.bottom {
+        background-color:seagreen;
+        transform:rotateX(-90deg) translateZ(100px);
+      }
+      &.left {
+        background-color:aliceblue;
+        transform:rotateY(-90deg) translateZ(100px);
+      }
+      &.back {
+        background-color:#FFF;
+        transform:rotateX(-180deg) translateZ(100px);
+      }
+    }
+  }
+}
+@keyframes spin {
+  from {
+    transform:rotateX(2turn) rotateY(2turn);//0deg
+  }
+  to {
+    transform:rotateX(1turn) rotateY(1turn);//360deg
+  }
+}
+
+
+
+
 //----------------------------------Layout Styles----------------------------------//
 
 // (To Revise/Check A 'Layout' Component To Wrap Everything | Or ¿To Use React-Bootstrap? ¿To Use Reactstrap? ¿To Use Material-UI? Let's See)
@@ -485,11 +545,6 @@ article.project-card {//.article
           font-size:11px;
           letter-spacing:0.8px;
           z-index:21;//NEW
-
-
-
-
-
 
 
 

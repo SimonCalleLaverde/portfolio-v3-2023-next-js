@@ -11,7 +11,7 @@ export default function HeadConfig({ title }) {
 
       <title>Simón Calle Laverde - Portfolio V3 2023 NextJS</title>{/*{ title }*/}
       <meta name="description" content="Portfolio V3 2023 NextJS using GraphCMS."/>
-      <link rel="icon" href="/favicon.ico"/>
+      <link rel="icon" href="/favicon.png"/>{/*favicon.ico*/}
 
       {/* TERMINAL's WARNING/STEPS-FOLLOWED */}
       {/* Do not add stylesheets using next/head (see <link rel="stylesheet"> tag with href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular"). Use Document instead. 

@@ -23,7 +23,42 @@ export default function HomeHeader() {
           </div>
 
           <div className="col-md-5 offset-md-1">
-            <img src="/profile-images/home-header-picture-(cropped).jpg" alt="Home header picture of Simón Calle Laverde with his glasses on his hair" style={{ width:"100%" }}/>
+            {/*<img src="/profile-images/home-header-picture-(cropped).jpg" alt="Home header picture of Simón Calle Laverde with his glasses on his hair" style={{ width:"100%" }}/>*/}
+
+
+
+
+            <div className="cube-3d-scene-container">
+              <div className="cube">
+                <div className="face front">
+                  <img src="/profile-images/home-header-picture-(cropped).jpg" alt="Home header picture of Simón Calle Laverde with his glasses on his hair" style={{ width:"100%" }}/>
+                </div>
+
+                <div className="face top">
+                  Top
+                </div>
+
+                <div className="face right">
+                  Right
+                </div>
+
+                <div className="face bottom">
+                  Bottom
+                </div>
+
+                <div className="face left">
+                  Left
+                </div>
+
+                <div className="face back">
+                  Back
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
         </div>
 
