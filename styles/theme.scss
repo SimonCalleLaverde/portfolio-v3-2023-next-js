@@ -418,12 +418,12 @@ $btn-lg-padding:0.7rem 2.3rem;
     width:100%;
     height:100%;
     transform-style:preserve-3d;
-    animation:spin 10s infinite linear;//ease
+    animation:spin 8s infinite ease-in-out;//linear//ease//5s//10s
     .face {
       position:absolute;
       width:100%;
       height:100%;
-      border:1px #000 solid;
+      //border:1px #000 solid;
       //filter:opacity(90%);
       &.front {
         background-color:#000;
