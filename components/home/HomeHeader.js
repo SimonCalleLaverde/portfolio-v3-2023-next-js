@@ -30,16 +30,8 @@ export default function HomeHeader() {
 
             <div className="cube-3d-scene-container">
               <div className="cube">
-                {/*<div className="face front">
-                  <img src="/profile-images/home-header-picture-(cropped).jpg"    />
-                </div>*/}
-
-
-
                 <div className="face front background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-(cropped).jpg')" }} title="Home header picture of Simón Calle Laverde with his glasses on his hair">
                 </div>
-
-
 
                 <div className="face top">
                   Top
