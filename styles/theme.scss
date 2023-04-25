@@ -422,6 +422,7 @@ $size:200px;
     transform-style:preserve-3d;
     //animation:spin 8s infinite ease-in-out;//linear//ease//5s//10s
     animation:rotation 10s linear infinite;
+    //transform:translateZ(-100px);//Fixing/Un-fuzzing 3D Transformed Text, As Per "https://3dtransforms.desandro.com/cube"
     .face {
       position:absolute;
       width:100%;
@@ -460,6 +461,13 @@ $size:200px;
         //background-color:#FFF;//teal
         transform:rotateX(-180deg) translateZ(100px);
       }
+      // Other Way Of Rotating, As Per: "https://3dtransforms.desandro.com/cube"
+      // .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+      // .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+      // .cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+      // .cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+      // .cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+      // .cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
     }
   }
 }
