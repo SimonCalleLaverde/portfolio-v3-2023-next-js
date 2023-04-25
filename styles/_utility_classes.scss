@@ -501,6 +501,8 @@
 
 // Background Images
 .background-image-default {
+  width:100%;
+  //"height" Must Be Placed Manually For Each Case
   background-repeat:no-repeat;
   background-position:center center;
   background-attachment:scroll;

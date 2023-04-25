@@ -408,10 +408,12 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 
 // Cube 3D Scene Container
+$size:200px;
 .cube-3d-scene-container {
-  width:200px;
-  height:200px;
+  width:$size;
+  height:$size;
   perspective:1000px;
+  //perspective-origin:center center;
   margin:100px auto 0;////
   .cube {
     position:relative;
@@ -424,43 +426,51 @@ $btn-lg-padding:0.7rem 2.3rem;
       position:absolute;
       width:100%;
       height:100%;
-      //border:1px #000 solid;
-      //filter:opacity(90%);
+      border:1px solid;//1px #000 solid
+      filter:opacity(90%);
+
+
+
+      box-shadow:inset 0 0 $size * 0.7;////
+      color:teal;////
+
+
+
       &.front {
-        background-color:#000;
+        //background-color:#000;//teal
         transform:rotateX(0deg) translateZ(100px);
       }
       &.top {
-        background-color:purple;
+        //background-color:purple;//teal
         transform:rotateX(90deg) translateZ(100px);
       }
       &.right {
-        background-color:darkorange;
+        //background-color:darkorange;//teal
         transform:rotateY(90deg) translateZ(100px);
       }
       &.bottom {
-        background-color:seagreen;
+        //background-color:seagreen;//teal
         transform:rotateX(-90deg) translateZ(100px);
       }
       &.left {
-        background-color:aliceblue;
+        //background-color:aliceblue;//teal
         transform:rotateY(-90deg) translateZ(100px);
       }
       &.back {
-        background-color:#FFF;
+        //background-color:#FFF;//teal
         transform:rotateX(-180deg) translateZ(100px);
       }
     }
   }
 }
-@keyframes spin {
-  from {
-    transform:rotateX(2turn) rotateY(2turn);//0deg
-  }
-  to {
-    transform:rotateX(1turn) rotateY(1turn);//360deg
-  }
-}
+// @keyframes spin {
+//   from {
+//     transform:rotateX(2turn) rotateY(2turn);//0deg
+//   }
+//   to {
+//     transform:rotateX(1turn) rotateY(1turn);//360deg
+//   }
+// }
 $angle:360deg;
 @keyframes rotation {
   100% {
