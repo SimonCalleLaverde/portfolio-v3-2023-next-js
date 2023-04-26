@@ -408,84 +408,81 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 
 // Cube 3D Scene Container
-$size:300px;
 .cube-3d-scene-container {
+  $size:300px;
+  $half-size:$size / 2;
+  $angle:360deg;
   width:$size;
   height:$size;
+  margin:50px auto 0;//100px auto 0
   perspective:1000px;
   //perspective-origin:center center;
-  margin:50px auto 0;//100px auto 0
   .cube {
     position:relative;
     width:100%;
     height:100%;
     transform-style:preserve-3d;
-    //animation:spin 8s infinite ease-in-out;//linear//ease//5s//10s
-    animation:rotation 10s ease-in-out 3s infinite alternate;//linear//5
-    //transform:translateZ(-100px);//Fixing/Un-fuzzing 3D Transformed Text, As Per "https://3dtransforms.desandro.com/cube"
-    &:hover, &:active, &:focus {
-    }
+    //@include transform(translateZ(-100px));//Fixing/Un-fuzzing 3D Transformed Text, As Per "https://3dtransforms.desandro.com/cube"
+    @include animation(cubeRotation 20s ease-in-out 1s infinite alternate);//linear//5//cubeSpin 8s infinite ease-in-out//linear//ease//5s//10s
     .face {
       position:absolute;
       width:100%;
       height:100%;
-      border:1px solid;//1px #000 solid
-      filter:opacity(90%);
-
-
-
-      box-shadow:inset 0 0 $size * 0.7;
-      color:darken(theme-color("chocolate"),10);//teal;
-
-
-
+      color:darken(theme-color("chocolate"),10);//teal////
+      border:1px theme-color("rosybrown") solid;//1px darken(theme-color("chocolate"),10) solid;//1px #000 solid////
+      @include box-shadow(inset 0 0 $size * 0.7);
+      @include filter(opacity(90%));
+      @include transition(filter ease-in-out 0.5s);
       &.front {
         //background-color:#000;//teal
-        border:none;
-        transform:rotateX(0deg) translateZ(150px);
+        @include transform(rotateX(0deg) translateZ($half-size));
       }
       &.top {
         //background-color:purple;//teal
-        transform:rotateX(90deg) translateZ(150px);
+        @include transform(rotateX(90deg) translateZ($half-size));
       }
       &.right {
         //background-color:darkorange;//teal
-        transform:rotateY(90deg) translateZ(150px);
+        @include transform(rotateY(90deg) translateZ($half-size));
       }
       &.bottom {
         //background-color:seagreen;//teal
-        transform:rotateX(-90deg) translateZ(150px);
+        @include transform(rotateX(-90deg) translateZ($half-size));
       }
       &.left {
         //background-color:aliceblue;//teal
-        transform:rotateY(-90deg) translateZ(150px);
+        @include transform(rotateY(-90deg) translateZ($half-size));
       }
       &.back {
         //background-color:#FFF;//teal
-        transform:rotateX(-180deg) translateZ(150px);
+        @include transform(rotateX(-180deg) translateZ($half-size));
       }
-      // Other Way Of Rotating, As Per: "https://3dtransforms.desandro.com/cube"
-      // .cube__face--front  { transform: rotateY(  0deg) translateZ(150px); }
-      // .cube__face--right  { transform: rotateY( 90deg) translateZ(150px); }
-      // .cube__face--back   { transform: rotateY(180deg) translateZ(150px); }
-      // .cube__face--left   { transform: rotateY(-90deg) translateZ(150px); }
-      // .cube__face--top    { transform: rotateX( 90deg) translateZ(150px); }
-      // .cube__face--bottom { transform: rotateX(-90deg) translateZ(150px); }
+      // Other Way Of Rotating, As Per: "https://3dtransforms.desandro.com/cube" (Only Visual Difference: Will Mantain Back Image Face-Up)
+      // &.front  { @include transform(rotateY(0deg) translateZ($half-size)); }
+      // &.top    { @include transform(rotateX(90deg) translateZ($half-size)); }
+      // &.right  { @include transform(rotateY(90deg) translateZ($half-size)); }
+      // &.bottom { @include transform(rotateX(-90deg) translateZ($half-size)); }
+      // &.left   { @include transform(rotateY(-90deg) translateZ($half-size)); }
+      // &.back   { @include transform(rotateY(180deg) translateZ($half-size)); }
+    }
+    &:hover, &:active, &:focus {
+      .face {
+        @include filter(opacity(90%) grayscale(100%));
+      }
     }
   }
-}
-// @keyframes spin {
-//   from {
-//     transform:rotateX(2turn) rotateY(2turn);//0deg
-//   }
-//   to {
-//     transform:rotateX(1turn) rotateY(1turn);//360deg
-//   }
-// }
-$angle:360deg;
-@keyframes rotation {
-  100% {
-    transform:rotateX($angle) rotateY($angle) rotateZ($angle);
+  // @keyframes cubeSpin {
+  //   from {
+  //     @include transform(rotateX(2turn) rotateY(2turn));//0deg
+  //   }
+  //   to {
+  //     @include transform(rotateX(1turn) rotateY(1turn));//$angle//360deg
+  //   }
+  // }
+  @keyframes cubeRotation {
+    100% {
+      @include transform(rotateX($angle) rotateY($angle) rotateZ($angle));
+    }
   }
 }
 
