@@ -404,9 +404,6 @@ $btn-lg-padding:0.7rem 2.3rem;
   background-color:rgba(105,169,179,0.7);
 }
 
-
-
-
 // Cube 3D Scene Container
 .cube-3d-scene-container {
   $size:300px;
@@ -429,10 +426,10 @@ $btn-lg-padding:0.7rem 2.3rem;
       width:100%;
       height:100%;
       color:darken(theme-color("chocolate"),10);//teal////
-      border:1px theme-color("rosybrown") solid;//1px darken(theme-color("chocolate"),10) solid;//1px #000 solid////
+      //border:2px transparent solid;//1px theme-color("rosybrown") solid//1px darken(theme-color("chocolate"),10) solid;//1px #000 solid////
       @include box-shadow(inset 0 0 $size * 0.7);
       @include filter(opacity(90%));
-      @include transition(filter ease-in-out 0.5s);
+      @include transition(filter ease-in-out 0.7s);
       &.front {
         //background-color:#000;//teal
         @include transform(rotateX(0deg) translateZ($half-size));
@@ -457,7 +454,7 @@ $btn-lg-padding:0.7rem 2.3rem;
         //background-color:#FFF;//teal
         @include transform(rotateX(-180deg) translateZ($half-size));
       }
-      // Other Way Of Rotating, As Per: "https://3dtransforms.desandro.com/cube" (Only Visual Difference: Will Mantain Back Image Face-Up)
+      // Other Way Of Rotating, As Per: "https://3dtransforms.desandro.com/cube" (Only Visual Difference: Will Maintain Back Image Face-Up)
       // &.front  { @include transform(rotateY(0deg) translateZ($half-size)); }
       // &.top    { @include transform(rotateX(90deg) translateZ($half-size)); }
       // &.right  { @include transform(rotateY(90deg) translateZ($half-size)); }
@@ -467,7 +464,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     }
     &:hover, &:active, &:focus {
       .face {
-        @include filter(opacity(90%) grayscale(100%));
+        @include filter(opacity(90%) brightness(120%) sepia(10%));
       }
     }
   }
@@ -485,9 +482,6 @@ $btn-lg-padding:0.7rem 2.3rem;
     }
   }
 }
-
-
-
 
 //----------------------------------Layout Styles----------------------------------//
 
