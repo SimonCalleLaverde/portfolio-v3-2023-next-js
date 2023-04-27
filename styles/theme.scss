@@ -463,8 +463,9 @@ $btn-lg-padding:0.7rem 2.3rem;
       // &.back   { @include transform(rotateY(180deg) translateZ($half-size)); }
     }
     &:hover, &:active, &:focus {
+      //@include animation(cubeRotation 20s ease-in-out 1s 1 alternate);
       .face {
-        @include filter(opacity(90%) brightness(120%) sepia(10%));
+        @include filter(opacity(90%) brightness(120%) sepia(5%));//sepia(10%)
       }
     }
   }

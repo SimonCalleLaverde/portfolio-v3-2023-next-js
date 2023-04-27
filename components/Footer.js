@@ -134,7 +134,7 @@ export default function Footer() {
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-underline" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Work</span>
+                <span>All work</span>
               </Link>
             </li>
 

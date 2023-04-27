@@ -6,7 +6,7 @@ export default function AboutHeader() {
     <header className="display-flex justify-content-center align-items-center text-align-center">{/*flex-direction-row*/}
       <div className="container">
         <h1 className="headline">
-          About
+          My story
         </h1>
       </div>
     </header>
