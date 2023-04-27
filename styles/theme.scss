@@ -420,7 +420,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     height:100%;
     transform-style:preserve-3d;
     //@include transform(translateZ(-100px));//Fixing/Un-fuzzing 3D Transformed Text, As Per "https://3dtransforms.desandro.com/cube"
-    @include animation(cubeRotation 20s ease-in-out 3s infinite alternate);//linear//5//cubeSpin 8s infinite ease-in-out//linear//ease//5s//10s
+    @include animation(cubeRotation 20s ease-in-out 3s 3 alternate);//infinite//linear//5//cubeSpin 8s infinite ease-in-out//linear//ease//5s//10s
     .face {
       position:absolute;
       width:100%;
