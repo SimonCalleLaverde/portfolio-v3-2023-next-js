@@ -118,19 +118,27 @@
   //----------------------------------Layout Styles----------------------------------//
 
   // Container
-  .container {
+  header, section, footer {
+    > .container {
+    }
   }
   @media only screen and (min-width:992px) {//Up
-    .container {
-      max-width:988px;//I will keep it at "max-width:988px" for this Portfolio as it was in Bootstrap 4 after screen-size greater than "992px (lg)". Bootstrap 5 goes too wide, plus my new Mac isn't '1366px' width any more, but passes that 1400px breakpoint as well being '1440px' width. So ".container" gets too wide
+    header, section, footer {
+      > .container {
+        max-width:988px;//I will keep it at "max-width:988px" for this Portfolio as it was in Bootstrap 4 after screen-size greater than "992px (lg)". Bootstrap 5 goes too wide, plus my new Mac isn't '1366px' width any more, but passes that 1400px breakpoint as well being '1440px' width. So ".container" gets too wide
+      }
     }
   }
   @media only screen and (min-width:1200px) {//Up
-    .container {
+    header, section, footer {
+      > .container {
+      }
     }
   }
   @media only screen and (min-width:1400px) {//Up
-    .container {
+    header, section, footer {
+      > .container {
+      }
     }
   }
 

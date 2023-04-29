@@ -31,7 +31,7 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="/contact">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="/get_in_touch">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
         <div className="row">
           <div className="col-md-12">
 
@@ -83,8 +83,8 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-ultra-light">
-            <br/>Freelance projects /
-            <br/>Contract work.
+            <br/>Contract projects /
+            <br/>Full-time work.
           </span>
         </div>
 
@@ -106,10 +106,10 @@ export default function Footer() {
 
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <div className="footer-credits" aria-hidden="true">
-          Credits
+          Relevant work
           <span className="font-ultra-light">
-            <br/>Icon Illustrations by
-            <br/><Link className="link-underline text-rosybrown" href="https://absurd.design/" target="_blank">absurd.design</Link>
+            <br/>Visit also my older
+            <br/><Link className="link-underline text-rosybrown" href="https://simoncallelaverde.github.io/" target="_blank" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
           </span>
         </div>
 
@@ -127,28 +127,36 @@ export default function Footer() {
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'home' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-underline" href="/">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Welcome</span>
-              </Link>
-            </li>
-
-            <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="/projects">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>All work</span>
-              </Link>
-            </li>
-
-            <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="/about">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>My story</span>
+                <span>
+                  Welcome
+                </span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
-              <Link className="footer-nav-link link-underline" href="/contact">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
-                <span>Drop me a line</span>
+              <Link className="footer-nav-link link-underline" href="/get_in_touch">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>
+                  Get in touch{/*Drop me a line*/}
+                </span>
+              </Link>
+            </li>
+
+            <li className="footer-nav-li">{/*nav-item*/}
+              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-underline" href="#">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>
+                  Resume
+                </span>
+              </Link>
+            </li>
+
+            <li className="footer-nav-li">{/*nav-item*/}
+              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                <span>
+                  Relevant work{/*More work*/}
+                </span>
               </Link>
             </li>
           </ul>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import HomeHeader from "../components/home/HomeHeader.js";
+import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
 import HomeProjectCard from "../components/home/HomeProjectCard.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -77,45 +78,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <HomeHeader/>
 
       <main>
-        <section className="homepage-disclaimer-section font-ultra-light text-rosybrown">
-          <div className="container">
-
-            <div className="row">
-              <div className="col-md-12">
-
-
-
-                <h4 className="mb-3">
-                  Disclaimer
-                </h4>
-
-                <p>
-                  I apologize for the inconvenience, my site is under construction,{/* its latest version isn&apos;t live yet.*/} completion due date: 04.24.2023.
-                </p>
-
-                <p>
-                  In the meantime you can check out my previous Portfolio (V2){/*II*/} 2021 for more <Link href="https://simoncallelaverde.github.io/about" target="_blank">about</Link> me
-                  or to see all the <Link href="https://simoncallelaverde.github.io/projects" target="_blank">work</Link> I've been a part of. There I have 28 Front-end Development projects
-                  I helped build for an Australian based digital agency, and 2 independent User Interfase (UI) Design projects I designed and developed.
-                </p>
-
-                <p>
-                  Although this new Portfolio (V3) 2023 will have the option to create better case studies and it has my latest
-                  User Experience (UX) & Product Design real client project that I worked in a Product Design inc. UX & UI. course
-                  I was taking in 2022 - 2023 in London, UK.
-                </p>
-
-                <p>
-                  —As of {/*April 20, 2023*/}04.20.2023
-                </p>
-
-
-
-              </div>
-            </div>
-
-          </div>
-        </section>
+        <HomeDisclaimerSection/>
 
         <section className="homepage-projects-headline-section">
           <div className="container">
@@ -210,7 +173,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
         </section>
       </main>
 
-      {/*<Footer/>*/}
+      <Footer/>
 
     </>
   )

@@ -489,7 +489,7 @@ export default function ProjectPage({ projectData }) {
         </section>
       </main>
 
-      {/*<Footer/>*/}
+      <Footer/>
 
     </>
   )

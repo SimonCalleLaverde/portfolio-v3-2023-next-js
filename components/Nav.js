@@ -4,26 +4,32 @@ import Link from "next/link";
 // Nav (Sitewide) Component
 export default function Nav() {
   return (
+
     <nav>
-      <ul>
-        <li>
-          <Link href={"/"}>
-            Home
-          </Link>
-        </li>
+      <div className="container">
 
-        <li>
-          <Link href={"/about"}>
-            About
-          </Link>
-        </li>
+        <ul>
+          <li>
+            <Link href="/">
+              Welcome
+            </Link>
+          </li>
 
-        <li>
-          <Link href={"/projects"}>
-            All Projects
-          </Link>
-        </li>
-      </ul>
+          <li>
+            <Link href="#">
+              Resume
+            </Link>
+          </li>
+
+          <li>
+            <Link href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">
+              Relevant work
+            </Link>
+          </li>
+        </ul>
+
+      </div>
     </nav>
+
   )
 }

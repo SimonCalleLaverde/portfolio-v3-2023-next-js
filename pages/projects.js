@@ -106,7 +106,7 @@ export default function ProjectsPage({ allProjectsData }) {
         )) }
       </main>
 
-      {/*<Footer/>*/}
+      <Footer/>
 
     </>
   )

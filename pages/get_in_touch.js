@@ -2,25 +2,25 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import AboutHeader from "../components/about/AboutHeader.js";
+import ContactHeader from "../components/contact/ContactHeader.js";
 
 // About (Page) Component
 export default function AboutPage() {
-	return (
-		<>
+  return (
+    <>
 
-			<HeadConfig/>
+      <HeadConfig/>
 
-      <AboutHeader/>
+      <ContactHeader/>
 
-      <main>
+      {/*<main>
         <div className="container">
-					<h1>About (Page) Component</h1>
+          <h1>Contact (Page) Component</h1>
         </div>
-      </main>
+      </main>*/}
 
       {/*<Footer/>*/}
 
-		</>
-	)
+    </>
+  )
 };
