@@ -6,9 +6,9 @@ export default function Nav() {
   return (
 
     <nav>
-      <div className="container">
+      <div className="container display-flex justify-content-end">{/*align-items-center*/}
 
-        <ul>
+        <ul className="display-flex align-items-center">{/*justify-content-between*/}
           <li>
             <Link href="/">
               Welcome
