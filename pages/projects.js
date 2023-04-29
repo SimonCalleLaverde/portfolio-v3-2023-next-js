@@ -4,6 +4,7 @@ import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import ProjectsHeader from "../components/projects/ProjectsHeader.js";
 import ProjectsProjectCard from "../components/projects/ProjectsProjectCard.js";
+import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//

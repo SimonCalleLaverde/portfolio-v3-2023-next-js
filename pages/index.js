@@ -5,6 +5,7 @@ import HeadConfig from "../components/HeadConfig.js";
 import HomeHeader from "../components/home/HomeHeader.js";
 import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
 import HomeProjectCard from "../components/home/HomeProjectCard.js";
+import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//

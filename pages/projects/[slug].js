@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../../components/HeadConfig.js";
 import ProjectHeader from "../../components/project/ProjectHeader.js";
+import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
 //----------------------------------THIS PART BELOW IS FETCHING CONTENT USING GRAPHCMS [START]----------------------------------//

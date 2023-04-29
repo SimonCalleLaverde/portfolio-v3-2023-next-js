@@ -16,6 +16,12 @@ export default function Nav() {
           </li>
 
           <li>
+            <Link href="/get_in_touch">
+              Get in touch
+            </Link>
+          </li>
+
+          <li>
             <Link href="#">
               Resume
             </Link>

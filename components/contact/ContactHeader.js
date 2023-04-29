@@ -3,7 +3,8 @@ import Link from "next/link";
 
 // Contact (Header) Component
 export default function ContactHeader() {
-	return (
+  return (
+
     <header className="display-flex justify-content-center align-items-center text-align-center">{/*flex-direction-row*/}
       <div className="container">
 
@@ -25,5 +26,6 @@ export default function ContactHeader() {
 
       </div>
     </header>
-	)
+
+  )
 };
