@@ -11,8 +11,8 @@ export default function ContactPageHeader() {
         <div className="row">
           <div className="col-md-6 offset-3">
 
-            <div className="contact-card">
-              <h1 className="headline mt-5 pt-5">
+            <div className="contact-card mt-5 p-5">
+              <h1 className="headline">
                 Drop me a line
               </h1>
 
@@ -20,11 +20,11 @@ export default function ContactPageHeader() {
                 <Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>
               </h4>
 
-              <h1 className="headline mt-5 pt-2">
+              <h1 className="headline mt-5">
                 Give me a ring
               </h1>
 
-              <h4 className="mt-2">
+              <h4 className="mt-2 mb-0">
                 +(57) 310 558 2638
               </h4>
             </div>
