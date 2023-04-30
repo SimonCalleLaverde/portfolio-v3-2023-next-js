@@ -1,6 +1,7 @@
 // Imports
 import Head from "next/head"
 import Nav from "../components/Nav.js";
+import ModalResume from "../components/ModalResume.js";
 import Footer from "../components/Footer.js";
 import Script from "next/script"
 // Adding "main.scss" (Global Or General) CSS (Can Only Within This "_app.js")
@@ -15,6 +16,8 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
       </Head>
 
       <Nav/>
+
+      <ModalResume/>
 
       <Component {...pageProps}/>
 

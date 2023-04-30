@@ -143,19 +143,19 @@ export default function Footer() {
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="#">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
-                  Resume
+                  Other work{/*Relevant work*/}{/*More work*/}
                 </span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              {/*{% if page.slug == 'about' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-underline" href="#">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
-                  Relevant work{/*More work*/}
+                  Resume
                 </span>
               </Link>
             </li>

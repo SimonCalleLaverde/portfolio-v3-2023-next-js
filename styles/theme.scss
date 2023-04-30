@@ -389,7 +389,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       &.custom-checkbox, &.custom-radio {
         label.custom-control-label {
           padding:$btn-normal-padding;
-          font-size:12px;//13px
+          font-size:13px;//12px//13px
         }
       }
     }
@@ -660,19 +660,19 @@ article.project-card {//.article
 //----------------------------------Section Styles----------------------------------//
 
 // Nav
-nav {
+nav.top-nav {
   position:fixed;
   top:0;
   right:0;
   left:0;
   z-index:1000;////
-  backdrop-filter:blur(2px);//10px
+  backdrop-filter:blur(5px);//10px
   > .container {
     border-bottom:1px solid theme-color("rosybrown");
   }
   ul {
+    //width:400px;
     //min-height:60px;
-    //width:400px;///////
     margin-bottom:0;
     padding-left:0;
     li {
@@ -681,8 +681,20 @@ nav {
       a {
         display:inline-block;
         height:70px;
-        padding:0 15px;
-        line-height:71px;//70px
+        padding:23px 13px;
+        font-family:$font-regular;//$font-light
+        font-size:13px;//12px//15px
+        //line-height:71px;//70px
+        &.link-underline {
+          &::before {
+            height:2px;//1px//3px
+            bottom:-1px;//0//1.5px
+            background-color:theme-color("rosybrown");//chocolate//rosybrown
+            //border-top:none;//1px solid theme-color("chocolate")
+            //border-bottom:none;//1px solid theme-color("chocolate")
+            border:none;
+          }
+        }
       }
     }
   }
@@ -867,7 +879,7 @@ footer {
     @include filter(opacity(0.9));
     .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
       position:absolute;
-      font-size:12px;
+      font-size:13px;//12px
     }
     .footer-email-or-call, .footer-copyright, .footer-created-by {
       bottom:30.5px;//To be 30px
@@ -898,14 +910,15 @@ footer {
       bottom:188px;
       line-height:1.5!important;
       ul.footer-nav-ul {//ul.navbar-nav
-        list-style:none;//Temporary As Per B4//Needed While Not-Having "navbar-nav"
+        margin-bottom:0;//New
+        list-style-type:none;//Temporary As Per B4//Needed While Not-Having "navbar-nav"
         li.footer-nav-li {//li.nav-item
           a.footer-nav-link {//a.nav-link
             display:inline-block;
             margin:0.1rem auto;
             padding:0 0.1rem;
             font-family:$font-ultra-light;
-            font-size:12px;
+            font-size:13px;//12px
             color:theme-color("rosybrown");
             //text-transform:uppercase;
             // &::before {
