@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import HomeHeader from "../components/home/HomeHeader.js";
+import HomePageHeader from "../components/home/HomePageHeader.js";
 import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
 import HomeProjectCard from "../components/home/HomeProjectCard.js";
 import Footer from "../components/Footer.js";
@@ -76,7 +76,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
       <HeadConfig/>
 
-      <HomeHeader/>
+      <HomePageHeader/>
 
       <main>
         <HomeDisclaimerSection/>

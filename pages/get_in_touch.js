@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import ContactHeader from "../components/contact/ContactHeader.js";
+import ContactPageHeader from "../components/contact/ContactPageHeader.js";
 
 // About (Page) Component
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
 
       <HeadConfig/>
 
-      <ContactHeader/>
+      <ContactPageHeader/>
 
       {/*<main>
         <div className="container">

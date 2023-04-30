@@ -375,14 +375,14 @@
 
 
 
-  // Project Header
-  header.project-header {
+  // Project Page Header
+  header.project-page-header {
     min-height:100vh;
     padding:203px 0 0;
     span.page-order {
       right:auto;
     }
-    .page-image-wrapper {
+    .page-image-wrap {
       position:absolute;
       height:100vh;
       top:0;
@@ -394,7 +394,7 @@
         .row {
           > div {
             height:100vh;
-            .page-project-image {
+            .page-image {
               //width:100%;
               height:320px;
             }
@@ -404,12 +404,12 @@
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
-    header.project-header {
-      .page-image-wrapper {
+    header.project-page-header {
+      .page-image-wrap {
         .container {
           .row {
             > div {
-              .page-project-image {
+              .page-image {
                 height:350px;
               }
             }
@@ -419,14 +419,14 @@
     }
   }
 
-  // Project Page
-  section.project-page {
+  // Project Page Section
+  section.project-page-section {
     padding:65px 0 60px;
     // img {
     // }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
-    section.project-page {
+    section.project-page-section {
       padding:105px 0 100px;
     }
   }

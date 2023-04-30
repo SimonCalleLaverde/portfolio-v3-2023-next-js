@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
-import ProjectsHeader from "../components/projects/ProjectsHeader.js";
+import ProjectsPageHeader from "../components/projects/ProjectsPageHeader.js";
 import ProjectsProjectCard from "../components/projects/ProjectsProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -58,7 +58,7 @@ export default function ProjectsPage({ allProjectsData }) {
 
       <HeadConfig/>
 
-      <ProjectsHeader/>
+      <ProjectsPageHeader/>
 
       <main>
         {/*<section className="homepage-projects-headline-section">

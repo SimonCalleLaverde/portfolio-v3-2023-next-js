@@ -146,7 +146,7 @@ export default function Footer() {
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
               <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
-                  Other work{/*Relevant work*/}{/*More work*/}
+                  More work{/*Other work*/}{/*Relevant work*/}
                 </span>
               </Link>
             </li>

@@ -23,7 +23,7 @@ export default function Nav() {
 
           <li>
             <Link className="link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">
-              Other work{/*Relevant work*/}
+              More work{/*Other work*/}{/*Relevant work*/}
             </Link>
           </li>
 

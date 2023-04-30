@@ -5,7 +5,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../../components/HeadConfig.js";
-import ProjectHeader from "../../components/project/ProjectHeader.js";
+import ProjectPageHeader from "../../components/project/ProjectPageHeader.js";
 import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -153,13 +153,13 @@ export default function ProjectPage({ projectData }) {
         title={ projectData.title }
       />
 
-      {/*<ProjectHeader
+      {/*<ProjectPageHeader
         title={ projectData.title }
         client={ projectData.client }
       />*/}
 
       <main>
-        <header className="project-header text-rosybrown clearfix" id="project_header" data-scene>
+        <header className="project-page-header text-rosybrown">
           <div className="container">
 
             <div className="row">
@@ -268,12 +268,12 @@ export default function ProjectPage({ projectData }) {
           </div>
 
           {/* Desktop Md | Screen Readers */}
-          <div className="page-image-wrapper d-none d-md-block">
+          <div className="page-image-wrap d-none d-md-block">
             <div className="container">
 
               <div className="row">
                 <div className="col-md-6 offset-md-6 d-flex flex-column justify-content-end">{/*flex-row*/}{/*align-items-end*/}
-                  <div className="page-project-image background-image-default" type="image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} title={`Main Image Case Study: ${ projectData.title }`}>
+                  <div className="page-image background-image-default" type="image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} title={`Main Image Case Study: ${ projectData.title }`}>
                   </div>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function ProjectPage({ projectData }) {
           </div>
         </header>
 
-        <section className="project-page text-rosybrown clearfix" id="project_page" data-scene>
+        <section className="project-page-section text-rosybrown" id="project_page_section" data-scene>
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>

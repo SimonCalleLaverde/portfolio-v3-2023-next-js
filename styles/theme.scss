@@ -657,6 +657,20 @@ article.project-card {//.article
   }
 }
 
+// Contact Card
+.contact-card {
+
+
+
+
+  border:1px theme-color("rosybrown") solid;
+  @include border-radius(0.8rem);
+
+
+
+
+}
+
 //----------------------------------Section Styles----------------------------------//
 
 // Nav
@@ -665,8 +679,9 @@ nav.top-nav {
   top:0;
   right:0;
   left:0;
-  z-index:1000;////
+  background-color:rgba(232,223,205,0.3);//theme-color("chocolate")
   backdrop-filter:blur(5px);//10px
+  z-index:1000;////
   > .container {
     border-bottom:1px solid theme-color("rosybrown");
   }
@@ -741,8 +756,6 @@ section.homepage-disclaimer-section, section.homepage-projects-headline-section,
 
 
 
-
-
 // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
 section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
   padding:50px 20px 30px;
@@ -798,10 +811,8 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
 
 
 
-
-
-// Project Header
-header.project-header {
+// Project Page Header
+header.project-page-header {
   padding:105px 20px 25px;
   background-color:theme-color("chocolate");////Temporary
   span.page-order {
@@ -829,13 +840,14 @@ header.project-header {
   }
 }
 
-// Project Page
-section.project-page {
+// Project Page Section
+section.project-page-section {
   padding:25px 20px 50px;
   background-color:theme-color("chocolate");////Temporary
   .page-content-mid {
     font-size:18px;//20px
     img {
+      border:1px rgba(26,42,55,0.3) solid;//theme-color("rosybrown")////
       @include border-radius(0.8rem);
     }
     blockquote {

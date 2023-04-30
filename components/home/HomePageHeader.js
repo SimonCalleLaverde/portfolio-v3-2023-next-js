@@ -1,7 +1,7 @@
 // Imports
 
-// Home (Header) Component
-export default function HomeHeader() {
+// Home Page (Header) Component
+export default function HomePageHeader() {
   return (
 
     <header className="display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
