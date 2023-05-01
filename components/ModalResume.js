@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function ModalResume() {
   return (
 
-    <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-centered">
+    <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-hidden="true">{/*data-bs-backdrop="static" data-bs-keyboard="false"*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="modalResumeLabel">Modal title</h5>
@@ -17,6 +17,65 @@ export default function ModalResume() {
             <p>
               Modal body text goes here.
             </p>
+
+
+
+
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+            <p>
+              Modal body text goes here.
+            </p>
+
+
+
+
           </div>
 
           <div className="modal-footer">

@@ -1,4 +1,5 @@
 // MISSING "MOBILE" VERSIONS (WHERE COMMENTS ARE)
+// To Revise Mobile Deeper As I Made Changes In The Middle Link
 
 // Imports
 import Link from "next/link";
@@ -31,8 +32,8 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="/get_in_touch">{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
-        <div className="row">
+      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+        <div className="row display-flex justify-content-center align-items-center">
           <div className="col-md-12">
 
             <h3 className="text-huge text-rosybrown">{/*mb-0*/}{/*text-transform-uppercase*/}
@@ -40,13 +41,8 @@ export default function Footer() {
               <br/>something
               <br/>special*/}
 
-
-
-              Get in touch
               {/*Drop me a line*/}
-
-
-
+              Get in touch
             </h3>
 
             <p className="font-ultra-light text-rosybrown">
@@ -54,6 +50,11 @@ export default function Footer() {
               <br/>with me, let&apos;s talk.*/}
 
               {/*Drop me a line*/}
+
+              {/*Use the boring form in
+              <br/>my Portfolio 2021*/}
+              Use the form in my
+              <br/>Portfolio 2021
             </p>
 
           </div>
@@ -71,8 +72,8 @@ export default function Footer() {
       <aside className="footer-aside-info-elements text-rosybrown">
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
-          {/*Or just email me or call me*/}
-          Email me or call me
+          Or just email me or call me
+          {/*Email me or call me*/}
           <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
@@ -83,8 +84,8 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-ultra-light">
-            <br/>Contract projects /
-            <br/>Full-time work.
+            <br/>Full-time work or/and
+            <br/>Contract projects.
           </span>
         </div>
 
@@ -134,19 +135,24 @@ export default function Footer() {
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
-              <Link className="footer-nav-link link-underline" href="/get_in_touch">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
-                  Get in touch{/*Drop me a line*/}
+                  {/*Relevant work*/}
+                  {/*Other work*/}
+                  {/*More work*/}
+                  Dev work
                 </span>
               </Link>
             </li>
 
             <li className="footer-nav-li">{/*nav-item*/}
-              {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
+              <Link className="footer-nav-link link-underline" href="/get_in_touch">{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
-                  More work{/*Other work*/}{/*Relevant work*/}
+                  {/*Drop me a line*/}
+                  {/*Get in touch*/}
+                  UX/UI Certificate
                 </span>
               </Link>
             </li>

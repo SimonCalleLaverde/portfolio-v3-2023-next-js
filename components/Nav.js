@@ -16,14 +16,18 @@ export default function Nav() {
           </li>
 
           <li>
-            <Link className="link-underline" href="/get_in_touch">
-              Get in touch
+            <Link className="link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">
+              {/*Relevant work*/}
+              {/*Other work*/}
+              {/*More work*/}
+              Dev work
             </Link>
           </li>
 
           <li>
-            <Link className="link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">
-              More work{/*Other work*/}{/*Relevant work*/}
+            <Link className="link-underline" href="/get_in_touch">
+              {/*Get in touch*/}
+              UX/UI Certificate
             </Link>
           </li>
 
@@ -37,7 +41,7 @@ export default function Nav() {
 
 
           <li>
-            <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalResume">
+            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
               Resume
             </button>
           </li>

@@ -273,7 +273,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &::before {
       border:1px solid theme-color("chocolate");
     }
-    &:hover {//, &:active, &:focus
+    &:hover, &:active, &:focus {
       color:theme-color("chocolate");//transparent
       border-color:theme-color("chocolate");//lighten(theme-color("rosybrown"),10)
       &::before {
@@ -287,7 +287,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &::before {
       border:1px solid theme-color("aqua");
     }
-    &:hover {//, &:active, &:focus
+    &:hover, &:active, &:focus {
       color:theme-color("aqua");//transparent
       border-color:theme-color("aqua");//lighten(theme-color("rosybrown"),10)
       &::before {
@@ -327,7 +327,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   //     content:"Send";
   //   }
   // }
-  &:hover {//, &:active, &:focus
+  &:hover, &:active, &:focus {
     background-color:theme-color("rosybrown")!important;//transparent!important
     color:theme-color("chocolate");//transparent
     border-color:theme-color("rosybrown");//lighten(theme-color("rosybrown"),10)
@@ -465,7 +465,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &:hover, &:active, &:focus {
       //@include animation(cubeRotation 20s ease-in-out 1s 1 alternate);
       .face {
-        @include filter(opacity(90%) brightness(120%) sepia(5%));//sepia(10%)
+        @include filter(opacity(90%) brightness(115%) sepia(5%));//brightness(120%)//sepia(10%)
       }
     }
   }
@@ -867,15 +867,42 @@ footer {
     //flex-grow:1;//Was Starting With NextJS
     min-height:100vh;
     > div {
+      position:relative;////New
+      width:400px;////New
+      height:400px;////New
       pointer-events:none;//From "row", To All Elements Inside <a>
+      @include border-radius(50%);////New
+      @include transition(filter ease-in-out 1.5s 0.3s);//box-shadow ease-in-out 1.5s////New
+      &::before {
+        content:"";////New
+        position:absolute;////New
+        top:0;////New
+        right:0;////New
+        bottom:0;////New
+        left:0;////New
+        border:1px transparent dotted;////New
+        @include border-radius(50%);////New
+        @include transition(border-color ease-in-out 1.5s 0.3s);//transform ease-in-out 20s////New
+        @include animation(rotateAnim 80s linear infinite);////New
+      }
       h1, h2, h3, h4, h5, h6 {
-        margin-top:0;//New//Temporary
+        margin-top:30px;//0//New//Temporary
         margin-bottom:0;//New//Temporary
       }
       p {
         margin-top:0;//New//Temporary
         font-size:23px;
         line-height:1.2;
+      }
+    }
+    &:hover, &:active, &:focus {
+      > div {
+        //@include box-shadow(0 5px 15px rgba(0,0,0,0.4));////New
+        @include filter(opacity(0.8));////New
+        &::before {
+          border:1px theme-color("rosybrown") dotted;////New
+          //@include transform(rotate(360deg));////New
+        }
       }
     }
   }
