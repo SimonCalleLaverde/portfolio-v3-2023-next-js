@@ -20,39 +20,29 @@ export default function Nav() {
               {/*Relevant work*/}
               {/*Other work*/}
               {/*More work*/}
-              Dev work
+              Development work
             </Link>
           </li>
 
           <li>
-            <Link className="link-underline" href="/get_in_touch">
+            <Link className="link-underline" href="#" data-bs-toggle="modal" data-bs-target="#modalResume">{/*href="/get_in_touch"*/}
               {/*Get in touch*/}
-              UX/UI Certificate
+              UX & UI certificate
             </Link>
           </li>
 
-          {/*<li>
-            <Link className="link-underline" href="#">
-              Resume
-            </Link>
-          </li>*/}
-
-
-
-
           <li>
-            <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
+            {/*<Link className="link-underline" href="#">
+              Resume
+            </Link>*/}
+            <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
               Resume
             </button>
           </li>
-
-
-
-
         </ul>
 
       </div>
     </nav>
 
   )
-}
+};

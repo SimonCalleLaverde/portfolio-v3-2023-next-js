@@ -1,4 +1,5 @@
 // Imports
+import Link from "next/link";
 
 // Home Page (Header) Component
 export default function HomePageHeader() {
@@ -26,11 +27,8 @@ export default function HomePageHeader() {
           <div className="col-md-5 offset-md-1">
             {/*<img src="/profile-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
 
-
-
-
             <div className="cube-3d-scene-container">
-              <div className="cube">
+              <Link className="cube" href="https://simoncallelaverde.github.io/about" target="_blank">
                 <div className="face front background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube">
                 </div>
 
@@ -48,12 +46,8 @@ export default function HomePageHeader() {
 
                 <div className="face back background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
                 </div>
-              </div>
+              </Link>
             </div>
-
-
-
-
           </div>
         </div>
 

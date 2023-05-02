@@ -1,77 +1,33 @@
 // Imports
 import Link from "next/link";
 
-// ModalResume (Sitewide) Component
+// Modal Resume (Sitewide) Component
 export default function ModalResume() {
   return (
 
-    <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-hidden="true">{/*data-bs-backdrop="static" data-bs-keyboard="false"*/}
-      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
+    <div className="modal fade" id="modalResume" tabindex="-1" aria-labelledby="modalResumeLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" aria-hidden="true">{/*data-bs-backdrop="static" data-bs-keyboard="false"*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
+        {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
+        {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="modalResumeLabel">Modal title</h5>
+            <h5 className="modal-title" id="modalResumeLabel">Resume 2023</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
           <div className="modal-body">
-            <p>
-              Modal body text goes here.
-            </p>
+            {/*<div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  Using the grid
+                </div>
+              </div>
+            </div>*/}
 
 
 
 
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
-            <p>
-              Modal body text goes here.
-            </p>
+            <img src="/Simon Calle Laverde_LinkedIn.png" alt="Product Design inc. UX & UI. Course Certificate of Completion" style={{ width:"100%" }}/>
 
 
 
@@ -80,11 +36,20 @@ export default function ModalResume() {
 
           <div className="modal-footer">
             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" className="btn btn-primary">Save changes</button>
+            <button type="button" className="btn btn-primary">Understood</button>{/*Download*/}
+
+
+
+
+            <a href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the pdf</a>
+
+
+
+
           </div>
         </div>
       </div>
     </div>
 
   )
-}
+};
