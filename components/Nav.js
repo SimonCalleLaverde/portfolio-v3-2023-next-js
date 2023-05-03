@@ -25,7 +25,7 @@ export default function Nav() {
           </li>
 
           <li>
-            <Link className="link-underline" href="#" data-bs-toggle="modal" data-bs-target="#modalResume">{/*href="/get_in_touch"*/}
+            <Link className="link-underline" href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
               {/*Get in touch*/}
               UX & UI certificate
             </Link>

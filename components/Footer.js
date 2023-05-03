@@ -151,7 +151,7 @@ export default function Footer() {
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'contact_me' %} active-link{% endif %} // if page.type_slug == 'feedback'*/}
-              <Link className="footer-nav-link link-underline" href="#" data-bs-toggle="modal" data-bs-target="#modalResume">{/*href="/get_in_touch"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
                   {/*Drop me a line*/}
                   {/*Get in touch*/}

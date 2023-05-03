@@ -11,7 +11,7 @@ export default function ModalResume() {
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="modalResumeLabel">Resume 2023</h5>
+            <h5 className="modal-title" id="modalResumeLabel">Resume (CV) 2023</h5>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -24,37 +24,14 @@ export default function ModalResume() {
               </div>
             </div>*/}
 
-
-
-
-            {/*<img src="/Simon Calle Laverde_LinkedIn.png" alt="Product Design inc. UX & UI. Course Certificate of Completion" style={{ width:"100%" }}/>*/}
-
-
-
-
-            {/*TO CONTINUE TESTING THE BOTH EXAMPLES BELOW, AND BOTH STACKOVERFLOW LINK TABS*/}
-
-            <embed src="/Simón Calle Laverde CV 2023 (English).pdf" width="100%" height="2100px"/>{/*800px*/}
-
-            {/*<iframe src="/Simón Calle Laverde CV 2023 (English).pdf" style={{ width:"100%", height:"100%", border:"none" }}></iframe>*/}
-
-
-
-
+            {/* Different Options */}
+            {/*<embed src="/Simón Calle Laverde CV 2023 (English).pdf" width="100%" height="475px"/>*/}{/*width="800px"*/}{/*height="2100px"*/}
+            <iframe src="/Simón Calle Laverde CV 2023 (English).pdf" style={{ width:"100%", height:"475px", border:"none" }}></iframe>{/*height:"100%"*/}
           </div>
 
           <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" className="btn btn-primary">Understood</button>{/*Download*/}
-
-
-
-
-            <a href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the pdf</a>
-
-
-
-
+            <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the PDF</a>
+            <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

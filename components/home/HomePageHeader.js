@@ -28,7 +28,7 @@ export default function HomePageHeader() {
             {/*<img src="/profile-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
 
             <div className="cube-3d-scene-container">
-              <Link className="cube" href="https://simoncallelaverde.github.io/about" target="_blank">
+              <div className="cube" href="https://simoncallelaverde.github.io/about" target="_blank">{/*Link*/}
                 <div className="face front background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube">
                 </div>
 
@@ -46,7 +46,7 @@ export default function HomePageHeader() {
 
                 <div className="face back background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
                 </div>
-              </Link>
+              </div>{/*Link*/}
             </div>
           </div>
         </div>
