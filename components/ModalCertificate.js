@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function ModalCertificate() {
   return (
 
-    <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" aria-hidden="true">{/*data-bs-backdrop="static" data-bs-keyboard="false"*/}
+    <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
       <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
         {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="modalCertificateLabel">Product Design inc. UX & UI. certificate</h5>
+            <h3 className="modal-title" id="modalCertificateLabel">Product Design inc. UX & UI. certificate</h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -20,7 +20,11 @@ export default function ModalCertificate() {
           </div>
 
           <div className="modal-footer">
-            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Awesome! 🎉</button>{/*Congratulations*/}{/*Nice! 🎉*/}
+            {/*<button className="btn" type="button" data-bs-dismiss="modal">Awesome! 🎉</button>*/}
+            {/*Congratulations*/}{/*Nice! 🎉*/}
+
+            <a className="btn" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank">Visit the course</a>
+            <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

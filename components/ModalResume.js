@@ -5,13 +5,13 @@ import Link from "next/link";
 export default function ModalResume() {
   return (
 
-    <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" aria-hidden="true">{/*data-bs-backdrop="static" data-bs-keyboard="false"*/}
+    <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
       <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
         {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title" id="modalResumeLabel">Resume (CV) 2023</h5>
+            <h3 className="modal-title" id="modalResumeLabel">Resume (CV) 2023</h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
