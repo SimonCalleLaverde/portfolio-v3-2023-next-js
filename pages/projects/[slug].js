@@ -159,7 +159,7 @@ export default function ProjectPage({ projectData }) {
       />*/}
 
       <main>
-        <header className="project-page-header text-rosybrown">
+        <header className="project-page-header text-turquoise">
           <div className="container">
 
             <div className="row">
@@ -184,7 +184,7 @@ export default function ProjectPage({ projectData }) {
                       </span>
                     </div>
 
-                    <h1 className="page-title text-huge text-rosybrown text-uppercase">
+                    <h1 className="page-title text-huge text-turquoise text-uppercase">
                       { projectData.title }
                     </h1>
                   </div>
@@ -236,13 +236,13 @@ export default function ProjectPage({ projectData }) {
                   <div className="col-md-8 offset-md-2">
                     <div className="font-light">
                       { projectData.webLaunchUrl &&
-                        <Link className="btn btn-xs btn-rosybrown" href={ projectData.webLaunchUrl } target="_blank">
+                        <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank">
                           View the site
                         </Link>
                       }
 
                       { projectData.prototypeLaunchUrl &&
-                        <Link className="btn btn-xs btn-rosybrown" href={ projectData.prototypeLaunchUrl } target="_blank">
+                        <Link className="btn btn-xs btn-turquoise" href={ projectData.prototypeLaunchUrl } target="_blank">
                           View prototype
                         </Link>
                       }
@@ -305,7 +305,7 @@ export default function ProjectPage({ projectData }) {
           </div>
         </header>
 
-        <section className="project-page-section text-rosybrown" id="project_page_section" data-scene>
+        <section className="project-page-section text-turquoise" id="project_page_section" data-scene>
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>
@@ -453,7 +453,7 @@ export default function ProjectPage({ projectData }) {
             }
             {/*<Image src={ projectData.webImageFonts.url } alt="A display of the fonts used in the project" width="300" height="300"/>*/}
 
-            <div className="row page-content-last font-ultra-light text-rosybrown">{/*To Check Logic In (stuff/content_two_left_right.html)*/}
+            <div className="row page-content-last font-ultra-light text-turquoise">{/*To Check Logic In (stuff/content_two_left_right.html)*/}
               {/* Desktop Lg | Screen Readers */}
               <div className="col-md-4 offset-md-2 d-none d-lg-block">
                 <div className="pe-4">

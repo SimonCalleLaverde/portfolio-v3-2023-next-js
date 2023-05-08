@@ -86,7 +86,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
             <div className="row">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-                <h3 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
+                <h3 className="font-headline text-gigantic text-turquoise text-uppercase mb-0">{/*text-center*/}
                   Featured
                   <br/>Projects
                 </h3>
@@ -130,7 +130,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
             <div className="row">
               <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-                <h3 className="font-headline text-gigantic text-rosybrown text-uppercase mb-0">{/*text-center*/}
+                <h3 className="font-headline text-gigantic text-turquoise text-uppercase mb-0">{/*text-center*/}
                   Some Of My
                   <br/>Skills Set
                 </h3>
@@ -150,7 +150,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 <div className="skill-row" key={ skill.id }>
                   <div className="row">
                     <div className="col-md-4">
-                      <h3 className="text-medium text-rosybrown mb-4more mb-md-0">{/*text-huge*/}
+                      <h3 className="text-medium text-turquoise mb-4more mb-md-0">{/*text-huge*/}
                         {/* {{ skill.title }} */}
                         { skill.skillTitle }
                       </h3>
@@ -160,7 +160,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                       {/* {{ skill.content }} */}
                       {/* { skill.skillDescription.html } */}
                       { skill.skillDescription &&
-                        <div className="skill-content font-ultra-light text-rosybrown mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}>
+                        <div className="skill-content font-ultra-light text-turquoise mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}>
                         </div>
                       }
                     </div>

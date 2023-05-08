@@ -17,7 +17,7 @@ export default function ContactPageHeader() {
               </h1>
 
               <h4 className="mt-2">
-                <Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>
+                <Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>
               </h4>
 
               <h1 className="headline mt-5">

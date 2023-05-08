@@ -36,7 +36,7 @@ export default function Footer() {
         <div className="row display-flex justify-content-center align-items-center">
           <div className="col-md-12">
 
-            <h3 className="text-huge text-rosybrown">{/*mb-0*/}{/*text-transform-uppercase*/}
+            <h3 className="text-huge text-turquoise">{/*mb-0*/}{/*text-transform-uppercase*/}
               {/*Let&apos;s create
               <br/>something
               <br/>special*/}
@@ -45,7 +45,7 @@ export default function Footer() {
               Get in touch
             </h3>
 
-            <p className="font-ultra-light text-rosybrown">
+            <p className="font-ultra-light text-turquoise">
               {/*If you want to work
               <br/>with me, let&apos;s talk.*/}
 
@@ -72,14 +72,14 @@ export default function Footer() {
 
 
 
-      <aside className="footer-aside-info-elements text-rosybrown">
+      <aside className="footer-aside-info-elements text-turquoise">
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
           Or just email me or call me
           {/*Email me or call me*/}
           <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
-            <br/><Link className="link-underline text-rosybrown" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
+            <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
         </div>
 
@@ -113,7 +113,7 @@ export default function Footer() {
           Relevant work
           <span className="font-ultra-light">
             <br/>Visit also my older
-            <br/><Link className="link-underline text-rosybrown" href="https://simoncallelaverde.github.io/" target="_blank" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
+            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
           </span>
         </div>
 
@@ -256,7 +256,7 @@ export default function Footer() {
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-created-by">{/*d-none d-md-block*/}
           Designed & developed by
-          <br/><Link className="link-underline font-ultra-light text-rosybrown" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-ultra-light text-turquoise" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
           {/*href="https://simoncallelaverde.github.io/" target="_blank"*/}
         </div>
 

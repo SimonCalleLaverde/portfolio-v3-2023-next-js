@@ -32,7 +32,7 @@ body {
   font-family:$font-light;
   font-weight:400;//Temporary As Per B4
   font-size:15px;//17px
-  background-color:theme-color("chocolate");//beige
+  background-color:theme-color("creme");//beige
   color:theme-color("grey-dark");
   line-height:1.8;
   letter-spacing:0.5px;
@@ -122,17 +122,17 @@ h1, h2, h3, h4, h5, h6 {
 .text-small {
   font-size:1.1rem;
 }
-// .text-stroke-rosybrown {
+// .text-stroke-turquoise {
 //   color:transparent!important;
 //   -webkit-text-fill-color:theme-color("transparent");//Will Override Color (Regardless Of Order)
 //   -webkit-text-stroke-width:1px;
-//   -webkit-text-stroke-color:theme-color("rosybrown");
+//   -webkit-text-stroke-color:theme-color("turquoise");
 // }
-// .text-stroke-chocolate {
+// .text-stroke-creme {
 //   color:transparent!important;
 //   -webkit-text-fill-color:theme-color("transparent");//Will Override Color (Regardless Of Order)
 //   -webkit-text-stroke-width:1px;
-//   -webkit-text-stroke-color:theme-color("chocolate");
+//   -webkit-text-stroke-color:theme-color("creme");
 // }
 @media only screen and (max-width:576px) {//Down
   .headline {
@@ -182,18 +182,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Website Colours
-.text-rosybrown {
-  color:theme-color("rosybrown")!important;
+.text-turquoise {
+  color:theme-color("turquoise")!important;
 }
 
 // Link Default Override
 a {
-  color:darken(theme-color("rosybrown"),5);
+  color:darken(theme-color("turquoise"),5);
   background-color:transparent;//As Per B4
   text-decoration:none;//As Per B4
   @include transition(all ease-in-out 0.5s);//ease//ease-out
   &:hover, &:active, &:focus {
-    color:lighten(theme-color("rosybrown"),5);//Becomes "white"
+    color:lighten(theme-color("turquoise"),5);//Becomes "white"
     text-decoration:none;
   }
 }
@@ -210,9 +210,9 @@ p {
       height:3px;
       bottom:5.5px;
       left:0;
-      background-color:theme-color("rosybrown");
-      border-top:1px solid theme-color("chocolate");//beige
-      border-bottom:1px solid theme-color("chocolate");//beige
+      background-color:theme-color("turquoise");
+      border-top:1px solid theme-color("creme");//beige
+      border-bottom:1px solid theme-color("creme");//beige
       pointer-events:none;
     }
     &:hover, &:active, &:focus {
@@ -237,9 +237,9 @@ a.link-underline {
     right:0;
     bottom:1.5px;//5.5px//0
     //left:0;
-    background-color:theme-color("rosybrown");
-    border-top:1px solid theme-color("chocolate");
-    border-bottom:1px solid theme-color("chocolate");
+    background-color:theme-color("turquoise");
+    border-top:1px solid theme-color("creme");
+    border-bottom:1px solid theme-color("creme");
     pointer-events:none;
     @include transition(width 0.4s linear);//ease-in-out
   }
@@ -262,22 +262,22 @@ $btn-lg-padding:0.7rem 2.3rem;
   font-family:$font-light;
   font-size:14px;//13px//11.5px
   background-color:transparent;
-  color:theme-color("rosybrown");//transparent
-  border:1px solid theme-color("rosybrown");
+  color:theme-color("turquoise");//transparent
+  border:1px solid theme-color("turquoise");
   @include border-radius(1rem);
   @include filter(opacity(1));
   @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
-  &.btn-chocolate {
-    color:theme-color("chocolate");
-    border:1px solid theme-color("chocolate");
+  &.btn-creme {
+    color:theme-color("creme");
+    border:1px solid theme-color("creme");
     &::before {
-      border:1px solid theme-color("chocolate");
+      border:1px solid theme-color("creme");
     }
     &:hover, &:active, &:focus {
-      color:theme-color("chocolate");//transparent
-      border-color:theme-color("chocolate");//lighten(theme-color("rosybrown"),10)
+      color:theme-color("creme");//transparent
+      border-color:theme-color("creme");//lighten(theme-color("turquoise"),10)
       &::before {
-        border-color:theme-color("chocolate");//lighten(theme-color("rosybrown"),10)
+        border-color:theme-color("creme");//lighten(theme-color("turquoise"),10)
       }
     }
   }
@@ -289,9 +289,9 @@ $btn-lg-padding:0.7rem 2.3rem;
     }
     &:hover, &:active, &:focus {
       color:theme-color("aqua");//transparent
-      border-color:theme-color("aqua");//lighten(theme-color("rosybrown"),10)
+      border-color:theme-color("aqua");//lighten(theme-color("turquoise"),10)
       &::before {
-        border-color:theme-color("aqua");//lighten(theme-color("rosybrown"),10)
+        border-color:theme-color("aqua");//lighten(theme-color("turquoise"),10)
       }
     }
   }
@@ -303,8 +303,8 @@ $btn-lg-padding:0.7rem 2.3rem;
     right:-2px;
     bottom:-2px;
     left:0;
-    color:transparent;//theme-color("rosybrown")
-    border:1px solid theme-color("rosybrown");
+    color:transparent;//theme-color("turquoise")
+    border:1px solid theme-color("turquoise");
     text-align:center;
     white-space:nowrap;
     pointer-events:none;
@@ -328,9 +328,9 @@ $btn-lg-padding:0.7rem 2.3rem;
   //   }
   // }
   &:hover, &:active, &:focus {
-    background-color:theme-color("rosybrown")!important;//transparent!important
-    color:theme-color("chocolate");//transparent
-    border-color:theme-color("rosybrown");//lighten(theme-color("rosybrown"),10)
+    background-color:theme-color("turquoise")!important;//transparent!important
+    color:theme-color("creme");//transparent
+    border-color:theme-color("turquoise");//lighten(theme-color("turquoise"),10)
     //@include filter(opacity(0.8));
     //@include transform(scale(1.03));
     @include transform(translate(1.5px,1.5px));
@@ -339,7 +339,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &::before {
       right:0;
       bottom:0;
-      border-color:theme-color("rosybrown");//lighten(theme-color("rosybrown"),10)
+      border-color:theme-color("turquoise");//lighten(theme-color("turquoise"),10)
       @include transform(translate(0,0));
     }
   }
@@ -399,11 +399,11 @@ $btn-lg-padding:0.7rem 2.3rem;
 // Selection Styles
 ::selection {//webkit, opera, IE9
   background-color:transparent;//rgba(105,169,179,0.7)
-  color:lighten(theme-color("rosybrown"),20);
+  color:lighten(theme-color("turquoise"),20);
 }
 ::-moz-selection {//mozilla firefox
   background-color:transparent;//rgba(105,169,179,0.7)
-  color:lighten(theme-color("rosybrown"),20);
+  color:lighten(theme-color("turquoise"),20);
 }
 
 // Cube 3D Scene Container
@@ -428,8 +428,8 @@ $btn-lg-padding:0.7rem 2.3rem;
       position:absolute;
       width:100%;
       height:100%;
-      color:darken(theme-color("chocolate"),10);//teal////
-      //border:2px transparent solid;//1px theme-color("rosybrown") solid//1px darken(theme-color("chocolate"),10) solid;//1px #000 solid////
+      color:darken(theme-color("creme"),10);//teal////
+      //border:2px transparent solid;//1px theme-color("turquoise") solid//1px darken(theme-color("creme"),10) solid;//1px #000 solid////
       @include box-shadow(inset 0 0 $size * 0.7);
       @include filter(opacity(90%));
       @include transition(filter ease-in-out 1s);//0.7s
@@ -491,7 +491,7 @@ $btn-lg-padding:0.7rem 2.3rem;
 .modal {
   .modal-dialog {
     .modal-content {
-      background-color:lighten(rgba(232,223,205,0.7),5);//theme-color("chocolate")
+      background-color:rgba(232,223,205,0.9);//lighten(rgba(232,223,205,0.7),5)//theme-color("creme")
       border:none;
       backdrop-filter:blur(5px);//10px
       @include border-radius(0.8rem);
@@ -499,12 +499,12 @@ $btn-lg-padding:0.7rem 2.3rem;
         padding-top:1.4rem;
         padding-bottom:0.9rem;
         border-bottom:none;
-        //border-color:theme-color("rosybrown");
+        //border-color:theme-color("turquoise");
       }
       .modal-body {
         padding-top:0;
         padding-bottom:0;
-        img, iframe {
+        img, iframe {//, object
           @include border-radius(0.4rem);////
         }
         img {
@@ -515,7 +515,7 @@ $btn-lg-padding:0.7rem 2.3rem;
         padding-top:0.9rem;
         padding-bottom:1.7rem;
         border-top:none;
-        //border-color:theme-color("rosybrown");
+        //border-color:theme-color("turquoise");
       }
     }
   }
@@ -551,22 +551,22 @@ header, section, footer {
 ::-webkit-input-placeholder {
   font-family:$font-ultra-light;
   font-size:20px;
-  color:theme-color("rosybrown");//chocolate
+  color:theme-color("turquoise");//creme
 }
 :-moz-placeholder {//Firefox 18-
   font-family:$font-ultra-light;
   font-size:20px;
-  color:theme-color("rosybrown");//chocolate
+  color:theme-color("turquoise");//creme
 }
 ::-moz-placeholder {//Firefox 19+
   font-family:$font-ultra-light;
   font-size:20px;
-  color:theme-color("rosybrown");//chocolate
+  color:theme-color("turquoise");//creme
 }
 :-ms-input-placeholder {
   font-family:$font-ultra-light;
   font-size:20px;
-  color:theme-color("rosybrown");//chocolate
+  color:theme-color("turquoise");//creme
 }
 
 // Forms
@@ -696,7 +696,7 @@ article.project-card {//.article
 
 // Contact Card
 .contact-card {
-  border:1px theme-color("rosybrown") solid;
+  border:1px theme-color("turquoise") solid;
   @include border-radius(0.8rem);
 }
 
@@ -708,11 +708,11 @@ nav.top-nav {
   top:0;
   right:0;
   left:0;
-  background-color:rgba(232,223,205,0.3);//rgba(26,42,55,0.3)//theme-color("chocolate")
+  background-color:rgba(232,223,205,0.3);//rgba(26,42,55,0.3)//theme-color("creme")
   backdrop-filter:blur(5px);//10px
   z-index:1000;////
   > .container {
-    border-bottom:1px solid theme-color("rosybrown");
+    border-bottom:1px solid theme-color("turquoise");
   }
   ul {
     //width:400px;
@@ -735,9 +735,9 @@ nav.top-nav {
           &::before {
             height:2px;//1px//3px
             bottom:-1px;//0//1.5px
-            background-color:theme-color("rosybrown");//chocolate//rosybrown
-            //border-top:none;//1px solid theme-color("chocolate")
-            //border-bottom:none;//1px solid theme-color("chocolate")
+            background-color:theme-color("turquoise");//creme//turquoise
+            //border-top:none;//1px solid theme-color("creme")
+            //border-bottom:none;//1px solid theme-color("creme")
             border:none;
           }
         }
@@ -754,8 +754,8 @@ header {
   //flex:1;
   min-height:100vh;
   padding:4rem 0;//Temporary
-  background-color:theme-color("chocolate");////Temporary
-  color:theme-color("rosybrown");////Temporary
+  background-color:theme-color("creme");////Temporary
+  color:theme-color("turquoise");////Temporary
   .headline {//.title//Temporary
     margin:0;
   }
@@ -784,7 +784,7 @@ section.homepage-disclaimer-section {
 
 // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Projects Cards Section, HomePage Skills Headline Section, HomePage Skills Set Section
 section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-projects-cards-section, section.homepage-skills-headline-section, section.homepage-skills-set-section {
-  background-color:theme-color("chocolate");////Temporary
+  background-color:theme-color("creme");////Temporary
 }
 
 
@@ -812,9 +812,9 @@ section.homepage-skills-set-section {
     // margin-left:-15px;
     .skill-row {
       padding:55px 0 30px;
-      border-bottom:1px solid theme-color("rosybrown");
+      border-bottom:1px solid theme-color("turquoise");
       &:first-child {
-        border-top:1px solid theme-color("rosybrown");
+        border-top:1px solid theme-color("turquoise");
       }
       .skill-content {
         //text-align:left;
@@ -834,8 +834,8 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
   section.homepage-skills-set-section, header.projects-header {
     a {
       &::before {
-        border-top:1px solid theme-color("chocolate");
-        border-bottom:1px solid theme-color("chocolate");
+        border-top:1px solid theme-color("creme");
+        border-bottom:1px solid theme-color("creme");
       }
     }
   }
@@ -848,7 +848,7 @@ body.page-type-basic.theme-dark, body.page-type-project.theme-dark, body.page-ty
 // Project Page Header
 header.project-page-header {
   padding:105px 20px 25px;
-  background-color:theme-color("chocolate");////Temporary
+  background-color:theme-color("creme");////Temporary
   span.page-order {
     position:absolute;
     top:-70px;
@@ -877,11 +877,11 @@ header.project-page-header {
 // Project Page Section
 section.project-page-section {
   padding:25px 20px 50px;
-  background-color:theme-color("chocolate");////Temporary
+  background-color:theme-color("creme");////Temporary
   .page-content-mid {
     font-size:18px;//20px
     img {
-      border:1px rgba(26,42,55,0.3) solid;//theme-color("rosybrown")////
+      border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
       @include border-radius(0.8rem);
     }
     blockquote {
@@ -904,7 +904,7 @@ footer {
   //justify-content:center;//Was Starting With NextJS
   //align-items:center;//Was Starting With NextJS
   margin:0;////Was To Reset In B4
-  background-color:theme-color("chocolate");////Temporary (To see styles better, line-through, dark-mode)
+  background-color:theme-color("creme");////Temporary (To see styles better, line-through, dark-mode)
   > .container {//Desktop & Mobile
     //flex-grow:1;//Was Starting With NextJS
     min-height:100vh;
@@ -942,7 +942,7 @@ footer {
         //@include box-shadow(0 5px 15px rgba(0,0,0,0.4));////New
         @include filter(opacity(0.7));//0.8////New
         // &::before {
-        //   border:1px theme-color("rosybrown") dotted;////New
+        //   border:1px theme-color("turquoise") dotted;////New
         //   //@include transform(rotate(360deg));////New
         // }
       }
@@ -992,13 +992,13 @@ footer {
             padding:0 0.1rem;
             font-family:$font-ultra-light;
             font-size:13px;//12px
-            color:theme-color("rosybrown");
+            color:theme-color("turquoise");
             //text-transform:uppercase;
             // &::before {
             //   display:none;
             // }
             &:hover, &:active, &:focus, &.active-link {
-              color:lighten(theme-color("rosybrown"),10);
+              color:lighten(theme-color("turquoise"),10);
               @include transform(scale(1));
             }
             &.active-link {
@@ -1052,7 +1052,7 @@ footer {
             height:27px;
             //top:-3.1px;//Was -2.8px
             left:-5px;
-            background-color:theme-color("rosybrown");
+            background-color:theme-color("turquoise");
             z-index:20;
             @include border-radius(50%);
             @include filter(opacity(0));
@@ -1064,7 +1064,7 @@ footer {
             position:relative;
             width:17px;
             //font-size:1.2rem;//To remove
-            fill:theme-color("rosybrown");
+            fill:theme-color("turquoise");
             z-index:21;
             @include transition(fill ease-out 0.5s);//all
           }
@@ -1108,7 +1108,7 @@ footer {
               @include transform(translateY(0));
             }
             svg {
-              fill:theme-color("chocolate");
+              fill:theme-color("creme");
             }
           }
         }

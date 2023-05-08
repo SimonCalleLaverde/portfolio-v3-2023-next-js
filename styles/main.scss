@@ -1,4 +1,4 @@
-// WILL RENDER ALL STYLES AS "<style></style>" WITHIN THE "<head></head>"
+// NEXTJS WILL RENDER ALL STYLES AS "<style></style>" WITHIN THE "<head></head>"
 
 //----------------------------------Brand Colors Variables----------------------------------//
 
@@ -13,8 +13,8 @@ $theme-color-grey-light:#FEFEFE;//Grey Light //rgba(254,254,254,1)
 
 // Brand Colors
 $theme-color-beige:lighten(#B89C92,4);//Beige-Background/Beige-Contrast
-$theme-color-chocolate:rgba(232,223,205,1);//#E8DFCD//AQUA (DARK) ....... #10001C//BLUE/PURPLE (DARK) ....... #231F20//Chocolate-Contrast/Chocolate-Background
-$theme-color-rosybrown:rgba(26,42,55,1);//#1A2A37//BEIGE ....... #FDFDF4//BEIGE/YELLOW (LIGHT) (Option 2: FDFDFD) ....... lighten(#FFE8E4,1);//Rosybrown Texts
+$theme-color-creme:rgba(232,223,205,1);//#E8DFCD//CREME//Creme-Contrast/Creme-Background ....... #10001C//BLUE/PURPLE (DARK) ....... #231F20
+$theme-color-turquoise:rgba(26,42,55,1);//#1A2A37//TURQUOISE//Turquoise Texts ....... #FDFDF4//BEIGE/YELLOW (LIGHT) (Option 2: FDFDFD) ....... lighten(#FFE8E4,1)
 
 // Website's Complementary Colors
 $theme-color-aqua:#004743;//Aqua //(Logo's Hover Effect (HomePage))
@@ -46,8 +46,8 @@ $theme-colors: (
   "grey-light":$theme-color-grey-light,
 
   "beige":$theme-color-beige,
-  "chocolate":$theme-color-chocolate,
-  "rosybrown":$theme-color-rosybrown,
+  "creme":$theme-color-creme,
+  "turquoise":$theme-color-turquoise,
   
   "aqua":$theme-color-aqua,
   "blue":$theme-color-blue,

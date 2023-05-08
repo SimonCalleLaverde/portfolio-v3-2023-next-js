@@ -26,7 +26,7 @@ export default function ProjectsProjectCard({ slug, order, thumbnailImage, title
 					<figcaption className="font-ultra-light text-uppercase">
 						{/* Desktop | Screen Readers */}
 						<div className="project-title d-none d-md-block">
-							<h3 className="text-huge text-rosybrown mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+							<h3 className="text-huge text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
 							</h3>
 
 							<div className="project-details">
@@ -96,9 +96,9 @@ export default function ProjectsProjectCard({ slug, order, thumbnailImage, title
 
 				{/*
 				<!--Mobile-->
-		    <div class="project-title-mobile d-block d-md-none font-ultra-light text-rosybrown" aria-hidden="true">
+		    <div class="project-title-mobile d-block d-md-none font-ultra-light text-turquoise" aria-hidden="true">
 		      <h3 class="text-huge text-uppercase mb-0">
-		        <span class="text-rosybrown">
+		        <span class="text-turquoise">
 		          {{ project.name_for_thumbnail }}
 		        </span>
 		      </h3>
