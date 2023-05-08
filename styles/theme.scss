@@ -504,7 +504,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       .modal-body {
         padding-top:0;
         padding-bottom:0;
-        img, iframe {//, object
+        img, iframe, object {
           @include border-radius(0.4rem);////
         }
         img {
