@@ -46,7 +46,7 @@ export default function ModalResume() {
             {/*https://developer.adobe.com/document-services/apis/pdf-embed/*/}
 
             {/* Working Example */}
-            <object data="/Simón Calle Laverde CV 2023 (English).pdf?#zoom=92&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
+            <object data="/Simón Calle Laverde CV 2023 (English).pdf?#zoom=92.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
               <p>

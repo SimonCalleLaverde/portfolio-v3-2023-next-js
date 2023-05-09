@@ -557,7 +557,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     .modal-content {
       background-color:rgba(232,223,205,0.9);//lighten(rgba(232,223,205,0.7),5)//theme-color("creme")
       border:none;
-      backdrop-filter:blur(5px);//10px
+      backdrop-filter:blur(7px);//5px//10px
       @include border-radius(0.8rem);
       .modal-header, .modal-body, .modal-footer {
         padding:1.7rem;//Was ".modal-header, .modal-body" 1rem//Was ".modal-footer" 0.75rem
@@ -777,7 +777,7 @@ nav.top-nav {
   right:0;
   left:0;
   background-color:rgba(232,223,205,0.3);//rgba(26,42,55,0.3)//theme-color("creme")
-  backdrop-filter:blur(5px);//10px
+  backdrop-filter:blur(7px);//5px//10px
   z-index:1000;////
   > .container {
     border-bottom:1px solid theme-color("turquoise");
