@@ -32,7 +32,7 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
         <div className="row display-flex justify-content-center align-items-center">
           <div className="col-md-12">
 
@@ -113,7 +113,7 @@ export default function Footer() {
           Relevant work
           <span className="font-ultra-light">
             <br/>Visit also my older
-            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
+            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
           </span>
         </div>
 
@@ -139,7 +139,7 @@ export default function Footer() {
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 <span>
                   {/*Relevant work*/}
                   {/*Other work*/}
@@ -178,25 +178,25 @@ export default function Footer() {
           </span>
 
           <div className="mt-1">
-            <Link className="me-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://www.linkedin.com/in/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-linkedin">
                 {/*{% include icon_linkedin.xml %}*/}
                 <IconLinkedIn/>
               </span>
             </Link>
-            <Link className="me-3" href="https://www.behance.net/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://www.behance.net/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-behance">
                 {/*{% include icon_behance.xml %}*/}
                 <IconBehance/>
               </span>
             </Link>
-            <Link className="me-3" href="https://angel.co/u/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="me-3" href="https://angel.co/u/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-angel">
                 {/*{% include icon_angel.xml %}*/}
                 <IconAngel/>
               </span>
             </Link>
-            <Link className="" href="https://github.com/SimonCalleLaverde" target="_blank">{/*link*/}
+            <Link className="" href="https://github.com/SimonCalleLaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-github">
                 {/*{% include icon_github.xml %}*/}
                 <IconGithub/>
@@ -212,25 +212,25 @@ export default function Footer() {
           </span>
 
           <div className="mt-1">
-            <Link className="" href="https://dribbble.com/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="" href="https://dribbble.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-dribbble">
                 {/*{% include icon_dribbble.xml %}*/}
                 <IconDribbble/>
               </span>
             </Link>
-            <Link className="ms-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-pinterest">
                 {/*{% include icon_pinterest.xml %}*/}
                 <IconPinterest/>
               </span>
             </Link>
-            <Link className="ms-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-instagram">
                 {/*{% include icon_instagram.xml %}*/}
                 <IconInstagram/>
               </span>
             </Link>
-            <Link className="ms-3" href="https://www.facebook.com/simoncio/" target="_blank">{/*link*/}
+            <Link className="ms-3" href="https://www.facebook.com/simoncio/" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-facebook">
                 {/*{% include icon_facebook.xml %}*/}
                 <IconFacebook/>
@@ -257,7 +257,7 @@ export default function Footer() {
         <div className="footer-created-by">{/*d-none d-md-block*/}
           Designed & developed by
           <br/><Link className="link-underline font-ultra-light text-turquoise" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
-          {/*href="https://simoncallelaverde.github.io/" target="_blank"*/}
+          {/*href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer"*/}
         </div>
 
 

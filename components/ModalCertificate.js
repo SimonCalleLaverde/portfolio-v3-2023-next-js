@@ -23,7 +23,7 @@ export default function ModalCertificate() {
             {/*<button className="btn" type="button" data-bs-dismiss="modal">Awesome! 🎉</button>*/}
             {/*Congratulations*/}{/*Nice! 🎉*/}
 
-            <a className="btn" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank">Visit the course</a>
+            <a className="btn" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the course</a>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

@@ -51,8 +51,8 @@ export default function ModalResume() {
 
               <p>
                 It seems like your web browser is not configured to display PDF files.
-                {" "}Don't worry, just click the button below to "Download the PDF"
-                {" "}or click to "Open in a new tab".
+                {" "}Don&apos;t worry, just click the button below to &quot;Download the PDF&quot;
+                {" "}or click to &quot;Open in a new tab&quot;.
               </p>
             </object>
 
@@ -67,7 +67,7 @@ export default function ModalResume() {
 
           <div className="modal-footer">
             <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the PDF</a>
-            <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" target="_blank">Open in a new tab</a>
+            <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</a>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

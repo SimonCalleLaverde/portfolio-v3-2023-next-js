@@ -236,13 +236,13 @@ export default function ProjectPage({ projectData }) {
                   <div className="col-md-8 offset-md-2">
                     <div className="font-light">
                       { projectData.webLaunchUrl &&
-                        <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank">
+                        <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank" rel="noreferrer">
                           View the site
                         </Link>
                       }
 
                       { projectData.prototypeLaunchUrl &&
-                        <Link className="btn btn-xs btn-turquoise" href={ projectData.prototypeLaunchUrl } target="_blank">
+                        <Link className="btn btn-xs btn-turquoise" href={ projectData.prototypeLaunchUrl } target="_blank" rel="noreferrer">
                           View prototype
                         </Link>
                       }
