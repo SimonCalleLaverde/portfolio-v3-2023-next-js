@@ -1,3 +1,67 @@
+//----------------------------------Under Development Note----------------------------------//
+
+// Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
+html {
+  overflow:hidden;
+}
+.under-development-note {
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background-color:theme-color("creme");
+  color:theme-color("turquoise");
+  letter-spacing:2px;//
+  z-index:10000;
+  //@include filter(opacity(0.7));
+  > div {
+    max-width:270px;
+    > span {
+      //font-size:13px;
+    }
+  }
+}
+@media (orientation:portrait) {
+  .under-development-note {
+    flex-direction:column!important;
+    .cube-3d-scene-container {
+      margin-top:50px;
+    }
+  }
+}
+@media (orientation:landscape) {
+  .under-development-note {
+    flex-direction:row!important;
+  }
+}
+// BREAKPOINTS UPDATED TO BOOTSTRAP 5
+@media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
+  html {
+    overflow:hidden;
+  }
+}
+@media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
+  html {
+    overflow:visible;//unset
+  }
+}
+@media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
+  html {
+    overflow:visible;//unset
+  }
+}
+@media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
+  html {
+    overflow:visible;//unset
+  }
+}
+@media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
+  html {
+    overflow:visible;//unset
+  }
+}
+
 //----------------------------------General Styles----------------------------------//
 
 // General
@@ -408,12 +472,12 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 // Cube 3D Scene Container
 .cube-3d-scene-container {
-  $size:300px;
+  $size:180px;//200px//300px
   $half-size:$size / 2;
   $angle:360deg;
   width:$size;
   height:$size;
-  margin:50px auto 0;//100px auto 0
+  margin:0 auto;//50px auto 0
   perspective:1000px;
   //perspective-origin:center center;
   .cube {//a.cube
@@ -778,6 +842,40 @@ main {
 // Section
 section {
   //min-height:100vh;//Temporary
+}
+
+// HomePage Header
+header.homepage-header {
+  .cube-3d-scene-container {
+    $size:300px;
+    $half-size:$size / 2;
+    width:$size;
+    height:$size;
+    margin-top:50px;//100px
+    .cube {
+      .face {
+        @include box-shadow(inset 0 0 $size * 0.7);
+        &.front {
+          @include transform(rotateX(0deg) translateZ($half-size));
+        }
+        &.top {
+          @include transform(rotateX(90deg) translateZ($half-size));
+        }
+        &.right {
+          @include transform(rotateY(90deg) translateZ($half-size));
+        }
+        &.bottom {
+          @include transform(rotateX(-90deg) translateZ($half-size));
+        }
+        &.left {
+          @include transform(rotateY(-90deg) translateZ($half-size));
+        }
+        &.back {
+          @include transform(rotateX(-180deg) translateZ($half-size));
+        }
+      }
+    }
+  }
 }
 
 // HomePage Disclaimer Section

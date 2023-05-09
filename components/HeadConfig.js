@@ -1,9 +1,10 @@
 // Imports
 import Head from "next/head";
 
-// HeadConfig (Sitewide) Component
+// Head Config (Sitewide) Component
 export default function HeadConfig({ title }) {
   return (
+
     <Head>
       {/* To Later Revise <Head/> As I Was Doing In My "portfolio-V3-2022-next-js" In GitHub */}
       {/* To Revise Styles And Add To Document Instead, As Per Warning/Docs */}
@@ -21,5 +22,6 @@ export default function HeadConfig({ title }) {
       {/*Option 2: "Old+Standard+TT"*/}
       {/*<link href="https://db.onlinewebfonts.com/c/4c4c08af466e9ad071b6d69cf44093df?family=Saol+Display+Regular" rel="stylesheet" type="text/css"/>*/}
     </Head>
+
   )
 };

@@ -1,11 +1,11 @@
 // Imports
-import Link from "next/link";
+import Cube3D from "/components/Cube3D.js";
 
 // Home Page (Header) Component
 export default function HomePageHeader() {
   return (
 
-    <header className="display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
+    <header className="homepage-header display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
       <div className="container">
 
         <div className="row mt-md-5 pt-md-5">
@@ -27,27 +27,7 @@ export default function HomePageHeader() {
           <div className="col-md-5 offset-md-1">
             {/*<img src="/profile-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
 
-            <div className="cube-3d-scene-container">
-              <div className="cube" href="https://simoncallelaverde.github.io/about" target="_blank">{/*Link*/}
-                <div className="face front background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube">
-                </div>
-
-                <div className="face top background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-ii-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
-                </div>
-
-                <div className="face right background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/ñeña-facebook-video-screenshot-(cropped).png')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
-                </div>
-
-                <div className="face bottom background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-ii-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
-                </div>
-
-                <div className="face left background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/ñeña-facebook-video-screenshot-(cropped).png')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
-                </div>
-
-                <div className="face back background-image-default" type="image" style={{ backgroundImage:"url('/profile-images/home-header-picture-i-(cropped).jpg')" }} title="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" aria-hidden="true">
-                </div>
-              </div>{/*Link*/}
-            </div>
+            <Cube3D/>
           </div>
         </div>
 

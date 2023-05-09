@@ -1,6 +1,7 @@
 // Imports
 import Head from "next/head"
 import Nav from "../components/Nav.js";
+import UnderDevelopmentNote from "../components/UnderDevelopmentNote.js";
 import ModalResume from "../components/ModalResume.js";
 import ModalCertificate from "../components/ModalCertificate.js";
 import Footer from "../components/Footer.js";
@@ -17,6 +18,8 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
       </Head>
 
       <Nav/>
+
+      <UnderDevelopmentNote/>
 
       <ModalResume/>
       <ModalCertificate/>
