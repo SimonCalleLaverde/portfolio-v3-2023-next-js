@@ -6,7 +6,7 @@ export default function ModalResume() {
   return (
 
     <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
         {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
@@ -46,7 +46,7 @@ export default function ModalResume() {
             {/*https://developer.adobe.com/document-services/apis/pdf-embed/*/}
 
             {/* Working Example */}
-            <object data="/Simón Calle Laverde CV 2023 (English).pdf?#zoom=138&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">
+            <object data="/Simón Calle Laverde CV 2023 (English).pdf?#zoom=92&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
               <p>

@@ -12,16 +12,11 @@ $theme-color-grey-mid:darken(#CCC,5);//Grey Mid //(Logo's Hover Effect (ContactP
 $theme-color-grey-light:#FEFEFE;//Grey Light //rgba(254,254,254,1)
 
 // Brand Colors
-$theme-color-beige:lighten(#B89C92,4);//Beige-Background/Beige-Contrast
-$theme-color-creme:rgba(232,223,205,1);//#E8DFCD//CREME//Creme-Contrast/Creme-Background ....... #10001C//BLUE/PURPLE (DARK) ....... #231F20
-$theme-color-turquoise:rgba(26,42,55,1);//#1A2A37//TURQUOISE//Turquoise Texts ....... #FDFDF4//BEIGE/YELLOW (LIGHT) (Option 2: FDFDFD) ....... lighten(#FFE8E4,1)
+$theme-color-beige-old:lighten(#B89C92,4);//Beige-Old-Background/Beige-Old-Contrast
+$theme-color-creme:rgba(232,223,205,1);//#E8DFCD//CREME//Creme-Contrast/Creme-Background
+$theme-color-turquoise:rgba(26,42,55,1);//#1A2A37//TURQUOISE//Turquoise Texts
 
 // Website's Complementary Colors
-$theme-color-aqua:#004743;//Aqua //(Logo's Hover Effect (HomePage))
-$theme-color-blue:#69A9B3;//Blue //(Logo's Hover Effect (AboutPage)) (Text Selection Styles)
-$theme-color-cherry:#CE1352;//Cherry //(Logo's Hover Effect (ProjectsPage)) (Hire Button (Old/Removed))
-$theme-color-azalea:rgba(248,198,198,1);//Azalea //(Logo's Hover Effect (HireAProjectPage))
-$theme-color-redish:#B36F68;//Redish //(Footer's Hover Cursor Circle)
 
 // Third Party Companies' Brand Colors (https://brandcolors.net/)
 $theme-color-facebook:#3B5998;//Facebook Official
@@ -45,15 +40,10 @@ $theme-colors: (
   "grey-mid":$theme-color-grey-mid,
   "grey-light":$theme-color-grey-light,
 
-  "beige":$theme-color-beige,
+  "beige-old":$theme-color-beige-old,
+
   "creme":$theme-color-creme,
   "turquoise":$theme-color-turquoise,
-  
-  "aqua":$theme-color-aqua,
-  "blue":$theme-color-blue,
-  "cherry":$theme-color-cherry,
-  "azalea":$theme-color-azalea,
-  "redish":$theme-color-redish,
 
   "facebook":$theme-color-facebook,
   "instagram":$theme-color-instagram,

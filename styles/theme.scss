@@ -15,7 +15,7 @@ html, body {
   padding:0;//As Per B4
 }
 html {
-  //background-color:theme-color("beige");
+  //background-color:theme-color("beige-old");
   text-rendering:optimizeLegibility;//geometricPrecision
   font-smooth:always;
   -webkit-font-smoothing:subpixel-antialiased;//antialiased
@@ -32,7 +32,7 @@ body {
   font-family:$font-light;
   font-weight:400;//Temporary As Per B4
   font-size:15px;//17px
-  background-color:theme-color("creme");//beige
+  background-color:theme-color("creme");//beige-old
   color:theme-color("grey-dark");
   line-height:1.8;
   letter-spacing:0.5px;
@@ -211,8 +211,8 @@ p {
       bottom:5.5px;
       left:0;
       background-color:theme-color("turquoise");
-      border-top:1px solid theme-color("creme");//beige
-      border-bottom:1px solid theme-color("creme");//beige
+      border-top:1px solid theme-color("creme");//beige-old
+      border-bottom:1px solid theme-color("creme");//beige-old
       pointer-events:none;
     }
     &:hover, &:active, &:focus {
@@ -495,24 +495,28 @@ $btn-lg-padding:0.7rem 2.3rem;
       border:none;
       backdrop-filter:blur(5px);//10px
       @include border-radius(0.8rem);
+      .modal-header, .modal-body, .modal-footer {
+        padding:1.7rem;//Was ".modal-header, .modal-body" 1rem//Was ".modal-footer" 0.75rem
+      }
       .modal-header {
         padding-top:1.4rem;
-        padding-bottom:0.9rem;
+        padding-bottom:0;//0.9rem
         border-bottom:none;
         //border-color:theme-color("turquoise");
       }
       .modal-body {
-        padding-top:0;
-        padding-bottom:0;
+        padding-top:0.9rem;//0
+        padding-bottom:0.9rem;//0
         img, iframe, object {
-          @include border-radius(0.4rem);////
+          @include border-radius(0.4rem);
+          @include box-shadow(0 5px 15px rgba(24,16,8,0.4));//0 5px 15px rgba(0,0,0,0.4)
         }
         img {
           margin-bottom:0.6rem;
         }
       }
       .modal-footer {
-        padding-top:0.9rem;
+        padding-top:0;//0.9rem
         padding-bottom:1.7rem;
         border-top:none;
         //border-color:theme-color("turquoise");
