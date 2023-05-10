@@ -12,13 +12,15 @@ html {
   left:0;
   background-color:theme-color("creme");
   color:theme-color("turquoise");
-  letter-spacing:2px;//
   z-index:10000;
   //@include filter(opacity(0.7));
   > div {
     max-width:270px;
-    > span {
+    h1, h2, h3, h4, h5, h6 {
+    }
+    span {
       //font-size:13px;
+      letter-spacing:2px;
     }
   }
 }
@@ -36,7 +38,7 @@ html {
     flex-direction:row!important;
     text-align:start!important;//left
     .note {
-      padding-left:10px;
+      //padding-left:10px;
     }
   }
 }
