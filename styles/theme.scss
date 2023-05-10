@@ -24,15 +24,20 @@ html {
 }
 @media (orientation:portrait) {
   .under-development-note {
-    flex-direction:column!important;
+    //flex-direction:column!important;
+    //text-align:center!important;
     .cube-3d-scene-container {
-      margin-top:50px;
+      margin-top:30px;//50px
     }
   }
 }
 @media (orientation:landscape) {
   .under-development-note {
     flex-direction:row!important;
+    text-align:start!important;//left
+    .note {
+      padding-left:10px;
+    }
   }
 }
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5

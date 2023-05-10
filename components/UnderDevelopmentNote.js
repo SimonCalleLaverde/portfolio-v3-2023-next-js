@@ -8,7 +8,7 @@ export default function UnderDevelopmentNote() {
     <div className="under-development-note d-flex flex-column justify-content-around align-items-center text-center py-5 px-4 d-md-none">
       <Cube3D/>
 
-      <div>
+      <div className="note">
         {/*
         Under development
         <br/><br/>
@@ -20,7 +20,7 @@ export default function UnderDevelopmentNote() {
         
         <span>I haven&apos;t forgotten of you mobile users. The mobile version is under development.
         <br/><br/>Coming soon</span>
-        <br/>05.30.2023
+        <br/>05.15.2023
 
         {/*
         <span>Coming Soon</span>
