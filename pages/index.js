@@ -4,7 +4,7 @@ import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import HomePageHeader from "../components/home/HomePageHeader.js";
 import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
-import HomeProjectCard from "../components/ProjectCard.js";
+import ProjectCard from "../components/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -96,7 +96,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
           </div>
         </section>
 
-        {/* Mapping through "allProjectsData" and displaying each "project", in a "HomeProjectCard" component */}
+        {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
         {/* Was {% include home/home_project_article.html %} */}
         { allProjectsData.map(project => (
           <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
@@ -105,7 +105,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
               <div className="row">
                 <div className="col-12 col-md-10 offset-md-1">{/*col-10 offset-1 col-md-8 offset-md-2*/}
 
-                  <HomeProjectCard
+                  <ProjectCard
                     slug={ project.slug }
                     order={ project.order }
                     thumbnailImage={ project.thumbnailImage }

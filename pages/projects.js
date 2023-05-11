@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import ProjectsPageHeader from "../components/projects/ProjectsPageHeader.js";
-import ProjectsProjectCard from "../components/ProjectCard.js";
+import ProjectCard from "../components/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -77,7 +77,7 @@ export default function ProjectsPage({ allProjectsData }) {
           </div>
         </section>*/}
 
-        {/* Mapping through "allProjectsData" and displaying each "project", in a "HomeProjectCard" component */}
+        {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
         {/* Was {% include home/home_project_article.html %} */}
         { allProjectsData.map(project => (
           <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
@@ -86,7 +86,7 @@ export default function ProjectsPage({ allProjectsData }) {
               <div className="row">
                 <div className="col-10 offset-1 col-md-8 offset-md-2">
 
-                  <ProjectsProjectCard
+                  <ProjectCard
                     slug={ project.slug }
                     order={ project.order }
                     thumbnailImage={ project.thumbnailImage }

@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 //import moment from "moment";
 
-// Home Project (Card) Component
-export default function HomeProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
+// Project (Card) Component
+export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
   return (
 
 		<article className="project-card home">
