@@ -23,7 +23,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
           </div>
 
-          <figcaption className="font-ultra-light text-uppercase">
+          <figcaption className="font-light text-uppercase">{/*font-ultra-light*/}
             {/* Desktop | Screen Readers */}
             <div className="project-title d-none d-md-block">
               <h3 className="text-huge text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
@@ -53,7 +53,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
             <div className="project-info">
               {/* Desktop | Screen Readers */}
               <div className="project-data d-none d-md-block">
-                <time className="font-light">
+                <time className="font-regular">{/*font-light*/}
                   {/*{ year }*/}
                   { year2 }
                 </time>
@@ -63,7 +63,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
               {/* Mobile */}
               <div className="project-data text-left d-block d-md-none" aria-hidden="true">{/*text-right*/}
-                <time className="font-light mb-0">
+                <time className="font-regular mb-0">{/*font-light*/}
                   {/*{ year }*/}
                   { year2 }
                 </time>
@@ -71,7 +71,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
               {/* Desktop | Screen Readers */}
               <div className="project-platforms d-none d-md-block">
-                <span className="font-light">
+                <span className="font-regular">{/*font-light*/}
                   Using
                 </span>
 
@@ -92,7 +92,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
         </figure>
 
         {/* Mobile */}
-        <div className="project-title-mobile d-block d-md-none font-ultra-light text-turquoise" aria-hidden="true">
+        <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
           <h3 className="text-huge text-uppercase mb-0">
             <span className="text-turquoise" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
             </span>
