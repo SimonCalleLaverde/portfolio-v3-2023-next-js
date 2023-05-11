@@ -4,7 +4,7 @@ import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import HomePageHeader from "../components/home/HomePageHeader.js";
 import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
-import HomeProjectCard from "../components/home/HomeProjectCard.js";
+import HomeProjectCard from "../components/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import ProjectsPageHeader from "../components/projects/ProjectsPageHeader.js";
-import ProjectsProjectCard from "../components/projects/ProjectsProjectCard.js";
+import ProjectsProjectCard from "../components/ProjectCard.js";
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
