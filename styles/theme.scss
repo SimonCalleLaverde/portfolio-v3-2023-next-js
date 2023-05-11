@@ -100,7 +100,7 @@ html {
 body {
   position:relative;//As Per B4
   min-height:100vh;
-  font-family:$font-light;
+  font-family:$font-regular;//$font-light
   font-weight:400;//Temporary As Per B4
   font-size:15px;//17px
   background-color:theme-color("creme");//beige-old
@@ -108,7 +108,7 @@ body {
   line-height:1.8;
   letter-spacing:0.5px;
   .text-italic {
-    font-family:$font-light-italic!important;
+    font-family:$font-regular-italic!important;//$font-light-italic!important
   }
 }
 
@@ -330,7 +330,7 @@ $btn-lg-padding:0.7rem 2.3rem;
 .btn {
   position:relative;
   padding:$btn-normal-padding;
-  font-family:$font-light;
+  font-family:$font-regular;//$font-light
   font-size:14px;//13px//11.5px
   background-color:transparent;
   color:theme-color("turquoise");//transparent
@@ -1091,7 +1091,7 @@ footer {
             display:inline-block;
             margin:0.1rem auto;
             padding:0 0.1rem;
-            font-family:$font-ultra-light;
+            font-family:$font-light;//$font-ultra-light
             font-size:13px;//12px
             color:theme-color("turquoise");
             //text-transform:uppercase;

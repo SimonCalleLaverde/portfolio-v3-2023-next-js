@@ -45,7 +45,7 @@ export default function Footer() {
               Get in touch
             </h3>
 
-            <p className="font-ultra-light text-turquoise">
+            <p className="font-light text-turquoise">{/*font-ultra-light*/}
               {/*If you want to work
               <br/>with me, let&apos;s talk.*/}
 
@@ -56,8 +56,8 @@ export default function Footer() {
               {/*Use the form in my
               <br/>Portfolio 2021*/}
 
-              Use my older but
-              <br/>reliable form?
+              Use my older, boring,
+              <br/>but reliable form?
             </p>
 
           </div>
@@ -77,7 +77,7 @@ export default function Footer() {
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
           Or just email me or call me
           {/*Email me or call me*/}
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
@@ -86,7 +86,7 @@ export default function Footer() {
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-availability">
           Available for
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>Full-time work or/and
             <br/>Contract projects.
           </span>
@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-office">
           Office
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>Calle 10 # 2 Este - 40,
             <br/>Tr 8 Apt 404, Chía,
             <br/>Cundinamarca,
@@ -111,7 +111,7 @@ export default function Footer() {
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <div className="footer-credits" aria-hidden="true">
           Relevant work
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>Visit also my older
             <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="Like with every movie sequel, the first one was way better!">Portfolio 2021</Link>
           </span>
@@ -240,7 +240,7 @@ export default function Footer() {
         </div>
 
         {/* Desktop | Screen Readers */}
-        <div className="footer-copyright font-ultra-light">
+        <div className="footer-copyright font-light">{/*font-ultra-light*/}
           © {/*{{ "now" | date: "%Y" }}*/}{/*2023*/}{ currentYear } Simón Calle Laverde
           <br/>All rights reserved
         </div>
@@ -256,7 +256,7 @@ export default function Footer() {
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-created-by">{/*d-none d-md-block*/}
           Designed & developed by
-          <br/><Link className="link-underline font-ultra-light text-turquoise" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-light text-turquoise" href="/">Simón Calle Laverde</Link>{/*font-ultra-light*/}{/*{{ site.client_name }}*/}
           {/*href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer"*/}
         </div>
 
