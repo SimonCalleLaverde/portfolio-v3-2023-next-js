@@ -23,7 +23,7 @@ export default function UnderDevelopmentNote() {
         </h5>
 
         <span>Coming soon
-        <br/>05.15.2023</span>
+        <br/>05.20.2023</span>
 
         {/*
         <span>Coming Soon</span>

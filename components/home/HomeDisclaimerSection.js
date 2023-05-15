@@ -16,7 +16,7 @@ export default function HomeDisclaimerSection() {
             </h4>
 
             <p>
-              I apologize for the inconvenience, this site is under development.{/*construction*/}{/* its latest version isn&apos;t live yet.*/} First minimum viable version completion due date: 05.15.2023.
+              I apologize for the inconvenience, this site is under development.{/*construction*/}{/* its latest version isn&apos;t live yet.*/} First minimum viable version completion due date: 05.20.2023.
             </p>
 
             <p>
