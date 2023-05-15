@@ -148,38 +148,41 @@
   article.project-card {//.article
     a {
       figure {
-        height:320px;
+        //height:320px;
+        .project-thumbnail {
+          height:320px;
+        }
         figcaption {
-
-
-
           .project-title {
-            position:absolute;
-            width:100%;//
+            width:50%;//100%
             //min-width:50%;//So Text Below Doesn't Fall If Title Is Short
-            margin-top:0;
-            right:auto;
-            bottom:-25px;//-36px//-33px
-            left:-27px;//-22px
-            z-index:21;
+            margin-top:18px;//0
             .project-details {
-              position:absolute;
-              width:calc(100% - 1px);
-              left:1px;
-              text-align:left;
-              > .project-type {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-              > .project-roles {
-                position:absolute;
-                top:0;
-                right:0;//auto
-                bottom:0;
-                left:0;
-                @include filter(opacity(0));
-                @include transform(translateY(-20px));
-              }
+              //position:absolute;
+              //width:calc(100% - 1px);
+              //left:1px;
+              //text-align:start;//left
+
+
+
+
+              // > .project-type {
+              //   @include filter(opacity(1));
+              //   @include transform(translateY(0));
+              // }
+              // > .project-roles {
+              //   position:absolute;
+              //   top:0;
+              //   right:0;//auto
+              //   bottom:0;
+              //   left:0;
+              //   @include filter(opacity(0));
+              //   @include transform(translateY(-20px));
+              // }
+
+
+
+
             }
           }
           .project-details, .project-info {
@@ -188,12 +191,16 @@
               @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
             }
           }
+
+
+
+
           .project-info {
-            height:calc(100% - 1px);
+            //height:calc(100% - 1px);
             padding-top:0;
-            top:1px;
+            top:0;//1px;
             right:-32px;
-            @include transform(rotate(180deg));
+            //@include transform(rotate(180deg));
             > .project-data {
               @include filter(opacity(1));
               @include transform(translateX(0));
@@ -211,11 +218,13 @@
 
 
 
+
         }
       }
       &:hover, &:active, &:focus {
         figure {
           figcaption {
+
 
 
 
@@ -228,26 +237,27 @@
                 @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
               }
             }
-            .project-details {
-              > .project-type {
-                @include filter(opacity(0));
-                @include transform(translateY(20px));
-              }
-              > .project-roles {
-                @include filter(opacity(1));
-                @include transform(translateY(0));
-              }
-            }
-            .project-info {
-              > .project-data {
-                @include filter(opacity(0));
-                @include transform(translateX(-20px));
-              }
-              > .project-platforms {
-                @include filter(opacity(1));
-                @include transform(translateX(0));
-              }
-            }
+            // .project-details {
+            //   > .project-type {
+            //     @include filter(opacity(0));
+            //     @include transform(translateY(20px));
+            //   }
+            //   > .project-roles {
+            //     @include filter(opacity(1));
+            //     @include transform(translateY(0));
+            //   }
+            // }
+            // .project-info {
+            //   > .project-data {
+            //     @include filter(opacity(0));
+            //     @include transform(translateX(-20px));
+            //   }
+            //   > .project-platforms {
+            //     @include filter(opacity(1));
+            //     @include transform(translateX(0));
+            //   }
+            // }
+
 
 
 
@@ -260,16 +270,21 @@
     article.project-card {
       a {
         figure {
-          width:calc(100% + 30px);
-          height:530px;//height:403px;//450px With col-md-10//Mobile 250px
-          margin-left:-15px;
+          //width:100%;//calc(100% + 30px)
+          //height:530px;//height:403px;//450px With col-md-10//Mobile 250px
+          //margin-left:-15px;
+          .project-thumbnail {
+            height:530px;
+          }
           figcaption {
+
 
 
 
             .project-title {
               bottom:-31px;//-26px
             }
+
 
 
 
@@ -286,9 +301,11 @@
 
 
 
+
             .project-title {
               bottom:-35.5px;
             }
+
 
 
 
@@ -307,8 +324,6 @@
   // HomePage Skills Set Section
   section.homepage-skills-set-section {
   }
-
-
 
 
 
@@ -352,8 +367,6 @@
       }
     }
   }
-
-
 
 
 

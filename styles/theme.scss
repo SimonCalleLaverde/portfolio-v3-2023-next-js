@@ -662,22 +662,23 @@ article.project-card {//.article
   position:relative;
   a {
     figure {
-      position:relative;
-      height:280px;
-      .project-thumbnail, figcaption {
-        position:absolute;
-        top:0;
-        right:0;
-        bottom:0;
-        left:0;
+      //position:relative;
+      //height:280px;
+      .project-thumbnail {//, figcaption
+        //position:relative;//absolute;
+        height:280px;
+        // top:0;
+        // right:0;
+        // bottom:0;
+        // left:0;
       }
       .project-thumbnail {
-        z-index:20;
+        //z-index:20;
       }
       figcaption {
         font-size:11px;
-        letter-spacing:0.8px;
-        z-index:21;//NEW
+        //letter-spacing:0.8px;
+        //z-index:21;//NEW
 
 
 
@@ -685,35 +686,37 @@ article.project-card {//.article
         .project-title {
           //mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
           h1, h2, h3, h4, h5, h6 {
-            //mix-blend-mode:screen;
           }
           .project-details {
             width:100%;
             bottom:-17px;
           }
         }
+
+
+
+
         .project-info {
-          position:absolute;
-          width:20px;
-          height:100%;
-          padding-top:25px;
-          right:-9.5px;
-          text-align:start;//left
-          writing-mode:vertical-rl;
-          text-orientation:mixed;
+          //position:absolute;
+          //width:20px;
+          //height:100%;
+          //padding-top:25px;
+          //right:-9.5px;
+          //text-align:start;//left
+          //writing-mode:vertical-rl;
+          //text-orientation:mixed;
           pointer-events:none;
           //z-index:21;
-          > .project-data, > .project-platforms {
-            time, span {
+          > .project-data {
+            time {
               margin-bottom:12px;
             }
           }
-          > .project-platforms {//New
-            div {//New
-              display:inline-block;//New
-              margin-bottom:3px;//4px//New
-            }
-          }
+          // > .project-platforms {//New
+          //   span {//New
+          //     margin-bottom:3px;//4px//New
+          //   }
+          // }
         }
 
 
@@ -746,14 +749,19 @@ article.project-card {//.article
   article.project-article {
     a {
       figure {
-        height:180px;
+        //height:180px;
+        .project-thumbnail {
+          height:180px;
+        }
       }
+
 
 
 
       .project-title-mobile {
         margin-top:-13px;//-12px
       }
+
 
 
 

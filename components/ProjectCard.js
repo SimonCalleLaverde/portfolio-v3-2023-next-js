@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
   return (
 
-    <article className="project-card home">
+    <article className="project-card">
       <Link className="link-page-load" href={ `/projects/${ slug }` }>
         <figure>
           {/* Option 1 (Image Component): Must Use "width" & "height" Properties, Or "layout='fill'" Property */}
@@ -24,86 +24,69 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           </div>
 
           <figcaption className="font-light text-uppercase">{/*font-ultra-light*/}
+
+
+
+
             {/* Desktop | Screen Readers */}
             <div className="project-title d-none d-md-block">
-              <h3 className="text-huge text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-              </h3>
-
               <div className="project-details">
                 <div className="project-type">
                   { type }
                 </div>
 
-                <div className="project-roles">
-                  {/* I didn't had this "<span/>" below in old Portfolio. Here for the key */}
-                  {/*
-                  { roles.map(role => (
-                    <span key={ role }>
-                      { role }{" "}·{" "}
-                    </span>
-                  )) }
-                  */}
-                  {/*&middot;*/}
-                  {/*{% unless forloop.last %} &middot;{% endunless %}*/}
+                {/*<div className="project-roles">
                   { roles2 }
-                </div>
+                </div>*/}
               </div>
+
+              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+              </h4>
             </div>
+
+
+
 
             <div className="project-info">
               {/* Desktop | Screen Readers */}
               <div className="project-data d-none d-md-block">
-                <time className="font-regular">{/*font-light*/}
-                  {/*{ year }*/}
-                  { year2 }
-                </time>
-
                 { category }
               </div>
 
               {/* Mobile */}
-              <div className="project-data text-left d-block d-md-none" aria-hidden="true">{/*text-right*/}
-                <time className="font-regular mb-0">{/*font-light*/}
-                  {/*{ year }*/}
-                  { year2 }
-                </time>
+              <div className="project-data text-left d-block d-md-none" aria-hidden="true">
               </div>
 
               {/* Desktop | Screen Readers */}
-              <div className="project-platforms d-none d-md-block">
-                <span className="font-regular">{/*font-light*/}
-                  Using
-                </span>
-
-                {/* I didn't had this "<div/>" below in old Portfolio. Here for the key. Had to add some styles to it to make it "display:inline-block", as I can't use <span/> as it also has styles already for the above */}
-                {/*
-                { platforms.map(platform => (
-                  <div key={ platform }>
-                    { platform }{" "}·{" "}
-                  </div>
-                )) }
-                */}
-                {/*&middot;*/}
-                {/*{% unless forloop.last %} &middot;{% endunless %}*/}
+              {/*<div className="project-platforms d-none d-md-block">
                 { platforms2 }
-              </div>
+              </div>*/}
             </div>
+
+
+
+
           </figcaption>
         </figure>
 
+
+
+
         {/* Mobile */}
         <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
-          <h3 className="text-huge text-uppercase mb-0">
-            <span className="text-turquoise" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-            </span>
-          </h3>
+          <h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+            {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. ALSO THIS dangerouslySetInnerHTML CAUSED LAST DEPLOYMENT ERROR */}
+          </h4>
           
           <div className="project-details">
-            <div className="project-roles">
+            {/*<div className="project-roles">
               { roles2 }
-            </div>
+            </div>*/}
           </div>
         </div>
+
+
+
 
         {/* TEMPORARY // TO REVISE "moment.js" FOR DATES // USED IN MY "next-js-blog-graphcms" */}
         <time className="project-date">
