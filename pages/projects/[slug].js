@@ -261,8 +261,7 @@ export default function ProjectPage({ projectData }) {
                     <div className="page-content font-ultra-light">
                       {/*{ projectData.content.text }*/}
 
-                      <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}>
-                      </div>
+                      <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}/>
                     </div>
                   </div>
                 </div>
@@ -302,8 +301,7 @@ export default function ProjectPage({ projectData }) {
                 <div className="page-content font-ultra-light">
                   {/*{ projectData.content.text }*/}
 
-                  <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}>
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}/>
                 </div>
               </div>
             </div>
@@ -341,8 +339,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFirst &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}/>
                 }
               </div>
             </div>
@@ -358,8 +355,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSecond &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}/>
                 }
               </div>
             </div>
@@ -375,8 +371,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionThird &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}/>
                 }
               </div>
             </div>
@@ -392,8 +387,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFourth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}/>
                 }
               </div>
             </div>
@@ -409,8 +403,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionFifth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}/>
                 }
               </div>
             </div>
@@ -426,8 +419,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSixth &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}/>
                 }
               </div>
             </div>
@@ -443,8 +435,7 @@ export default function ProjectPage({ projectData }) {
 
               <div className="col-md-8 offset-md-2">{/*col-md-6 offset-md-3*/}
                 { projectData.captionSeventh &&
-                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}>
-                  </div>
+                  <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}/>
                 }
               </div>
             </div>
@@ -463,8 +454,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-4 offset-md-2 d-none d-lg-block">
                 <div className="pe-4">
                   { projectData.contentLastLeft &&
-                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}>
-                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}/>
                   }
                 </div>
               </div>
@@ -472,8 +462,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-4 d-none d-lg-block">
                 <div className="ps-4">
                   { projectData.contentLastRight &&
-                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}>
-                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}/>
                   }
                 </div>
               </div>
@@ -481,13 +470,11 @@ export default function ProjectPage({ projectData }) {
               {/* Mobile Lg */}
               <div className="col-md-8 offset-md-2 d-block d-lg-none" aria-hidden="true">
                 { projectData.contentLastLeft &&
-                  <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}>
-                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: projectData.contentLastLeft.html }}/>
                 }
 
                 { projectData.contentLastRight &&
-                  <div className="mt-4" dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}>
-                  </div>
+                  <div className="mt-4" dangerouslySetInnerHTML={{ __html: projectData.contentLastRight.html }}/>
                 }
               </div>
             </div>

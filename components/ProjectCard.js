@@ -40,8 +40,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
                 </div>*/}
               </div>
 
-              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-              </h4>
+              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>
             </div>
 
 
@@ -75,8 +74,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
         {/* Mobile */}
         <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
           {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. */}
-          {/*<h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-          </h4>*/}
+          <h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>
           
           <div className="project-details">
             {/*<div className="project-roles">
