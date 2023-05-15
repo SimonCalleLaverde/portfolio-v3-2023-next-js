@@ -160,9 +160,10 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                       {/* {{ skill.content }} */}
                       {/* { skill.skillDescription.html } */}
                       { skill.skillDescription &&
-                        <div className="skill-content font-light text-turquoise mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}>{/*font-ultra-light*/}
+                        <div className="skill-content font-light text-turquoise mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}>
                         </div>
                       }
+                      {/*font-ultra-light*/}
                     </div>
                   </div>
                 </div>
