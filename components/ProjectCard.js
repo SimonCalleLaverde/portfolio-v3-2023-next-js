@@ -40,7 +40,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
                 </div>*/}
               </div>
 
-              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}></h4>
+              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>
             </div>
 
 
