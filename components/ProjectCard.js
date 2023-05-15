@@ -74,9 +74,9 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
         {/* Mobile */}
         <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
-          <h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
-            {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. ALSO THIS dangerouslySetInnerHTML CAUSED LAST DEPLOYMENT ERROR */}
-          </h4>
+          {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. */}
+          {/*<h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}>
+          </h4>*/}
           
           <div className="project-details">
             {/*<div className="project-roles">
@@ -88,13 +88,6 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-        {/* TEMPORARY // TO REVISE "moment.js" FOR DATES // USED IN MY "next-js-blog-graphcms" */}
-        <time className="project-date">
-          {/*<h3>{datePublished}</h3>*/}
-          {/*<h3>{moment(datePublished).format("MMMM d, YYYY")}</h3>*/}
-          {/*<h3>{moment(datePublished).format("MMMM Do, YYYY")}</h3>*/}
-          {/*<h3>{moment(datePublished).format("MMMM D, YYYY")}</h3>*/}
-        </time>
       </Link>
     </article>
 

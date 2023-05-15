@@ -222,6 +222,11 @@ export default function ProjectPage({ projectData }) {
                     {/*https://blog.logrocket.com/4-alternatives-to-moment-js-for-internationalizing-dates/*/}
                     {/*https://day.js.org/*/}
                     {/*https://www.reactshark.com/blog/guide-react-date-format*/}
+                    {/* EXAMPLE USED IN MY "GitHub > next-js-blog-graphcms" */}
+                    {/*<h3>{ datePublished }</h3>*/}
+                    {/*<h3>{ moment(datePublished).format("MMMM d, YYYY") }</h3>*/}
+                    {/*<h3>{ moment(datePublished).format("MMMM Do, YYYY") }</h3>*/}
+                    {/*<h3>{ moment(datePublished).format("MMMM D, YYYY") }</h3>*/}
                     <div className="page-year font-ultra-light">
                       <span className="page-subtitles font-light">
                         Year
