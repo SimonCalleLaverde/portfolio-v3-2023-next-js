@@ -66,8 +66,8 @@ export default function ModalResume() {
           </div>
 
           <div className="modal-footer">
-            <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the PDF</a>
-            <a className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</a>
+            <Link className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>
+            <Link className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

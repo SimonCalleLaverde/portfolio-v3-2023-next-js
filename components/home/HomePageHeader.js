@@ -25,7 +25,7 @@ export default function HomePageHeader() {
           </div>
 
           <div className="col-md-5 offset-md-1">
-            {/*<img src="/profile-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML/CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
+            {/*<img src="/profile-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML & CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
 
             <Cube3D/>
           </div>
