@@ -21,15 +21,15 @@ export default function HomeDisclaimerSection() {
               </p>
 
               <p>
-                In the meantime, you can check out my previous Portfolio (V2){/*II*/} 2021 for more <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em>about me</em></Link>, or so that you can take a peek at
-                what I&apos;ve done before and at {/*some*/}big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em>projects</em></Link> I&apos;ve been a part of. There I have a bunch (28)
-                Front-end Development projects I helped build for an Australian-based digital agency, and {/*2*/}a couple independent User Interfase (UI) Design projects I designed and developed myself.
+                In the meantime, you can check out my previous <em>Portfolio (V2){/*II*/} 2021</em> for more{/*bio*/} <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em><strong>about me</strong></em></Link> and so that you can take a peek at what I&apos;ve done before
+                and at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of. There I have a good bunch (28) Front-end Development projects I helped build for an
+                Australian-based digital agency, and {/*2*/}a couple independent User Interfase (UI) Design projects I designed and developed myself.
               </p>
 
               <p>
-                Although this is only a rough first version of it, this new Portfolio (V3) 2023 is currently being made with better technologies (i.e. ReactJS / NextJS) and will have the option to display better case studies. It also currently shows my
-                latest real client Product Design & User Experience (UX) project that I worked in a <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course
-                that I was taking in 2022 - 2023 in London, UK.
+                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies. It is also currently showing my latest real client User Experience (UX)
+                & Product Design project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI{/*.*/}</strong></em></Link> course {/*that*/}which I {/*was taking*/}enrolled
+                in 2022 - 2023 at Experience Haus, London, UK.
               </p>
 
               {/*<p>
@@ -38,14 +38,15 @@ export default function HomeDisclaimerSection() {
               </p>*/}
 
               <p>
-                Due date for a first version completion: Saturday 05.20.2023.
+                Due date for desktop's version completion: Saturday 05.20.2023.
               </p>
 
               <p>
                 —As of {/*April 20, 2023*/}{/*04.20.2023*/} May 15, 2023
               </p>
 
-              <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021 of UI & Front-end Work</Link>
+              <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021 (UI & Front-end Work)</Link>
+              {/*Portfolio 2021 (UI Design & Front-end Development)*/}
               {/*Portfolio 2021 (UI & Front-end Work)*/}
             </div>
 
