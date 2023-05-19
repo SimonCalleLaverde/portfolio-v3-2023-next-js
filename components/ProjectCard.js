@@ -23,54 +23,39 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
           </div>
 
-          <figcaption className="font-light text-uppercase">{/*font-ultra-light*/}
-
-
-
-
+          <figcaption className="font-light d-flex justify-content-between">{/*font-ultra-light*/}
             {/* Desktop | Screen Readers */}
             <div className="project-title d-none d-md-block">
-              <div className="project-details">
-                <div className="project-type">
-                  { type }
-                </div>
-
-                {/*<div className="project-roles">
-                  { roles2 }
-                </div>*/}
+              <div className="project-type text-uppercase">
+                { type }
               </div>
 
-              <h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>
+              {/*<h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>*/}
+              <h4 className="text-medium text-turquoise mt-1 mb-0">
+                { title }
+              </h4>
             </div>
 
-
-
-
-            <div className="project-info">
+            <div className="project-description">
               {/* Desktop | Screen Readers */}
               <div className="project-data d-none d-md-block">
                 { category }
+                {/*{ roles2 }*/}
+                {/*{ platforms2 }*/}
               </div>
 
               {/* Mobile */}
-              <div className="project-data text-left d-block d-md-none" aria-hidden="true">
-              </div>
-
-              {/* Desktop | Screen Readers */}
-              {/*<div className="project-platforms d-none d-md-block">
-                { platforms2 }
+              {/*<div className="project-data d-block d-md-none" aria-hidden="true">
               </div>*/}
             </div>
-
-
-
-
           </figcaption>
         </figure>
 
 
 
 
+        {/* To Revise Mobile Further. This Is Old Portfolio 2021 Example. Why Not Having "figure" & "figcaption" As Well In Mobile? */}
+        {/* But First I'll Do Above, Which Will Be More Complex (With 3 Diff Layouts) And Follow On Mobile*/}
         {/* Mobile */}
         <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
           {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. */}

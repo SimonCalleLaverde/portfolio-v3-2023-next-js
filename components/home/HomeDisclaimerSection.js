@@ -27,9 +27,9 @@ export default function HomeDisclaimerSection() {
               </p>
 
               <p>
-                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies. It is also currently showing my latest real client User Experience (UX)
-                & Product Design project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI{/*.*/}</strong></em></Link> course {/*that*/}which I {/*was taking*/}enrolled
-                in 2022 - 2023 at Experience Haus, London, UK.
+                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies. It is also currently showing my latest User Experience (UX) & Product Design real client
+                project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course {/*that*/}which I {/*was taking*/}enrolled from October 2022 to
+                February 2023 at Experience Haus, London, UK.
               </p>
 
               {/*<p>
@@ -37,12 +37,12 @@ export default function HomeDisclaimerSection() {
                 want to start applying to jobs and put a first MVP version in the wild while I polish it and add to it over time.
               </p>*/}
 
-              <p>
-                Due date for desktop's version completion: Saturday 05.20.2023.
-              </p>
+              {/*<p>
+                Desktop's version due date for completion: Saturday 05.20.2023.
+              </p>*/}
 
               <p>
-                —As of {/*April 20, 2023*/}{/*04.20.2023*/} May 15, 2023
+                —As of {/*April 20, 2023*/}{/*04.20.2023*/}{/*May 15, 2023*/}May, 2023
               </p>
 
               <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021 (UI & Front-end Work)</Link>

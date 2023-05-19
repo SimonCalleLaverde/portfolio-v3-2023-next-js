@@ -148,119 +148,34 @@
   article.project-card {//.article
     a {
       figure {
-        //height:320px;
         .project-thumbnail {
           height:320px;
         }
         figcaption {
           .project-title {
-            width:50%;//100%
+            width:60%;//40%////50%//100%
             //min-width:50%;//So Text Below Doesn't Fall If Title Is Short
-            margin-top:18px;//0
-            .project-details {
-              //position:absolute;
-              //width:calc(100% - 1px);
-              //left:1px;
-              //text-align:start;//left
-
-
-
-
-              // > .project-type {
-              //   @include filter(opacity(1));
-              //   @include transform(translateY(0));
-              // }
-              // > .project-roles {
-              //   position:absolute;
-              //   top:0;
-              //   right:0;//auto
-              //   bottom:0;
-              //   left:0;
-              //   @include filter(opacity(0));
-              //   @include transform(translateY(-20px));
-              // }
-
-
-
-
-            }
+            //margin-top:18px;//0
           }
-          .project-details, .project-info {
-            overflow:hidden;
-            > .project-data, > .project-platforms, > .project-type, > .project-roles {
-              @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-            }
-          }
-
-
-
-
-          .project-info {
-            //height:calc(100% - 1px);
-            padding-top:0;
-            top:0;//1px;
-            right:-32px;
-            //@include transform(rotate(180deg));
+          .project-description {
+            width:20%;//25%//50%//NEW
             > .project-data {
-              @include filter(opacity(1));
-              @include transform(translateX(0));
+              //width:50%;//NEW
             }
-            > .project-platforms {
-              position:absolute;
-              top:0;
-              right:0;
-              bottom:0;
-              left:0;
-              @include filter(opacity(0));
-              @include transform(translateX(20px));
-            }
+            // > .project-data, > .project-platforms, > .project-type-OLD, > .project-roles {
+            //   @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
+            // }
           }
-
-
-
-
+          .project-title, .project-description {
+            margin-top:14px;////NEW//18px//0
+          }
         }
       }
       &:hover, &:active, &:focus {
         figure {
+          .project-thumbnail {
+          }
           figcaption {
-
-
-
-
-            .project-title {
-              h1, h2, h3, h4, h5, h6 {
-              }
-            }
-            .project-details, .project-info {
-              > .project-data, > .project-platforms, > .project-type, > .project-roles {
-                @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s 0.1s);
-              }
-            }
-            // .project-details {
-            //   > .project-type {
-            //     @include filter(opacity(0));
-            //     @include transform(translateY(20px));
-            //   }
-            //   > .project-roles {
-            //     @include filter(opacity(1));
-            //     @include transform(translateY(0));
-            //   }
-            // }
-            // .project-info {
-            //   > .project-data {
-            //     @include filter(opacity(0));
-            //     @include transform(translateX(-20px));
-            //   }
-            //   > .project-platforms {
-            //     @include filter(opacity(1));
-            //     @include transform(translateX(0));
-            //   }
-            // }
-
-
-
-
           }
         }
       }
@@ -277,17 +192,6 @@
             height:530px;
           }
           figcaption {
-
-
-
-
-            .project-title {
-              bottom:-31px;//-26px
-            }
-
-
-
-
           }
         }
       }
@@ -297,18 +201,9 @@
     article.project-card {
       a {
         figure {
+          .project-thumbnail {
+          }
           figcaption {
-
-
-
-
-            .project-title {
-              bottom:-35.5px;
-            }
-
-
-
-
           }
         }
       }

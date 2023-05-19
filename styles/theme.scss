@@ -659,75 +659,33 @@ form {
 
 // Project Card
 article.project-card {//.article
-  position:relative;
+  //position:relative;//Could Remove After Placing On "figcaption"
   a {
     figure {
-      //position:relative;
-      //height:280px;
-      .project-thumbnail {//, figcaption
-        //position:relative;//absolute;
-        height:280px;
-        // top:0;
-        // right:0;
-        // bottom:0;
-        // left:0;
-      }
       .project-thumbnail {
-        //z-index:20;
+        height:280px;
       }
       figcaption {
-        font-size:11px;
-        //letter-spacing:0.8px;
-        //z-index:21;//NEW
-
-
-
-
+        font-size:14px;////NEW//11px
+        //pointer-events:none;
         .project-title {
           //mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
+          .project-type {
+            letter-spacing:2px;////NEW//0.8px
+          }
           h1, h2, h3, h4, h5, h6 {
           }
-          .project-details {
-            width:100%;
-            bottom:-17px;
-          }
         }
-
-
-
-
-        .project-info {
-          //position:absolute;
-          //width:20px;
-          //height:100%;
-          //padding-top:25px;
-          //right:-9.5px;
-          //text-align:start;//left
-          //writing-mode:vertical-rl;
-          //text-orientation:mixed;
-          pointer-events:none;
-          //z-index:21;
+        .project-description {
           > .project-data {
-            time {
-              margin-bottom:12px;
-            }
           }
-          // > .project-platforms {//New
-          //   span {//New
-          //     margin-bottom:3px;//4px//New
-          //   }
-          // }
         }
-
-
-
-
       }
     }
 
 
 
-
+    // TO REVISE MOBILE
     .project-title-mobile {
       margin-top:-19.5px;//-18.5px
       font-size:13px;
@@ -742,26 +700,25 @@ article.project-card {//.article
 
 
 
-
   }
 }
 @media only screen and (max-width:400px) {//Down
   article.project-article {
     a {
       figure {
-        //height:180px;
         .project-thumbnail {
           height:180px;
+        }
+        figcaption {
         }
       }
 
 
 
-
+      // TO REVISE MOBILE
       .project-title-mobile {
         margin-top:-13px;//-12px
       }
-
 
 
 
