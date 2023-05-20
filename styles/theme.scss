@@ -658,28 +658,30 @@ form {
 //----------------------------------Cards Styles----------------------------------//
 
 // Project Card
-article.project-card {//.article
-  //position:relative;//Could Remove After Placing On "figcaption"
+article.project-card {
   a {
     figure {
       .project-thumbnail {
         height:280px;
       }
       figcaption {
-        font-size:14px;////NEW//11px
-        //pointer-events:none;
+        font-size:15px;
         .project-title {
-          //mix-blend-mode:screen;//luminosity//hard-light//exclusion//color-dodge//difference
           .project-type {
-            letter-spacing:2px;////NEW//0.8px
+            letter-spacing:2px;
           }
           h1, h2, h3, h4, h5, h6 {
           }
         }
-        .project-description {
-          > .project-data {
-          }
+        .project-title, .project-description {
+          line-height:1.4;
         }
+      }
+      &.FIGURE-ONE {
+      }
+      &.FIGURE-TWO {
+      }
+      &.FIGURE-THREE {
       }
     }
 
@@ -710,6 +712,12 @@ article.project-card {//.article
           height:180px;
         }
         figcaption {
+        }
+        &.FIGURE-ONE {
+        }
+        &.FIGURE-TWO {
+        }
+        &.FIGURE-THREE {
         }
       }
 

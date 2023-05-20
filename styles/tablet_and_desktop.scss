@@ -92,7 +92,7 @@
       font-size:2.5rem;
     }
     .text-medium {
-      font-size:2.2rem;
+      font-size:1.9rem;//2.2rem//NEW
     }
     .text-small {
       font-size:1.4rem;
@@ -145,29 +145,41 @@
   //----------------------------------Cards Styles----------------------------------//
 
   // Project Card
-  article.project-card {//.article
+  article.project-card {
     a {
       figure {
         .project-thumbnail {
           height:320px;
         }
         figcaption {
-          .project-title {
-            width:60%;//40%////50%//100%
-            //min-width:50%;//So Text Below Doesn't Fall If Title Is Short
-            //margin-top:18px;//0
-          }
-          .project-description {
-            width:20%;//25%//50%//NEW
-            > .project-data {
-              //width:50%;//NEW
+          // .project-title {
+          //   min-width:50%;//So Text Below Doesn't Fall If Title Is Short
+          // }
+          // .project-description {
+          //   @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
+          // }
+        }
+        &.FIGURE-ONE {
+          figcaption {
+            margin-top:18px;//16px
+            .project-title {
+              width:60%;
             }
-            // > .project-data, > .project-platforms, > .project-type-OLD, > .project-roles {
-            //   @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-            // }
+            .project-description {
+              width:20%;
+            }
           }
-          .project-title, .project-description {
-            margin-top:14px;////NEW//18px//0
+        }
+        &.FIGURE-TWO {
+          figcaption {
+            .project-description {
+              width:60%;
+            }
+          }
+        }
+        &.FIGURE-THREE {
+          figcaption {
+            text-align:end;
           }
         }
       }
@@ -177,6 +189,12 @@
           }
           figcaption {
           }
+          &.FIGURE-ONE {
+          }
+          &.FIGURE-TWO {
+          }
+          &.FIGURE-THREE {
+          }
         }
       }
     }
@@ -185,13 +203,20 @@
     article.project-card {
       a {
         figure {
-          //width:100%;//calc(100% + 30px)
-          //height:530px;//height:403px;//450px With col-md-10//Mobile 250px
-          //margin-left:-15px;
-          .project-thumbnail {
-            height:530px;
-          }
+          // .project-thumbnail {
+          //   height:370px;//530px
+          // }
           figcaption {
+          }
+          &.FIGURE-ONE {
+            .project-thumbnail {
+              height:370px;//530px
+            }
+          }
+          &.FIGURE-TWO, &.FIGURE-THREE {
+            .project-thumbnail {
+              height:440px;//530px
+            }
           }
         }
       }
@@ -204,6 +229,12 @@
           .project-thumbnail {
           }
           figcaption {
+          }
+          &.FIGURE-ONE {
+          }
+          &.FIGURE-TWO {
+          }
+          &.FIGURE-THREE {
           }
         }
       }

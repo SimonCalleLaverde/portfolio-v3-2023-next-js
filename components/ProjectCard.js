@@ -11,7 +11,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
     <article className="project-card">
       <Link className="link-page-load" href={ `/projects/${ slug }` }>
-        <figure>
+        <figure className="FIGURE-ONE">
           {/* Option 1 (Image Component): Must Use "width" & "height" Properties, Or "layout='fill'" Property */}
           {/*<Image src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } layout="fill"/>*/}
           {/*<Image src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } width="200" height="120"/>*/}
@@ -23,30 +23,89 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
           </div>
 
-          <figcaption className="font-light d-flex justify-content-between">{/*font-ultra-light*/}
-            {/* Desktop | Screen Readers */}
-            <div className="project-title d-none d-md-block">
+          {/* Desktop | Screen Readers */}
+          <figcaption className="font-light justify-content-between d-none d-md-flex">{/*font-ultra-light*/}
+            <div className="project-title">
               <div className="project-type text-uppercase">
                 { type }
               </div>
 
               {/*<h4 className="text-medium text-turquoise mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>*/}
-              <h4 className="text-medium text-turquoise mt-1 mb-0">
+              <h4 className="text-medium text-turquoise mt-2 mb-0">
                 { title }
               </h4>
             </div>
 
             <div className="project-description">
-              {/* Desktop | Screen Readers */}
-              <div className="project-data d-none d-md-block">
-                { category }
-                {/*{ roles2 }*/}
-                {/*{ platforms2 }*/}
+              { category }
+              {/*{ roles2 }*/}
+              {/*{ platforms2 }*/}
+            </div>
+          </figcaption>
+        </figure>
+
+
+
+        <figure className="FIGURE-TWO   d-none   ">{/* TEMPORARY "d-none" */}
+          {/* Desktop | Screen Readers */}
+          <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
+            <div className="row">
+              <div className="col-md-8">
+                {/* Option 3 (Background-Image) */}
+                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+                </div>
               </div>
 
-              {/* Mobile */}
-              {/*<div className="project-data d-block d-md-none" aria-hidden="true">
-              </div>*/}
+              <div className="col-md-4 d-flex flex-column justify-content-between">
+                <div className="project-title">
+                  <div className="project-type text-uppercase">
+                    { type }
+                  </div>
+
+                  <h4 className="text-medium text-turquoise mt-2 mb-0">
+                    { title }
+                  </h4>
+                </div>
+
+                <div className="project-description">
+                  { category }
+                  {/*{ roles2 }*/}
+                  {/*{ platforms2 }*/}
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+
+
+
+        <figure className="FIGURE-THREE   d-none   ">{/* TEMPORARY "d-none" */}
+          {/* Desktop | Screen Readers */}
+          <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
+            <div className="row">
+              <div className="col-md-4 d-flex flex-column justify-content-between">
+                <div className="project-title">
+                  <div className="project-type text-uppercase">
+                    { type }
+                  </div>
+
+                  <h4 className="text-medium text-turquoise mt-2 mb-0">
+                    { title }
+                  </h4>
+                </div>
+
+                <div className="project-description">
+                  { category }
+                  {/*{ roles2 }*/}
+                  {/*{ platforms2 }*/}
+                </div>
+              </div>
+
+              <div className="col-md-8">
+                {/* Option 3 (Background-Image) */}
+                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+                </div>
+              </div>
             </div>
           </figcaption>
         </figure>
@@ -56,7 +115,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
         {/* To Revise Mobile Further. This Is Old Portfolio 2021 Example. Why Not Having "figure" & "figcaption" As Well In Mobile? */}
         {/* But First I'll Do Above, Which Will Be More Complex (With 3 Diff Layouts) And Follow On Mobile*/}
-        {/* Mobile */}
+        {/* Missing Mobile */}
         <div className="project-title-mobile d-block d-md-none font-light text-turquoise" aria-hidden="true">{/*font-ultra-light*/}
           {/* TO CHECK. WAS SPAN INSIDE SET TO dangerouslySetInnerHTML. */}
           <h4 className="text-medium text-turquoise text-uppercase mb-0" dangerouslySetInnerHTML={{ __html: nameForThumbnail }}/>

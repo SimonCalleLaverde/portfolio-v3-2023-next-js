@@ -1,4 +1,4 @@
-// MISSING "MOBILE" VERSIONS (WHERE COMMENTS ARE)
+// MISSING "MOBILE" VERSION (WHERE COMMENTS ARE)
 // To Revise Mobile Deeper As I Made Changes In The Middle Link
 
 // Imports
