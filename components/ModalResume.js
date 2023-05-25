@@ -32,10 +32,10 @@ export default function ModalResume() {
             {/* For now I will use <object></object>. I also added extra "target='_blank'" button option. */}
 
             {/* Working Example */}
-            {/*<embed src="/Simón Calle Laverde CV 2023 (English).pdf" width="100%" height="475px"/>*/}{/*width="800px"*/}{/*height="2100px"*/}
+            {/*<embed src="/Simon Calle Laverde CV 2023 (English).pdf" width="100%" height="475px"/>*/}{/*width="800px"*/}{/*height="2100px"*/}
 
             {/* Working Example */}
-            {/*<iframe src="/Simón Calle Laverde CV 2023 (English).pdf" style={{ width:"100%", height:"475px", border:"none" }}></iframe>*/}
+            {/*<iframe src="/Simon Calle Laverde CV 2023 (English).pdf" style={{ width:"100%", height:"475px", border:"none" }}></iframe>*/}
             {/*height:"100%"*/}
 
             {/* Raw Example (With Google Docs Viewer, Needs The File To Be Available Online Wherever) */}
@@ -46,7 +46,7 @@ export default function ModalResume() {
             {/*https://developer.adobe.com/document-services/apis/pdf-embed/*/}
 
             {/* Working Example */}
-            <object data="/Simón Calle Laverde CV 2023 (English).pdf?#zoom=92.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
+            <object data="/Simon Calle Laverde CV 2023 (English).pdf?#zoom=92.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
               <p>
@@ -66,8 +66,8 @@ export default function ModalResume() {
           </div>
 
           <div className="modal-footer">
-            <Link className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>
-            <Link className="btn" href="/Simón Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>
+            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>
+            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
