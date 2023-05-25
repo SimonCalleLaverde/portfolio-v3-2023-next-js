@@ -149,14 +149,14 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
               { allSkillsData.map(skill => (
                 <div className="skill-row" key={ skill.id }>
                   <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">{/*col-md-4*/}
                       <h3 className="text-medium text-turquoise mb-4more mb-md-0">{/*text-huge*/}
                         {/* {{ skill.title }} */}
                         { skill.skillTitle }
                       </h3>
                     </div>
 
-                    <div className="col-md-8">
+                    <div className="col-md-8 offset-md-1">{/*col-md-8*/}
                       {/* {{ skill.content }} */}
                       {/* { skill.skillDescription.html } */}
                       { skill.skillDescription &&
