@@ -21,14 +21,14 @@ export default function HomeDisclaimerSection() {
               </p>
 
               <p>
-                In the meantime, you can check out my previous <em>Portfolio (V2){/*II*/} 2021</em> for more{/*bio*/} <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em><strong>about me</strong></em></Link> and so that you can take a peek at what I&apos;ve done before
-                and at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of in previous years. There I have a good bunch (28) Front-end Development projects that I helped build for an
-                Australian-based digital agency, and {/*2*/}a couple independent User Interface (UI) Design projects that I designed and developed myself.
+                In the meantime, you can check out my previous <em>Portfolio (V2){/*II*/} 2021</em> for more{/*bio*/} <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em><strong>about me</strong></em></Link> and so that you can take a peek at what I&apos;ve done before and
+                at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of in previous years. There I have a good bunch (28) Front-end Development projects that I helped
+                build for an Australian-based digital agency, and {/*2*/}a couple independent User Interface (UI) Design projects that I designed and developed myself.
               </p>
 
               <p>
-                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies. It is also currently showing my latest User Experience (UX) & Product Design real client
-                project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course {/*that*/}which I {/*was taking*/}enrolled from October 2022 to
+                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is currently being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies as well. It is also currently showing my latest User Experience (UX) & Product Design
+                real client project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course that{/*which*/} I {/*was taking*/}enrolled from October 2022 to
                 February 2023 at Experience Haus, London, UK.
               </p>
 
