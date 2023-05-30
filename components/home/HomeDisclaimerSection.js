@@ -22,8 +22,8 @@ export default function HomeDisclaimerSection() {
 
               <p>
                 In the meantime, you can check out my previous <em>Portfolio (V2){/*II*/} 2021</em> for more{/*bio*/} <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em><strong>about me</strong></em></Link> and so that you can take a peek at what I&apos;ve done before
-                and at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of. There I have a good bunch (28) Front-end Development projects I helped build for an
-                Australian-based digital agency, and {/*2*/}a couple independent User Interfase (UI) Design projects I designed and developed myself.
+                and at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of in previous years. There I have a good bunch (28) Front-end Development projects that I helped build for an
+                Australian-based digital agency, and {/*2*/}a couple independent User Interface (UI) Design projects that I designed and developed myself.
               </p>
 
               <p>
