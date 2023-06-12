@@ -19,12 +19,14 @@ export default function UnderDevelopmentNote() {
         */}
         
         <h5 className="mb-4">
-          I haven&apos;t forgotten of you mobile users. The mobile version is under development.
+          I haven&apos;t forgotten of you tablet and mobile users. These responsive versions are under development and will be coming soon.
         </h5>
 
-        <span>Coming soon
-        <br/>06.12.2023</span>
         {/*05.27.2023*/}
+        {/*06.12.2023*/}
+        <span>
+          06.16.2023
+        </span>
 
         {/*
         <span>Coming Soon</span>
