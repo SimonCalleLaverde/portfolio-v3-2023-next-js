@@ -15,9 +15,16 @@ const accessEndpoint = "https://api-us-east-1.hygraph.com/v2/cl5ketcvx2wnm01ta90
 const graphCMSRequestAPI = new GraphQLClient(accessEndpoint);
 
 // Querying (Projects) With GraphQL //projects(where: { title_contains: "..." }) { //projects(where: { slug_contains: "..." }) { //projects(where: { slug: "jomaira-imagen" }) { //projects(where: { category_contains: "Recent Independent Project" }) { //projects(where: { roles_contains_all: "UX Research" }) { //projects(where: { type_contains: "Coaching Website Re-Design" }) { //projects(where: { tags_contains_all: "Home" }) {
+// {
+//   posts(orderBy: createdAt_ASC) {
+//     id
+//     createdAt
+//   }
+// }
+
 const graphCMSQueryProjects = gql`
   {
-    projects(where: { tags_contains_all: "Home" }) {
+    projects(where: { tags_contains_all: "Home" }, orderBy: order_ASC) {
 
       id
       slug
