@@ -179,7 +179,7 @@ export default function ProjectPage({ projectData }) {
                         {% endfor %}*/}
 
                         <small className="font-ultra-light">
-                          {" "}/09{/*{{ projects_total_count }}*/}
+                          {" "}/05{/*{{ projects_total_count }}*/}
                         </small>
                       </span>
                     </div>
