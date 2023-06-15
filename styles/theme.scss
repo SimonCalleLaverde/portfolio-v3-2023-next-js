@@ -600,7 +600,7 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 // (To Revise/Check A 'Layout' Component To Wrap Everything | Or ¿To Use React-Bootstrap? ¿To Use Reactstrap? ¿To Use Material-UI? Let's See)
 // Container
-header, section, footer {
+header, section, footer, header > .page-image-wrap {
 > .container {
   }
 }
