@@ -139,12 +139,13 @@ export default function Footer() {
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer" title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to take you temporarily to my Portfolio 2021, while I finish my new My Story page 2023.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}{/*Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.*/}
                 <span>
                   {/*Relevant work*/}
                   {/*Other work*/}
                   {/*More work*/}
-                  Development work
+                  {/*Development work*/}
+                  About me
                 </span>
               </Link>
             </li>

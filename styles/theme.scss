@@ -571,26 +571,36 @@ $btn-lg-padding:0.7rem 2.3rem;
       }
       .modal-header {
         padding-top:1.4rem;
-        padding-bottom:0;//0.9rem
+        padding-bottom:0.9rem;//0
         border-bottom:none;
         //border-color:theme-color("turquoise");
       }
       .modal-body {
-        padding-top:0.9rem;//0
-        padding-bottom:0.9rem;//0
+        padding-top:0;//0.9rem
+        padding-bottom:0;//0.9rem
+        //@include border-radius(0.4rem);////
         img, iframe, object {
           @include border-radius(0.4rem);
-          @include box-shadow(0 5px 15px rgba(24,16,8,0.4));//0 5px 15px rgba(0,0,0,0.4)
+          //@include box-shadow(0 5px 15px rgba(24,16,8,0.4));//0 5px 15px rgba(0,0,0,0.4)
         }
-        img {
-          margin-bottom:0.6rem;
-        }
+        // img {
+        //   margin-bottom:0.6rem;
+        // }
       }
       .modal-footer {
-        padding-top:0;//0.9rem
+        padding-top:0.9rem;//0
         padding-bottom:1.7rem;
         border-top:none;
         //border-color:theme-color("turquoise");
+      }
+    }
+  }
+  &#modalCertificate {
+    .modal-dialog {
+      .modal-content {
+        .modal-footer {
+          padding-top:1.4rem;//0.9rem//0
+        }
       }
     }
   }

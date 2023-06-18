@@ -6,8 +6,8 @@ export default function ModalCertificate() {
   return (
 
     <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
-        {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
+        {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
@@ -23,7 +23,7 @@ export default function ModalCertificate() {
             {/*<button className="btn" type="button" data-bs-dismiss="modal">Awesome! 🎉</button>*/}
             {/*Congratulations*/}{/*Nice! 🎉*/}
 
-            <Link className="btn" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the course</Link>
+            <Link className="btn" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the Experience Haus course</Link>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

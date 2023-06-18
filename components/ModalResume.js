@@ -6,8 +6,8 @@ export default function ModalResume() {
   return (
 
     <div className="modal fade" id="modalResume" tabIndex="-1" aria-labelledby="modalResumeLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
-      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
-        {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}{/*modal-xl*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*Scrollable Body: "modal-dialog-scrollable"*/}{/*Vertically Centered: "modal-dialog-centered"*/}
+        {/*modal-sm*/}{/*Default*/}{/*modal-lg*/}
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
@@ -46,7 +46,7 @@ export default function ModalResume() {
             {/*https://developer.adobe.com/document-services/apis/pdf-embed/*/}
 
             {/* Working Example */}
-            <object data="/Simon Calle Laverde CV 2023 (English).pdf?#zoom=92.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=138" (with "modal-xl")*/}
+            <object data="/Simon Calle Laverde CV 2023 (English).pdf?#zoom=135.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=92" (approx with "modal-lg")*/}{/*"zoom=138" (approx with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
               <p>
@@ -66,8 +66,9 @@ export default function ModalResume() {
           </div>
 
           <div className="modal-footer">
-            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>
-            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>
+            {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>*/}
+            {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>*/}
+            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open to download in a new tab</Link>
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
