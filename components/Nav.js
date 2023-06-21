@@ -16,7 +16,7 @@ export default function Nav() {
           </li>
 
           <li>
-            <Link className="link-underline" href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to take you temporarily to my Portfolio 2021, while I finish my new My Story page 2023.">
+            <Link className="link-underline" href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to temporarily take you to my Portfolio 2021, while I finish my new My Story page 2023.">
               {/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
               {/*Relevant work*/}
               {/*Other work*/}
