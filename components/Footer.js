@@ -32,7 +32,8 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer" title="I'll kindly temporarily redirect you to my Portfolio 2021, while I finish my new 'Get In Touch' page 2023.">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+        {/*title="I'll kindly temporarily redirect you to my Portfolio 2021, while I finish my new 'Get In Touch' page 2023."*/}
         <div className="row display-flex justify-content-center align-items-center">
           <div className="col-md-12">
 
@@ -59,9 +60,9 @@ export default function Footer() {
               {/*Use my older, boring,
               <br/>but reliable form?*/}
 
-              Click to use my older
-              <br/>but reliable form
-              <br/>{"{ "}temporarily{" }"}
+              Click here to use my
+              <br/>older 2021 form
+              <br/>{"{"}temporarily{"}"}
             </p>
 
           </div>
