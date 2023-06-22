@@ -30,6 +30,7 @@ const graphCMSQuery = gql`
       client
       roles2
       year2
+      duration
 
       webLaunchUrl
       prototypeLaunchUrl
@@ -227,12 +228,19 @@ export default function ProjectPage({ projectData }) {
                     {/*<h3>{ moment(datePublished).format("MMMM d, YYYY") }</h3>*/}
                     {/*<h3>{ moment(datePublished).format("MMMM Do, YYYY") }</h3>*/}
                     {/*<h3>{ moment(datePublished).format("MMMM D, YYYY") }</h3>*/}
-                    <div className="page-year font-ultra-light">
+                    <div className="page-year font-ultra-light mb-2 pb-1">
                       <span className="page-subtitles font-light">
                         Year
                       </span>
                       {/*{ projectData.year }*/}
                       { projectData.year2 }
+                    </div>
+
+                    <div className="page-duration font-ultra-light mb-2 pb-1">
+                      <span className="page-subtitles font-light">
+                        Duration
+                      </span>
+                      { projectData.duration }
                     </div>
                   </div>
                 </div>
@@ -242,13 +250,13 @@ export default function ProjectPage({ projectData }) {
                     <div className="font-light">
                       { projectData.webLaunchUrl &&
                         <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank" rel="noreferrer">
-                          View the site
+                          View the live site
                         </Link>
                       }
 
                       { projectData.prototypeLaunchUrl &&
                         <Link className="btn btn-xs btn-turquoise" href={ projectData.prototypeLaunchUrl } target="_blank" rel="noreferrer">
-                          View prototype
+                          View the prototype
                         </Link>
                       }
                     </div>

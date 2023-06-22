@@ -62,7 +62,7 @@ export default function Footer() {
 
               Click here to use my
               <br/>older 2021 form
-              <br/>{"{"}temporarily{"}"}
+              <br/>{"{ "}temporarily{" }"}
             </p>
 
           </div>
