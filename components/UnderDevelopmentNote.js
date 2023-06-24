@@ -26,8 +26,9 @@ export default function UnderDevelopmentNote() {
         {/*06.12.2023*/}
         {/*06.16.2023*/}
         {/*06.20.2023*/}
+        {/*06.23.2023*/}
         <span>
-          06.23.2023
+          On due date
         </span>
 
         {/*
