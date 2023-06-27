@@ -8,7 +8,7 @@
 
   // Main, Header, Section, Footer
   main, header, section, footer {
-    text-align:left;
+    text-align:start;//left
   }
 
   // Headline, Title, Subtitle
@@ -290,6 +290,296 @@
         .skill-row {
           padding:55px 0 35px;
         }
+      }
+    }
+  }
+
+
+
+
+  // AboutPage Header
+  header.aboutpage-header {
+    padding:100px 0;
+  }
+  @media only screen and (min-width:992px) {//Up//@include media-breakpoint-up(lg) {//Up
+    header.aboutpage-header {
+      .about-header-middle {
+        > div {
+          top:-41px;
+          span.about-header-short-story {
+            bottom:-95px;//-115px
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-up(xl) {//Up
+    header.aboutpage-header {
+      .about-header-middle {
+        > div {
+          top:-39px;//-70px
+        }
+      }
+    }
+  }
+
+  // About Myself Section
+  section.about-myself-section {
+    padding:83px 0 240px;
+    .about-postdata {
+      > div {
+        width:46%;
+      }
+    }
+    img {
+      position:absolute;
+    }
+    img.image-candelaria {
+      width:296px;
+      top:163px;
+      left:0;
+    }
+    img.image-palm-beach {
+      width:118px;
+      top:260px;
+      right:-64px;
+    }
+    img.image-england-port {
+      width:263px;
+      top:700px;//620px
+      left:0;
+    }
+    img.image-bogota-colombia {
+      width:290px;//300px
+      bottom:370px;
+      left:0;//-157px//0 Cooler But
+    }
+    img.image-england-park {
+      width:298px;
+      top:42px;
+      right:1px;
+    }
+  }
+  @media only screen and (min-width:880px) {//Up//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 300px;
+      img.image-candelaria {
+        width:375px;
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:170px;
+        top:260px;
+        right:-35px;//-170px
+      }
+      img.image-england-port {
+        width:315px;//392px
+        top:680px;//600px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:285px;
+        bottom:395px;
+        left:0;//-149px//0 Cooler But
+      }
+      img.image-england-park {
+        width:358px;//411px
+        top:50px;
+        right:1px;
+      }
+    }
+  }
+  @media only screen and (min-width:992px) {//Up//@include media-breakpoint-up(lg) {//Up//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 400px;
+      img.image-candelaria {
+        width:378px;//438px//475px
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:120px;//144px//170px
+        top:345.5px;
+        right:-62px;//-24px//-91px
+      }
+      img.image-england-port {
+        width:336px;//358px//392px
+        top:708.5px;//628.5px//608.5px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:293px;//338px//255px
+        bottom:87px;//117px
+        left:0;//-154px//-176px//-135px//0 Cooler But
+      }
+      img.image-england-park {
+        width:400px;
+        top:90px;
+        right:1px;
+      }
+    }
+  }
+  @media only screen and (min-width:1100px) {//Up//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 400px;
+      img.image-candelaria {
+        width:438px;//475px
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:144px;//170px
+        top:345.5px;
+        right:-24px;//-91px
+      }
+      img.image-england-port {
+        width:358px;//392px
+        top:708.5px;//628.5px//608.5px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:338px;//255px
+        bottom:87px;//117px
+        left:0;//-176px//-135px//0 Cooler But
+      }
+      img.image-england-park {
+        width:400px;
+        top:90px;
+        right:1px;
+      }
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-up(xl) {//Up//√√√√√√√
+    section.about-myself-section {
+      padding:83px 0 450px;
+      img.image-candelaria {
+        width:475px;
+        top:163px;
+        left:0;
+      }
+      img.image-palm-beach {
+        width:170px;
+        top:345.5px;
+        right:-24px;
+      }
+      img.image-england-port {
+        width:392px;
+        top:688.5px;//608.5px
+        left:0;
+      }
+      img.image-bogota-colombia {
+        width:305px;
+        bottom:127px;
+        left:0;//-159px//0 Cooler But
+      }
+      img.image-england-park {
+        width:411px;
+        top:110px;
+        right:1px;
+      }
+    }
+  }
+
+  // About Lets Work Section
+  section.about-lets-work-section {
+    padding:70px 0 300px;
+    img {
+      position:absolute;
+    }
+    img.image-england-castle {
+      width:381px;
+      top:140px;
+      left:-238px;
+    }
+    img.image-villa-de-leyva {
+      width:203px;
+      bottom:40px;
+      left:0;
+    }
+    img.image-turkey-cats {
+      width:173px;
+      right:0;
+      bottom:10px;
+    }
+  }
+  @media only screen and (min-width:880px) {//Up
+    section.about-lets-work-section {
+      padding:70px 0 350px;
+      img.image-england-castle {
+        width:433px;//465px
+        top:150px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:315px;//391px
+        bottom:40px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:194px;//227px
+        right:0;
+        bottom:10px;
+      }
+    }
+  }
+  @media only screen and (min-width:992px) {//Up//@include media-breakpoint-up(lg) {//Up//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 400px;
+      img.image-england-castle {
+        width:376px;//436px
+        top:170px;//140px
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:297px;//322px
+        bottom:50px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:176px;//227px
+        right:0;
+        bottom:11px;
+      }
+    }
+  }
+  @media only screen and (min-width:1100px) {//Up//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 400px;
+      img.image-england-castle {
+        width:436px;
+        top:140px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:322px;
+        bottom:30px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:227px;
+        right:0;
+        bottom:11px;
+      }
+    }
+  }
+  @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-up(xl) {//Up//√√√√√√√
+    section.about-lets-work-section {
+      padding:70px 0 465px;
+      img.image-england-castle {
+        width:465px;
+        top:141px;
+        left:-238px;
+      }
+      img.image-villa-de-leyva {
+        width:391px;
+        bottom:100px;
+        left:0;
+      }
+      img.image-turkey-cats {
+        width:227px;
+        right:0;
+        bottom:11px;
       }
     }
   }
