@@ -3,8 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import AboutPageHeader from "../components/about/AboutPageHeader.js";
-import AboutPageLetsWorkSection from "../components/about/AboutPageLetsWorkSection.js";
 import AboutPageMyselfSection from "../components/about/AboutPageMyselfSection.js";
+import AboutPageLetsWorkSection from "../components/about/AboutPageLetsWorkSection.js";
+import Footer from "../components/Footer.js";
 
 // About (Page) Component
 export default function AboutPage() {
@@ -25,7 +26,7 @@ export default function AboutPage() {
         </div>
       </main>*/}
 
-      {/*<Footer/>*/}
+      <Footer/>
 
     </>
   )
