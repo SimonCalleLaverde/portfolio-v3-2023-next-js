@@ -323,8 +323,8 @@
     }
   }
 
-  // About Myself Section
-  section.about-myself-section {
+  // About Page Myself Section
+  section.aboutpage-myself-section {
     padding:83px 0 240px;
     .about-postdata {
       > div {
@@ -361,7 +361,7 @@
     }
   }
   @media only screen and (min-width:880px) {//Up//√√√√√√√
-    section.about-myself-section {
+    section.aboutpage-myself-section {
       padding:83px 0 300px;
       img.image-candelaria {
         width:375px;
@@ -391,7 +391,7 @@
     }
   }
   @media only screen and (min-width:992px) {//Up//@include media-breakpoint-up(lg) {//Up//√√√√√√√
-    section.about-myself-section {
+    section.aboutpage-myself-section {
       padding:83px 0 400px;
       img.image-candelaria {
         width:378px;//438px//475px
@@ -421,7 +421,7 @@
     }
   }
   @media only screen and (min-width:1100px) {//Up//√√√√√√√
-    section.about-myself-section {
+    section.aboutpage-myself-section {
       padding:83px 0 400px;
       img.image-candelaria {
         width:438px;//475px
@@ -451,7 +451,7 @@
     }
   }
   @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-up(xl) {//Up//√√√√√√√
-    section.about-myself-section {
+    section.aboutpage-myself-section {
       padding:83px 0 450px;
       img.image-candelaria {
         width:475px;

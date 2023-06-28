@@ -10,7 +10,7 @@ export default function AboutPageMyselfSection() {
 
 
 
-    <section className="about-myself-section">
+    <section className="aboutpage-myself-section">
       {/* Desktop | Screen Readers */}
       <img className="image-candelaria d-none d-md-block rellax" src="/about-page-images/about-bogota-colombia-candelaria-image.jpg"/>
       <img className="image-england-port d-none d-md-block rellax" src="/about-page-images/about-london-england-port-image.jpg"/>

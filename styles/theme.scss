@@ -1041,8 +1041,8 @@ header.aboutpage-header {
   }
 }
 
-// About Myself Section
-section.about-myself-section {
+// About Page Myself Section
+section.aboutpage-myself-section {
   padding:20px 20px 25px;
   .about-intro, .about-postdata {
     a {
@@ -1080,21 +1080,21 @@ section.about-myself-section {
   }
 }
 @media only screen and (max-width:992px) {//Down//@include media-breakpoint-down(sm) {//Down
-  section.about-myself-section {
+  section.aboutpage-myself-section {
     img {
       margin:0 auto;
     }
   }
 }
 // @include media-breakpoint-only(sm) {//Only
-//   section.about-myself-section {
+//   section.aboutpage-myself-section {
 //     img.image-candelaria, img.image-england-port, img.image-england-park {//img.image-palm-beach, img.image-bogota-colombia
 //       width:67.5%;
 //     }
 //   }
 // }
 @media only screen and (max-width:768px) {//Down//@include media-breakpoint-down(xs) {//Down
-  section.about-myself-section {
+  section.aboutpage-myself-section {
     .about-postdata {
       > div {
         width:65%;
@@ -1104,7 +1104,7 @@ section.about-myself-section {
   }
 }
 @media only screen and (max-width:400px) {//Down
-  section.about-myself-section {
+  section.aboutpage-myself-section {
     .about-postdata {
       > div {
         width:90%;
