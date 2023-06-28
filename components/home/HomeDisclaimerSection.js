@@ -28,7 +28,7 @@ export default function HomeDisclaimerSection() {
 
               <p>
                 Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is currently being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies as well. It is also currently showing my latest User Experience (UX) & Product Design
-                real {/*client*/}stakeholder’s project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course that{/*which*/} I {/*was taking*/}enrolled from October 2022 to
+                real {/*client*/}stakeholder&apos;s project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course that{/*which*/} I {/*was taking*/}enrolled from October 2022 to
                 February 2023 at Experience Haus, London, UK.
               </p>
 

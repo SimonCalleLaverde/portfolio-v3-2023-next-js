@@ -111,6 +111,9 @@ body {
     font-family:$font-regular-italic!important;//$font-light-italic!important
   }
 }
+img {
+  max-width:100%;//Important For Images
+}
 
 // Main, Header, Section, Footer
 main, header, section, footer {
@@ -941,15 +944,6 @@ header.aboutpage-header {
       position:relative;
       width:210px;
       margin:0 auto;
-      .glitch-image-wrap {
-        img.glitch-img {
-          height:300px;////New
-        }
-      }
-
-
-
-
       span {
         position:absolute;
       }
@@ -972,7 +966,7 @@ header.aboutpage-header {
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-up(sm) {//Up
-  header.about-header {
+  header.aboutpage-header {
     .about-header-middle {
       h1, h2, h3, h4, h5, h6 {
         white-space:nowrap;
@@ -993,7 +987,7 @@ header.aboutpage-header {
   }
 }
 @media only screen and (max-width:768px) {//Down//@include media-breakpoint-down(xs) {//Down
-  header.about-header {
+  header.aboutpage-header {
     .about-header-middle {
       h1, h2, h3, h4, h5, h6 {
         position:absolute;
@@ -1031,7 +1025,7 @@ header.aboutpage-header {
   }
 }
 @media only screen and (max-width:400px) {//Down
-  header.about-header {
+  header.aboutpage-header {
     .about-header-middle {
       h1, h2, h3, h4, h5, h6 {
         > div {
@@ -1119,12 +1113,12 @@ section.about-myself-section {
   }
 }
 
-// About Lets Work Section
-section.about-lets-work-section {
+// About Page Lets Work Section
+section.aboutpage-lets-work-section {
   padding:30px 20px 40px;////pad-bott
 }
 @media only screen and (max-width:992px) {//Down//@include media-breakpoint-down(sm) {//Down
-  section.about-lets-work-section {
+  section.aboutpage-lets-work-section {
     img {
       margin:0 auto;
     }
@@ -1139,7 +1133,7 @@ section.about-lets-work-section {
   }
 }
 // @include media-breakpoint-only(sm) {//Only
-//   section.about-lets-work-section {
+//   section.aboutpage-lets-work-section {
 //     img.image-england-castle {
 //       width:67.5%;
 //     }
@@ -1508,7 +1502,7 @@ footer {
 }
 
 // Glitch Text Effect Styles (About Page)
-header.about-header {
+header.aboutpage-header {
   .text-hero {
     @include animation(glitchTextAnim var(--anim-duration) linear var(--anim-delay) infinite);
   }
