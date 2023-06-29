@@ -32,15 +32,15 @@ export default function AboutPageHeader() {
 
               <div>
                 <div className="glitch-image-wrap">
-                  <img className="glitch-img" src="/profile-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect"/>
+                  <img className="glitch-img" src="/about-page-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect"/>
 
-                  <img className="glitch-img" src="/profile-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect" aria-hidden="true"/>
+                  <img className="glitch-img" src="/about-page-images/about-header-picture-(original)-(tinypng).jpg" alt="" aria-hidden="true"/>
 
-                  <img className="glitch-img" src="/profile-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect" aria-hidden="true"/>
+                  <img className="glitch-img" src="/about-page-images/about-header-picture-(original)-(tinypng).jpg" alt="" aria-hidden="true"/>
 
-                  <img className="glitch-img" src="/profile-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect" aria-hidden="true"/>
+                  <img className="glitch-img" src="/about-page-images/about-header-picture-(original)-(tinypng).jpg" alt="" aria-hidden="true"/>
 
-                  <img className="glitch-img" src="/profile-images/about-header-picture-(original)-(tinypng).jpg" alt="Picture of Simón Calle Laverde with a glitch effect" aria-hidden="true"/>
+                  <img className="glitch-img" src="/about-page-images/about-header-picture-(original)-(tinypng).jpg" alt="" aria-hidden="true"/>
                 </div>
                 
                 <span className="about-header-info text-rosybrown">
