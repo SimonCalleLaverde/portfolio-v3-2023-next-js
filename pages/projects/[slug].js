@@ -346,23 +346,36 @@ export default function ProjectPage({ projectData }) {
               </div>
 
               {/* Some New Examples */}
-              {/*if (data !== null && data !== '')
+              {/* if (data !== null && data !== '')
               // do something
-              }*/}
+              } */}
 
-              {/*if (data) {
+              {/* if (data) {
               // do something
-              }*/}
+              } */}
 
-              {/*array.length > 0 && array.map(i => i); // returns false*/}
+              {/* https://steph-ny.medium.com/logical-and-vs-ternary-operator-cdf06ae5d432 */}
+              {/* We could also use this approach */}
+              {/* array.length > 0 && array.map(i => i); // returns false */}
 
-              {/*result = "" && "foo"; // result is assigned "" (empty string)
+              {/* The most ideal solution, however, is to use the ternary operator and control what you want as the outcome when the condition isn’t met */}
+              {/* array ? true : false; // returns true;
+              array.length ? true : false // returns false as the length is 0; */}
+
+              {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND */}
+              {/* Logical AND (&&) evaluates operands from left to right, returning immediately with the value of the first falsy operand it encounters; if all values are truthy, the value of the last operand is returned.
+              If a value can be converted to true, the value is so-called truthy. If a value can be converted to false, the value is so-called falsy. */}
+
+              {/* result = "" && "foo"; // result is assigned "" (empty string)
               result = 2 && 0; // result is assigned 0
-              result = "foo" && 4; // result is assigned 4*/}
+              result = "foo" && 4; // result is assigned 4 */}
 
-              {/* Because "dangerouslySetInnerHTML" generates "<p></p>" as minimum, so string is never length "0" here, but length "7" */}
-              {/*projectData.captionFirst.html.length > 7 && ...*/}
-              { projectData.captionFirst.html !== "<p></p>" &&
+              {/* Because "CMS when not clearing input" generates "<p></p>", so string would not be length "0", but length "7" */}
+              {/* projectData.captionFirst.html.length > 7 && ... */}
+
+              {/* Input-Dont-Exist - Not ever written 'or' Cleared (in the CMS)
+              Input-Exists - Lorem Ipsum 'or' Errased but not cleared, so throws <p></p> (in the CMS) */}
+              { (projectData.captionFirst && projectData.captionFirst.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}/>
                 </div>
@@ -378,7 +391,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionSecond.html !== "<p></p>" &&
+              { (projectData.captionSecond && projectData.captionSecond.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}/>
                 </div>
@@ -394,7 +407,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionThird.html !== "<p></p>" &&
+              { (projectData.captionThird && projectData.captionThird.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}/>
                 </div>
@@ -410,7 +423,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionFourth.html !== "<p></p>" &&
+              { (projectData.captionFourth && projectData.captionFourth.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}/>
                 </div>
@@ -426,7 +439,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionFifth.html !== "<p></p>" &&
+              { (projectData.captionFifth && projectData.captionFifth.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}/>
                 </div>
@@ -442,7 +455,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionSixth.html !== "<p></p>" &&
+              { (projectData.captionSixth && projectData.captionSixth.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}/>
                 </div>
@@ -458,7 +471,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { projectData.captionSeventh.html !== "<p></p>" &&
+              { (projectData.captionSeventh && projectData.captionSeventh.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}/>
                 </div>
