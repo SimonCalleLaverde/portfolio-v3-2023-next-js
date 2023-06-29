@@ -375,7 +375,7 @@ export default function ProjectPage({ projectData }) {
 
               {/* Input-Dont-Exist - Not ever written 'or' Cleared (in the CMS)
               Input-Exists - Lorem Ipsum 'or' Errased but not cleared, so throws <p></p> (in the CMS) */}
-              { (projectData.captionFirst && projectData.captionFirst.html !== "<p></p>") &&
+              { (projectData.captionFirst && projectData.captionFirst) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFirst.html }}/>
                 </div>
@@ -391,7 +391,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionSecond && projectData.captionSecond.html !== "<p></p>") &&
+              { (projectData.captionSecond && projectData.captionSecond) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSecond.html }}/>
                 </div>
@@ -407,7 +407,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionThird && projectData.captionThird.html !== "<p></p>") &&
+              { (projectData.captionThird && projectData.captionThird) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionThird.html }}/>
                 </div>
@@ -423,7 +423,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionFourth && projectData.captionFourth.html !== "<p></p>") &&
+              { (projectData.captionFourth && projectData.captionFourth) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourth.html }}/>
                 </div>
@@ -439,7 +439,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionFifth && projectData.captionFifth.html !== "<p></p>") &&
+              { (projectData.captionFifth && projectData.captionFifth) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifth.html }}/>
                 </div>
@@ -455,7 +455,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionSixth && projectData.captionSixth.html !== "<p></p>") &&
+              { (projectData.captionSixth && projectData.captionSixth) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixth.html }}/>
                 </div>
@@ -471,7 +471,7 @@ export default function ProjectPage({ projectData }) {
                 ))}
               </div>
 
-              { (projectData.captionSeventh && projectData.captionSeventh.html !== "<p></p>") &&
+              { (projectData.captionSeventh && projectData.captionSeventh) &&
                 <div className="col-md-8 offset-md-2 mb-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-4more mb-5 pb-5 font-ultra-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventh.html }}/>
                 </div>
