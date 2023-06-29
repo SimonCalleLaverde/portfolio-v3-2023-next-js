@@ -12,12 +12,12 @@ export default function AboutPageLetsWorkSection() {
 
     <section className="aboutpage-lets-work-section">
       {/* Desktop | Screen Readers */}
-      <img className="image-england-castle d-none d-md-block" src="/about-page-images/about-london-england-castle-image.jpg"/>
-      <img className="image-villa-de-leyva d-none d-md-block" src="/about-page-images/about-villa-de-leyva-colombia-daniela-patel-image.jpg"/>
-      <img className="image-turkey-cats d-none d-md-block" src="/about-page-images/about-istanbul-turkey-cats-image.jpg"/>
+      <img className="image-england-castle d-none d-md-block" src="/about-page-images/about-london-england-castle-image.jpg" alt=""/>
+      <img className="image-villa-de-leyva d-none d-md-block" src="/about-page-images/about-villa-de-leyva-colombia-daniela-patel-image.jpg" alt=""/>
+      <img className="image-turkey-cats d-none d-md-block" src="/about-page-images/about-istanbul-turkey-cats-image.jpg" alt=""/>
 
       {/* Mobile */}
-      <img className="image-england-castle d-block d-md-none mb-5 pb-2" src="/about-page-images/about-london-england-castle-image.jpg" aria-hidden="true"/>
+      <img className="image-england-castle d-block d-md-none mb-5 pb-2" src="/about-page-images/about-london-england-castle-image.jpg" alt="" aria-hidden="true"/>
 
       <div className="container">
 
@@ -50,8 +50,8 @@ export default function AboutPageLetsWorkSection() {
       </div>
 
       {/* Mobile */}
-      <img className="image-villa-de-leyva d-block d-md-none my-5 pb-1" src="/about-page-images/about-villa-de-leyva-colombia-daniela-patel-image.jpg" aria-hidden="true"/>
-      <img className="image-turkey-cats d-block d-md-none mb-5 pb-2" src="/about-page-images/about-istanbul-turkey-cats-image.jpg" aria-hidden="true"/>
+      <img className="image-villa-de-leyva d-block d-md-none my-5 pb-1" src="/about-page-images/about-villa-de-leyva-colombia-daniela-patel-image.jpg" alt="" aria-hidden="true"/>
+      <img className="image-turkey-cats d-block d-md-none mb-5 pb-2" src="/about-page-images/about-istanbul-turkey-cats-image.jpg" alt="" aria-hidden="true"/>
     </section>
 
 

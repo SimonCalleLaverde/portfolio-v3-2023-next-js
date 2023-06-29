@@ -12,16 +12,16 @@ export default function AboutPageMyselfSection() {
 
     <section className="aboutpage-myself-section">
       {/* Desktop | Screen Readers */}
-      <img className="image-candelaria d-none d-md-block rellax" src="/about-page-images/about-bogota-colombia-candelaria-image.jpg"/>
-      <img className="image-england-port d-none d-md-block rellax" src="/about-page-images/about-london-england-port-image.jpg"/>
-      <img className="image-palm-beach d-none d-md-block rellax" src="/about-page-images/about-colombia-palm-beach-image.jpg"/>
-      <img className="image-bogota-colombia d-none d-md-block rellax" src="/about-page-images/about-bogota-colombia-marcela-pinzon-image.jpg"/>
+      <img className="image-candelaria d-none d-md-block rellax" src="/about-page-images/about-bogota-colombia-candelaria-image.jpg" alt=""/>
+      <img className="image-england-port d-none d-md-block rellax" src="/about-page-images/about-london-england-port-image.jpg" alt=""/>
+      <img className="image-palm-beach d-none d-md-block rellax" src="/about-page-images/about-colombia-palm-beach-image.jpg" alt=""/>
+      <img className="image-bogota-colombia d-none d-md-block rellax" src="/about-page-images/about-bogota-colombia-marcela-pinzon-image.jpg" alt=""/>
 
       {/* Mobile */}
-      <img className="image-candelaria d-block d-md-none mb-5 pb-2" src="/about-page-images/about-bogota-colombia-candelaria-image.jpg" aria-hidden="true"/>
-      <img className="image-england-port d-block d-md-none mb-5" src="/about-page-images/about-london-england-port-image.jpg" aria-hidden="true"/>
-      {/*<img className="image-palm-beach d-block d-md-none" src="/about-page-images/about-colombia-palm-beach-image.jpg" aria-hidden="true"/>*/}
-      {/*<img className="image-bogota-colombia d-block d-md-none" src="/about-page-images/about-bogota-colombia-marcela-pinzon-image.jpg" aria-hidden="true"/>*/}
+      <img className="image-candelaria d-block d-md-none mb-5 pb-2" src="/about-page-images/about-bogota-colombia-candelaria-image.jpg" alt="" aria-hidden="true"/>
+      <img className="image-england-port d-block d-md-none mb-5" src="/about-page-images/about-london-england-port-image.jpg" alt="" aria-hidden="true"/>
+      {/*<img className="image-palm-beach d-block d-md-none" src="/about-page-images/about-colombia-palm-beach-image.jpg" alt="" aria-hidden="true"/>*/}
+      {/*<img className="image-bogota-colombia d-block d-md-none" src="/about-page-images/about-bogota-colombia-marcela-pinzon-image.jpg" alt="" aria-hidden="true"/>*/}
 
       <div className="container">
 
@@ -36,7 +36,7 @@ export default function AboutPageMyselfSection() {
 
 <p>Hi there, I live in the beautiful country of Colombia which I have shown in some photos throughout my portfolio. I have a career in marketing and advertising and over 6 years of experience in web development. I worked over 4 years of that time for an international agency and clients around the world. {/*We started working in a physical environment, the company then moved to a remote setting in the last two and a half years that I worked there.*/}</p>
 
-<p>I started my journey after graduating with a bachelor's degree as a <em className="font-ultra-light text-italic">Publicist</em> {/*with studies in marketing and advertising */}in the <a href="https://www.utadeo.edu.co/es" target="blank">Universidad&nbsp;Jorge&nbsp;Tadeo&nbsp;Lozano</a>. I wanted to apply my 5 years long career knowledge through digital platforms so I then took a continuing education program course in <em className="font-ultra-light text-italic">Web Design and Design for Mobile Devices</em> in a recognized university here in my country, the <a href="https://www.javeriana.edu.co/home" target="blank">Pontificia&nbsp;Universidad&nbsp;Javeriana</a>.</p>
+<p>I started my journey after graduating with a bachelor&apos;s degree as a <em className="font-ultra-light text-italic">Publicist</em> {/*with studies in marketing and advertising */}in the <a href="https://www.utadeo.edu.co/es" target="blank">Universidad&nbsp;Jorge&nbsp;Tadeo&nbsp;Lozano</a>. I wanted to apply my 5 years long career knowledge through digital platforms so I then took a continuing education program course in <em className="font-ultra-light text-italic">Web Design and Design for Mobile Devices</em> in a recognized university here in my country, the <a href="https://www.javeriana.edu.co/home" target="blank">Pontificia&nbsp;Universidad&nbsp;Javeriana</a>.</p>
 
 <p>I then worked for over 4 years with the great team of <a href="https://www.codenation.com/" target="blank">Code&nbsp;Nation</a>, a 5 star rated international{/* company*/} digital agency based in Australia. There, we created dozens of robust and powerful campaign websites and platforms for both progressive and big organizations. {/*we had a couple of occations  where all the team could get together.*/}</p>
 
@@ -80,14 +80,14 @@ export default function AboutPageMyselfSection() {
         {/* Desktop | Screen Readers */}
         <div className="row d-none d-md-block">
           <div className="col-md-12">
-            <img className="image-england-park" src="/about-page-images/about-london-england-park-image.jpg"/>
+            <img className="image-england-park" src="/about-page-images/about-london-england-park-image.jpg" alt=""/>
           </div>
         </div>
 
       </div>
 
       {/* Mobile */}
-      <img className="image-england-park d-block d-md-none mt-5 pt-1" src="/about-page-images/about-london-england-park-image.jpg" aria-hidden="true"/>
+      <img className="image-england-park d-block d-md-none mt-5 pt-1" src="/about-page-images/about-london-england-park-image.jpg" alt="" aria-hidden="true"/>
     </section>
 
 
