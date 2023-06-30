@@ -45,9 +45,9 @@ export default function HomeDisclaimerSection() {
                 —As of {/*April 20, 2023*/}{/*04.20.2023*/}{/*May 15, 2023*/}May, 2023
               </p>
 
-              <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021 (UI & Front-end Work)</Link>
-              {/*Portfolio 2021 (UI Design & Front-end Development)*/}
+              <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Archaic Portfolio 2021</Link>
               {/*Portfolio 2021 (UI & Front-end Work)*/}
+              {/*Portfolio 2021 (UI Design & Front-end Development)*/}
             </div>
 
           </div>

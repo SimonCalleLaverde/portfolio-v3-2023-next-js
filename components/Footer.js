@@ -32,7 +32,8 @@ export default function Footer() {
 	return (
 		<footer>
       {/* Desktop | Screen Readers */}
-      <Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
+      <div className="container display-flex justify-content-center align-items-center text-align-center">
+      {/*<Link className="container display-flex justify-content-center align-items-center text-align-center" href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">*/}{/*/get_in_touch*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}
         {/*title="I'll kindly temporarily redirect you to my Portfolio 2021, while I finish my new 'Get In Touch' page 2023."*/}
         <div className="row display-flex justify-content-center align-items-center">
           <div className="col-md-12">
@@ -60,14 +61,15 @@ export default function Footer() {
               {/*Use my older, boring,
               <br/>but reliable form?*/}
 
-              Click here to use my
+              {/*Click here to use my
               <br/>older 2021 form
-              <br/>{"{ "}temporarily{" }"}
+              <br/>{"{ "}temporarily{" }"}*/}
             </p>
 
           </div>
         </div>
-      </Link>
+      </div>
+      {/*</Link>*/}
 
 
 
@@ -80,8 +82,9 @@ export default function Footer() {
       <aside className="footer-aside-info-elements text-turquoise">
         {/* Desktop | Screen Readers */}{/* (Mobile Hidden (I Think, Gotta Revise/Decide Mobile Yet)) */}
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
-          Or just email me or call me
+          {/*Or just email me or call me*/}
           {/*Email me or call me*/}
+          Just email me or call me
           <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}

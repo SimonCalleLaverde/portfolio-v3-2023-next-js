@@ -1238,16 +1238,16 @@ footer {
         line-height:1.2;
       }
     }
-    &:hover, &:active, &:focus {
-      > div {
-        //@include box-shadow(0 5px 15px rgba(0,0,0,0.4));////New
-        @include filter(opacity(0.7));//0.8////New
-        // &::before {
-        //   border:1px theme-color("turquoise") dotted;////New
-        //   //@include transform(rotate(360deg));////New
-        // }
-      }
-    }
+    // &:hover, &:active, &:focus {
+    //   > div {
+    //     //@include box-shadow(0 5px 15px rgba(0,0,0,0.4));////New
+    //     @include filter(opacity(0.7));//0.8////New
+    //     // &::before {
+    //     //   border:1px theme-color("turquoise") dotted;////New
+    //     //   //@include transform(rotate(360deg));////New
+    //     // }
+    //   }
+    // }
   }
   > aside.footer-aside-info-elements {
     @include filter(opacity(0.9));
