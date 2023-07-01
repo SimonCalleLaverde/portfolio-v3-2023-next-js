@@ -45,7 +45,7 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:hidden;
+    overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
@@ -1182,7 +1182,7 @@ section.project-page-section {
   .page-content-mid {
     font-size:18px;//20px
     img {
-      border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
+      //border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
       @include border-radius(0.8rem);
     }
     blockquote {

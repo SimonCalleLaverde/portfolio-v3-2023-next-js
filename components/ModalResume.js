@@ -11,7 +11,7 @@ export default function ModalResume() {
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h3 className="modal-title" id="modalResumeLabel">Resume (CV) 2023</h3>
+            <h3 className="modal-title" id="modalResumeLabel">Resume (CV) 2023 (English)</h3>{/*Resume (CV) 2023*/}
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -68,7 +68,8 @@ export default function ModalResume() {
           <div className="modal-footer">
             {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>*/}
             {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>*/}
-            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open to download in a new tab</Link>
+            <Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open and download</Link>
+            {/*Open to download in a new tab*/}
             <button className="btn" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>

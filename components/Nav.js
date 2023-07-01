@@ -22,7 +22,7 @@ export default function Nav() {
               {/*Other work*/}
               {/*More work*/}
               {/*Development work*/}
-              About me
+              About me (2021)
             </Link>
           </li>
 

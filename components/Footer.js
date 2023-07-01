@@ -64,6 +64,9 @@ export default function Footer() {
               {/*Click here to use my
               <br/>older 2021 form
               <br/>{"{ "}temporarily{" }"}*/}
+
+              Let&apos;s work together.
+              <br/>Let&apos;s talk!
             </p>
 
           </div>
@@ -84,7 +87,8 @@ export default function Footer() {
         <div className="footer-email-or-call">{/*d-none d-md-block*/}
           {/*Or just email me or call me*/}
           {/*Email me or call me*/}
-          Just email me or call me
+          {/*Just email me or call me*/}
+          Please currently email me or call me at:
           <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
@@ -95,8 +99,8 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-light">{/*font-ultra-light*/}
-            <br/>Full-time work or/and
-            <br/>Contract projects.
+            <br/>Contract projects or
+            <br/>Full-time work
           </span>
         </div>
 
@@ -120,8 +124,9 @@ export default function Footer() {
         <div className="footer-credits" aria-hidden="true">
           Relevant work
           <span className="font-light">{/*font-ultra-light*/}
-            <br/>Visit also my older
-            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with all movie sequels, the first one was way better">Portfolio 2021</Link>
+            {/*<br/>Visit also my older*/}
+            <br/>Visit also my archaic
+            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with most movie sequels, my first portfolio was better">Portfolio 2021</Link>
           </span>
         </div>
 
@@ -153,7 +158,7 @@ export default function Footer() {
                   {/*Other work*/}
                   {/*More work*/}
                   {/*Development work*/}
-                  About me
+                  About me (2021)
                 </span>
               </Link>
             </li>

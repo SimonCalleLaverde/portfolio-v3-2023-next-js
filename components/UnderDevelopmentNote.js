@@ -19,7 +19,7 @@ export default function UnderDevelopmentNote() {
         */}
         
         <h5 className="mb-4">
-          I haven&apos;t forgotten of you tablet and mobile users. These responsive versions are under development and will be coming soon.
+          I haven&apos;t forgotten of you mobile and tablet users.
         </h5>
 
         {/*05.27.2023*/}
@@ -28,7 +28,11 @@ export default function UnderDevelopmentNote() {
         {/*06.20.2023*/}
         {/*06.23.2023*/}
         <span>
-          On due date
+          The responsive versions are under development and will be coming soon.
+          <br/>{/*<br/>*/}
+
+          {/*On due date*/}
+          <br/>–As of July 01, 2023
         </span>
 
         {/*
