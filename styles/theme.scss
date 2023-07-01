@@ -1182,7 +1182,7 @@ section.project-page-section {
   .page-content-mid {
     font-size:18px;//20px
     img {
-      //border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
+      border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
       @include border-radius(0.8rem);
     }
     blockquote {
