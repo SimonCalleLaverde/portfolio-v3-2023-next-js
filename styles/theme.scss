@@ -1186,8 +1186,9 @@ section.project-page-section {
       @include border-radius(0.8rem);
     }
     blockquote {
+      margin-top:-30px;
       padding-right:0;//30px//10px
-      padding-bottom:15px;
+      padding-bottom:30px;//15px
       padding-left:30px;//10px
       font-size:15px;//18px
     }
