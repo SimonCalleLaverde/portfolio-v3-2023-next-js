@@ -29,7 +29,8 @@ export default function UnderDevelopmentNote() {
 
         <span>
           The responsive versions are under development and will be coming soon.
-          <br/>{/*<br/>*/}
+          <br/>
+          {/*<br/>*/}
 
           {/*05.27.2023*/}
           {/*06.12.2023*/}
