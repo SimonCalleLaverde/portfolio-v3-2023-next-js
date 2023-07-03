@@ -9,46 +9,53 @@ export default function HomeDisclaimerSection() {
       <div className="container">
 
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-10">
 
-            <div>
-              <h4 className="mb-3">
-                Disclaimer
-              </h4>
+            <h4 className="mb-3">
+              Disclaimer
+            </h4>
 
-              <p>
-                I apologize for the inconvenience, this site is under development.{/*construction*/}{/* its latest version isn&apos;t live yet.*/}{/* Due date for completion: Saturday 05.20.2023.*/}
-              </p>
+            <p>
+              {/*construction*/}{/* its latest version isn&apos;t live yet.*/}{/* Due date for completion: Saturday 05.20.2023.*/}
+              {/*I apologize for the inconvenience, this site is under development.*/}
+              I apologize for the inconvenience, this portfolio is in its final stages of development. In the meantime, you can check out my
+              previous <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer"><em><strong>Portfolio 2021</strong></em></Link> and
+              take a peek at what I&apos;ve work on before.
+            </p>
 
-              <p>
-                In the meantime, you can check out my previous <em>Portfolio (V2){/*II*/} 2021</em> for more{/*bio*/} <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer"><em><strong>about me</strong></em></Link> and so that you can take a peek at what I&apos;ve done before and
-                at {/*some*/}a big part of the digital <Link href="https://simoncallelaverde.github.io/projects" target="_blank" rel="noreferrer"><em><strong>work & projects</strong></em></Link> I&apos;ve been a part of in previous years. There I have a good bunch (28) Front-end Development projects that I helped
-                build for an Australian-based digital agency, and {/*2*/}a couple independent User Interface (UI) Design projects that I designed and developed myself.
-              </p>
+            <p>
+              This new <em>Portfolio 2023</em> will be using better technologies like ReactJS (the most in demand JavaScript library for building User Interfaces,
+              created by Facebook&apos;s developers team) and NextJS (the React framework for the Web, used by some of the world&apos;s largest companies) and I will
+              be able to structure my Case Studies better.
+            </p>
 
-              <p>
-                Although this is only a rough first version, this new <em>Portfolio (V3) 2023</em> is currently being made with better technologies (i.e. ReactJS / NextJS) and it will have the option to display better case studies as well. It is also currently showing my latest User Experience (UX) & Product Design
-                real {/*client*/}stakeholder&apos;s project that I worked {/*in*/}at a in-person <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course that{/*which*/} I {/*was taking*/}enrolled from October 2022 to
-                February 2023 at Experience Haus, London, UK.
-              </p>
+            <p>
+              I&apos;m also finally and currently showcasing my latest <em>User Experience (UX) & Product Design</em> real {/*stakeholder*/}client&apos;s project which I worked
+              on {/*in*/}at an in-person 3 months duration <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course {/*which*/}that
+              I {/*was taking*/}enrolled at the <em>Experience Haus, London, United Kingdom</em> from October 2022 to February 2023.
+            </p>
 
-              {/*<p>
-                I took a while learning new tech and re-building this simpler but more to the point Portfolio, organizing my new most recent case study and others to come soon, so now I really
-                want to start applying to jobs and put a first MVP version in the wild while I polish it and add to it over time.
-              </p>*/}
+            {/*<p>
+              I took a while learning new tech and re-building this simpler but more to the point Portfolio, organizing my new most recent case study and others to come soon, so now I really
+              want to start applying to jobs and put a first MVP version in the wild while I polish it and add to it over time.
+            </p>*/}
 
-              {/*<p>
-                Desktop's version due date for completion: Saturday 05.20.2023.
-              </p>*/}
+            {/*<p>
+              Desktop's version due date for completion: Saturday 05.20.2023.
+            </p>*/}
 
-              <p>
-                —As of {/*April 20, 2023*/}{/*04.20.2023*/}{/*May 15, 2023*/}May, 2023
-              </p>
+            <p>
+              {/*April 20, 2023*/}
+              {/*04.20.2023*/}
+              {/*May 15, 2023*/}
+              {/*—As of May, 2023*/}
+              —As of July 02, 2023
+            </p>
 
-              <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Archaic Portfolio 2021</Link>
-              {/*Portfolio 2021 (UI & Front-end Work)*/}
-              {/*Portfolio 2021 (UI Design & Front-end Development)*/}
-            </div>
+            {/*Portfolio 2021 (UI & Front-end Work)*/}
+            {/*Portfolio 2021 (UI Design & Front-end Development)*/}
+            {/*Archaic Portfolio 2021*/}
+            <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021</Link>
 
           </div>
         </div>

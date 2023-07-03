@@ -10,6 +10,11 @@ export default function UnderDevelopmentNote() {
 
       <div className="note">
         {/*
+        <span>Coming Soon</span>
+        <br/>Today 17.09.2020
+        */}
+
+        {/*
         Under development
         <br/><br/>
         <span>Note: I'm just getting back in track designing & developing this portfolio on May.
@@ -22,23 +27,19 @@ export default function UnderDevelopmentNote() {
           I haven&apos;t forgotten of you mobile and tablet users.
         </h5>
 
-        {/*05.27.2023*/}
-        {/*06.12.2023*/}
-        {/*06.16.2023*/}
-        {/*06.20.2023*/}
-        {/*06.23.2023*/}
         <span>
           The responsive versions are under development and will be coming soon.
           <br/>{/*<br/>*/}
 
+          {/*05.27.2023*/}
+          {/*06.12.2023*/}
+          {/*06.16.2023*/}
+          {/*06.20.2023*/}
+          {/*06.23.2023*/}
           {/*On due date*/}
-          <br/>–As of July 01, 2023
+          {/*<br/>–As of July 01, 2023*/}
+          <br/>—As of July 02, 2023
         </span>
-
-        {/*
-        <span>Coming Soon</span>
-        <br/>Today 17.09.2020
-        */}
       </div>
     </div>
 
