@@ -49,7 +49,9 @@ export default function HomeDisclaimerSection() {
               {/*04.20.2023*/}
               {/*May 15, 2023*/}
               {/*—As of May, 2023*/}
-              —As of July 02, 2023
+              {/*—As of July 02, 2023*/}
+              —{/*As of July 07, 2023*/}
+              Launching today: 07.07.2023
             </p>
 
             {/*Portfolio 2021 (UI & Front-end Work)*/}
