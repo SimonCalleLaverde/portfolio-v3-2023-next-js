@@ -65,8 +65,8 @@ export default function Footer() {
               <br/>older 2021 form
               <br/>{"{ "}temporarily{" }"}*/}
 
-              Let&apos;s work together.
-              <br/>Let&apos;s talk!
+              Let&apos;s work together,
+              <br/>let&apos;s talk!
             </p>
 
           </div>
@@ -88,7 +88,7 @@ export default function Footer() {
           {/*Or just email me or call me*/}
           {/*Email me or call me*/}
           {/*Just email me or call me*/}
-          Please whatsapp, call, or email me at:
+          Please call, whatsapp, or email me at:
           <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}

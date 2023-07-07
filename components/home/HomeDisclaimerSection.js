@@ -18,7 +18,7 @@ export default function HomeDisclaimerSection() {
             <p>
               {/*construction*/}{/* its latest version isn&apos;t live yet.*/}{/* Due date for completion: Saturday 05.20.2023.*/}
               {/*I apologize for the inconvenience, this site is under development.*/}
-              I apologize for the inconvenience, this portfolio is in its final stages of development. In the meantime, you can check out my
+              I apologize for the inconvenience, this portfolio is in its final stage of development. In the meantime, you can check out my
               previous <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer"><em><strong>Portfolio 2021</strong></em></Link> and
               take a peek at what I&apos;ve work on before.
             </p>

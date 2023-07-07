@@ -194,14 +194,14 @@ export default function ProjectPage({ projectData }) {
                 <div className="row text-left mt-5less">
                   <div className="col-5 offset-2">
                     <div className="page-client font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-light">
+                      <span className="page-subtitles font-regular">
                         Client
                       </span>
                       { projectData.client ? projectData.client : projectData.title }
                     </div>
 
                     <div className="page-roles font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-light">
+                      <span className="page-subtitles font-regular">
                         Roles
                       </span>
                       {/* I didn't have this "<span/>" below in older site. Here for the key. Had to create ".page-subtitles" class in "<span/> above" */}
@@ -229,7 +229,7 @@ export default function ProjectPage({ projectData }) {
                     {/*<h3>{ moment(datePublished).format("MMMM Do, YYYY") }</h3>*/}
                     {/*<h3>{ moment(datePublished).format("MMMM D, YYYY") }</h3>*/}
                     <div className="page-year font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-light">
+                      <span className="page-subtitles font-regular">
                         Year
                       </span>
                       {/*{ projectData.year }*/}
@@ -237,7 +237,7 @@ export default function ProjectPage({ projectData }) {
                     </div>
 
                     <div className="page-duration font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-light">
+                      <span className="page-subtitles font-regular">
                         Duration
                       </span>
                       { projectData.duration }
@@ -247,7 +247,7 @@ export default function ProjectPage({ projectData }) {
 
                 <div className="row mt-5less">
                   <div className="col-md-8 offset-md-2">
-                    <div className="font-light">
+                    <div className="font-regular">
                       { projectData.webLaunchUrl &&
                         <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank" rel="noreferrer">
                           View the live site
