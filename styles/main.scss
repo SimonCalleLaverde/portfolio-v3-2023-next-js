@@ -61,7 +61,7 @@ $theme-colors: (
   @return map-get($theme-colors, $key);
 }
 
-//----------------------------------Base Styles----------------------------------//
+//----------------------------------General/Base Styles----------------------------------//
 
 // Mixins Styles
 @import "styles/mixins";
@@ -82,3 +82,8 @@ $theme-colors: (
 
 // Tablet & Desktop Styles
 @import "styles/tablet_and_desktop";
+
+//----------------------------------About Page Styles----------------------------------//
+
+// About Page Glitch Effect Image Styles
+@import "styles/about_page_glitch_effect_image";

@@ -5,7 +5,7 @@ import Cube3D from "/components/Cube3D.js";
 export default function UnderDevelopmentNote() {
   return (
 
-    <div className="under-development-note d-flex flex-column justify-content-around align-items-center text-center py-5 px-4 d-md-none">
+    <div className="under-development-note d-flex d-md-none flex-column justify-content-around align-items-center text-center py-5 px-4">
       <Cube3D/>
 
       <div className="note">
@@ -28,7 +28,7 @@ export default function UnderDevelopmentNote() {
         </h5>
 
         <span>
-          The responsive versions are under development and will be launching today:
+          The responsive versions are under development and will be launching {/*today:*/}in a few days.
           {/*<br/>07.07.2023*/}
           <br/>
           {/*<br/>*/}
@@ -42,7 +42,9 @@ export default function UnderDevelopmentNote() {
           {/*<br/>–As of July 01, 2023*/}
           {/*<br/>—As of July 02, 2023*/}
           {/*<br/>—As of July 07, 2023*/}
-          <br/>07.07.2023
+
+          {/*<br/>07.07.2023*/}
+          <br/>—As of 07.07.2023
         </span>
       </div>
     </div>

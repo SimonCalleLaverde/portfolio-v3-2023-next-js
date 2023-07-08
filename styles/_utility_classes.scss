@@ -73,18 +73,21 @@
   text-decoration:underline;
 }
 
-// Text Align
-.text-align-center {
-  text-align:center;
-}
-.text-align-right {
-  text-align:right;
-}
-.text-align-left {
-  text-align:left;
-}
+// // Text Align
+// .text-align-center {
+//   text-align:center;
+// }
+// .text-align-right {
+//   text-align:right;//Shouldn't Use
+// }
+// .text-align-left {
+//   text-align:left;//Shouldn't Use
+// }
 
 // Flexbox (Better Support) (STILL MISSING SUPPORT, CLASSES, & RE-CHECK)
+// I'll Just Be Using "Bootstrap 5's" Flexbox. I Think I Started This Independent Classes Years Ago, Because B4 Was Still Missing Some Lines Of Support, This Was More Robust (From "CSS Tricks" I Think). Also For An Independent Grid Not Depending On Bootstrap.
+// But For Now I'm Back To Bootstrap (Now 5) In My "Portfolio 2023", I Like It And Now I Trust Its Flexbox Supprt 4 Years After. I Don't Think I Have To Improve On Bootstrap's Template Or Support As I Was Trying 4 Years Ago, Fearing It Still Could Break In Some Browsers As Flexbox Was Pretty New, Even In/For Bootstrap (Was The First Time Implemented In B4)
+// I Was Trying To Make It Even More Robust, Following Some Documentation/Tips. But Bullshit. I'll Just Use The Default "B5's" From Now On, Which I Like, And Know
 .display-flex {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -123,6 +126,7 @@
 }
 
 // Margin & Padding (Ogh, Hate That I Can't Just Add This Into The "SCSS Map" As I Used To Do, As I Don't Have "_variables.scss")
+// Adding "4more" & "5less" Additional Classes
 .m-4more {
   margin:2rem!important;
 }
