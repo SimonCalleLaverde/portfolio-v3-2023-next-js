@@ -48,7 +48,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-        <figure className="FIGURE-TWO">
+        <figure className="FIGURE-TWO" aria-hidden="true">
           {/* Desktop | Screen Readers */}
           <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
             <div className="row">
@@ -81,7 +81,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-        <figure className="FIGURE-THREE">
+        <figure className="FIGURE-THREE" aria-hidden="true">
           {/* Desktop | Screen Readers */}
           <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
             <div className="row">

@@ -173,6 +173,7 @@
         }
         &.FIGURE-TWO {
           figcaption {
+            text-align:end;
             .project-description {
               width:60%;
             }
@@ -180,7 +181,7 @@
         }
         &.FIGURE-THREE {
           figcaption {
-            text-align:end;
+            //text-align:end;
             .project-description {
               width:60%;
             }
