@@ -674,62 +674,60 @@ form {
 //----------------------------------Cards Styles----------------------------------//
 
 // HomePage Projects Cards Sections
-div#homepage-projects-cards-sections {
-  section:nth-child(3n + 1) {//This Will Target Every "3th" Starting From "1" (E.g. '1', '4', '7') //section:nth-of-type(1) {
-    article.project-card {
-      a {
-        figure {
-          &.FIGURE-ONE {
-            display:block;
-          }
-          &.FIGURE-TWO {
-            display:none;
-          }
-          &.FIGURE-THREE {
-            display:none;
-          }
+section.homepage-projects-cards-section {//div#homepage-projects-cards-sections {
+  article.project-card:nth-child(3n + 1) {//This Will Target Every "3th" Starting From "1" (E.g. '1', '4', '7') //section:nth-of-type(1) {
+    a {
+      figure {
+        &.FIGURE-ONE {
+          display:block;
+        }
+        &.FIGURE-TWO {
+          display:none;
+        }
+        &.FIGURE-THREE {
+          display:none;
         }
       }
     }
   }
-  section:nth-child(3n + 2) {//This Will Target Every "3th" Starting From "2" (E.g. '2', '5', '8') //section:nth-of-type(2) {
-    article.project-card {
-      a {
-        figure {
-          &.FIGURE-ONE {
-            display:none;
-          }
-          &.FIGURE-TWO {
-            display:block;
-          }
-          &.FIGURE-THREE {
-            display:none;
-          }
+  article.project-card:nth-child(3n + 2) {//This Will Target Every "3th" Starting From "2" (E.g. '2', '5', '8') //section:nth-of-type(2) {
+    a {
+      figure {
+        &.FIGURE-ONE {
+          display:none;
+        }
+        &.FIGURE-TWO {
+          display:block;
+        }
+        &.FIGURE-THREE {
+          display:none;
         }
       }
     }
   }
-  section:nth-child(3n + 3) {//This Will Target Every "3th" Starting From "3" (E.g. '3', '6', '9') //section:nth-of-type(3) {
-    article.project-card {
-      a {
-        figure {
-          &.FIGURE-ONE {
-            display:none;
-          }
-          &.FIGURE-TWO {
-            display:none;
-          }
-          &.FIGURE-THREE {
-            display:block;
-          }
+  article.project-card:nth-child(3n + 3) {//This Will Target Every "3th" Starting From "3" (E.g. '3', '6', '9') //section:nth-of-type(3) {
+    a {
+      figure {
+        &.FIGURE-ONE {
+          display:none;
+        }
+        &.FIGURE-TWO {
+          display:none;
+        }
+        &.FIGURE-THREE {
+          display:block;
         }
       }
     }
+  }
+  article.project-card:last-child {
+    margin-bottom:0;////New
   }
 }
 
 // Project Card
 article.project-card {
+  margin-bottom:calc(60px + 1rem);//((35px + 25px) + 1rem (from "figure's" margin-bottom))//35px////New
   a {
     figure {
       .project-thumbnail {

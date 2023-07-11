@@ -98,36 +98,34 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
         {/* Added To Be Able To Select "nth-child(s)/nth-of-type(s)" Without Targeting The Outside "Header/Sections" As Well, Like It Was Using "main" As The Wrap For Childs */}
         {/* Could Have Used A "Main/One" 'section.homepage-projects-cards-section' And Loop Through Child "Div/Article" Projects (Having Them The Paddings Of The Current Sections). But Moving All Styles Now For That Would Be A Mess And Lots Of Work */}
-        <div id="homepage-projects-cards-sections">
-          {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-          {/* Was {% include home/home_project_article.html %} */}
-          { allProjectsData.map(project => (
-            <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
-              <div className="container">
+        <section className="homepage-projects-cards-section">
+          <div className="container">
 
-                <div className="row">
-                  <div className="col-12">{/*col-12 col-lg-10*/}{/*col-12*/}{/*col-12 col-md-10 offset-md-1*/}{/*col-10 offset-1 col-md-8 offset-md-2*/}
+            <div className="row">
+              <div className="col-12">{/*col-12 col-lg-10*/}{/*col-12*/}{/*col-12 col-md-10 offset-md-1*/}{/*col-10 offset-1 col-md-8 offset-md-2*/}
+                {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
+                {/* Was {% include home/home_project_article.html %} */}
+                { allProjectsData.map(project => (
 
-                    <ProjectCard
-                      slug={ project.slug }
-                      order={ project.order }
-                      thumbnailImage={ project.thumbnailImage }
-                      title={ project.title }
-                      nameForThumbnail={ project.nameForThumbnail }
-                      type={ project.type }
-                      roles2={ project.roles2 }
-                      year2={ project.year2 }
-                      category={ project.category }
-                      platforms2={ project.platforms2 }
-                    />
+                  <ProjectCard id={ project.id } key={ project.id }
+                    slug={ project.slug }
+                    order={ project.order }
+                    thumbnailImage={ project.thumbnailImage }
+                    title={ project.title }
+                    nameForThumbnail={ project.nameForThumbnail }
+                    type={ project.type }
+                    roles2={ project.roles2 }
+                    year2={ project.year2 }
+                    category={ project.category }
+                    platforms2={ project.platforms2 }
+                  />
 
-                  </div>
-                </div>
-
+                )) }
               </div>
-            </section>
-          )) }
-        </div>
+            </div>
+
+          </div>
+        </section>
 
         <HomePageSkillsHeadlineSection/>
 
