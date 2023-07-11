@@ -1,4 +1,6 @@
 // MISSING "MOBILE" VERSION (WHERE COMMENTS ARE)
+// TO IMPROVE "FIGURE-ONE", "FIGURE-TWO", & "FIGURE-THREE"
+// TO USE JUST "FIGURE-ONE" FOR MOBILE
 
 // Imports
 import Link from "next/link";
@@ -50,39 +52,6 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           {/* Desktop | Screen Readers */}
           <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
             <div className="row">
-              <div className="col-md-8">
-                {/* Option 3 (Background-Image) */}
-                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
-                </div>
-              </div>
-
-              <div className="col-md-4 d-flex flex-column justify-content-between">
-                <div className="project-title">
-                  <div className="project-type text-uppercase">
-                    { type }
-                  </div>
-
-                  <h4 className="text-medium text-turquoise mt-2 mb-0">
-                    { title }
-                  </h4>
-                </div>
-
-                <div className="project-description">
-                  { category }
-                  {/*{ roles2 }*/}
-                  {/*{ platforms2 }*/}
-                </div>
-              </div>
-            </div>
-          </figcaption>
-        </figure>
-
-
-
-        <figure className="FIGURE-THREE">
-          {/* Desktop | Screen Readers */}
-          <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
-            <div className="row">
               <div className="col-md-4 d-flex flex-column justify-content-between align-items-end">
                 <div className="project-title">
                   <div className="project-type text-uppercase">
@@ -104,6 +73,39 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               <div className="col-md-8">
                 {/* Option 3 (Background-Image) */}
                 <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+
+
+
+        <figure className="FIGURE-THREE">
+          {/* Desktop | Screen Readers */}
+          <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
+            <div className="row">
+              <div className="col-md-8">
+                {/* Option 3 (Background-Image) */}
+                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
+                </div>
+              </div>
+
+              <div className="col-md-4 d-flex flex-column justify-content-between">
+                <div className="project-title">
+                  <div className="project-type text-uppercase">
+                    { type }
+                  </div>
+
+                  <h4 className="text-medium text-turquoise mt-2 mb-0">
+                    { title }
+                  </h4>
+                </div>
+
+                <div className="project-description">
+                  { category }
+                  {/*{ roles2 }*/}
+                  {/*{ platforms2 }*/}
                 </div>
               </div>
             </div>

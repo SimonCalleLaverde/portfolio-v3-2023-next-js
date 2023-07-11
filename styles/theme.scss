@@ -727,7 +727,7 @@ section.homepage-projects-cards-section {//div#homepage-projects-cards-sections 
 
 // Project Card
 article.project-card {
-  margin-bottom:calc(60px + 1rem);//((35px + 25px) + 1rem (from "figure's" margin-bottom))//35px////New
+  margin-bottom:35px;//calc(60px + 1rem)//((35px + 25px) + 1rem (from "figure's" margin-bottom))//35px////New
   a {
     figure {
       .project-thumbnail {

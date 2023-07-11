@@ -96,8 +96,6 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
 
         <HomePageProjectsHeadlineSection/>
 
-        {/* Added To Be Able To Select "nth-child(s)/nth-of-type(s)" Without Targeting The Outside "Header/Sections" As Well, Like It Was Using "main" As The Wrap For Childs */}
-        {/* Could Have Used A "Main/One" 'section.homepage-projects-cards-section' And Loop Through Child "Div/Article" Projects (Having Them The Paddings Of The Current Sections). But Moving All Styles Now For That Would Be A Mess And Lots Of Work */}
         <section className="homepage-projects-cards-section">
           <div className="container">
 
