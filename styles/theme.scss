@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  overflow:hidden;
+  //overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -45,27 +45,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:visible;//hidden
+    //overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 
@@ -672,6 +672,61 @@ form {
 }
 
 //----------------------------------Cards Styles----------------------------------//
+
+// HomePage Projects Cards Sections
+div#homepage-projects-cards-sections {
+  section:nth-child(3n + 1) {//This Will Target Every "3th" Starting From "1" (E.g. '1', '4', '7') //section:nth-of-type(1) {
+    article.project-card {
+      a {
+        figure {
+          &.FIGURE-ONE {
+            display:block;
+          }
+          &.FIGURE-TWO {
+            display:none;
+          }
+          &.FIGURE-THREE {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  section:nth-child(3n + 2) {//This Will Target Every "3th" Starting From "2" (E.g. '2', '5', '8') //section:nth-of-type(2) {
+    article.project-card {
+      a {
+        figure {
+          &.FIGURE-ONE {
+            display:none;
+          }
+          &.FIGURE-TWO {
+            display:block;
+          }
+          &.FIGURE-THREE {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  section:nth-child(3n + 3) {//This Will Target Every "3th" Starting From "3" (E.g. '3', '6', '9') //section:nth-of-type(3) {
+    article.project-card {
+      a {
+        figure {
+          &.FIGURE-ONE {
+            display:none;
+          }
+          &.FIGURE-TWO {
+            display:none;
+          }
+          &.FIGURE-THREE {
+            display:block;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Project Card
 article.project-card {

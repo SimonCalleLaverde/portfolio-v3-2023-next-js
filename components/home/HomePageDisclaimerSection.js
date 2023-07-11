@@ -1,8 +1,8 @@
 // Imports
 import Link from "next/link";
 
-// Home Disclaimer (Section) Component
-export default function HomeDisclaimerSection() {
+// HomePage Disclaimer (Section) Component
+export default function HomePageDisclaimerSection() {
   return (
 
     <section className="homepage-disclaimer-section font-light text-turquoise">
@@ -10,7 +10,6 @@ export default function HomeDisclaimerSection() {
 
         <div className="row">
           <div className="col-md-10">
-
             <h4 className="mb-3">
               Disclaimer
             </h4>
@@ -59,7 +58,6 @@ export default function HomeDisclaimerSection() {
             {/*Portfolio 2021 (UI Design & Front-end Development)*/}
             {/*Archaic Portfolio 2021*/}
             <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021</Link>
-
           </div>
         </div>
 

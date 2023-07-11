@@ -20,7 +20,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           {/*<img src={ thumbnailImage.url } alt={ `${ title } Case Study's Thumbnail Image` } style={{ width:"100%" }}/>*/}
 
           {/* Option 3 (Background-Image) */}
-          <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+          <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
           </div>
 
           {/* Desktop | Screen Readers */}
@@ -46,13 +46,13 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-        <figure className="FIGURE-TWO   d-none   ">{/* TEMPORARY "d-none" */}
+        <figure className="FIGURE-TWO   d-n...   ">{/* TEMPORARY "d-none" */}
           {/* Desktop | Screen Readers */}
           <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
             <div className="row">
               <div className="col-md-8">
                 {/* Option 3 (Background-Image) */}
-                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
                 </div>
               </div>
 
@@ -79,11 +79,11 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-        <figure className="FIGURE-THREE   d-none   ">{/* TEMPORARY "d-none" */}
+        <figure className="FIGURE-THREE   d-n...   ">{/* TEMPORARY "d-none" */}
           {/* Desktop | Screen Readers */}
           <figcaption className="font-light d-none d-md-block">{/*font-ultra-light*/}
             <div className="row">
-              <div className="col-md-4 d-flex flex-column justify-content-between">
+              <div className="col-md-4 d-flex flex-column justify-content-between align-items-end">
                 <div className="project-title">
                   <div className="project-type text-uppercase">
                     { type }
@@ -103,7 +103,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
               <div className="col-md-8">
                 {/* Option 3 (Background-Image) */}
-                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `${ title } Case Study's Thumbnail Image` }>{/*loading="lazy"*/}
+                <div className="project-thumbnail background-image-default bg-image" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*loading="lazy"*/}
                 </div>
               </div>
             </div>

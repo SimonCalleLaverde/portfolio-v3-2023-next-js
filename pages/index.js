@@ -3,8 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import HeadConfig from "../components/HeadConfig.js";
 import HomePageHeader from "../components/home/HomePageHeader.js";
-import HomeDisclaimerSection from "../components/home/HomeDisclaimerSection.js";
+import HomePageDisclaimerSection from "../components/home/HomePageDisclaimerSection.js";
+import HomePageProjectsHeadlineSection from "../components/home/HomePageProjectsHeadlineSection.js";
+// Soon: HomePageProjectsCardsSection.js
 import ProjectCard from "../components/ProjectCard.js";
+import HomePageSkillsHeadlineSection from "../components/home/HomePageSkillsHeadlineSection.js";
+// Soon: HomePageSkillsSetSection.js
 import Footer from "../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
 
@@ -88,71 +92,49 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
       <HomePageHeader/>
 
       <main>
-        <HomeDisclaimerSection/>
+        <HomePageDisclaimerSection/>
 
-        <section className="homepage-projects-headline-section">
-          <div className="container">
+        <HomePageProjectsHeadlineSection/>
 
-            <div className="row">
-              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-                <h3 className="font-headline text-gigantic text-turquoise text-uppercase mb-0">{/*text-center*/}
-                  Featured
-                  <br/>Projects
-                </h3>
-              </div>
-            </div>
+        {/* Added To Be Able To Select "nth-child(s)/nth-of-type(s)" Without Targeting The Outside "Header/Sections" As Well, Like It Was Using "main" As The Wrap For Childs */}
+        {/* Could Have Used A "Main/One" 'section.homepage-projects-cards-section' And Loop Through Child "Div/Article" Projects (Having Them The Paddings Of The Current Sections). But Moving All Styles Now For That Would Be A Mess And Lots Of Work */}
+        <div id="homepage-projects-cards-sections">
+          {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
+          {/* Was {% include home/home_project_article.html %} */}
+          { allProjectsData.map(project => (
+            <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
+              <div className="container">
 
-          </div>
-        </section>
+                <div className="row">
+                  <div className="col-12">{/*col-12 col-lg-10*/}{/*col-12*/}{/*col-12 col-md-10 offset-md-1*/}{/*col-10 offset-1 col-md-8 offset-md-2*/}
 
-        {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
-        {/* Was {% include home/home_project_article.html %} */}
-        { allProjectsData.map(project => (
-          <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
-            <div className="container">
+                    <ProjectCard
+                      slug={ project.slug }
+                      order={ project.order }
+                      thumbnailImage={ project.thumbnailImage }
+                      title={ project.title }
+                      nameForThumbnail={ project.nameForThumbnail }
+                      type={ project.type }
+                      roles2={ project.roles2 }
+                      year2={ project.year2 }
+                      category={ project.category }
+                      platforms2={ project.platforms2 }
+                    />
 
-              <div className="row">
-                <div className="col-12 col-lg-10">{/*col-12*/}{/*col-12 col-md-10 offset-md-1*/}{/*col-10 offset-1 col-md-8 offset-md-2*/}
-
-                  <ProjectCard
-                    slug={ project.slug }
-                    order={ project.order }
-                    thumbnailImage={ project.thumbnailImage }
-                    title={ project.title }
-                    nameForThumbnail={ project.nameForThumbnail }
-                    type={ project.type }
-                    roles2={ project.roles2 }
-                    year2={ project.year2 }
-                    category={ project.category }
-                    platforms2={ project.platforms2 }
-                  />
-
+                  </div>
                 </div>
+
               </div>
+            </section>
+          )) }
+        </div>
 
-            </div>
-          </section>
-        )) }
-
-        <section className="homepage-skills-headline-section">
-          <div className="container">
-
-            <div className="row">
-              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-                <h3 className="font-headline text-gigantic text-turquoise text-uppercase mb-0">{/*text-center*/}
-                  Some Of My
-                  <br/>Skills Set
-                </h3>
-              </div>
-            </div>
-
-          </div>
-        </section>
+        <HomePageSkillsHeadlineSection/>
 
         <section className="homepage-skills-set-section">
           <div className="container">
 
-            <div className="skills-set-table">
+            <div className="skills-set-table text-start">
               {/* Mapping through "allSkillsData" and displaying each "skill" */}
               {/* for skill in sorted_skills */}
               { allSkillsData.map(skill => (
