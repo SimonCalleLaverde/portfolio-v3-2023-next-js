@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  //overflow:hidden;
+  overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -45,27 +45,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    //overflow:visible;//hidden
+    overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    //overflow:visible;//unset
+    overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    //overflow:visible;//unset
+    overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    //overflow:visible;//unset
+    overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    //overflow:visible;//unset
+    overflow:visible;//unset
   }
 }
 
