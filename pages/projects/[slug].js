@@ -167,7 +167,7 @@ export default function ProjectPage({ projectData }) {
               <div className="col-md-6">
 
                 <div className="row">
-                  <div className="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-12">
+                  <div className="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-10">{/*col-xl-12*/}
                     <div className="position-relative">
                       <span className="page-order font-headline" aria-hidden="true">
                         0{ projectData.order }{/*03*/}{/*{{ page.order }}*/}

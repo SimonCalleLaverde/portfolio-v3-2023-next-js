@@ -12,7 +12,7 @@ export default function HomePageHeader() {
           <div className="col-md-6">
             <p className="mb-4">Hello</p>
 
-            <h1 className="headline">
+            <h1 className="text-header">
               {/*Portfolio V3 2023 NextJS*/}
               Simón Calle—{/*Em Dash*/}<br/>UX, UI, & Product Designer with experience in Front-end—{/*Em Dash*/}graduated as a Publicist.
             </h1>

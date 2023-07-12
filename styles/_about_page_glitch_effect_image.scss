@@ -56,7 +56,7 @@
 
 // About Page Glitch Effect Text Styles
 header.aboutpage-header {
-  .text-hero {
+  .text-header-ABOUT {
     @include animation(glitchTextAnim var(--anim-duration) linear var(--anim-delay) infinite);
   }
 }

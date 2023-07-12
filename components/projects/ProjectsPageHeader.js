@@ -5,7 +5,7 @@ export default function ProjectsPageHeader() {
   return (
     <header className="display-flex justify-content-center align-items-center text-align-center">{/*flex-direction-row*/}
       <div className="container">
-        <h1 className="headline">
+        <h1 className="text-header">
           All work
         </h1>
       </div>

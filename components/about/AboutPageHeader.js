@@ -15,12 +15,12 @@ export default function AboutPageHeader() {
             <div className="about-header-middle text-center">
             
               {/*Desktop Sm | Screen Readers*/}
-              <h1 className="text-hero text-rosybrown text-uppercase mb-0 d-none d-sm-block">
+              <h1 className="text-header-ABOUT text-rosybrown text-uppercase mb-0 d-none d-sm-block">
                 About me
               </h1>
 
               {/*Mobile Sm*/}
-              <h1 className="text-hero text-rosybrown text-uppercase mb-0 d-block d-sm-none" aria-hidden="true">
+              <h1 className="text-header-ABOUT text-rosybrown text-uppercase mb-0 d-block d-sm-none" aria-hidden="true">
                 <div>
                   About
                 </div>

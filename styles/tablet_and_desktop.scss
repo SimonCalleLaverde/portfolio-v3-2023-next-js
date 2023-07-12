@@ -11,92 +11,87 @@
     text-align:start;//left
   }
 
-  // Headline, Title, Subtitle
-  .headline {//Targets From 768px All The Way Up, Or Up To 850px If Styles Are Added/Overriding Down Here
-    font-size:2rem;//New//2.6rem
-    line-height:1.15;
+  // Headline, Title, Subtitle (Font-Sizes)
+  .text-header {
+    //font-size:2.4rem;////New
+    //line-height:1.15;
   }
-  .text-hero, .text-gigantic {
+
+
+
+  .text-header-ABOUT {
     font-size:4.3rem;
-  }
-  .text-hero {
     line-height:1.5;
   }
   .text-gigantic {
+    font-size:4.3rem;
     line-height:0.88;
   }
-  .text-intro, .text-huge {
-    font-size:2.6rem;//2.3rem
-  }
-  .text-intro {
+  .text-intro-ABOUT {
+    font-size:2.6rem;
     line-height:1.23;
   }
   .text-huge {
+    font-size:2.6rem;
     line-height:1.02;
-  }
-  .text-big {
-    font-size:2rem;//1.5rem
   }
   .text-medium {
     font-size:1.7rem;//1.2rem
   }
-  .text-small {
-    font-size:1.2rem;
-  }
-  @media only screen and (min-width:850px) {//Up
-    .headline {
-      font-size:2.85rem;
-    }
-    .text-hero, .text-gigantic {
-      font-size:5.3rem;
-    }
-    .text-intro, .text-huge {
-      font-size:2.85rem;
-    }
-    .text-intro {
-      line-height:1.19;
-    }
-  }
+
+
+
   @media only screen and (min-width:992px) {//Up
-    .headline {
+    .text-header {
+      font-size:2.9rem;////New
+    }
+
+
+
+    .text-header-ABOUT {
+      font-size:4.5rem;//NEW//5.8rem
+    }
+    .text-gigantic {
+      font-size:4.5rem;//NEW//5.8rem
+    }
+    .text-intro-ABOUT {
       font-size:3.35rem;
     }
-    .text-hero, .text-gigantic {
-      font-size:5.8rem;
-    }
-    .text-intro, .text-huge {
+    .text-huge {
       font-size:3.35rem;
-    }
-    .text-big {
-      font-size:2rem;
     }
     .text-medium {
       font-size:1.7rem;
     }
+
+
+
   }
   @media only screen and (min-width:1200px) {//Up
-    .headline {
-      font-size:3rem;//3.3rem//NEW//4rem//3.85rem
+    .text-header {
+      font-size:3rem;////NEW
     }
-    .text-hero {
+
+
+
+    .text-header-ABOUT {
       font-size:6.3rem;
     }
     .text-gigantic {
       font-size:4.5rem;//NEW//5.3rem
       line-height:0.93;
     }
-    .text-intro, .text-huge {
+    .text-intro-ABOUT, .text-huge {
       font-size:3.85rem;
-    }
-    .text-big {
-      font-size:2.5rem;
     }
     .text-medium {
       font-size:1.9rem;//2.2rem//NEW
     }
-    .text-small {
-      font-size:1.4rem;
-    }
+
+
+
+  }
+  @media only screen and (min-width:1400px) {//Up
   }
 
   // Buttons
@@ -148,103 +143,83 @@
   article.project-card {
     margin-bottom:91px;//calc(130px + 1rem)//((91px + 39px) + 1rem (from "figure's" margin-bottom))//91px////New
     a {
+
+
+
       figure {
-        .project-thumbnail {
-          height:420px;//Temporary 420px//320px
-        }
-        figcaption {
-          // .project-title {
-          //   min-width:50%;//So Text Below Doesn't Fall If Title Is Short
-          // }
-          // .project-description {
-          //   @include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
-          // }
-        }
         &.FIGURE-ONE {
+          .project-thumbnail {
+            height:340px;
+          }
           figcaption {
             margin-top:18px;//16px
             .project-title {
               width:60%;
             }
             .project-description {
-              width:25%;//20%
+              width:25%;
+              //@include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
             }
           }
         }
         &.FIGURE-TWO {
           figcaption {
             text-align:end;
-            .project-description {
-              width:60%;
-            }
           }
         }
-        &.FIGURE-THREE {
-          figcaption {
-            //text-align:end;
-            .project-description {
-              width:60%;
-            }
-          }
-        }
-      }
-      &:hover, &:active, &:focus {
-        figure {
+        &.FIGURE-TWO, &.FIGURE-THREE {
           .project-thumbnail {
+            height:320px;
           }
           figcaption {
-          }
-          &.FIGURE-ONE {
-          }
-          &.FIGURE-TWO {
-          }
-          &.FIGURE-THREE {
+            .project-title {
+            }
+            .project-description {
+              width:60%;
+            }
           }
         }
       }
+
+
+
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
     article.project-card {
       margin-bottom:111px;//calc(170px + 1rem)//((111px + 59px) + 1rem (from "figure's" margin-bottom))//111px////New
       a {
+
+
+
         figure {
-          // .project-thumbnail {
-          //   height:370px;//530px
-          // }
-          figcaption {
-          }
           &.FIGURE-ONE {
             .project-thumbnail {
-              height:470px;//Temporary 470px//530px//530px Tempo Again While I Have The Other Two Figures & I'll Put 370px Then//370px//530px
+              height:470px;
+            }
+            figcaption {
+              .project-title {
+              }
+              .project-description {
+                width:20%;
+              }
             }
           }
           &.FIGURE-TWO, &.FIGURE-THREE {
             .project-thumbnail {
-              height:440px;//530px
+              height:440px;
+            }
+            figcaption {
             }
           }
         }
+
+
+
       }
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(xl) {//Up
-    article.project-card {
-      a {
-        figure {
-          .project-thumbnail {
-          }
-          figcaption {
-          }
-          &.FIGURE-ONE {
-          }
-          &.FIGURE-TWO {
-          }
-          &.FIGURE-THREE {
-          }
-        }
-      }
-    }
   }
 
   //----------------------------------Section Styles----------------------------------//

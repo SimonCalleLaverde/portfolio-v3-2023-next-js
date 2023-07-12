@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  overflow:hidden;
+  //overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -45,27 +45,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:visible;//hidden
+    //overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 
@@ -165,14 +165,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Headline, Title, Subtitle
-.headline, .title, .subtitle {
+// Headline, Title, Subtitle (Font-Sizes)
+.text-header {
+  font-size:2.4rem;////New
+  line-height:1.15;
 }
-.headline {//Targets 768px Down & 576px All The Way Up If No Styles Are Added/Overriding In Tablet-And-Desktop Or Down Here
-  font-size:2.85rem;
-  line-height:1.02;
-}
-.text-hero {
+
+
+
+.text-header-ABOUT {
   font-size:4.3rem;
   line-height:1.5;
 }
@@ -180,25 +181,76 @@ h1, h2, h3, h4, h5, h6 {
   font-size:3.7rem;
   line-height:0.88;
 }
-.text-intro, .text-huge {
+.text-intro-ABOUT, .text-huge {
   font-size:2.85rem;
   font-weight:500;//New
 }
-.text-intro {
+.text-intro-ABOUT {
   line-height:1.19;
 }
 .text-huge {
   line-height:1.02;
 }
-.text-big {
-  font-size:2rem;
-}
 .text-medium {
   font-size:1.7rem;//1.2rem
 }
-.text-small {
-  font-size:1.1rem;
+
+
+
+@media only screen and (max-width:576px) {//Down
+  .text-header {
+    font-size:2.2rem;////New
+  }
+
+
+
+  .text-header-ABOUT {
+    font-size:3.4rem;
+  }
+  .text-gigantic {
+    font-size:3rem;
+  }
+  .text-gigantic {
+    line-height:1;
+  }
+  .text-intro-ABOUT, .text-huge {
+    font-size:2.5rem;
+  }
+  .text-medium {
+    font-size:1.6rem;
+  }
+
+
+
 }
+@media only screen and (max-width:400px) {//Down
+  .text-header {
+    font-size:1.8rem;////New
+  }
+
+
+
+  .text-header-ABOUT {//, .text-gigantic
+    font-size:2.5rem;
+  }
+  .text-gigantic {//.text-header-ABOUT,
+    font-size:2.1rem;
+  }
+  .text-intro-ABOUT {//, .text-huge
+    font-size:1.8rem;
+  }
+  .text-huge {//.text-intro-ABOUT,
+    font-size:1.6rem;
+  }
+  .text-medium {
+    font-size:1.2rem;
+  }
+
+
+
+}
+
+// Text Stroke (OLD)
 // .text-stroke-turquoise {
 //   color:transparent!important;
 //   -webkit-text-fill-color:theme-color("transparent");//Will Override Color (Regardless Of Order)
@@ -211,52 +263,6 @@ h1, h2, h3, h4, h5, h6 {
 //   -webkit-text-stroke-width:1px;
 //   -webkit-text-stroke-color:theme-color("creme");
 // }
-@media only screen and (max-width:576px) {//Down
-  .headline {
-    font-size:2.5rem;
-  }
-  .text-hero {
-    font-size:3.4rem;
-  }
-  .text-gigantic {
-    font-size:3rem;
-  }
-  .text-gigantic {
-    line-height:1;
-  }
-  .text-intro, .text-huge {
-    font-size:2.5rem;
-  }
-  .text-big {
-    font-size:1.8rem;
-  }
-  .text-medium {
-    font-size:1.6rem;
-  }
-}
-@media only screen and (max-width:400px) {//Down
-  .headline {
-    font-size:1.6rem;
-  }
-  .text-hero {//, .text-gigantic
-    font-size:2.5rem;
-  }
-  .text-gigantic {//.text-hero,
-    font-size:2.1rem;
-  }
-  .text-intro {//, .text-huge
-    font-size:1.8rem;
-  }
-  .text-huge {//.text-intro,
-    font-size:1.6rem;
-  }
-  .text-big {
-    font-size:1.4rem;
-  }
-  .text-medium {
-    font-size:1.2rem;
-  }
-}
 
 // Website Colours
 .text-turquoise {
@@ -865,7 +871,7 @@ header {
   padding:4rem 0;//Temporary
   background-color:theme-color("creme");////Temporary
   color:theme-color("turquoise");////Temporary
-  .headline {//.title//Temporary
+  .text-header {//.title//Temporary
     margin:0;
   }
 }

@@ -24,7 +24,7 @@ export default function AboutPageLetsWorkSection() {
         {/* Desktop | Screen Readers */}
         <div className="row d-none d-md-block">
           <div className="col-md-8 offset-md-2">
-            <h2 className="text-intro text-rosybrown text-uppercase text-center">
+            <h2 className="text-intro-ABOUT text-rosybrown text-uppercase text-center">
               I&apos;ll be happy to work with you in any business website or branding related project. I love interactive design and doing awesome platforms that stand out!
             </h2>
           </div>
@@ -33,7 +33,7 @@ export default function AboutPageLetsWorkSection() {
         {/* Mobile */}
         <div className="row d-block d-md-none" aria-hidden="true">
           <div className="col-12">
-            <h2 className="text-intro text-rosybrown text-uppercase text-center">
+            <h2 className="text-intro-ABOUT text-rosybrown text-uppercase text-center">
               I&apos;ll be happy to work with you in any business website or branding related project. I love interactive design and doing awesome platforms that stand out!
             </h2>
           </div>
