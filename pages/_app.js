@@ -19,7 +19,7 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
 
       <Nav/>
 
-      {/*<UnderDevelopmentNote/>*/}
+      <UnderDevelopmentNote/>
 
       <ModalResume/>
       <ModalCertificate/>
