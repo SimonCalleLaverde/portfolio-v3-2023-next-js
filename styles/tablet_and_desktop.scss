@@ -1,4 +1,4 @@
-@media only screen and (min-width:768px) {//Up
+@media only screen and (min-width:768px) {//Up//@include media-breakpoint-up(sm) {//Up
 
   //----------------------------------General Styles----------------------------------//
 
@@ -143,22 +143,19 @@
   article.project-card {
     margin-bottom:91px;//calc(130px + 1rem)//((91px + 39px) + 1rem (from "figure's" margin-bottom))//91px////New
     a {
-
-
-
+      //@include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
       figure {
         &.FIGURE-ONE {
-          .project-thumbnail {
+          div.project-thumbnail {
             height:340px;
           }
           figcaption {
-            margin-top:18px;//16px
+            margin-top:18px;
             .project-title {
-              width:60%;
+              width:50%;
             }
             .project-description {
               width:25%;
-              //@include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
             }
           }
         }
@@ -168,37 +165,69 @@
           }
         }
         &.FIGURE-TWO, &.FIGURE-THREE {
-          .project-thumbnail {
+          div.project-thumbnail {
             height:320px;
           }
           figcaption {
             .project-title {
+              //width:100%;
             }
             .project-description {
-              width:60%;
+              width:80%;
             }
           }
         }
       }
-
-
-
+    }
+    &:nth-child(3n + 1) {//This Will Target Every "3th" Starting From "1" (E.g. '1', '4', '7') //section:nth-of-type(1) {
+      a {
+        figure {
+          &.FIGURE-ONE {
+            display:block;//Desktop
+          }
+          &.FIGURE-TWO, &.FIGURE-THREE {
+            display:none;//Desktop
+          }
+        }
+      }
+    }
+    &:nth-child(3n + 2) {//This Will Target Every "3th" Starting From "2" (E.g. '2', '5', '8') //section:nth-of-type(2) {
+      a {
+        figure {
+          &.FIGURE-ONE, &.FIGURE-THREE {
+            display:none;//Desktop
+          }
+          &.FIGURE-TWO {
+            display:block;//Desktop
+          }
+        }
+      }
+    }
+    &:nth-child(3n + 3) {//This Will Target Every "3th" Starting From "3" (E.g. '3', '6', '9') //section:nth-of-type(3) {
+      a {
+        figure {
+          &.FIGURE-ONE, &.FIGURE-TWO {
+            display:none;//Desktop
+          }
+          &.FIGURE-THREE {
+            display:block;//Desktop
+          }
+        }
+      }
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
     article.project-card {
       margin-bottom:111px;//calc(170px + 1rem)//((111px + 59px) + 1rem (from "figure's" margin-bottom))//111px////New
       a {
-
-
-
         figure {
           &.FIGURE-ONE {
-            .project-thumbnail {
+            div.project-thumbnail {
               height:470px;
             }
             figcaption {
               .project-title {
+                width:30%;
               }
               .project-description {
                 width:20%;
@@ -206,20 +235,25 @@
             }
           }
           &.FIGURE-TWO, &.FIGURE-THREE {
-            .project-thumbnail {
+            div.project-thumbnail {
               height:440px;
             }
             figcaption {
+              .project-title {
+                //width:100%;//90%//80%
+              }
+              .project-description {
+                width:60%;
+              }
             }
           }
         }
-
-
-
       }
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(xl) {//Up
+  }
+  @media only screen and (min-width:1400px) {//Up //@include media-breakpoint-up(xxl) {//Up
   }
 
   //----------------------------------Section Styles----------------------------------//
@@ -231,9 +265,6 @@
   // HomePage Skills Set Section
   section.homepage-skills-set-section {
   }
-
-
-
 
   // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
   section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
@@ -281,6 +312,23 @@
   // AboutPage Header
   header.aboutpage-header {
     padding:100px 0;
+    .about-header-middle {
+      h1, h2, h3, h4, h5, h6 {
+        white-space:nowrap;
+      }
+      > div {
+        position:absolute;
+        //width:210px;
+        //margin:auto;
+        top:-53px;//-80px
+        right:0;
+        //bottom:0;
+        left:0;
+        span.about-header-short-story {
+          bottom:-100px;
+        }
+      }
+    }
   }
   @media only screen and (min-width:992px) {//Up//@include media-breakpoint-up(lg) {//Up
     header.aboutpage-header {
