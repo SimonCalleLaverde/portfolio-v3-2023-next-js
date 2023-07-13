@@ -68,34 +68,32 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-          <figcaption>
-            <div className="row">
-              <div className="col-md-4 d-flex flex-column justify-content-between align-items-end">
-                <div className="project-title">
-                  <div className="project-type text-uppercase">
-                    { type }
-                  </div>
-
-                  <h4 className="text-medium text-turquoise mt-2 mb-0">
-                    { title }
-                  </h4>
+          <div className="row">
+            <figcaption className="col-md-4 d-flex flex-column justify-content-between align-items-end">
+              <div className="project-title">
+                <div className="project-type text-uppercase">
+                  { type }
                 </div>
 
-                <div className="project-description">
-                  { category }
-                </div>
+                <h4 className="text-medium text-turquoise mt-2 mb-0">
+                  { title }
+                </h4>
               </div>
 
-              <div className="col-md-8">
-                {/* Option 3 (Background-Image) */}
-                <div className="project-thumbnail background-image-default" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>
-                </div>
+              <div className="project-description">
+                { category }
+              </div>
+            </figcaption>
+
+            <div className="col-md-8">
+              {/* Option 3 (Background-Image) */}
+              <div className="project-thumbnail background-image-default" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>
               </div>
             </div>
+          </div>
 
 
 
-          </figcaption>
         </figure>
 
         {/* Desktop [Every :nth-child(3n + 3)] */}
@@ -103,31 +101,29 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
 
 
-          <figcaption>
-            <div className="row">
-              <div className="col-md-8">
-                {/* Option 3 (Background-Image) */}
-                <div className="project-thumbnail background-image-default" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>
-                </div>
-              </div>
-
-              <div className="col-md-4 d-flex flex-column justify-content-between">
-                <div className="project-title">
-                  <div className="project-type text-uppercase">
-                    { type }
-                  </div>
-
-                  <h4 className="text-medium text-turquoise mt-2 mb-0">
-                    { title }
-                  </h4>
-                </div>
-
-                <div className="project-description">
-                  { category }
-                </div>
+          <div className="row">
+            <div className="col-md-8">
+              {/* Option 3 (Background-Image) */}
+              <div className="project-thumbnail background-image-default" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>
               </div>
             </div>
-          </figcaption>
+
+            <figcaption className="col-md-4 d-flex flex-column justify-content-between">
+              <div className="project-title">
+                <div className="project-type text-uppercase">
+                  { type }
+                </div>
+
+                <h4 className="text-medium text-turquoise mt-2 mb-0">
+                  { title }
+                </h4>
+              </div>
+
+              <div className="project-description">
+                { category }
+              </div>
+            </figcaption>
+          </div>
 
 
 
