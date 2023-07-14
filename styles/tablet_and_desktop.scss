@@ -4,6 +4,7 @@
 
   // General
   body {
+    font-size:15px;//√//17px
   }
 
   // Main, Header, Section, Footer
@@ -145,13 +146,20 @@
     a {
       //@include transition(filter cubic-bezier(0.455,0.03,0.515,0.955) 1s, transform cubic-bezier(0.455,0.03,0.515,0.955) 1s);
       figure {
+        figcaption {//ALL
+          .project-type-and-title {
+            .project-type {
+              font-size:13px;//15px//Same As Body
+            }
+          }
+        }
         &.FIGURE-ONE {
           div.project-thumbnail {
             height:340px;
           }
           figcaption {
-            margin-top:18px;
-            .project-title {
+            //margin-top:18px;
+            .project-type-and-title {
               width:50%;
             }
             .project-description {
@@ -159,22 +167,22 @@
             }
           }
         }
-        &.FIGURE-TWO {
-          figcaption {
-            text-align:end;
-          }
-        }
         &.FIGURE-TWO, &.FIGURE-THREE {
           div.project-thumbnail {
             height:320px;
           }
           figcaption {
-            .project-title {
+            .project-type-and-title {
               //width:100%;
             }
             .project-description {
               width:80%;
             }
+          }
+        }
+        &.FIGURE-TWO {
+          figcaption {
+            text-align:end;
           }
         }
       }
@@ -221,12 +229,19 @@
       margin-bottom:111px;//calc(170px + 1rem)//((111px + 59px) + 1rem (from "figure's" margin-bottom))//111px////New
       a {
         figure {
+          figcaption {//ALL
+            .project-type-and-title {
+              .project-type {
+                font-size:15px;//Same As Body
+              }
+            }
+          }
           &.FIGURE-ONE {
             div.project-thumbnail {
               height:470px;
             }
             figcaption {
-              .project-title {
+              .project-type-and-title {
                 width:30%;
               }
               .project-description {
@@ -239,7 +254,7 @@
               height:440px;
             }
             figcaption {
-              .project-title {
+              .project-type-and-title {
                 //width:100%;//90%//80%
               }
               .project-description {

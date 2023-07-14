@@ -1,13 +1,10 @@
-// IMPROVING "FIGURE-ONE", "FIGURE-TWO", & "FIGURE-THREE"
-// DOING "MOBILE" VERSION
-
 // Imports
 import Link from "next/link";
 import Image from "next/image";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, roles2, year2, category, platforms2 }) {
+export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, year2, category }) {
   return (
 
     <article className="project-card font-light">{/*font-ultra-light*/}
@@ -25,57 +22,51 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           <div className="project-thumbnail background-image-default" id={ `project_thumbnail_0${ order }` } style={{ backgroundImage:`url(${ thumbnailImage.url })` }} type="image" title={ `Case Study: ${ title }` }>{/*bg-image*/}{/*loading="lazy"*/}
           </div>
 
-
-
           {/* Desktop [Every :nth-child(3n + 1)] | Screen Readers [Always] */}
           <figcaption className="d-none d-md-flex justify-content-between">
-            <div className="project-title">
+            <div className="project-type-and-title">
               <div className="project-type text-uppercase">
                 { type }
               </div>
 
-              <h4 className="text-medium text-turquoise mt-2 mb-0">
+              <h4 className="project-title text-medium mt-2 mb-0">
                 { title }
               </h4>
             </div>
 
             <div className="project-description">
-              { category }{/*{ roles2 }*/}{/*{ platforms2 }*/}
+              { category }
             </div>
           </figcaption>
-
-
 
           {/* Mobile [Always] */}
-          <figcaption className="d-block d-md-none    figcaption-mobile    text-turquoise" aria-hidden="true">
-            <h4 className="text-medium text-turquoise text-uppercase mb-0">
-              { title }
-            </h4>
+          <figcaption className="d-block d-md-none text-start" aria-hidden="true">
+            <div className="project-type-and-title">
+              <div className="project-type text-uppercase">
+                { type }
+              </div>
 
-            <div className="project-details">
-              {/*<div className="project-roles">
-                { roles2 }
-              </div>*/}
+              <h4 className="project-title text-medium mt-2 mb-0">
+                { title }
+              </h4>
+            </div>
+
+            <div className="project-description mt-2">
+              { category }
             </div>
           </figcaption>
-
-
-
         </figure>
 
         {/* Desktop [Every :nth-child(3n + 2)] */}
         <figure className="FIGURE-TWO" aria-hidden="true">{/*d-none d-md-block*/}
-
-
-
           <div className="row">
             <figcaption className="col-md-4 d-flex flex-column justify-content-between align-items-end">
-              <div className="project-title">
+              <div className="project-type-and-title">
                 <div className="project-type text-uppercase">
                   { type }
                 </div>
 
-                <h4 className="text-medium text-turquoise mt-2 mb-0">
+                <h4 className="project-title text-medium mt-2 mb-0">
                   { title }
                 </h4>
               </div>
@@ -91,16 +82,10 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               </div>
             </div>
           </div>
-
-
-
         </figure>
 
         {/* Desktop [Every :nth-child(3n + 3)] */}
         <figure className="FIGURE-THREE" aria-hidden="true">{/*d-none d-md-block*/}
-
-
-
           <div className="row">
             <div className="col-md-8">
               {/* Option 3 (Background-Image) */}
@@ -109,12 +94,12 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
             </div>
 
             <figcaption className="col-md-4 d-flex flex-column justify-content-between">
-              <div className="project-title">
+              <div className="project-type-and-title">
                 <div className="project-type text-uppercase">
                   { type }
                 </div>
 
-                <h4 className="text-medium text-turquoise mt-2 mb-0">
+                <h4 className="project-title text-medium mt-2 mb-0">
                   { title }
                 </h4>
               </div>
@@ -124,9 +109,6 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               </div>
             </figcaption>
           </div>
-
-
-
         </figure>
       </Link>
     </article>

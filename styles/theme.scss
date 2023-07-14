@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  overflow:hidden;
+  //overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -45,27 +45,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:visible;//hidden
+    //overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 
@@ -101,12 +101,12 @@ body {
   position:relative;//As Per B4
   min-height:100vh;
   font-family:$font-regular;//$font-light
-  font-weight:400;//Temporary As Per B4
-  font-size:15px;//17px
+  //font-weight:400;//Temporary As Per B4
+  font-size:13.5px;//14px//√//15px//17px
   background-color:theme-color("creme");//beige-old
   color:theme-color("grey-dark");
-  line-height:1.8;
-  letter-spacing:0.5px;
+  line-height:1.9;//√//1.8
+  //letter-spacing:0.5px;
   .text-italic {
     font-family:$font-regular-italic!important;//$font-light-italic!important
   }
@@ -684,45 +684,29 @@ article.project-card {
   margin-bottom:35px;//calc(60px + 1rem)//((35px + 25px) + 1rem (from "figure's" margin-bottom))//35px////New
   a {
     figure {//.FIGURE-ONE
-
-
-
-      div.project-thumbnail {
-        height:280px;
+      div.project-thumbnail {//ALL
       }
-      figcaption {
-        font-size:15px;
-        .project-title {
+      figcaption {//ALL
+        .project-type-and-title {
           .project-type {
-            letter-spacing:2px;
+            font-size:12px;//15px//Same As Body
+            letter-spacing:2px;//√
           }
-          h1, h2, h3, h4, h5, h6 {
+          .project-title {//h1, h2, h3, h4, h5, h6
           }
         }
-        .project-title, .project-description {
-          line-height:1.4;
-        }
-      }
-
-
-
-      // TO REVISE MOBILE
-      figcaption.figcaption-mobile {
-        margin-top:-19.5px;//-18.5px
-        font-size:13px;
-        letter-spacing:0.5px;
-        h1, h2, h3, h4, h5, h6 {
-          position:relative;
-          z-index:21;
-          span {
-          }
+        .project-type-and-title, .project-description {
+          line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
       }
-
-
-
       &.FIGURE-ONE {
         display:block;//Mobile
+        div.project-thumbnail {
+          height:260px;//280px
+        }
+        figcaption {
+          margin-top:18px;
+        }
       }
       &.FIGURE-TWO, &.FIGURE-THREE {
         display:none;//Mobile
@@ -730,39 +714,46 @@ article.project-card {
     }
   }
   &:last-child {
-    margin-bottom:0;////New
+    margin-bottom:0;//Desktop//Mobile
+  }
+}
+@media only screen and (max-width:768px) {//Down
+  article.project-card {
+    a {
+      figure {
+        &.FIGURE-ONE {
+          figcaption {
+            .project-type-and-title, .project-description {
+              width:70%;//50%
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media only screen and (max-width:576px) {//Down
-  article.project-article {
+  article.project-card {
     a {
       figure {//.FIGURE-ONE
-
-
-
         div.project-thumbnail {
-          height:180px;
+          height:200px;//To Revise These Two
         }
         figcaption {
         }
-
-
-
-        // TO REVISE MOBILE
-        figcaption.figcaption-mobile {
-          margin-top:-13px;//-12px
-        }
-
-
-
       }
     }
   }
 }
 @media only screen and (max-width:400px) {//Down
-  article.project-article {
+  article.project-card {
     a {
       figure {//.FIGURE-ONE
+        div.project-thumbnail {
+          height:180px;//To Revise These Two
+        }
+        figcaption {
+        }
       }
     }
   }
@@ -804,7 +795,7 @@ nav.top-nav {
         padding:21px 0;//21px 15px//23px 13px
         font-family:$font-regular;//$font-light
         font-size:13px;//12px//15px
-        //line-height:71px;//70px
+        //line-height:1.9;//√//Same Than Body//1.8//71px//70px
         &.link-underline {
           &::before {
             height:2px;//1px//3px
@@ -885,16 +876,6 @@ header.homepage-header {
   }
 }
 
-
-
-// HomePage Disclaimer Section
-section.homepage-disclaimer-section {
-  font-size:15px;////Temporary
-  line-height:1.9;////Temporary
-}
-
-
-
 // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
 section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
   padding:50px 20px 30px;
@@ -903,12 +884,6 @@ section.homepage-disclaimer-section, section.homepage-projects-headline-section,
 // HomePage Projects Cards Section, HomePage Skills Set Section
 section.homepage-projects-cards-section, section.homepage-skills-set-section {
   padding:25px 20px 35px;//25px 20px 90px
-}
-
-// HomePage Projects Cards Section
-section.homepage-projects-cards-section {//div#homepage-projects-cards-sections {
-  article.project-card {
-  }
 }
 
 // HomePage Skills Set Section
@@ -931,8 +906,6 @@ section.homepage-skills-set-section {
         //text-align:left;
         p {
           margin-bottom:15px;//1px
-          font-size:15px;
-          line-height:1.9;
         }
       }
     }
@@ -1190,7 +1163,7 @@ section.project-page-section {
       padding-right:0;//30px//10px
       padding-bottom:30px;//15px
       padding-left:30px;//10px
-      font-size:15px;//18px
+      font-size:15px;//Same Than Body//18px
     }
   }
   .page-content-last {
