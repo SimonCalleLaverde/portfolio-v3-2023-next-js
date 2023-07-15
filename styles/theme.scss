@@ -10,24 +10,25 @@ html {
   right:0;
   bottom:0;
   left:0;
+  padding:25px 20px;//Aprox(py-5,px-4)
   background-color:theme-color("creme");
   color:theme-color("turquoise");
   z-index:10000;
-  //@include filter(opacity(0.7));
-  > div {
-    max-width:270px;
+  .note {
+    max-width:300px;//270px
     h1, h2, h3, h4, h5, h6 {
     }
-    span {
-      //font-size:13px;
-      letter-spacing:2px;
+    p {
+      span {
+        letter-spacing:2px;
+      }
     }
   }
 }
 @media (orientation:portrait) {
   .under-development-note {
-    //flex-direction:column!important;
-    //text-align:center!important;
+    //flex-direction:column!important;////Support
+    text-align:center;
     .cube-3d-scene-container {
       margin-top:30px;//50px
     }
@@ -35,8 +36,8 @@ html {
 }
 @media (orientation:landscape) {
   .under-development-note {
-    flex-direction:row!important;
-    text-align:start!important;//left
+    flex-direction:row!important;////Support
+    text-align:start;//left
     .note {
       //padding-left:10px;
     }
@@ -876,8 +877,13 @@ header.homepage-header {
   }
 }
 
-// HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
-section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+// HomePage Disclaimer Section
+section.homepage-disclaimer-section {
+  padding:70px 20px 50px;//50px 20px 30px
+}
+
+// HomePage Projects Headline Section, HomePage Skills Headline Section
+section.homepage-projects-headline-section, section.homepage-skills-headline-section {
   padding:50px 20px 30px;
 }
 

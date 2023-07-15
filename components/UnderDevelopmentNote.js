@@ -5,7 +5,7 @@ import Cube3D from "/components/Cube3D.js";
 export default function UnderDevelopmentNote() {
   return (
 
-    <div className="under-development-note d-flex d-md-none flex-column justify-content-around align-items-center text-center py-5 px-4">
+    <div className="under-development-note d-flex d-md-none flex-column justify-content-around align-items-center">{/*text-center*/}
       <Cube3D/>
 
       <div className="note">
@@ -23,29 +23,30 @@ export default function UnderDevelopmentNote() {
         <br/>11.09.2020
         */}
         
-        <h5 className="mb-4">
+        <h5>
           I haven&apos;t forgotten of you mobile and tablet users.
         </h5>
 
-        <span>
-          The responsive versions are under development and will be launching {/*today:*/}in a few days.
-          {/*<br/>07.07.2023*/}
-          <br/>
-          {/*<br/>*/}
+        <p className="mt-4">{/*mb-0*/}
+          The responsive version is under development and will be launching {/*today:*/}in a few days.
+          <br/><br/>
 
+          {/*07.07.2023*/}
           {/*05.27.2023*/}
           {/*06.12.2023*/}
           {/*06.16.2023*/}
           {/*06.20.2023*/}
           {/*06.23.2023*/}
           {/*On due date*/}
-          {/*<br/>–As of July 01, 2023*/}
-          {/*<br/>—As of July 02, 2023*/}
-          {/*<br/>—As of July 07, 2023*/}
+          {/*–As of July 01, 2023*/}
+          {/*—As of July 02, 2023*/}
+          {/*—As of July 07, 2023*/}
+          {/*07.07.2023*/}
 
-          {/*<br/>07.07.2023*/}
-          <br/>—As of 07.07.2023
-        </span>
+          <span>
+            —As of 07.07.2023
+          </span>
+        </p>
       </div>
     </div>
 
