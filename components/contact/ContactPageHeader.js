@@ -12,7 +12,7 @@ export default function ContactPageHeader() {
           <div className="col-md-6 offset-3">
 
             <div className="contact-card mt-5 p-5">
-              <h1 className="text-header">
+              <h1 className="headline-hero">
                 Drop me a line
               </h1>
 
@@ -20,7 +20,7 @@ export default function ContactPageHeader() {
                 <Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>
               </h4>
 
-              <h1 className="text-header mt-5">
+              <h1 className="headline-hero mt-5">
                 Give me a ring
               </h1>
 

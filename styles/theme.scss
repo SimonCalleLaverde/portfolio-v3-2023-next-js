@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  overflow:hidden;
+  //overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -46,27 +46,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:visible;//hidden
+    //overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 
@@ -167,8 +167,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Headline, Title, Subtitle (Font-Sizes)
-.text-header {
-  font-size:2.4rem;////New
+.headline-hero {
+  font-size:2.1rem;////New
   line-height:1.15;
 }
 
@@ -199,8 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media only screen and (max-width:576px) {//Down
-  .text-header {
-    font-size:2.2rem;////New
+  .headline-hero {
+    font-size:1.8rem;//2.2rem////New
   }
 
 
@@ -225,8 +225,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 @media only screen and (max-width:400px) {//Down
-  .text-header {
-    font-size:1.8rem;////New
+  .headline-hero {
+    font-size:1.5rem;//1.8rem////New
   }
 
 
@@ -774,42 +774,54 @@ nav.top-nav {
   top:0;
   right:0;
   left:0;
-  background-color:rgba(232,223,205,0.3);//rgba(26,42,55,0.3)//theme-color("creme")
-  backdrop-filter:blur(7px);//5px//10px
-  z-index:1000;////
+  background-color:transparent;
+  backdrop-filter:blur(7px);
+  z-index:5000;
   > .container {
     border-bottom:1px solid theme-color("turquoise");
-  }
-  ul {
-    //width:400px;
-    //min-height:60px;
-    margin-bottom:0;
-    padding-left:0;
-    li {
-      //display:inline-block;
-      list-style-type:none;
-      a {
-        display:inline-block;
-        height:65px;//70px
-        margin-right:15px;
-        margin-left:15px;
-        padding:21px 0;//21px 15px//23px 13px
-        font-family:$font-regular;//$font-light
-        font-size:13px;//12px//15px
-        //line-height:1.9;//√//Same Than Body//1.8//71px//70px
-        &.link-underline {
+    > ul {
+      //min-width:400px;//Leaving At Natural Sum-Of-Childs' Width
+      //height:65px;
+      margin-bottom:0;//Overriding Default
+      padding-left:0;//Overriding Default
+      > li {
+        display:inline-block;//If We Weren't Using Flexbox In The "Ul" Already
+        list-style-type:none;//Overriding Default
+        > a, > button {
+          font-family:$font-regular;//$font-light
+          font-size:13px;//"15px" Same As Body
+        }
+        > a {
+          display:block;//Or "inline-block" The Same, Just To Be Able To Give Dimentions. We Don't Need To Inline The "<a></a>(s)", Just The "<ul></ul>(s)", And We Are Doing It With Flexbox
+          //height:65px;//Padding-Top & Padding-Bottom Will Do
+          margin:0 15px;//Should Use "2px 15px 0" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
+          padding:13px 0;//21px 0//21px 0 23px//(For Desktop) Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
+          //line-height:66.5px;//Could Replace The "Padding"//1.9//Same As Body//Was 1.8
           &::before {
-            height:2px;//1px//3px
-            bottom:-1px;//0//1.5px
-            background-color:theme-color("turquoise");//creme//turquoise
-            //border-top:none;//1px solid theme-color("creme")
-            //border-bottom:none;//1px solid theme-color("creme")
-            border:none;
+            content:"";
+            position:absolute;
+            width:0;
+            height:1px;
+            right:0;
+            bottom:0;//-1px
+            left:auto;
+            background-color:theme-color("turquoise");
+            pointer-events:none;
+            @include transition(width 0.5s linear);//ease-in-out
+          }
+          &:hover, &:active, &:focus {//&.active-link
+            @include filter(opacity(0.8));
+            &::before {
+              width:100%;
+              //right:auto;//0
+              left:0;
+            }
           }
         }
-      }
-      button {
-        margin-left:15px;
+        > button {
+          //margin-top:2px;//Should Use (This Enabled) "2px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
+          margin-left:15px;
+        }
       }
     }
   }
@@ -822,7 +834,7 @@ header {
   padding:4rem 0;//Temporary
   background-color:theme-color("creme");////Temporary
   color:theme-color("turquoise");////Temporary
-  .text-header {//.title//Temporary
+  .headline-hero {//.title//Temporary
     margin:0;
   }
 }
@@ -845,41 +857,12 @@ section {
 
 // HomePage Header
 header.homepage-header {
-  .cube-3d-scene-container {
-    $size:300px;
-    $half-size:$size / 2;
-    width:$size;
-    height:$size;
-    margin-top:50px;//100px
-    .cube {
-      .face {
-        @include box-shadow(inset 0 0 $size * 0.7);
-        &.front {
-          @include transform(rotateX(0deg) translateZ($half-size));
-        }
-        &.top {
-          @include transform(rotateX(90deg) translateZ($half-size));
-        }
-        &.right {
-          @include transform(rotateY(90deg) translateZ($half-size));
-        }
-        &.bottom {
-          @include transform(rotateX(-90deg) translateZ($half-size));
-        }
-        &.left {
-          @include transform(rotateY(-90deg) translateZ($half-size));
-        }
-        &.back {
-          @include transform(rotateX(-180deg) translateZ($half-size));
-        }
-      }
-    }
-  }
+  // CUBE3D
 }
 
 // HomePage Disclaimer Section
 section.homepage-disclaimer-section {
-  padding:70px 20px 50px;//50px 20px 30px
+  padding:40px 20px 50px;//70px 20px 50px//50px 20px 30px
 }
 
 // HomePage Projects Headline Section, HomePage Skills Headline Section

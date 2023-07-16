@@ -27,6 +27,7 @@ export default function Footer() {
   let currentYear = currentDate.getFullYear()
 
 	return (
+
 		<footer>
       {/* Desktop | Screen Readers */}
       <div className="container d-none d-md-flex justify-content-center align-items-md-center text-center">{/*<Link className="..." href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}{/*title="I'll kindly temporarily redirect you to my Portfolio 2021, while I finish my new 'Get In Touch' page 2023."*/}
@@ -268,5 +269,6 @@ export default function Footer() {
         </div>
       </aside>
 		</footer>
+
 	)
 };
