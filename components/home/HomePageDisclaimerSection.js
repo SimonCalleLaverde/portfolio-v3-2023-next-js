@@ -50,7 +50,7 @@ export default function HomePageDisclaimerSection() {
               {/*—As of May, 2023*/}
               {/*—As of July 02, 2023*/}
               {/*—As of July 07, 2023*/}
-              Launching {/*today: 07.07.2023*/}{/*in a few days.*/}tomorrow:
+              Launching {/*today: 07.07.2023*/}{/*in a few days.*/}{/*tomorrow*/}tonight:
               {/*<br/>—As of 07.07.2023*/}
               <br/>—07.17.2023
             </p>

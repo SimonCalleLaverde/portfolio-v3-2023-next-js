@@ -28,7 +28,7 @@ export default function UnderDevelopmentNote() {
         </h5>
 
         <p className="mt-4">{/*mb-0*/}
-          The responsive versions are under development and will be fully launching {/*today:*/}{/*in a few days.*/}tomorrow:
+          The responsive versions are under development and will be fully launching {/*today:*/}{/*in a few days.*/}{/*tomorrow*/}tonight:
           <br/><br/>
 
           {/*07.07.2023*/}
