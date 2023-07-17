@@ -160,14 +160,14 @@ export default function ProjectPage({ projectData }) {
       />*/}
 
       <main>
-        <header className="project-page-header text-turquoise">
+        <header className="project-page-header text-turquoise text-start">
           <div className="container">
 
             <div className="row">
               <div className="col-md-6">
 
                 <div className="row">
-                  <div className="col-8 offset-2 col-md-10 col-lg-8 offset-lg-1 col-xl-10">{/*col-xl-12*/}
+                  <div className="col-8 col-md-10 col-lg-8 offset-lg-1 col-xl-10">{/*col-8 offset-2*/}{/*col-xl-12*/}
                     <div className="position-relative">
                       <span className="page-order font-headline" aria-hidden="true">
                         0{ projectData.order }{/*03*/}{/*{{ page.order }}*/}
@@ -191,8 +191,8 @@ export default function ProjectPage({ projectData }) {
                   </div>
                 </div>
 
-                <div className="row text-left mt-5less">
-                  <div className="col-5 offset-2">
+                <div className="row mt-5less">{/*text-start*/}
+                  <div className="col-5 offset-md-2">{/*col-5 offset-2*/}
                     <div className="page-client font-ultra-light mb-2 pb-1">
                       <span className="page-subtitles font-regular">
                         Client
@@ -303,8 +303,8 @@ export default function ProjectPage({ projectData }) {
           </div>
 
           {/* Mobile Lg */}
-          <div className="container d-block d-lg-none mt-5 pt-3" aria-hidden="true">
-            <div className="row">
+          <div className="container d-block d-lg-none mt-5 pt-5" aria-hidden="true">
+            <div className="row mt-5 pt-4">
               <div className="col-md-8">{/*col-md-8 offset-md-2*/}
                 <div className="page-content font-ultra-light">
                   {/*{ projectData.content.text }*/}
@@ -316,7 +316,7 @@ export default function ProjectPage({ projectData }) {
           </div>
         </header>
 
-        <section className="project-page-section text-turquoise" id="project_page_section" data-scene>
+        <section className="project-page-section text-turquoise text-start" id="project_page_section" data-scene>
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>

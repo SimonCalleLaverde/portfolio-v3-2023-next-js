@@ -1159,7 +1159,7 @@ section.aboutpage-lets-work-section {
 
 // Project Page Header
 header.project-page-header {
-  padding:105px 20px 25px;
+  padding:167px 20px 25px;//105px 20px 25px
   background-color:theme-color("creme");////Temporary
   span.page-order {
     position:absolute;
@@ -1194,6 +1194,7 @@ section.project-page-section {
     font-size:18px;//20px
     img {
       border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
+      @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));
       @include border-radius(0.8rem);
     }
     blockquote {
