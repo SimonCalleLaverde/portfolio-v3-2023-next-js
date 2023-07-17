@@ -58,7 +58,7 @@ export default function Footer() {
 
       {/* Mobile */}
       <div className="container d-flex d-md-none justify-content-center align-items-start text-center" aria-hidden="true">
-        <div className="row mt-4more pt-2">
+        <div className="row mt-5 pt-2">
           <div className="col-12">
             <h3 className="text-huge text-turquoise mb-0">{/*text-uppercase*/}
               Get in touch

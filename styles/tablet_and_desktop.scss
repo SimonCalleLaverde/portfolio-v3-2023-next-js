@@ -4,7 +4,8 @@
 
   // General
   body {
-    font-size:15px;//√//17px
+    font-size:15px;
+    line-height:1.9;//1.8
   }
 
   // Main, Header, Section, Footer
@@ -38,6 +39,17 @@
   }
   .text-medium {
     font-size:1.7rem;//1.2rem
+  }
+
+
+
+  @media only screen and (max-width:992px) {//Down
+    @media (orientation:landscape) {//Trying To Target "Mobile" Between "768px" & "992px" Only, When On "landscape"
+      .headline-hero {//Putting A Smaller "font-size", Same Than Below "768px" In "portrait"
+        font-size:2.1rem;////New
+        line-height:1.15;
+      }
+    }
   }
 
 
@@ -277,7 +289,7 @@
         figcaption {//ALL
           .project-type-and-title {
             .project-type {
-              font-size:13px;//15px//Same As Body
+              font-size:13px;//"15px" Is Body
             }
           }
         }
@@ -403,12 +415,34 @@
 
   // Nav
   nav.top-nav {
-    //background-color:rgba(232,223,205,0.3);//theme-color("creme")
     > .container {
       > ul {
         > li {
+          > a, > button {
+            font-size:13px;//"15px" Is Body
+          }
           > a {
             padding:21px 0;//21px 0 23px//Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
+            &::before {
+              content:"";
+              position:absolute;
+              width:0;
+              height:1px;
+              right:0;
+              bottom:0;//-1px
+              left:auto;
+              background-color:theme-color("turquoise");
+              pointer-events:none;
+              @include transition(width 0.5s linear);//ease-in-out
+            }
+            &:hover, &:active, &:focus {//&.active-link
+              //@include filter(opacity(0.8));//Already In Mobile
+              &::before {
+                width:100%;
+                //right:auto;//0
+                left:0;
+              }
+            }
           }
         }
       }
@@ -417,15 +451,21 @@
 
   // HomePage Header
   header.homepage-header {
-    // CUBE3D
+    padding:90px 0;//New
   }
-
-  // HomePage Projects Cards Section
-  section.homepage-projects-cards-section {
-  }
-
-  // HomePage Skills Set Section
-  section.homepage-skills-set-section {
+  @media only screen and (max-width:992px) {//Down
+    @media (orientation:landscape) {//Trying To Target "Mobile" Between "768px" & "992px" Only, When On "landscape"
+      header.homepage-header {//Putting A Smaller "padding-top" & "padding-bottom", Same Than Below "768px" In "landscape"
+        padding:50px 20px;//New
+        > .container {
+          > .row {
+            //margin-top:0!important;//Replacing B5 Classes
+            margin-top:2.8rem!important;//3rem!important//Reducing A Bit From "mt-md-5"
+            padding-top:0!important;//Replacing B5 Classes
+          }
+        }
+      }
+    }
   }
 
   // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section

@@ -5,16 +5,17 @@ import Cube3D from "/components/Cube3D.js";
 export default function HomePageHeader() {
   return (
 
-    <header className="homepage-header display-flex justify-content-center align-items-center">{/*flex-direction-row*/}{/*text-align-center*/}
+    <header className="homepage-header display-flex justify-content-center align-items-md-center">
       <div className="container">
 
-        <div className="row d-flex flex-column flex-md-row justify-content-between mt-md-5 pt-md-5">
-          <div className="col-md-6">
-            <p className="mb-4">
+        <div className="row mt-md-5 pt-md-3 pt-lg-4 pt-xl-4more pt-xxl-5">{/*d-flex flex-column flex-md-row justify-content-between*/}
+          <div className="col-md-6 d-flex flex-column align-items-center">{/*"d-flex flex-column align-items-center" For Mobile, In Portrait*/}
+            <p className="mb-3 mb-md-4">
               Hello
             </p>
 
-            <h1 className="headline-hero mb-5 mb-md-0">
+            {/* Desktop | Screen Readers */}
+            <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
               Simón Calle—{/*Em Dash*/}<br/>
               UX, UI, & Product<br/>
               Designer with<br/>
@@ -23,10 +24,18 @@ export default function HomePageHeader() {
               Publicist.
             </h1>
 
+            {/* Mobile */}
+            <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
+              Simón Calle—{/*Em Dash*/}
+              UX, UI, & Product
+              Designer with
+              experience in Front-
+              end—{/*Em Dash*/}graduated as a
+              Publicist.
+            </h1>
+
             {/* Work on your work, until your work, gets you work — Chris do */}
-
             {/*<p>A designer who codes</p>*/}
-
             {/*<p>I&apos;m a UX/UI Product Designer & Front-end Developer</p>*/}
           </div>
 

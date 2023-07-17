@@ -106,7 +106,7 @@ body {
   font-size:13.5px;//14px//√//15px//17px
   background-color:theme-color("creme");//beige-old
   color:theme-color("grey-dark");
-  line-height:1.9;//√//1.8
+  line-height:1.4;//1.9//1.8
   //letter-spacing:0.5px;
   .text-italic {
     font-family:$font-regular-italic!important;//$font-light-italic!important
@@ -285,24 +285,26 @@ a {
 // Links Inside Paragraphs
 p {
   > a {
-    position:relative;
-    display:inline-block;
-    &::before {
-      content:"";
-      position:absolute;
-      width:100%;//98%
-      height:3px;
-      bottom:5.5px;
-      left:0;
-      background-color:theme-color("turquoise");
-      border-top:1px solid theme-color("creme");//beige-old
-      border-bottom:1px solid theme-color("creme");//beige-old
-      pointer-events:none;
-    }
+    text-decoration:underline;//New
+    // position:relative;
+    // display:inline-block;
+    // &::before {
+    //   content:"";
+    //   position:absolute;
+    //   width:100%;
+    //   height:1px;//3px
+    //   bottom:5.5px;
+    //   left:0;
+    //   background-color:theme-color("turquoise");
+    //   //border-top:1px solid theme-color("creme");//beige-old
+    //   //border-bottom:1px solid theme-color("creme");//beige-old
+    //   pointer-events:none;
+    // }
     &:hover, &:active, &:focus {
+      text-decoration:underline;//New
       @include filter(opacity(0.8));
       &::before {
-        @include animation(underlineBackAnim 0.8s linear forwards);
+        //@include animation(underlineBackAnim 0.8s linear forwards);
       }
     }
   }
@@ -316,14 +318,14 @@ a.link-underline {
     content:"";
     position:absolute;
     width:0;
-    height:3px;//2px//30%
-    //top:50%;//40%
+    height:1px;//3px
+    //top:50%;
     right:0;
     bottom:1.5px;//5.5px//0
-    //left:0;
+    left:auto;//0
     background-color:theme-color("turquoise");
-    border-top:1px solid theme-color("creme");
-    border-bottom:1px solid theme-color("creme");
+    //border-top:1px solid theme-color("creme");
+    //border-bottom:1px solid theme-color("creme");
     pointer-events:none;
     @include transition(width 0.4s linear);//ease-in-out
   }
@@ -331,7 +333,7 @@ a.link-underline {
     @include filter(opacity(0.8));
     &::before {
       width:100%;
-      right:auto;
+      //right:auto;
       left:0;
     }
   }
@@ -774,7 +776,7 @@ nav.top-nav {
   top:0;
   right:0;
   left:0;
-  background-color:transparent;
+  background-color:rgba(232,223,205,0.3);//theme-color("creme")//transparent
   backdrop-filter:blur(7px);
   z-index:5000;
   > .container {
@@ -789,7 +791,8 @@ nav.top-nav {
         list-style-type:none;//Overriding Default
         > a, > button {
           font-family:$font-regular;//$font-light
-          font-size:13px;//"15px" Same As Body
+          font-size:12px;//"13.5px" Is Body
+          line-height:1.9;//New
         }
         > a {
           display:block;//Or "inline-block" The Same, Just To Be Able To Give Dimentions. We Don't Need To Inline The "<a></a>(s)", Just The "<ul></ul>(s)", And We Are Doing It With Flexbox
@@ -797,25 +800,8 @@ nav.top-nav {
           margin:0 15px;//Should Use "2px 15px 0" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           padding:13px 0;//21px 0//21px 0 23px//(For Desktop) Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           //line-height:66.5px;//Could Replace The "Padding"//1.9//Same As Body//Was 1.8
-          &::before {
-            content:"";
-            position:absolute;
-            width:0;
-            height:1px;
-            right:0;
-            bottom:0;//-1px
-            left:auto;
-            background-color:theme-color("turquoise");
-            pointer-events:none;
-            @include transition(width 0.5s linear);//ease-in-out
-          }
           &:hover, &:active, &:focus {//&.active-link
             @include filter(opacity(0.8));
-            &::before {
-              width:100%;
-              //right:auto;//0
-              left:0;
-            }
           }
         }
         > button {
@@ -831,7 +817,7 @@ nav.top-nav {
 header {
   //flex:1;
   min-height:100vh;
-  padding:4rem 0;//Temporary
+  padding:4rem 0;//Temporary//(Should Have 20px Sides)
   background-color:theme-color("creme");////Temporary
   color:theme-color("turquoise");////Temporary
   .headline-hero {//.title//Temporary
@@ -857,12 +843,75 @@ section {
 
 // HomePage Header
 header.homepage-header {
-  // CUBE3D
+  padding:75px 20px;//New//Was 4rem 0
+  > .container {
+    > .row {
+      > div {
+        p {
+          line-height:1.9;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:768px) {//Down
+  // header.homepage-header {
+  //   > .container {
+  //     > .row {
+  //       > div {
+  //         h1, h2, h3, h4, h5, h6, p {
+  //           text-align:center!important;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  @media (orientation:portrait) {
+    header.homepage-header {
+      > .container {
+        > .row {
+          > div {
+            h1, h2, h3, h4, h5, h6, p {
+              //text-align:center!important;
+            }
+            h1, h2, h3, h4, h5, h6 {
+              max-width:70%;//80%
+            }
+            p {
+              margin-top:5.5%;//1.5rem
+            }
+            .cube-3d-scene-container {
+              margin-top:10%;//16%//70px
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (orientation:landscape) {//Trying To Target "Mobile" Below "768px" Only, When On "landscape"
+    header.homepage-header {
+      padding:80px 20px;//50px 20px//New
+      > .container {
+        > .row {
+          margin-top:0!important;//Replacing B5 Classes
+          padding-top:0!important;//Replacing B5 Classes
+          > div {
+            h1, h2, h3, h4, h5, h6, p {
+              //max-width:450px;
+            }
+            p {
+              margin-bottom:1.1rem!important;//0.5rem!important
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // HomePage Disclaimer Section
 section.homepage-disclaimer-section {
-  padding:40px 20px 50px;//70px 20px 50px//50px 20px 30px
+  padding:50px 20px;//60px 20px 50px//70px 20px 50px//50px 20px 30px
 }
 
 // HomePage Projects Headline Section, HomePage Skills Headline Section
@@ -1215,16 +1264,16 @@ footer {
     nav.footer-nav {//nav.navbar
       padding:0;
       top:auto;
-      bottom:188px;
-      line-height:1.5!important;
+      bottom:180px;//188px
+      line-height:1.4!important;//1.5!important
       ul.footer-nav-ul {//ul.navbar-nav
         margin-bottom:0;//New
         list-style-type:none;//Temporary As Per B4//Needed While Not-Having "navbar-nav"
         li.footer-nav-li {//li.nav-item
           a.footer-nav-link {//a.nav-link
             display:inline-block;
-            margin:0.1rem auto;
-            padding:0 0.1rem;
+            //margin:0.1rem auto;
+            //padding:0 0.1rem;
             font-family:$font-light;//$font-ultra-light
             font-size:13px;//12px
             color:theme-color("turquoise");
