@@ -159,163 +159,23 @@ export default function ProjectPage({ projectData }) {
         client={ projectData.client }
       />*/}
 
+      <ProjectPageHeader
+        id={ projectData.id }
+        key={ projectData.id }
+        headerImage={ projectData.headerImage }
+        order={ projectData.order }
+        title={ projectData.title }
+        client={ projectData.client }
+        roles2={ projectData.roles2 }
+        year2={ projectData.year2 }
+        duration={ projectData.duration }
+        webLaunchUrl={ projectData.webLaunchUrl }
+        prototypeLaunchUrl={ projectData.prototypeLaunchUrl }
+        thumbnailImage={ projectData.thumbnailImage }
+        content={ projectData.content }
+      />
+
       <main>
-        <header className="project-page-header text-turquoise text-start">
-          <div className="container">
-
-            <div className="row">
-              <div className="col-md-6">
-
-                <div className="row">
-                  <div className="col-8 col-md-10 col-lg-8 offset-lg-1 col-xl-10">{/*col-8 offset-2*/}{/*col-xl-12*/}
-                    <div className="position-relative">
-                      <span className="page-order font-headline" aria-hidden="true">
-                        0{ projectData.order }{/*03*/}{/*{{ page.order }}*/}
-
-                        {/*{% assign sorted_projects = site.projects %}
-                        {% assign projects_total_count = 0 %}
-
-                        {% for project in sorted_projects %}
-                          {% assign projects_total_count = projects_total_count | plus:1 %}
-                        {% endfor %}*/}
-
-                        <small className="font-ultra-light">
-                          {" "}/05{/*{{ projects_total_count }}*/}
-                        </small>
-                      </span>
-                    </div>
-
-                    <h1 className="page-title text-huge text-turquoise text-uppercase">
-                      { projectData.title }
-                    </h1>
-                  </div>
-                </div>
-
-                <div className="row mt-5less">{/*text-start*/}
-                  <div className="col-5 offset-md-2">{/*col-5 offset-2*/}
-                    <div className="page-client font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-regular">
-                        Client
-                      </span>
-                      { projectData.client ? projectData.client : projectData.title }
-                    </div>
-
-                    <div className="page-roles font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-regular">
-                        Roles
-                      </span>
-                      {/* I didn't have this "<span/>" below in older site. Here for the key. Had to create ".page-subtitles" class in "<span/> above" */}
-                      {/*
-                      { projectData.roles.map(role => (
-                        <span key={ role }>
-                          { role }{" "}·{" "}
-                        </span>
-                      )) }
-                      */}
-                      {/*&middot;*/}
-                      { projectData.roles2 }
-                    </div>
-                  </div>
-
-                  <div className="col-4 offset-1">
-                    {/* Removing "Date Formating" Links From My Tabs And Leaving Here For The Day I Do It, Using Hygraph's Date-Picker Again. */}
-                    {/*https://momentjs.com/docs/*/}
-                    {/*https://blog.logrocket.com/4-alternatives-to-moment-js-for-internationalizing-dates/*/}
-                    {/*https://day.js.org/*/}
-                    {/*https://www.reactshark.com/blog/guide-react-date-format*/}
-                    {/* EXAMPLE USED IN MY "GitHub > next-js-blog-graphcms" */}
-                    {/*<h3>{ datePublished }</h3>*/}
-                    {/*<h3>{ moment(datePublished).format("MMMM d, YYYY") }</h3>*/}
-                    {/*<h3>{ moment(datePublished).format("MMMM Do, YYYY") }</h3>*/}
-                    {/*<h3>{ moment(datePublished).format("MMMM D, YYYY") }</h3>*/}
-                    <div className="page-year font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-regular">
-                        Year
-                      </span>
-                      {/*{ projectData.year }*/}
-                      { projectData.year2 }
-                    </div>
-
-                    <div className="page-duration font-ultra-light mb-2 pb-1">
-                      <span className="page-subtitles font-regular">
-                        Duration
-                      </span>
-                      { projectData.duration }
-                    </div>
-                  </div>
-                </div>
-
-                <div className="row mt-5less">
-                  <div className="col-md-8 offset-md-2">
-                    <div className="font-regular">
-                      { projectData.webLaunchUrl &&
-                        <Link className="btn btn-xs btn-turquoise" href={ projectData.webLaunchUrl } target="_blank" rel="noreferrer">
-                          View the live site
-                        </Link>
-                      }
-
-                      { projectData.prototypeLaunchUrl &&
-                        <Link className="btn btn-xs btn-turquoise" href={ projectData.prototypeLaunchUrl } target="_blank" rel="noreferrer">
-                          View the prototype
-                        </Link>
-                      }
-                    </div>
-                  </div>
-                </div>
-
-                {/* Desktop Lg | Screen Readers */}
-                <div className="row mt-5 d-none d-lg-block">
-                  <div className="col-lg-10 offset-lg-1 mt-2">
-                    <div className="page-content font-ultra-light">
-                      {/*{ projectData.content.text }*/}
-
-                      <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}/>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-
-          {/* Desktop Md | Screen Readers */}
-          <div className="page-image-wrap d-none d-md-block">
-            <div className="container">
-
-              <div className="row">
-                <div className="col-md-6 offset-md-6 d-flex flex-column justify-content-end">{/*flex-row*/}{/*align-items-end*/}
-                  <div className="page-image background-image-default" type="image" style={{ backgroundImage:`url(${ projectData.thumbnailImage.url })` }} title={`Main Image Case Study: ${ projectData.title }`}>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Mobile */}
-          <div className="container d-block d-md-none mt-5 pt-3">
-            <div className="row">
-              <div className="col-12">
-                <img src={ projectData.thumbnailImage.url } alt={`Main Image Case Study: ${ projectData.title }`} style={{ width:"100%" }}/>
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile Lg */}
-          <div className="container d-block d-lg-none mt-5 pt-5" aria-hidden="true">
-            <div className="row mt-5 pt-4">
-              <div className="col-md-8">{/*col-md-8 offset-md-2*/}
-                <div className="page-content font-ultra-light">
-                  {/*{ projectData.content.text }*/}
-
-                  <div dangerouslySetInnerHTML={{ __html: projectData.content.html }}/>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-
         <section className="project-page-section text-turquoise text-start" id="project_page_section" data-scene>
           <div className="container">
             {/*{ projectData.webImages.map(image => (
