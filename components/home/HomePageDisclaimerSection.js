@@ -70,7 +70,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              My newest Portfolio 2023 is using advanced technologies such as ReactJS, which is a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I am incorporating NextJS, a ReactJS framework for production widely utilized by some of the world's leading companies.
+              My newest Portfolio 2023 is using advanced technologies such as ReactJS, which is a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I am incorporating NextJS, a ReactJS framework for production widely utilized by some of the world&apos;s leading companies.
               These advancements allowed me to create a more sophisticated structure for my case studies than I ever had before. Additionaly I integrated a robust <em>CMS (Content Management System)</em> called <em>Hygraph CMS</em>as well.
             </p>
 
