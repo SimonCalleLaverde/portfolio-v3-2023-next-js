@@ -11,24 +11,28 @@ export default function HomePageDisclaimerSection() {
         <div className="row">
           <div className="col-md-10">
             <h4 className="mb-3">
-              Disclaimer
+              {/*Disclaimer*/}
+              Welcome
             </h4>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               {/*construction*/}{/* its latest version isn&apos;t live yet.*/}{/* Due date for completion: Saturday 05.20.2023.*/}
               {/*I apologize for the inconvenience, this site is under development.*/}
               I apologize for the inconvenience, this portfolio is in its final stage of development. In the meantime, you can check out my
               previous <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer"><em><strong>Portfolio 2021</strong></em></Link> and
-              take a peek at what I&apos;ve work on before.
+              take a peek at what I&apos;ve {/*work*/}worked on before.
             </p>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               This new <em>Portfolio 2023</em> will be using better technologies like ReactJS (the most in demand JavaScript library for building User Interfaces,
               created by Facebook&apos;s developers team) and NextJS (the React framework for the Web, used by some of the world&apos;s largest companies) and I will
               be able to structure my Case Studies better.
             </p>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               I&apos;m also finally and currently showcasing my latest <em>User Experience (UX) & Product Design</em> real {/*stakeholder*/}client&apos;s project which I worked
               on {/*in*/}at an in-person 3 months duration <Link href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer"><em><strong>Product Design inc. UX & UI.</strong></em></Link> course {/*which*/}that
               I {/*was taking*/}enrolled at the <em>Experience Haus, London, United Kingdom</em> from October 2022 to February 2023.
@@ -43,7 +47,8 @@ export default function HomePageDisclaimerSection() {
               Desktop's version due date for completion: Saturday 05.20.2023.
             </p>*/}
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               {/*April 20, 2023*/}
               {/*04.20.2023*/}
               {/*May 15, 2023*/}
@@ -55,10 +60,28 @@ export default function HomePageDisclaimerSection() {
               <br/>—07.17.2023
             </p>
 
+            <p>
+              My name is Simón Calle Laverde and I am a <em>UX, UI, & Product Designer</em> with experience in <em>Front-end Development</em> as well. While taking a course in <em>Web Design and Design for Mobile Devices</em> which I enrolled over 9 years ago in 2013, I found myself in love with all the stages of
+              developing digital products and digital experiences.
+            </p>
+
+            <p>
+              I come from a creative career that focuses mainly in human persuasion and included studies in human behaviours, psychology, sociology, history of design and graphic design, semiotics, linguistics, and many more.
+            </p>
+
+            <p>
+              My newest Portfolio 2023 is using advanced technologies such as ReactJS, which is a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I am incorporating NextJS, a ReactJS framework for production widely utilized by some of the world's leading companies.
+              These advancements allowed me to create a more sophisticated structure for my case studies than I ever had before. Additionaly I integrated a robust <em>CMS (Content Management System)</em> called <em>Hygraph CMS</em>as well.
+            </p>
+
+            <p>
+              I am also excited to present my latest User Experience (UX) and Product Design project, which I developed for a real client during a three-month in-person <em>Product Design inc. UX & UI</em> course that I enrolled at Experience Haus in London, United Kingdom, from October 2022 to February 2023.
+            </p>
+
             {/*Portfolio 2021 (UI & Front-end Work)*/}
             {/*Portfolio 2021 (UI Design & Front-end Development)*/}
             {/*Archaic Portfolio 2021*/}
-            <Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021</Link>
+            {/*<Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021</Link>*/}
           </div>
         </div>
 
