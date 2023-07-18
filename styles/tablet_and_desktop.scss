@@ -33,7 +33,7 @@
     font-size:2.6rem;
     line-height:1.23;
   }
-  .text-huge {
+  .headline-huge {
     font-size:2.6rem;
     line-height:1.02;
   }
@@ -70,7 +70,7 @@
     .text-intro-ABOUT {
       font-size:3.35rem;
     }
-    .text-huge {
+    .headline-huge {
       font-size:3.35rem;
     }
     .text-medium {
@@ -94,7 +94,7 @@
       font-size:4.5rem;//NEW//5.3rem
       line-height:0.93;
     }
-    .text-intro-ABOUT, .text-huge {
+    .text-intro-ABOUT, .headline-huge {
       font-size:3.85rem;
     }
     .text-medium {
@@ -821,8 +821,9 @@
   // Project Page Header
   header.project-page-header {
     min-height:100vh;
-    padding:203px 0 0;
+    padding:167px 0 0;
     span.page-order {
+      top:-70px;
       right:auto;
     }
     .page-image-wrap {
@@ -845,9 +846,19 @@
         }
       }
     }
+    .page-client, .page-roles, .page-year, .page-duration {
+      font-size:13.5px;//Same As Body In Mobile//13px
+      span.page-subtitles {//New ".page-subtitles" Class
+        font-size:12px;//"13.5px" Is Body//11px
+      }
+    }
+    .page-content {
+      font-size:18px;//20px
+    }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
     header.project-page-header {
+      padding:203px 0 0;
       .page-image-wrap {
         .container {
           .row {
@@ -865,8 +876,19 @@
   // Project Page Section
   section.project-page-section {
     padding:65px 0 60px;
-    // img {
-    // }
+    .page-content-mid {
+      font-size:17px;//16px//18px//20px
+      blockquote {
+        margin-top:-30px;
+        padding-right:0;
+        padding-bottom:30px;
+        padding-left:30px;
+        font-size:15px;//Same As Body
+      }
+    }
+    .page-content-last {
+      font-size:15px;//Same As Body
+    }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {
     section.project-page-section {
@@ -884,10 +906,10 @@
         bottom:220.5px;//To be 220px
       }
       .footer-social-media-business, .footer-social-media-personal {
-        bottom:115px;//To be 115px
+        bottom:115.5px;//115px//To be 115px
       }
       .footer-social-media-personal {//To mix above
-        bottom:115.5px;//To be 115px and mixed above again
+        //bottom:115.5px;//To be 115px and mixed above again
       }
     }
   }

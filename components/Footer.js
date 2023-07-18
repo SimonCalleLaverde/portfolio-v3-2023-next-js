@@ -33,7 +33,7 @@ export default function Footer() {
       <div className="container d-none d-md-flex justify-content-center align-items-md-center text-center">{/*<Link className="..." href="https://simoncallelaverde.github.io/contact_me" target="_blank" rel="noreferrer">*/}{/*link-page-load*/}{/*href="javascript:delay('/hire_a_project')"*/}{/*title="I'll kindly temporarily redirect you to my Portfolio 2021, while I finish my new 'Get In Touch' page 2023."*/}
         <div className="row">
           <div className="col-md-12">
-            <h3 className="text-huge text-turquoise mb-0">{/*text-uppercase*/}
+            <h2 className="headline-huge mb-0">{/*text-uppercase*/}
               {/*Let&apos;s create
               <br/>something
               <br/>special*/}
@@ -41,9 +41,9 @@ export default function Footer() {
               {/*Drop me a line*/}
 
               Get in touch
-            </h3>
+            </h2>
 
-            <p className="font-light text-turquoise">{/*font-ultra-light*/}
+            <p className="font-ultra-light">
               {/*If you want to work
               <br/>with me, let&apos;s talk.*/}
 
@@ -60,11 +60,11 @@ export default function Footer() {
       <div className="container d-flex d-md-none justify-content-center align-items-start text-center" aria-hidden="true">
         <div className="row mt-5 pt-2">
           <div className="col-12">
-            <h3 className="text-huge text-turquoise mb-0">{/*text-uppercase*/}
+            <h2 className="headline-huge mb-0">{/*text-uppercase*/}
               Get in touch
-            </h3>
+            </h2>
 
-            <p className="font-light text-turquoise">{/*font-ultra-light*/}
+            <p className="font-ultra-light">
               Let&apos;s work together,
               <br/>let&apos;s talk!
             </p>
@@ -79,17 +79,17 @@ export default function Footer() {
           {/*Email me or call me*/}
           {/*Just email me or call me*/}
           Please call, WhatsApp, or email me at:
-          <span className="font-light">{/*font-ultra-light*/}
+          <span className="font-ultra-light">
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
-            <br/><Link className="link-underline text-turquoise" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
+            <br/><Link className="link-underline" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
         </div>
 
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-availability">
           Available for
-          <span className="font-light">{/*font-ultra-light*/}
-            <br/>Contract projects or
+          <span className="font-ultra-light">
+            <br/>Contract {/*projects*/}work {/*or*/}and/or
             <br/>Full-time work
           </span>
         </div>
@@ -97,7 +97,7 @@ export default function Footer() {
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-office">
           Office
-          <span className="font-light">{/*font-ultra-light*/}
+          <span className="font-ultra-light">
             <br/>Calle 10 # 2 Este - 40,
             <br/>Tr 8 Apt 404, Chía,
             <br/>Cundinamarca,
@@ -113,10 +113,10 @@ export default function Footer() {
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <div className="footer-credits" aria-hidden="true">
           Relevant work
-          <span className="font-light">{/*font-ultra-light*/}
+          <span className="font-ultra-light">
             {/*<br/>Visit also my older*/}
-            <br/>Visit also my archaic
-            <br/><Link className="link-underline text-turquoise" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with most movie sequels, my first portfolio was better">Portfolio 2021</Link>
+            <br/>Visit also my {/*archaic*/}previous
+            <br/><Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with most movie sequels, my first portfolio was better">Portfolio 2021</Link>
           </span>
         </div>
 
@@ -244,7 +244,7 @@ export default function Footer() {
         </div>
 
         {/* Desktop | Screen Readers */}
-        <div className="footer-copyright font-light d-none d-md-block">{/*font-ultra-light*/}
+        <div className="footer-copyright font-ultra-light d-none d-md-block">
           © {/*2023*/}{ currentYear } Simón Calle Laverde
           <br/>All rights reserved
         </div>
@@ -258,14 +258,14 @@ export default function Footer() {
         {/* Desktop | Screen Readers */}
         <div className="footer-created-by d-none d-md-block">
           Designed & developed by
-          <br/><Link className="link-underline font-light text-turquoise" href="/">Simón Calle Laverde</Link>{/*font-ultra-light*/}{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-ultra-light" href="/">Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
           {/*href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer"*/}
         </div>
 
         {/* Mobile */}
         <div className="footer-created-by d-block d-md-none" aria-hidden="true">
           Designed & developed
-          <br/><Link className="link-underline font-light text-turquoise" href="/">by Simón Calle Laverde</Link>{/*font-ultra-light*/}{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-ultra-light" href="/">by Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
         </div>
       </aside>
 		</footer>

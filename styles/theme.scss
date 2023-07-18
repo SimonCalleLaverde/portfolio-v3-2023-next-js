@@ -2,7 +2,7 @@
 
 // Under Development Note (Styles To Match "UnderDevelopmentNote.js" Set Displays)
 html {
-  overflow:hidden;
+  //overflow:hidden;
 }
 .under-development-note {
   position:fixed;
@@ -46,27 +46,27 @@ html {
 // BREAKPOINTS UPDATED TO BOOTSTRAP 5
 @media only screen and (min-width:576px) {//Up//@include media-breakpoint-only(sm) {//up
   html {
-    overflow:visible;//hidden
+    //overflow:visible;//hidden
   }
 }
 @media only screen and (min-width:768px) {//Up//@include media-breakpoint-only(md) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:992px) {//Up//@include media-breakpoint-only(lg) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1200px) {//Up//@include media-breakpoint-only(xl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 @media only screen and (min-width:1400px) {//Up//@include media-breakpoint-only(xxl) {//up
   html {
-    overflow:visible;//unset
+    //overflow:visible;//unset
   }
 }
 
@@ -182,14 +182,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size:3.7rem;
   line-height:0.88;
 }
-.text-intro-ABOUT, .text-huge {
+.text-intro-ABOUT, .headline-huge {
   font-size:2.85rem;
   font-weight:500;//New
 }
 .text-intro-ABOUT {
   line-height:1.19;
 }
-.text-huge {
+.headline-huge {
   line-height:1.02;
 }
 .text-medium {
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
   .text-gigantic {
     line-height:1;
   }
-  .text-intro-ABOUT, .text-huge {
+  .text-intro-ABOUT, .headline-huge {
     font-size:2.5rem;
   }
   .text-medium {
@@ -237,10 +237,10 @@ h1, h2, h3, h4, h5, h6 {
   .text-gigantic {//.text-header-ABOUT,
     font-size:2.1rem;
   }
-  .text-intro-ABOUT {//, .text-huge
+  .text-intro-ABOUT {//, .headline-huge
     font-size:1.8rem;
   }
-  .text-huge {//.text-intro-ABOUT,
+  .headline-huge {//.text-intro-ABOUT,
     font-size:1.6rem;
   }
   .text-medium {
@@ -1159,55 +1159,54 @@ section.aboutpage-lets-work-section {
 
 // Project Page Header
 header.project-page-header {
-  padding:167px 20px 25px;//105px 20px 25px
-  background-color:theme-color("creme");////Temporary
+  padding:150px 20px 25px;//167px 20px 25px//105px 20px 25px
   span.page-order {
     position:absolute;
-    top:-70px;
+    top:-60px;
     right:0;
     left:0;
     font-size:22px;
     small {
-      font-size:13px;
+      font-size:13.5px;//Same As Body//13px
     }
   }
   .page-title {
     white-space:normal;
   }
   .page-client, .page-roles, .page-year, .page-duration {
-    font-size:13px;
+    font-size:12px;//"13.5px" Is Body//13px
     span.page-subtitles {//New ".page-subtitles" Class
       display:block;
-      font-size:11px;
+      font-size:11px;//"13.5px" Is Body
     }
   }
   .page-content {
-    font-size:20px;
+    font-size:17px;//18px//20px
   }
 }
 
 // Project Page Section
 section.project-page-section {
-  padding:25px 20px 50px;
-  background-color:theme-color("creme");////Temporary
+  padding:25px 20px 20px;//25px 20px 50px
   .page-content-mid {
-    font-size:18px;//20px
+    font-size:15px;//18px//20px
     img {
       border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
       @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));
       @include border-radius(0.8rem);
     }
     blockquote {
-      margin-top:-30px;
-      padding-right:0;//30px//10px
-      padding-bottom:30px;//15px
-      padding-left:30px;//10px
-      font-size:15px;//Same Than Body//18px
+      margin-top:-25px;//-20px//-30px
+      padding-right:10px;
+      padding-bottom:30px;//25px
+      padding-left:20px;//10px
+      font-size:13.5px;//Same As Body//15px//18px
+      @include filter(opacity(0.7));
     }
   }
   .page-content-last {
     margin-top:3px;
-    font-size:16px;//15px//13px
+    font-size:13.5px;//Same As Body//12px//16px//15px//13px
   }
 }
 
@@ -1228,8 +1227,8 @@ footer {
         margin-top:30px;//New
       }
       p {
-        font-size:23px;
-        line-height:1.2;
+        font-size:20px;//18px//23px
+        line-height:1.4;//1.2
       }
     }
   }
@@ -1237,7 +1236,7 @@ footer {
     @include filter(opacity(0.9));
     .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
       position:absolute;
-      font-size:13px;//12px
+      font-size:12px;//13px//12px
     }
     .footer-email-or-call, .footer-copyright, .footer-created-by {
       bottom:30.5px;//To be 30px
@@ -1253,7 +1252,7 @@ footer {
     }
     .footer-availability, .footer-credits {
       bottom:310px;
-      line-height:1.5;////To remove maybe
+      //line-height:1.5;////To remove maybe
     }
     .footer-office {
       bottom:180px;
@@ -1266,7 +1265,7 @@ footer {
       padding:0;
       top:auto;
       bottom:180px;//188px
-      line-height:1.4!important;//1.5!important
+      //line-height:1.4!important;//1.5!important
       ul.footer-nav-ul {//ul.navbar-nav
         margin-bottom:0;//New
         list-style-type:none;//Temporary As Per B4//Needed While Not-Having "navbar-nav"
@@ -1275,8 +1274,8 @@ footer {
             display:inline-block;
             //margin:0.1rem auto;
             //padding:0 0.1rem;
-            font-family:$font-light;//$font-ultra-light
-            font-size:13px;//12px
+            font-family:$font-ultra-light;
+            font-size:12px;//13px//12px
             color:theme-color("turquoise");
             //text-transform:uppercase;
             // &::before {
@@ -1328,7 +1327,7 @@ footer {
         // }
         > span {
           position:relative;
-          font-size:15.5px;
+          font-size:15px;//15.5px
           //pointer-events:none;
           &::before {
             content:"";

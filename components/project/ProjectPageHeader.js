@@ -36,13 +36,13 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                     </span>
                   </div>
 
-                  <h1 className="page-title text-huge text-turquoise text-uppercase">
+                  <h1 className="page-title headline-huge text-turquoise text-uppercase">
                     { title }
                   </h1>
                 </div>
               </div>
 
-              <div className="row mt-5less">{/*text-start*/}
+              <div className="row mt-4 mt-md-5less">{/*text-start*/}
                 <div className="col-5 offset-md-2">{/*col-5 offset-2*/}
                   <div className="page-client font-ultra-light mb-2 pb-1">
                     <span className="page-subtitles font-regular">
@@ -96,7 +96,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                 </div>
               </div>
 
-              <div className="row mt-5less">
+              <div className="row mt-4 mt-md-5less">
                 <div className="col-md-8 offset-md-2">
                   <div className="font-regular">
                     { webLaunchUrl &&
@@ -154,8 +154,8 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
         </div>
 
         {/* Mobile Lg */}
-        <div className="container d-block d-lg-none mt-5 pt-5" aria-hidden="true">
-          <div className="row mt-5 pt-4">
+        <div className="container d-block d-lg-none mt-5 pt-md-5" aria-hidden="true">
+          <div className="row">{/*mt-md-5 pt-md-4*/}
             <div className="col-md-8">{/*col-md-8 offset-md-2*/}
               <div className="page-content font-ultra-light">
                 {/*{ content.text }*/}

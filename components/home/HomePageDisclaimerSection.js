@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function HomePageDisclaimerSection() {
   return (
 
-    <section className="homepage-disclaimer-section font-light text-turquoise text-start">
+    <section className="homepage-disclaimer-section font-ultra-light text-turquoise text-start">
       <div className="container">
 
         <div className="row">

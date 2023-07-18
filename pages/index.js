@@ -137,7 +137,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 <div className="skill-row" key={ skill.id }>
                   <div className="row">
                     <div className="col-md-3">{/*col-md-4*/}
-                      <h3 className="text-medium text-turquoise mb-4more mb-md-0">{/*text-huge*/}
+                      <h3 className="text-medium mb-4more mb-md-0">{/*headline-huge*/}
                         {/* {{ skill.title }} */}
                         { skill.skillTitle }
                       </h3>
@@ -147,9 +147,8 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                       {/* {{ skill.content }} */}
                       {/* { skill.skillDescription.html } */}
                       { skill.skillDescription &&
-                        <div className="skill-content font-light text-turquoise mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}/>
+                        <div className="skill-content font-ultra-light mb-4" dangerouslySetInnerHTML={{ __html: skill.skillDescription.html }}/>
                       }
-                      {/*font-ultra-light*/}
                     </div>
                   </div>
                 </div>
