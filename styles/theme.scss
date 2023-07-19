@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width:576px) {//Down
   .headline-hero {
-    font-size:1.8rem;//2.2rem////New
+    font-size:1.5rem;//1.8rem//2rem//2.1rem//1.8rem//2.2rem////New
   }
 
 
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width:400px) {//Down
   .headline-hero {
-    font-size:1.5rem;//1.8rem////New
+    font-size:1.2rem;//1.3rem//1.5rem//1.8rem////New
   }
 
 
@@ -249,6 +249,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+}
+@media only screen and (max-width:330px) {//Down
+  .headline-hero {
+    font-size:1.1rem;//New
+  }
 }
 
 // Text Stroke (OLD)
@@ -723,12 +728,10 @@ article.project-card {
 @media only screen and (max-width:768px) {//Down
   article.project-card {
     a {
-      figure {
-        &.FIGURE-ONE {
-          figcaption {
-            .project-type-and-title, .project-description {
-              width:70%;//50%
-            }
+      figure {//.FIGURE-ONE
+        figcaption {
+          .project-type-and-title, .project-description {
+            width:50%;//70%//50%
           }
         }
       }
@@ -743,6 +746,9 @@ article.project-card {
           height:200px;//To Revise These Two
         }
         figcaption {
+          .project-type-and-title, .project-description {
+            width:60%;//70%//50%
+          }
         }
       }
     }
@@ -899,8 +905,29 @@ header.homepage-header {
             h1, h2, h3, h4, h5, h6, p {
               //max-width:450px;
             }
+            h1, h2, h3, h4, h5, h6 {
+              max-width:70%;//90%
+            }
             p {
               margin-bottom:1.1rem!important;//0.5rem!important
+            }
+            .cube-3d-scene-container {
+              margin-top:7%;//50px//10%
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width:400px) {//Down
+  @media (orientation:portrait) {
+    header.homepage-header {
+      > .container {
+        > .row {
+          > div {
+            h1, h2, h3, h4, h5, h6 {
+              max-width:90%;//100%//80%
             }
           }
         }
