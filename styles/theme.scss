@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Headline, Title, Subtitle (Font-Sizes)
+// ".headline-hero" Checked √. Was Checking ".headline-huge" Next Which Is The Second Largest Font I'm Using, In "Footer" And "Project Pages", And Should Use It In The Two Main "Section" Headings In "Home Page", Instead Of Current ".text-gigantic"
 .headline-hero {
   font-size:2.1rem;////New
   line-height:1.15;
@@ -200,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width:576px) {//Down
   .headline-hero {
-    font-size:1.5rem;//1.8rem//2rem//2.1rem//1.8rem//2.2rem////New
+    font-size:1.8rem;//1.5rem//1.8rem//2rem//2.1rem//1.8rem//2.2rem////New
   }
 
 
@@ -849,7 +850,7 @@ section {
 
 // HomePage Header
 header.homepage-header {
-  padding:75px 20px;//New//Was 4rem 0
+  padding:90px 20px 75px;//75px 20px//New//Was 4rem 0
   > .container {
     > .row {
       > div {
@@ -938,7 +939,7 @@ header.homepage-header {
 
 // HomePage Disclaimer Section
 section.homepage-disclaimer-section {
-  padding:50px 20px;//60px 20px 50px//70px 20px 50px//50px 20px 30px
+  padding:20px 20px 50px;//50px 20px//60px 20px 50px//70px 20px 50px//50px 20px 30px
 }
 
 // HomePage Projects Headline Section, HomePage Skills Headline Section

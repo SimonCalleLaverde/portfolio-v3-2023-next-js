@@ -9,7 +9,7 @@ export default function HomePageSkillsHeadlineSection() {
 
         <div className="row">
           <div className="col-md-12">{/*col-md-10 offset-md-1*/}
-            <h3 className="font-headline text-gigantic text-turquoise text-start text-uppercase mb-0">{/*text-center*/}
+            <h3 className="font-headline headline-huge text-turquoise text-start text-uppercase mb-0">{/*text-gigantic*/}{/*text-center*/}
               {/*Some Of My
               <br/>Skills Set*/}
               Skills
