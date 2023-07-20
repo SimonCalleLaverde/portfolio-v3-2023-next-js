@@ -785,7 +785,7 @@ nav.top-nav {
   left:0;
   background-color:rgba(232,223,205,0.3);//theme-color("creme")//transparent
   backdrop-filter:blur(7px);
-  z-index:5000;
+  z-index:1050;//Below ".modal(s)" Which Are "1060"//5000
   > .container {
     border-bottom:1px solid theme-color("turquoise");
     > ul {

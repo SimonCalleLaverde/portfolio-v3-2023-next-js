@@ -49,6 +49,7 @@ export default function ModalResume() {
             <object data="/Simon Calle Laverde CV 2023 (English).pdf?#zoom=135.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=92" (approx with "modal-lg")*/}{/*"zoom=138" (approx with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
+              {/* Hidden */}
               <p className="d-none">
                 {/*It seems like your web browser is not configured to display PDF files.
                 {" "}Don&apos;t worry, just click the button below to &quot;Download the PDF&quot;
