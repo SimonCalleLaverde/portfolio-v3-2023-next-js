@@ -25,7 +25,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           {/* Desktop [Every :nth-child(3n + 1)] | Screen Readers [Always] */}
           <figcaption className="d-none d-md-flex justify-content-between">
             <div className="project-type-and-title">
-              <div className="project-type text-uppercase">
+              <div className="project-type">{/*text-uppercase*/}
                 { type }
               </div>
 
@@ -42,7 +42,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           {/* Mobile [Always] */}
           <figcaption className="d-block d-md-none text-start" aria-hidden="true">
             <div className="project-type-and-title">
-              <div className="project-type text-uppercase">
+              <div className="project-type">{/*text-uppercase*/}
                 { type }
               </div>
 
@@ -62,7 +62,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
           <div className="row">
             <figcaption className="col-md-4 d-flex flex-column justify-content-between align-items-end">
               <div className="project-type-and-title">
-                <div className="project-type text-uppercase">
+                <div className="project-type">{/*text-uppercase*/}
                   { type }
                 </div>
 
@@ -95,7 +95,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
 
             <figcaption className="col-md-4 d-flex flex-column justify-content-between">
               <div className="project-type-and-title">
-                <div className="project-type text-uppercase">
+                <div className="project-type">{/*text-uppercase*/}
                   { type }
                 </div>
 
