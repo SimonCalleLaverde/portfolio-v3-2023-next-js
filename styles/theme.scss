@@ -271,6 +271,51 @@ h1, h2, h3, h4, h5, h6 {
 //   -webkit-text-stroke-color:theme-color("creme");
 // }
 
+// Letter Spacing(s) (To Match Different Elements In Stylesheet)
+p {
+  letter-spacing:0.5px;
+}
+header.homepage-header {
+  > .container {
+    > .row {
+      > div {
+        p {
+          letter-spacing:1px;
+        }
+      }
+    }
+  }
+}
+article.project-card {
+  a {
+    figure {//.FIGURE-ONE
+      figcaption {//ALL
+        .project-type-and-title {
+          .project-type {
+            letter-spacing:1px;
+          }
+        }
+        .project-description {
+          letter-spacing:0.5px;
+        }
+      }
+    }
+  }
+}
+section.homepage-skills-set-section {
+  .skills-set-table {
+    .skill-row {
+      .skill-content {
+        p {
+          strong {
+            letter-spacing:1px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Website Colours
 .text-turquoise {
   color:theme-color("turquoise")!important;
@@ -696,6 +741,9 @@ article.project-card {
       div.project-thumbnail {//ALL
       }
       figcaption {//ALL
+        .project-type-and-title, .project-description {
+          line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
+        }
         .project-type-and-title {
           .project-type {
             //font-size:12px;//15px//Same As Body
@@ -703,9 +751,6 @@ article.project-card {
           }
           .project-title {//h1, h2, h3, h4, h5, h6
           }
-        }
-        .project-type-and-title, .project-description {
-          line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
       }
       &.FIGURE-ONE {
