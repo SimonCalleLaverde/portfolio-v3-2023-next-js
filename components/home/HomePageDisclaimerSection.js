@@ -66,16 +66,16 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I come from a creative career that focuses mainly in human persuasion and included studies in human behaviours, psychology, sociology, history of design and graphic design, semiotics, linguistics, and many more.
+              I {/*come*/}came from a creative career background that {/*focuses mainly*/}its main focus is in {/*human*/}<em>persuasion</em> and <em>human behaviour</em> {/*which*/}where its studies included subjects like: history of design, graphic design, semiotics, linguistics, psychology, sociology, human studies, and many more.
             </p>
 
             <p>
-              My newest Portfolio 2023 is using advanced technologies such as ReactJS, which is a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I am incorporating NextJS, a ReactJS framework for production widely utilized by some of the world&apos;s leading companies.
-              These advancements allowed me to create a more sophisticated structure for my case studies than I ever had before. Additionaly I integrated a robust <em>CMS (Content Management System)</em> called <em>Hygraph CMS</em>as well.
+              I took a bit creating {/*My*/}this newest <em>Portfolio 2023</em> which is using advanced technologies such as ReactJS, {/*which is */}a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I {/*am incorporating*/}incorporated NextJS, a ReactJS framework for production widely utilized by some of the world&apos;s leading companies.
+              {/*These advancements allowed me to create a more sophisticated structure for my case studies than I ever had before.*/}{/* Additionaly, I integrated a robust <em>CMS (Content Management System)</em> called <em>Hygraph CMS</em>as well.*/}
             </p>
 
             <p>
-              I am also excited to present my latest User Experience (UX) and Product Design project, which I developed for a real client during a three-month in-person <em>Product Design inc. UX & UI</em> course that I enrolled at Experience Haus in London, United Kingdom, from October 2022 to February 2023.
+              I am also finally excited to present my latest <em>User Experience (UX), User Interface (UI), and Product Design</em> project, which I developed for a real client during a three-month in-person <em>Product Design inc. UX & UI</em> course that I enrolled at Experience Haus, London, United Kingdom from October 2022 to February 2023.
             </p>
 
             {/*Portfolio 2021 (UI & Front-end Work)*/}
