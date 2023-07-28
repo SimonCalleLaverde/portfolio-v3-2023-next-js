@@ -1264,7 +1264,7 @@ section.project-page-section {
   .page-content-mid {
     font-size:15px;//18px//20px
     img {
-      border:1px rgba(26,42,55,0.3) solid;//theme-color("turquoise")////
+      border:0.5px rgba(26,42,55,0.3) solid;//1px//theme-color("turquoise")////
       @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));
       @include border-radius(0.8rem);
     }
