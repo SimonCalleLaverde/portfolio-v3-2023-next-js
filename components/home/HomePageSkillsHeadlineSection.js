@@ -12,10 +12,11 @@ export default function HomePageSkillsHeadlineSection() {
             <h3 className="font-headline headline-huge text-turquoise text-start text-uppercase mb-0">{/*text-gigantic*/}{/*text-center*/}
               {/*Some Of My
               <br/>Skills Set*/}
-              Skills
               {/*<br/>Highlight*/}
               {/*<br/>Spotlight*/}
-              <br/>Set Stories
+              {/*Skill
+              <br/>Set Stories*/}
+              Skills
             </h3>
           </div>
         </div>
