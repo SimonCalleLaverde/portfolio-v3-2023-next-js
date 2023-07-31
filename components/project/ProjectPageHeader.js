@@ -101,7 +101,8 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                   <div className="font-regular">
                     { webLaunchUrl &&
                       <Link className="btn btn-xs btn-turquoise" href={ webLaunchUrl } target="_blank" rel="noreferrer">
-                        View the live site
+                        {/*View the live site*/}
+                        Launch the live site
                       </Link>
                     }
 
