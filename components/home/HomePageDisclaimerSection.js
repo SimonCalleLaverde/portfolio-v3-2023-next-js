@@ -66,7 +66,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I {/*come*/}came from a creative career background that {/*focuses mainly*/}its main focus is in {/*human*/}<em>persuasion</em> and <em>human behaviour</em> {/*which*/}where its studies included subjects like: history of design, graphic design, semiotics, linguistics, psychology, sociology, human studies, and many more.
+              I {/*come*/}came from a creative career background that {/*focuses mainly*/}its main focus is in {/*human*/}<em>persuasion</em> and <em>human behaviour</em> {/*which*/}where its studies included subjects like: history of design, graphic design, visual semiotics, linguistics, psychology, sociology, human studies, and many more.
             </p>
 
             <p>
