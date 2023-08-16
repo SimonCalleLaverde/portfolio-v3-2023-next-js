@@ -336,23 +336,30 @@ a {
 // Links Inside Paragraphs
 p {
   > a {
-    text-decoration:underline;//New
-    // position:relative;
-    // display:inline-block;
-    // &::before {
-    //   content:"";
-    //   position:absolute;
-    //   width:100%;
-    //   height:1px;//3px
-    //   bottom:5.5px;
-    //   left:0;
-    //   background-color:theme-color("turquoise");
-    //   //border-top:1px solid theme-color("creme");//beige-old
-    //   //border-bottom:1px solid theme-color("creme");//beige-old
-    //   pointer-events:none;
-    // }
+    //text-decoration:underline;//New
+
+
+
+    position:relative;
+    display:inline-block;
+    &::before {
+      content:"";
+      position:absolute;
+      width:100%;
+      height:1px;//3px
+      bottom:6.5px;//1px//0//NEW//5.5px
+      right:0;
+      left:0;
+      background-color:theme-color("turquoise");//red
+      //border-top:1px solid theme-color("creme");//beige-old
+      //border-bottom:1px solid theme-color("creme");//beige-old
+      //pointer-events:none;
+    }
+
+
+
     &:hover, &:active, &:focus {
-      text-decoration:underline;//New
+      //text-decoration:underline;//New
       @include filter(opacity(0.8));
       &::before {
         //@include animation(underlineBackAnim 0.8s linear forwards);
