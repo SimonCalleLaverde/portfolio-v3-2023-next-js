@@ -356,7 +356,7 @@ p {
     }
     &::before {
       //z-index:-1;//Would need "&::after" to have the content, and be on top or something. But can't print the content in "&::after". So not possible
-      background-color:darken(theme-color("creme"),30);
+      background-color:darken(theme-color("creme"),20);//30
       @include filter(opacity(0));//So it doesn't get on top of "&::after", so "&::after" can have its "0.7" transparency at first, and "&::before" gets slight filtering/fade-in transition when hover from "0" to "0.3", plus its height transition. Bottom line will then sum "0.7" + "0.3" = "1" (opacity) so it will have more contrast after hovering //This was using "theme-color("turquoise")", but I changed to "theme-color("creme")" with "darken" for the background
       @include transition(height 0.3s ease-in-out, filter 0.3s ease-in-out);
     }
