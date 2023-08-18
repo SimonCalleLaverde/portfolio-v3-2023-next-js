@@ -334,11 +334,14 @@ a {
 }
 
 // Links Directly Inside Paragraphs [Revised]
-p {
-  > a {
-    text-decoration:underline;//NEW
-    &:hover, &:active, &:focus {
+@media only screen and (max-width:768px) {//Down
+  p {
+    > a {
       text-decoration:underline;//NEW
+      &:hover, &:active, &:focus {
+        text-decoration:underline;//NEW
+        @include filter(opacity(0.7));
+      }
     }
   }
 }
@@ -347,7 +350,7 @@ p {
     > a {
       position:relative;
       display:inline-block;
-      text-decoration:none;//NEW//underline//New
+      //text-decoration:none;//NEW//underline//New
       //@include box-shadow(inset 0 0 0 0 transparent);
       @include filter(opacity(1));
       &::before, &::after {
@@ -378,7 +381,7 @@ p {
         @include transition(filter 0.3s ease-in-out);
       }
       &:hover, &:active, &:focus {
-        text-decoration:none;//NEW//underline//New
+        //text-decoration:none;//NEW//underline//New
         /* offset-x | offset-y ("height" of "inset" shadow. With "+" it comes from top, with "-" it comes from below) | blur-radius | spread-radius ("offset" from opposite side. So in this case "height" of "inset" shadow is original "offset-y", minus this "spread-radius (offset)" from top in this case) | color */
         /* Could make an "underline", instead of using the "&::after", leaving an offset like "inset 0 -0.9rem 0 -0.8rem". But then I would need to make all line-heights smaller, etc*/
         @include box-shadow(inset 0 -0.9rem 0 0 theme-color("green-light"));//inset 0 -0.5em 0 0 #3CFFD0//inset 0 -2rem 0 -1rem//inset 0 -2rem 0 -1.55rem theme-color("green-light") 'OR' inset 0 -0.45rem 0 0 theme-color("green-light") [For Highlight Right Below The Underline]
