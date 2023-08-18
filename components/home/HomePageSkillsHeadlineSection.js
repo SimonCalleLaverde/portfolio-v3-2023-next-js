@@ -14,9 +14,9 @@ export default function HomePageSkillsHeadlineSection() {
               <br/>Skills Set*/}
               {/*<br/>Highlight*/}
               {/*<br/>Spotlight*/}
-              {/*Skill
-              <br/>Set Stories*/}
-              Skills
+              Skill
+              <br/>Set Stories
+              {/*Skills*/}
             </h3>
           </div>
         </div>
