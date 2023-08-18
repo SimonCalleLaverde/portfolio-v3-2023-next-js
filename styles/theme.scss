@@ -571,11 +571,11 @@ $btn-lg-padding:0.7rem 2.3rem;
 // Selection Styles
 ::selection {//webkit, opera, IE9
   background-color:transparent;//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("creme"),10)//#FFF//transparent//rgba(105,169,179,0.7)
-  color:lighten(theme-color("turquoise"),30);//20
+  color:lighten(theme-color("green-dark"),30);//turquoise//20
 }
 ::-moz-selection {//mozilla firefox
   background-color:transparent;//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("creme"),10)//#FFF//transparent//rgba(105,169,179,0.7)
-  color:lighten(theme-color("turquoise"),30);//20
+  color:lighten(theme-color("green-dark"),30);//turquoise//20
 }
 
 // Cube 3D Scene Container
