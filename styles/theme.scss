@@ -337,9 +337,12 @@ a {
 @media only screen and (max-width:768px) {//Down
   p {
     > a {
-      text-decoration:underline;//NEW
+      color:theme-color("creme");
+      //text-decoration:underline;//NEW
+      @include box-shadow(inset 0 -1.2rem 0 0 theme-color("green-dark"));//0 -0.4rem 0 0
       &:hover, &:active, &:focus {
-        text-decoration:underline;//NEW
+        color:theme-color("creme");
+        //text-decoration:underline;//NEW
         @include filter(opacity(0.7));
       }
     }
