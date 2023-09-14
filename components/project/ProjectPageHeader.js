@@ -118,7 +118,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
               {/* Desktop Lg | Screen Readers */}
               <div className="row mt-5 d-none d-lg-block">
                 <div className="col-lg-10 offset-lg-1 mt-2">
-                  <div className="page-content font-ultra-light">
+                  <div className="page-content font-light">{/*font-ultra-light*/}
                     {/*{ content.text }*/}
 
                     <div dangerouslySetInnerHTML={{ __html: content.html }}/>
@@ -158,7 +158,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
         <div className="container d-block d-lg-none mt-5 pt-md-5" aria-hidden="true">
           <div className="row">{/*mt-md-5 pt-md-4*/}
             <div className="col-md-8">{/*col-md-8 offset-md-2*/}
-              <div className="page-content font-ultra-light">
+              <div className="page-content font-light">{/*font-ultra-light*/}
                 {/*{ content.text }*/}
 
                 <div dangerouslySetInnerHTML={{ __html: content.html }}/>

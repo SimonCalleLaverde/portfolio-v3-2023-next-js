@@ -250,7 +250,7 @@ export default function Footer() {
         </div>
 
         {/* Mobile */}
-        <div className="footer-copyright font-light d-block d-md-none" aria-hidden="true">
+        <div className="footer-copyright font-ultra-light d-block d-md-none" aria-hidden="true">
           Copyright © {/*2023*/}{ currentYear }
           <br/>Simón Calle Laverde
         </div>
