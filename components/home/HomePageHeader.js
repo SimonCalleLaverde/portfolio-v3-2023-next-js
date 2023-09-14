@@ -12,12 +12,12 @@ export default function HomePageHeader() {
           <div className="col-md-6 d-flex flex-column align-items-center align-items-md-start">{/*"d-flex flex-column align-items-center align-items-md-start" For Mobile, In Portrait*/}
             <p className="mb-3 mb-md-4">
               {/*Hello*/}
-              {/*It's*/}Nice to meet you!
+              {/*It&apos;s*/}Nice to meet you!
             </p>
 
             {/* Desktop | Screen Readers */}
             <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
-              I'm Simón Calle—{/*Em Dash*/}<br/>
+              I&apos;m Simón Calle—{/*Em Dash*/}<br/>
               UX, UI, & Product<br/>
               Designer with<br/>
               experience in Front-<br/>
@@ -27,7 +27,7 @@ export default function HomePageHeader() {
 
             {/* Mobile */}
             <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
-              I'm Simón Calle—{/*Em Dash*/}
+              I&apos;m Simón Calle—{/*Em Dash*/}
               UX, UI, & Product
               Designer with
               experience in Front-
