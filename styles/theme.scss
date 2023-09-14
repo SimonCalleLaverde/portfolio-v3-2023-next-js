@@ -280,7 +280,7 @@ header.homepage-header {
     > .row {
       > div {
         p {
-          letter-spacing:1px;
+          //letter-spacing:0.5px;//1px
         }
       }
     }
@@ -1391,7 +1391,7 @@ footer {
             display:inline-block;
             //margin:0.1rem auto;
             //padding:0 0.1rem;
-            font-family:$font-ultra-light;
+            font-family:$font-light;//$font-ultra-light
             font-size:12px;//13px//12px
             color:theme-color("turquoise");
             //text-transform:uppercase;

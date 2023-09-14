@@ -43,7 +43,7 @@ export default function Footer() {
               Get in touch
             </h2>
 
-            <p className="font-ultra-light">
+            <p className="font-light">{/*font-ultra-light*/}
               {/*If you want to work
               <br/>with me, let&apos;s talk.*/}
 
@@ -64,7 +64,7 @@ export default function Footer() {
               Get in touch
             </h2>
 
-            <p className="font-ultra-light">
+            <p className="font-light">{/*font-ultra-light*/}
               Let&apos;s work together,
               <br/>let&apos;s talk!
             </p>
@@ -78,8 +78,8 @@ export default function Footer() {
           {/*Or just email me or call me*/}
           {/*Email me or call me*/}
           {/*Just email me or call me*/}
-          Please call, WhatsApp, or email me at:
-          <span className="font-ultra-light">
+          Please call me, drop me a line on WhatsApp, or email me at:
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
           </span>
@@ -88,8 +88,8 @@ export default function Footer() {
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-availability">
           Available for
-          <span className="font-ultra-light">
-            <br/>Contract {/*projects*/}work {/*or*/}and/or
+          <span className="font-light">{/*font-ultra-light*/}
+            <br/>Contract {/*projects*/}work {/*or*/}{/*and/or*/}or
             <br/>Full-time work
           </span>
         </div>
@@ -97,7 +97,7 @@ export default function Footer() {
         {/* Desktop | Mobile | Screen Readers */}
         <div className="footer-office">
           Office
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             <br/>Calle 10 # 2 Este - 40,
             <br/>Tr 8 Apt 404, Chía,
             <br/>Cundinamarca,
@@ -113,7 +113,7 @@ export default function Footer() {
         {/* Desktop | Mobile */}{/* Screen Readers Hidden */}
         <div className="footer-credits" aria-hidden="true">
           Relevant work
-          <span className="font-ultra-light">
+          <span className="font-light">{/*font-ultra-light*/}
             {/*<br/>Visit also my older*/}
             <br/>Visit also my {/*archaic*/}previous
             <br/><Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with most movie sequels, my first portfolio was better">Portfolio 2021</Link>

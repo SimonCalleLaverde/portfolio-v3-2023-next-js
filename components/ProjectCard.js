@@ -34,7 +34,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               </h4>
             </div>
 
-            <div className="project-description font-ultra-light">
+            <div className="project-description font-light">{/*font-ultra-light*/}
               { category }
             </div>
           </figcaption>
@@ -51,7 +51,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               </h4>
             </div>
 
-            <div className="project-description font-ultra-light mt-1">{/*mt-2*/}
+            <div className="project-description font-light mt-1">{/*font-ultra-light*/}{/*mt-2*/}
               { category }
             </div>
           </figcaption>
@@ -71,7 +71,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
                 </h4>
               </div>
 
-              <div className="project-description font-ultra-light">
+              <div className="project-description font-light">{/*font-ultra-light*/}
                 { category }
               </div>
             </figcaption>
@@ -104,7 +104,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
                 </h4>
               </div>
 
-              <div className="project-description font-ultra-light">
+              <div className="project-description font-light">{/*font-ultra-light*/}
                 { category }
               </div>
             </figcaption>
