@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-light">{/*font-ultra-light*/}
-            <br/>Contract {/*projects*/}work {/*or*/}{/*and/or*/}or
+            <br/>Contract {/*projects*/}work{/* or*/}{/* and/or*/}/
             <br/>Full-time work
           </span>
         </div>
