@@ -1351,12 +1351,11 @@ footer {
   }
   > aside.footer-aside-info-elements {
     @include filter(opacity(0.9));
-    .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+    .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
       position:absolute;
       font-size:12px;//13px//12px
     }
     nav.footer-nav {//nav.navbar
-      position:absolute;
       ul.footer-nav-ul {//ul.navbar-nav
         li.footer-nav-li {//li.nav-item
           a.footer-nav-link {//a.nav-link
@@ -1536,7 +1535,7 @@ footer {
 @media only screen and (max-width:400px) {//Down
   footer {
     > aside.footer-aside-info-elements {
-      .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+      .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
         font-size:11px;
       }
       nav.footer-nav {//nav.navbar
