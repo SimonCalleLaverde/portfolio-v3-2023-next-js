@@ -12,7 +12,7 @@ export default function HomePageHeader() {
           <div className="col-md-6 d-flex flex-column align-items-center align-items-md-start">{/*"d-flex flex-column align-items-center align-items-md-start" For Mobile, In Portrait*/}
             <p className="mb-3 mb-md-4">
               {/*Hello*/}
-              {/*It&apos;s*/}Nice to meet you!
+              It&apos;s nice to meet you!
             </p>
 
             {/* Desktop | Screen Readers */}

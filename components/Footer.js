@@ -244,13 +244,13 @@ export default function Footer() {
         </div>
 
         {/* Desktop | Screen Readers */}
-        <div className="footer-copyright font-ultra-light d-none d-md-block">
+        <div className="footer-copyright font-light d-none d-md-block">{/*font-ultra-light*/}
           © {/*2023*/}{ currentYear } Simón Calle Laverde
           <br/>All rights reserved
         </div>
 
         {/* Mobile */}
-        <div className="footer-copyright font-ultra-light d-block d-md-none" aria-hidden="true">
+        <div className="footer-copyright font-light d-block d-md-none" aria-hidden="true">{/*font-ultra-light*/}
           Copyright © {/*2023*/}{ currentYear }
           <br/>Simón Calle Laverde
         </div>
@@ -265,7 +265,7 @@ export default function Footer() {
         {/* Mobile */}
         <div className="footer-created-by d-block d-md-none" aria-hidden="true">
           Designed & developed
-          <br/><Link className="link-underline font-ultra-light" href="/">by Simón Calle Laverde</Link>{/*{{ site.client_name }}*/}
+          <br/><Link className="link-underline font-light" href="/">by Simón Calle Laverde</Link>{/*font-ultra-light*/}{/*{{ site.client_name }}*/}
         </div>
       </aside>
 		</footer>
