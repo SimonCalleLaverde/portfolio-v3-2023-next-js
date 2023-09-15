@@ -51,7 +51,7 @@ export default function ProjectCard({ slug, order, thumbnailImage, title, nameFo
               </h4>
             </div>
 
-            <div className="project-description font-light mt-1">{/*font-ultra-light*/}{/*mt-2*/}
+            <div className="project-description font-light mt-2">{/*font-ultra-light*/}{/*mt-1*/}
               { category }
             </div>
           </figcaption>
