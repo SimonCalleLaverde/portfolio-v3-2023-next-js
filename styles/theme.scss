@@ -817,7 +817,7 @@ article.project-card {
     &:hover, &:active, &:focus {//TEMPORARY [HOVER EFFECT TO BE IMPROVED]
       figure {//.FIGURE-ONE
         div.project-thumbnail {//ALL
-          @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);//0 5px 15px rgba(24,16,8,0.4)
+          @include box-shadow(0 5px 15px rgba(0,0,0,0.3));
           //@include border-radius(0.4rem);//0.8rem
         }
         figcaption {
@@ -1076,6 +1076,7 @@ section.homepage-skills-set-section {
         //text-align:left;
         p {
           margin-bottom:15px;//1px
+          @include transition(filter ease-out 0.7s, transform ease-out 0.7s);//color ease-out 0.7s
           > strong {
           }
           > code {
@@ -1086,6 +1087,14 @@ section.homepage-skills-set-section {
             > strong {
             }
           }
+          &:hover, &:active, &:focus {
+            //color:lighten(theme-color("green-dark"),30);
+            @include filter(opacity(0.7));
+            @include transform(translateX(10px));
+          }
+          // &:not(:hover) {
+          //   @include filter(opacity(0.7));
+          // }
         }
       }
     }
