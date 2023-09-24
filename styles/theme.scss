@@ -515,7 +515,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     //@include filter(opacity(0.8));
     //@include transform(scale(1.03));
     @include transform(translate(1.5px,1.5px));
-    @include box-shadow(0 5px 15px rgba(24,16,8,0.1)!important);//0 5px 15px rgba(0,0,0,0.4)
+    @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);//0 5px 15px rgba(24,16,8,0.4)
     //@include box-shadow(none!important);
     &::before {
       right:0;
@@ -783,8 +783,11 @@ article.project-card {
   a {
     figure {//.FIGURE-ONE
       div.project-thumbnail {//ALL
+        //@include border-radius(0.8rem);
+        @include transition(box-shadow ease-out 0.4s);//border-radius ease-out 0.4s
       }
       figcaption {//ALL
+        @include transition(filter ease-out 0.4s);
         .project-type-and-title, .project-description {
           line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
@@ -809,6 +812,17 @@ article.project-card {
       }
       &.FIGURE-TWO, &.FIGURE-THREE {
         display:none;//Mobile
+      }
+    }
+    &:hover, &:active, &:focus {//TEMPORARY [HOVER EFFECT TO BE IMPROVED]
+      figure {//.FIGURE-ONE
+        div.project-thumbnail {//ALL
+          @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);//0 5px 15px rgba(24,16,8,0.4)
+          //@include border-radius(0.4rem);//0.8rem
+        }
+        figcaption {
+          @include filter(opacity(0.7));
+        }
       }
     }
   }

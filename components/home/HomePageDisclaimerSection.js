@@ -12,7 +12,9 @@ export default function HomePageDisclaimerSection() {
           <div className="col-md-10">
             <h4 className="mb-3">
               {/*Disclaimer*/}
-              Welcome
+              {/*Welcome*/}
+              {/*Nice to meet you!*/}
+              It&apos;s nice to meet you!
             </h4>
 
             {/* Hidden */}
