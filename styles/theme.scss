@@ -612,7 +612,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       color:darken(theme-color("creme"),10);//teal////
       //border:2px transparent solid;//1px theme-color("turquoise") solid//1px darken(theme-color("creme"),10) solid;//1px #000 solid////
       @include box-shadow(inset 0 0 $size * 0.7);
-      @include filter(opacity(90%));
+      @include filter(opacity(95%) brightness(100%) sepia(0));//opacity(90%)
       @include transition(filter ease-in-out 1s);//0.7s
       &.front {
         //background-color:#000;//teal
@@ -649,7 +649,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &:hover, &:active, &:focus {
       //@include animation(cubeRotation 20s ease-in-out 1s 1 alternate);
       .face {
-        @include filter(opacity(90%) brightness(115%) sepia(5%));//brightness(120%)//sepia(10%)
+        @include filter(opacity(80%) brightness(110%) sepia(10%));//opacity(90%)
       }
     }
   }

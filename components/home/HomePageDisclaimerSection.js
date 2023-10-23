@@ -8,6 +8,7 @@ export default function HomePageDisclaimerSection() {
     <section className="homepage-disclaimer-section font-light text-turquoise text-start">{/*font-ultra-light*/}
       <div className="container">
 
+        {/* A Creative Classic Publicist made Responsive Web Designer and UI Designer (2013), made Front-end Developer (2015), made UI/UX and Product Designer (2023) */}
         <div className="row">
           <div className="col-md-10">
             <h4 className="mb-3">
