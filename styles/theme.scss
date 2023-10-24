@@ -782,12 +782,13 @@ article.project-card {
   margin-bottom:35px;//calc(60px + 1rem)//((35px + 25px) + 1rem (from "figure's" margin-bottom))//35px////New
   a {
     figure {//.FIGURE-ONE
+      @include transition(transform ease-out 0.7s);
       div.project-thumbnail {//ALL
         //@include border-radius(0.8rem);
-        @include transition(box-shadow ease-out 0.4s);//border-radius ease-out 0.4s
+        @include transition(box-shadow ease-out 0.7s);//border-radius ease-out 0.7s
       }
       figcaption {//ALL
-        @include transition(filter ease-out 0.4s);
+        @include transition(filter ease-out 0.7s);
         .project-type-and-title, .project-description {
           line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
@@ -816,12 +817,13 @@ article.project-card {
     }
     &:hover, &:active, &:focus {//TEMPORARY [HOVER EFFECT TO BE IMPROVED]
       figure {//.FIGURE-ONE
+        @include transform(scale(1.01));
         div.project-thumbnail {//ALL
           @include box-shadow(0 5px 15px rgba(0,0,0,0.3));
           //@include border-radius(0.4rem);//0.8rem
         }
         figcaption {
-          @include filter(opacity(0.7));
+          @include filter(opacity(0.8));
         }
       }
     }
@@ -1097,6 +1099,7 @@ section.homepage-skills-set-section {
         //text-align:left;
         p {
           margin-bottom:15px;//1px
+          //will-change:filter, transform;
           @include transition(filter ease-out 0.7s, transform ease-out 0.7s);//color ease-out 0.7s
           > strong {
           }
@@ -1110,8 +1113,9 @@ section.homepage-skills-set-section {
           }
           &:hover, &:active, &:focus {
             //color:lighten(theme-color("green-dark"),30);
-            @include filter(opacity(0.7));
-            @include transform(translateX(10px));
+            @include filter(opacity(0.8));
+            //@include transform(translateX(10px));
+            @include transform(scale(1.03));//1.01
           }
           // &:not(:hover) {
           //   @include filter(opacity(0.7));
