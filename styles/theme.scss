@@ -897,7 +897,7 @@ article.project-card {
 
 // Logo
 .logo {
-  position:absolute;
+  position:fixed;//absolute
   top:0;
   left:0;
   z-index:1040;//Above "top-nav"
