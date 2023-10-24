@@ -1,5 +1,6 @@
 // Imports
 import Head from "next/head"
+import Logo from "../components/Logo.js";
 import Nav from "../components/Nav.js";
 import UnderDevelopmentNote from "../components/UnderDevelopmentNote.js";
 import ModalResume from "../components/ModalResume.js";
@@ -17,6 +18,7 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
 
+      <Logo/>
       <Nav/>
 
       {/*<UnderDevelopmentNote/>*/}

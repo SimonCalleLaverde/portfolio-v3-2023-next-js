@@ -13,16 +13,16 @@ export default function Nav() {
 
       {/* Desktop | Screen Readers */}
       <nav className="top-nav d-none d-md-block">
-        <div className="container display-flex justify-content-end">
+        <div className="container-fluid display-flex justify-content-end">{/*container*/}
 
           {/* Instead Of Classes "display-flex align-items-center justify-content-between" I'm Using "display:inline-block" Again In The "<li></li>". Otherwise Paddings Must Be Very Exact/Hard-Coded/Magic-Numbers So "<a></a>(s)" & "<button></button>(s)" Align. The "display:inline-block" Option Will Align Them Perfectly No Matter The Paddings, Or Margins, Or Height Of The "<a></a>". With The "Flexbox" Option It Requires Like 2px More Padding-Bottom For Links & Button To Align, But Then It Misses Like 2px Margin-Top To Be Fully Centered, And Then To Center Them Vertically Plus Fully Inline Them With The Button As Well, It Becomes More Messy */}
           {/* See Comments For "Option 2" In "theme.scss" */}
           <ul className="">{/*"justify-content-between" Won't Affect Unless "<ul></ul>" Has A Bigger Width Than Its Natural Sum-Of-Childs' Width*/}
-            <li>
+            {/*<li>
               <Link href="/">
                 Welcome
               </Link>
-            </li>
+            </li>*/}
 
             <li>
               <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023.">{/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}

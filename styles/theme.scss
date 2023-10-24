@@ -881,6 +881,26 @@ article.project-card {
 
 //----------------------------------Section Styles----------------------------------//
 
+// Logo
+.logo {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1040;//Above "top-nav"
+  > a {
+    display:block;//Or "inline-block"
+    height:65px;
+    padding:13px;
+    font-family:$font-regular;//Same As Nav Links
+    font-size:12px;//Same As Nav Links
+    line-height:1.9;//Same As Nav Links
+    letter-spacing:1px;
+    &:hover, &:active, &:focus {
+      @include filter(opacity(0.8));
+    }
+  }
+}
+
 // Nav
 nav.top-nav {
   position:fixed;
@@ -889,8 +909,8 @@ nav.top-nav {
   left:0;
   background-color:rgba(232,223,205,0.3);//theme-color("creme")//transparent
   backdrop-filter:blur(7px);
-  z-index:1040;//"1040" Puts It Completelly Below Modals' Background//1050//Below ".modal(s)" Which Are "1060"//5000
-  > .container {
+  z-index:1030;//1040//Changed To "1030" After Adding Logo//"1040" Puts It Completelly Below Modals' Background//1050//Below ".modal(s)" Which Are "1060"//5000
+  > .container, > .container-fluid {
     border-bottom:1px solid theme-color("turquoise");
     > ul {
       //min-width:400px;//Leaving At Natural Sum-Of-Childs' Width

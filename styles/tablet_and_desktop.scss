@@ -409,10 +409,25 @@
 
   //----------------------------------Section Styles----------------------------------//
 
+  // Logo
+  .logo {
+    > a {
+      //height:65px;
+      padding:21px 35px;//"21px" (From Nav Links Padding Top/Bottom) & "35px" ("20px" (From Nav New Ul Padding Right/Left) + "15px" (From "container-fluid's" Padding Right/Left))
+      font-size:13px;//Same As Nav Links
+      text-transform:uppercase;
+      &:hover, &:active, &:focus {
+        @include filter(opacity(0.8));
+      }
+    }
+  }
+
   // Nav
   nav.top-nav {
-    > .container {
+    > .container, > .container-fluid {
       > ul {
+        padding-right:20px;//New (After Adding "container-fluid")
+        padding-left:20px;//New (After Adding "container-fluid")
         > li {
           > a, > button {
             font-size:13px;//"15px" Is Body
