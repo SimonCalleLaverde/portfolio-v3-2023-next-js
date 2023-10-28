@@ -204,7 +204,7 @@ export default function ProjectPage({ projectData }) {
       />
 
       <main>
-        <section className="project-page-section text-turquoise text-start" id="project_page_section" data-scene>
+        <section className="project-page-section text-turquoise text-start">
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>
