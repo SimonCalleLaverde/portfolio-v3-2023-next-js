@@ -25,19 +25,27 @@ export default function Nav() {
             </li>*/}
 
             <li>
-              <Link href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023.">{/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here.">
+                {/*https://simoncallelaverde.github.io/about*/}
+
+                {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
+                {/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
+                
                 {/*Relevant work*/}
                 {/*Other work*/}
                 {/*More work*/}
                 {/*Development work*/}
-                About me (2021)
+                
+                {/*About me (2021)*/}
+                Portfolio 2021
               </Link>
             </li>
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
-                UX & UI certificate
+                {/*UX & UI certificate*/}
+                UX/UI certificate
               </Link>
             </li>
 
@@ -66,7 +74,8 @@ export default function Nav() {
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-                UX & UI certificate
+                {/*UX & UI certificate*/}
+                UX/UI certificate
               </Link>
             </li>
 

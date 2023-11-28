@@ -142,13 +142,18 @@ export default function Footer() {
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io/about" target="_blank" rel="noreferrer" title="Sorry to take you temporarily to my Portfolio 2021, while I finish my new My Story page 2023.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}{/*Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+                {/*https://simoncallelaverde.github.io/about*/}
+                {/*title="Sorry to take you temporarily to my Portfolio 2021, while I finish my new My Story page 2023."*/}
+                {/*Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.*/}
                 <span>
                   {/*Relevant work*/}
                   {/*Other work*/}
                   {/*More work*/}
                   {/*Development work*/}
-                  About me (2021)
+                  
+                  {/*About me (2021)*/}
+                  Portfolio 2021
                 </span>
               </Link>
             </li>
@@ -159,7 +164,9 @@ export default function Footer() {
                 <span>
                   {/*Drop me a line*/}
                   {/*Get in touch*/}
-                  UX & UI certificate
+                  
+                  {/*UX & UI certificate*/}
+                  UX/UI certificate
                 </span>
               </Link>
             </li>
