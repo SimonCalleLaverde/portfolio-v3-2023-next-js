@@ -37,13 +37,14 @@ export default function Nav() {
                 {/*Development work*/}
                 
                 {/*About me (2021)*/}
-                Portfolio 2021
+                Portfolio (Front-end) 2021
               </Link>
             </li>
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
+
                 {/*UX & UI certificate*/}
                 UX/UI certificate
               </Link>

@@ -785,7 +785,7 @@ article.project-card {
       @include transition(transform ease-out 0.7s);
       div.project-thumbnail {//ALL
         //@include border-radius(0.8rem);
-        @include transition(box-shadow ease-out 0.7s);//border-radius ease-out 0.7s
+        @include transition(filter ease-out 0.7s, box-shadow ease-out 0.7s);//border-radius ease-out 0.7s
       }
       figcaption {//ALL
         @include transition(filter ease-out 0.7s);
@@ -819,6 +819,7 @@ article.project-card {
       figure {//.FIGURE-ONE
         @include transform(scale(1.01));
         div.project-thumbnail {//ALL
+          @include filter(saturate(110%) brightness(110%));//saturate(200%) hue-rotate(90deg)
           @include box-shadow(0 5px 15px rgba(0,0,0,0.3));
           //@include border-radius(0.4rem);//0.8rem
         }
@@ -896,7 +897,8 @@ article.project-card {
     font-family:$font-regular;//Same As Nav Links
     font-size:12px;//Same As Nav Links
     line-height:1.9;//Same As Nav Links
-    letter-spacing:1px;
+    //letter-spacing:1px;
+    text-transform:uppercase;
     &:hover, &:active, &:focus {
       @include filter(opacity(0.8));
     }

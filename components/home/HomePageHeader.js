@@ -24,7 +24,7 @@ export default function HomePageHeader() {
               Designer with<br/>
               experience in Front-<br/>
               end—{/*Em Dash*/}graduated as a<br/>
-              Publicist.
+              creative Publicist.
             </h1>
 
             {/* Mobile */}
@@ -34,7 +34,7 @@ export default function HomePageHeader() {
               Designer with
               experience in Front-
               end—{/*Em Dash*/}graduated as a
-              Publicist.
+              creative Publicist.
             </h1>
 
             {/* Work on your work, until your work, gets you work — Chris do */}

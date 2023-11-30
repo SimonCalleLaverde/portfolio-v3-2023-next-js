@@ -435,7 +435,6 @@
       //height:65px;
       padding:21px 35px;//"21px" (From Nav Links Padding Top/Bottom) & "35px" ("20px" (From Nav New Ul Padding Right/Left) + "15px" (From "container-fluid's" Padding Right/Left))
       font-size:13px;//Same As Nav Links
-      text-transform:uppercase;
       &:hover, &:active, &:focus {
         @include filter(opacity(0.8));
       }
@@ -502,6 +501,11 @@
   // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
   section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
     padding:60px 0 37px;
+  }
+  section.homepage-disclaimer-section {
+    p {
+      font-size:17px;//Specific for this paragraph in Desktop, different/bigger to/than others
+    }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
     section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {

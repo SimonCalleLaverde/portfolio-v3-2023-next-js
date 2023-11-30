@@ -11,12 +11,14 @@ export default function HomePageDisclaimerSection() {
         {/* A Creative Classic Publicist made Responsive Web Designer and UI Designer (2013), made Front-end Developer (2015), made UI/UX and Product Designer (2023) */}
         <div className="row">
           <div className="col-md-10">
-            <h4 className="mb-3">
+            <h3 className="mb-3">
               {/*Disclaimer*/}
               {/*Welcome*/}
               {/*Nice to meet you!*/}
-              It&apos;s nice to meet you!
-            </h4>
+
+              {/*It&apos;s nice to meet you!*/}
+              Hi, it&apos;s nice to meet you!
+            </h3>
 
             {/* Hidden */}
             <p className="d-none">
@@ -63,21 +65,27 @@ export default function HomePageDisclaimerSection() {
               <br/>—07.17.2023
             </p>
 
-            <p>
+            {/* MOST 2023 */}
+
+            {/* Hidden */}
+            <p className="d-none">
               My name is Simón Calle Laverde and I am a <em>UX, UI, & Product Designer</em> with experience in <em>Front-end Development</em> as well. While taking a course in <em>Web Design and Design for Mobile Devices</em> which I enrolled over 9 years ago in 2013, I found myself in love with all the stages of
               developing digital products and digital experiences.
             </p>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               I {/*come*/}came from a creative career background that {/*focuses mainly*/}its main focus is in {/*human*/}<em>persuasion</em> and <em>human behaviour</em> {/*which*/}where its studies included subjects like: history of design, graphic design, visual semiotics, linguistics, psychology, sociology, human studies, and many more.
             </p>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               I took a bit creating {/*My*/}this newest <em>Portfolio 2023</em> which is using advanced technologies such as ReactJS, {/*which is */}a highly sought-after JavaScript library for building user interfaces developed by the team on Facebook. I {/*am incorporating*/}incorporated NextJS, a ReactJS framework for production widely utilized by some of the world&apos;s leading companies.
               {/*These advancements allowed me to create a more sophisticated structure for my case studies than I ever had before.*/}{/* Additionaly, I integrated a robust <em>CMS (Content Management System)</em> called <em>Hygraph CMS</em>as well.*/}
             </p>
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               I am also finally excited to present my latest <em>User Experience (UX), User Interface (UI), and Product Design</em> project, which I developed for a real client during a three-month in-person <em>Product Design inc. UX & UI</em> course that I enrolled at Experience Haus, London, United Kingdom from October 2022 to February 2023.
             </p>
 
@@ -85,6 +93,37 @@ export default function HomePageDisclaimerSection() {
             {/*Portfolio 2021 (UI Design & Front-end Development)*/}
             {/*Archaic Portfolio 2021*/}
             {/*<Link className="btn mt-2" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer">Portfolio 2021</Link>*/}
+
+            {/* GETTING TO 2024 (NOV 28, 2023) */}
+
+            {/*
+            - I gained over 4 years of experience working at a digital agency based in Melbourne, Australia, that had incredibly high impact on environmental and political issues
+            - Interaction Design / Interactive Design
+            */}
+
+            <p>
+              I graduated from university as a creative Publicist (2013).
+            </p>
+
+            <p>
+              Then made Responsive Web Designer (2013) in a separate university course, learning from professionals to properly design for all devices, not just shrinking things in smaller screens like some do, we studied tens of amazing responsive UI designs.
+            </p>
+
+            <p>
+              The made self-taught Front-end Developer (2014). Then I worked for an international digital agency based in Melbourne, Australia, for over 4 years, bringing digital experiences to life as well as creating the mobile, tablet, and iterations for all devices. I also sometimes had to have meetings with clients or the team, have consultations, and align expectations between design and development specially with some clients in my time-zone where we could speak directly, to help guide the final project changes or feature additions towards a functional UI including the final client&apos;s needs and feedback.
+            </p>
+
+            <p>
+              Then made UI Designer (since 2019) working in some freelance and creating some designs.
+            </p>
+
+            <p>
+              Finally made UX Designer (since 2022-2023) when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, for individual real clients, in a dynamic agency-type environment.
+            </p>
+
+            {/*<p>
+              I have also worked in print and some graphic design. I also worked through Amazon FBA in 2020-2021, but that&apos;s another story. I&apos;m now willing to re-enter the work forces and join another team to help with UI, UX, and Digital Product designs.
+            </p>*/}
           </div>
         </div>
 

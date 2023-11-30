@@ -153,6 +153,7 @@ export default function Footer() {
                   {/*Development work*/}
                   
                   {/*About me (2021)*/}
+                  {/*Portfolio (Front-end) 2021*/}
                   Portfolio 2021
                 </span>
               </Link>
