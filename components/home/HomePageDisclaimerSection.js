@@ -102,23 +102,27 @@ export default function HomePageDisclaimerSection() {
             */}
 
             <p>
-              I graduated from university as a creative Publicist (2013).
+              I graduated from university as a creative <em>Publicist (2013)</em>.
             </p>
 
             <p>
-              Then made Responsive Web Designer (2013) in a separate university course, learning from professionals to properly design for all devices, not just shrinking things in smaller screens like some do, we studied tens of amazing responsive UI designs.
+              I was then made <em>Responsive Web Designer (2013)</em> in a separate university course, learning from professionals to properly design for all devices. {/*, not just shrinking things in smaller screens like some do, w*/}We studied tens of amazing responsive UI designs.
             </p>
 
             <p>
-              The made self-taught Front-end Developer (2014). Then I worked for an international digital agency based in Melbourne, Australia, for over 4 years, bringing digital experiences to life as well as creating the mobile, tablet, and iterations for all devices. I also sometimes had to have meetings with clients or the team, have consultations, and align expectations between design and development specially with some clients in my time-zone where we could speak directly, to help guide the final project changes or feature additions towards a functional UI including the final client&apos;s needs and feedback.
+              Then made self-taught <em>Front-end Developer (2014)</em>.
             </p>
 
             <p>
-              Then made UI Designer (since 2019) working in some freelance and creating some designs.
+              I then <em>worked hybrid and finally remotely for an international digital agency based in Melbourne, Australia, for over 4 years (2015-2019)</em> bringing digital experiences to life as well as creating the mobile, tablet, and the iterations for {/*the */}different devices. I also sometimes had to have meetings with the clients or the team, had consultations, and align expectations between design and development specially with {/*some */}clients that were in my time-zone where we could speak directly, to help guide the final project changes or feature additions towards a functional UI including most of the final client&apos;s needs and feedback changes.
             </p>
 
             <p>
-              Finally made UX Designer (since 2022-2023) when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, for individual real clients, in a dynamic agency-type environment.
+              I was then made <em>UI Designer (since 2019)</em> working in some freelance projects and creating some designs. Studying UI design and all best practices for 2 years, working also in SEO, and some social-media.
+            </p>
+
+            <p>
+              Finally made <em>UX Designer (since 2022-2023)</em> when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, for individual real clients, in a dynamic agency-type environment.
             </p>
 
             {/*<p>
