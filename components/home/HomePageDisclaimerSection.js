@@ -122,7 +122,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              Finally made <em>UX Designer (since 2022-2023)</em> when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, for individual real clients, in a dynamic agency-type environment.
+              Finally made <em>UX Designer (since 2022-2023)</em> when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, working for individual real clients, in a dynamic agency-type environment.
             </p>
 
             {/*<p>
