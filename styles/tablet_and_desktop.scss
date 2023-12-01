@@ -498,17 +498,25 @@
     }
   }
 
-  // HomePage Disclaimer Section, HomePage Projects Headline Section, HomePage Skills Headline Section
-  section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
-    padding:60px 0 37px;
-  }
+  // HomePage Disclaimer Section
   section.homepage-disclaimer-section {
+    padding:40px 0 97px;//60px 0 37px
     p {
-      font-size:17px;//Specific for this paragraph in Desktop, different/bigger to/than others
+      font-size:17px;//Specific for this paragraph in Desktop, different/bigger than others
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
-    section.homepage-disclaimer-section, section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+    section.homepage-disclaimer-section {
+      padding:70px 0 112px;//100px 0 37px//100px 0 67px
+    }
+  }
+
+  // HomePage Projects Headline Section, HomePage Skills Headline Section
+  section.homepage-projects-headline-section, section.homepage-skills-headline-section {
+    padding:60px 0 37px;
+  }
+  @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
+    section.homepage-projects-headline-section, section.homepage-skills-headline-section {
       padding:100px 0 37px;//100px 0 67px
     }
   }

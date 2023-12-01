@@ -116,7 +116,7 @@ export default function Footer() {
           <span className="font-light">{/*font-ultra-light*/}
             {/*<br/>Visit also my older*/}
             <br/>Visit also my {/*archaic*/}previous
-            <br/><Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it happens with most movie sequels, my first portfolio was better">Portfolio 2021</Link>
+            <br/><Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it is with most movie sequels, the first one was even better!">Portfolio 2021</Link>
           </span>
         </div>
 
