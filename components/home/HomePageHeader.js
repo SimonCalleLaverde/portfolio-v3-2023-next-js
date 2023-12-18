@@ -53,9 +53,9 @@ export default function HomePageHeader() {
 
       </div>
 
-      <MadeIn/>
+      {/*<MadeIn/>
 
-      <Since1988/>
+      <Since1988/>*/}
     </header>
 
   )
