@@ -930,7 +930,7 @@ nav.top-nav {
           font-family:$font-regular;//$font-light
           font-size:12px;//"13.5px" Is Body
           line-height:1.9;//New
-          text-transform:uppercase;
+          //text-transform:uppercase;
         }
         > a {
           display:block;//Or "inline-block" The Same, Just To Be Able To Give Dimentions. We Don't Need To Inline The "<a></a>(s)", Just The "<ul></ul>(s)", And We Are Doing It With Flexbox
