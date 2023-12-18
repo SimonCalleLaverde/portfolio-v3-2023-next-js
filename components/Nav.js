@@ -37,7 +37,10 @@ export default function Nav() {
                 {/*Development work*/}
                 
                 {/*About me (2021)*/}
-                Portfolio (Front-end) 2021
+                {/*Portfolio (Front-end) 2021*/}
+
+                {/*Portfolio 2021 (Front-end)*/}
+                Portfolio 2021
               </Link>
             </li>
 
@@ -52,7 +55,8 @@ export default function Nav() {
 
             <li>
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
-                Resume
+                {/*Resume*/}
+                CV/Resume
               </button>
             </li>
           </ul>
@@ -82,7 +86,8 @@ export default function Nav() {
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalResume">
-                Resume
+                {/*Resume*/}
+                CV/Resume
               </Link>
             </li>
           </ul>

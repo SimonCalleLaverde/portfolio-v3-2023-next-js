@@ -427,7 +427,7 @@
   @media only screen and (min-width:1400px) {//Up //@include media-breakpoint-up(xxl) {//Up
   }
 
-  //----------------------------------Section Styles----------------------------------//
+  //----------------------------------Aside Styles----------------------------------//
 
   // Logo
   .logo {
@@ -478,6 +478,13 @@
       }
     }
   }
+
+  // Made In, Since 1988
+  aside.made-in, aside.since-1988 {
+    font-size:13px;//Same As Nav Links
+  }
+
+  //----------------------------------Section Styles----------------------------------//
 
   // HomePage Header
   header.homepage-header {

@@ -883,7 +883,7 @@ article.project-card {
   @include border-radius(0.8rem);
 }
 
-//----------------------------------Section Styles----------------------------------//
+//----------------------------------Aside Styles----------------------------------//
 
 // Logo
 .logo {
@@ -930,6 +930,7 @@ nav.top-nav {
           font-family:$font-regular;//$font-light
           font-size:12px;//"13.5px" Is Body
           line-height:1.9;//New
+          text-transform:uppercase;
         }
         > a {
           display:block;//Or "inline-block" The Same, Just To Be Able To Give Dimentions. We Don't Need To Inline The "<a></a>(s)", Just The "<ul></ul>(s)", And We Are Doing It With Flexbox
@@ -949,6 +950,29 @@ nav.top-nav {
     }
   }
 }
+
+// Made In, Since 1988
+aside.made-in, aside.since-1988 {
+  position:absolute;
+  bottom:23px;//35px//42px//21px//35px//0
+  font-family:$font-regular;//Same As Nav Links
+  font-size:12px;//Same As Nav Links
+  line-height:1.9;//Same As Nav Links
+  text-transform:uppercase;
+  z-index:1020;//Below "top-nav"
+}
+
+// Made In
+aside.made-in {
+  left:35px;//0
+}
+
+// Since 1988
+aside.since-1988 {
+  right:35px;//0
+}
+
+//----------------------------------Section Styles----------------------------------//
 
 // Header
 header {

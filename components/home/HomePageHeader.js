@@ -1,5 +1,7 @@
 // Imports
 import Cube3D from "/components/Cube3D.js";
+import MadeIn from "/components/MadeIn.js";
+import Since1988 from "/components/Since1988.js";
 
 // Home Page (Header) Component
 export default function HomePageHeader() {
@@ -50,6 +52,10 @@ export default function HomePageHeader() {
         </div>
 
       </div>
+
+      <MadeIn/>
+
+      <Since1988/>
     </header>
 
   )
