@@ -17,7 +17,9 @@ export default function HomePageDisclaimerSection() {
               {/*Nice to meet you!*/}
 
               {/*It&apos;s nice to meet you!*/}
-              Hi, it&apos;s nice to meet you!
+              {/*Hi, it&apos;s nice to meet you!*/}
+
+              Hello there!
             </h3>
 
             {/* Hidden */}
@@ -101,29 +103,44 @@ export default function HomePageDisclaimerSection() {
             - Interaction Design / Interactive Design
             */}
 
-            <p>
+            {/* Hidden */}
+            <p className="d-none">
               I graduated from university as a creative <em>Publicist (2013)</em> and I became a <em>Web Designer (2013)</em> in a separate continuing education university course, learning from professionals to properly design for all rising devices{/*, not just shrinking things in smaller screens like some do,*/} where we studied tens of amazing responsive UI designs.
             </p>
 
-            <p>
+            <p className="d-none">
               I learned some HTML, CSS, and JS and I was then gradually made <em>Front-end Developer (2014)</em> as I felt in love with coding my own projects and ideas.
             </p>
 
-            <p>
+            <p className="d-none">
               I then worked <em>hybrid and finally remotely for an international digital agency based in Melbourne, Australia, for over 4 years (2015-2019)</em> helping them bring digital experiences to life as well as creating the mobile, tablet, and the iterations for {/*the */}different devices. I also sometimes had meetings with the clients or their team, had consultations, or had to align expectations between design and development, specially with {/*some */}clients that were in my time-zone{/* where we could speak directly*/}, to help guide the final project changes or feature additions towards a functional UI including most of the final client&apos;s needs and feedback changes. I also learned to develop and design for accesibility, with real scenarios and different requirements.
             </p>
 
-            <p>
+            <p className="d-none">
               I was then more officially made <em>UI Designer (since 2019)</em> working in some freelance projects and creating some designs. I studied UI design and all types of web best practices for 2 years, working also in some SEO and some social-media projects.
             </p>
 
-            <p>
+            <p className="d-none">
               Finally made <em>UX Designer (since 2022-2023)</em> when I travelled to London, UK, to enrol in an in-person course taken at Experience Haus, where I collaborated with real teammates, working for individual real clients, in a dynamic agency-type environment.
             </p>
 
             {/*<p>
               I have also worked in print and some graphic design. I also worked through Amazon FBA in 2020-2021, but that&apos;s another story. I&apos;m now willing to re-enter the work forces and join another team to help with UI, UX, and Digital Product designs.
             </p>*/}
+
+            {/* DIC 18, 2023 */}
+
+            <p>
+              I&apos;m a <em>UX/UI Designer</em> & <em>Front-end Developer</em> with 6 years spent in the industry, I also have a background in <em>Marketing & Advertising</em> with a bachelor&apos;s degree as a <em>Publicist</em>.
+            </p>
+
+            <p>
+              I worked for over 4 years for a 5 star rated international digital agency based in Australia: <em>Code Nation Australia</em>, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together here or there.
+            </p>
+
+            <p>
+              I want to primarily pursue <em>web/app UI design</em> projects with a focus in delivering good design and a good user experience, without ever forgetting the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history and graphic design, branding, visual semiotics, linguistics, psychology, sociology, as well as responsive and accessible front-end development and UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
+            </p>
           </div>
         </div>
 
