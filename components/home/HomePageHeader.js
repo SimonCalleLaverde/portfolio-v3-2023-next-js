@@ -22,21 +22,19 @@ export default function HomePageHeader() {
             {/* Desktop | Screen Readers */}
             <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}<br/>
-              UX, UI, & Product<br/>
-              Designer with<br/>
-              experience in Front-<br/>
-              end—{/*Em Dash*/}graduated as a<br/>
-              creative Publicist.
+              Digital Product Designer with {/*<br/>*/}
+              experience in UX, UI, {/*<br/>*/}
+              & Front-end—{/*Em Dash*/}graduated as a {/*<br/>*/}
+              {/*creative */}Publicist.
             </h1>
 
             {/* Mobile */}
             <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}
-              UX, UI, & Product
-              Designer with
-              experience in Front-
-              end—{/*Em Dash*/}graduated as a
-              creative Publicist.
+              Digital Product Designer with
+              experience in UX, UI,
+              & Front-end—{/*Em Dash*/}graduated as a
+              {/*creative */}Publicist.
             </h1>
 
             {/* Work on your work, until your work, gets you work — Chris do */}

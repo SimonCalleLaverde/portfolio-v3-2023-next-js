@@ -48,15 +48,15 @@ export default function Nav() {
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
 
-                {/*UX & UI certificate*/}
-                UX/UI certificate
+                UX & UI certificate
+                {/*UX/UI certificate*/}
               </Link>
             </li>
 
             <li>
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
-                {/*Resume*/}
-                CV/Resume
+                Resume
+                {/*CV/Resume*/}
               </button>
             </li>
           </ul>
@@ -79,15 +79,15 @@ export default function Nav() {
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-                {/*UX & UI certificate*/}
-                UX/UI certificate
+                UX & UI certificate
+                {/*UX/UI certificate*/}
               </Link>
             </li>
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalResume">
-                {/*Resume*/}
-                CV/Resume
+                Resume
+                {/*CV/Resume*/}
               </Link>
             </li>
           </ul>

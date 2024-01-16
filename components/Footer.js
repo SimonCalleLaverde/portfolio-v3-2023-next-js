@@ -166,8 +166,8 @@ export default function Footer() {
                   {/*Drop me a line*/}
                   {/*Get in touch*/}
                   
-                  {/*UX & UI certificate*/}
-                  UX/UI certificate
+                  UX & UI certificate
+                  {/*UX/UI certificate*/}
                 </span>
               </Link>
             </li>

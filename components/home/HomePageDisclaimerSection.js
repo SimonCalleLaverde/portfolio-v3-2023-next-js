@@ -131,15 +131,15 @@ export default function HomePageDisclaimerSection() {
             {/* DIC 18, 2023 */}
 
             <p>
-              I&apos;m a <em><strong>UX/UI Designer</strong></em> & <em><strong>Front-end Developer</strong></em> with 6 years spent in the industry, I also have a background in <em><strong>Marketing & Advertising</strong></em> with a bachelor&apos;s degree as a <em><strong>Publicist</strong></em>.
+              I&apos;m a <em>UX/UI Designer</em> & <em>Front-end Developer</em> with 6 years spent in the industry, I also have a background in <em>Marketing & Advertising</em> with a bachelor&apos;s degree as a <em>Publicist</em>.
             </p>
 
             <p>
-              I worked for over 4 years for a 5 star rated international digital agency based in Australia: <em><strong>Code Nation Australia</strong></em>, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together here or there.
+              I worked for over 4 years for a 5 star rated international digital agency based in Australia: <em>Code Nation Australia</em>, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together here or there.
             </p>
 
             <p>
-              I want to primarily pursue <em><strong>web/app UI design</strong></em> projects with a focus in delivering good design and a good user experience, without ever forgetting the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history and graphic design, branding, visual semiotics, linguistics, psychology, sociology, as well as responsive and accessible front-end development and UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
+              I want to primarily pursue <em>web/app UI design</em> projects with a focus in delivering good design and a good user experience, without ever forgetting the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history and graphic design, branding, visual semiotics, linguistics, psychology, sociology, as well as responsive and accessible front-end development and UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
             </p>
           </div>
         </div>
