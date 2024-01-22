@@ -39,6 +39,30 @@ export default function HomePageHeader() {
               creative Publicist.
             </h1>
 
+
+
+            {/* HIDDEN | TO TEST SOON */}
+            {/* Desktop | Screen Readers */}
+            <h1 className="headline-hero   d-none   mb-md-0">{/*d-none d-md-block*/}
+              I&apos;m Simón Calle—{/*Em Dash*/}<br/>
+              Digital Product Designer with {/*<br/>*/}
+              experience in UX, UI, {/*<br/>*/}
+              & Front-end—{/*Em Dash*/}graduated as a {/*<br/>*/}
+              {/*creative */}Publicist.
+            </h1>
+
+            {/* HIDDEN | TO TEST SOON */}
+            {/* Mobile */}
+            <h1 className="headline-hero   d-none   mb-5" aria-hidden="true">{/*d-block d-md-none*/}
+              I&apos;m Simón Calle—{/*Em Dash*/}
+              Digital Product Designer with
+              experience in UX, UI,
+              & Front-end—{/*Em Dash*/}graduated as a
+              {/*creative */}Publicist.
+            </h1>
+
+
+
             {/* Work on your work, until your work, gets you work — Chris do */}
             {/*<p>A designer who codes</p>*/}
             {/*<p>I&apos;m a UX/UI Product Designer & Front-end Developer</p>*/}
