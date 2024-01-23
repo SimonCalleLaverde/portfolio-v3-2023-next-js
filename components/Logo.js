@@ -7,7 +7,7 @@ export default function Logo() {
 
     <>
       {/* Desktop | Screen Readers */}
-      <div className="logo d-none d-md-block" title="Creative Art & Tech Studio">
+      <div className="logo d-none d-md-block">{/*title="Creative Arts & Tech Studio"*/}
         <Link href="/">
           {/*Simon <span className="font-ultra-light">Calle Laverde</span>*/}
           {/*Simon's Cat <span className="font-ultra-light">Studio</span>*/}
@@ -17,8 +17,10 @@ export default function Logo() {
           {/*CAT <span className="font-ultra-light">Studio</span>*/}
           {/*Creative Analog/Absurd T... <span className="font-ultra-light">Studio</span>*/}
 
-          {/*Creative Art & Tech <span className="font-ultra-light">Studio</span>*/}
-          C.A.T. <span className="font-ultra-light">Studio</span>
+          {/*Creative Arts & Tech <span className="font-ultra-light">Studio</span>*/}
+          {/*C.A.T. <span className="font-ultra-light">Studio</span>*/}
+
+          <span className="font-semi-bold">Simon</span> <span className="font-light">Calle Laverde</span>
         </Link>
       </div>
     </>

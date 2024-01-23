@@ -14,6 +14,7 @@ $FontsPath:"./fonts";//https://s3.amazonaws.com/some-project/uploads
   font-family:"Aileron Regular Italic";
   src:url("#{$FontsPath}/Aileron-Italic.otf") format("opentype");
 }
+
 @font-face {
   font-family:"Aileron Light";
   src:url("#{$FontsPath}/Aileron-Light.otf") format("opentype");
@@ -22,6 +23,7 @@ $FontsPath:"./fonts";//https://s3.amazonaws.com/some-project/uploads
   font-family:"Aileron Light Italic";
   src:url("#{$FontsPath}/Aileron-LightItalic.otf") format("opentype");
 }
+
 @font-face {
   font-family:"Aileron Ultra Light";
   src:url("#{$FontsPath}/Aileron-UltraLight.otf") format("opentype");
@@ -31,8 +33,21 @@ $FontsPath:"./fonts";//https://s3.amazonaws.com/some-project/uploads
   src:url("#{$FontsPath}/Aileron-UltraLightItalic.otf") format("opentype");
 }
 
+@font-face {
+  font-family:"Aileron Semi Bold";
+  src:url("#{$FontsPath}/Aileron-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family:"Aileron Semi Bold Italic";
+  src:url("#{$FontsPath}/Aileron-SemiBoldItalic.otf") format("opentype");
+}
+
 // Font Headline (https://db.onlinewebfonts.com)
 $font-headline:"Saol Display",serif;//"Saol Display Regular"
+
+// Fonts Semi Bold & Semi Bold Italic (Font-Face)
+$font-semi-bold:"Aileron Semi Bold",sans-serif;
+$font-semi-bold-italic:"Aileron Semi Bold Italic",sans-serif;
 
 // Fonts Regular & Regular Italic (Font-Face)
 $font-regular:"Aileron Regular",sans-serif;
