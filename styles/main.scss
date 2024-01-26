@@ -12,9 +12,8 @@ $theme-color-grey-mid:#BFBFBF;//Grey Mid//rgba(191,191,191,1)//Same "darken(#CCC
 $theme-color-grey-light:#FEFEFE;//Grey Light//rgba(254,254,254,1)
 
 // Brand Colors
-$theme-color-beige-old:lighten(#B89C92,4);//rgba(184,156,146,1)//Beige-Old-Background/Beige-Old-Contrast
-$theme-color-creme:rgba(232,223,205,1);//#E8DFCD//CREME//Creme-Contrast/Creme-Background
-$theme-color-turquoise:rgba(26,42,55,1);//#1A2A37//TURQUOISE//Turquoise Texts
+$theme-color-creme:rgba(35,31,32,1);//#231F20//Chocolate NEW ............ rgba(232,223,205,1);//#E8DFCD//CREME//Creme-Contrast/Creme-Background
+$theme-color-turquoise:rgba(232,223,205,1);//#E8DFCD//Creme NEW ............ rgba(26,42,55,1);//#1A2A37//TURQUOISE//Turquoise Texts
 
 // Website's Complementary Colors
 $theme-color-green-dark:rgba(28,62,54,1);//#1C3E36//Favicon Green-Dark
@@ -41,8 +40,6 @@ $theme-colors: (
   "grey-dark":$theme-color-grey-dark,
   "grey-mid":$theme-color-grey-mid,
   "grey-light":$theme-color-grey-light,
-
-  "beige-old":$theme-color-beige-old,
 
   "creme":$theme-color-creme,
   "turquoise":$theme-color-turquoise,

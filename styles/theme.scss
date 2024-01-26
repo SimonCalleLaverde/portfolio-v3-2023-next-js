@@ -105,7 +105,7 @@ body {
   //font-weight:400;//Temporary As Per B4
   font-size:13.5px;//14px//√//15px//17px
   background-color:theme-color("creme");//beige-old
-  color:theme-color("grey-dark");
+  color:theme-color("turquoise");//grey-dark
   line-height:1.4;//1.9//1.8
   //letter-spacing:0.5px;
   .text-italic {
@@ -332,6 +332,9 @@ section.homepage-skills-set-section {
 .text-turquoise {
   color:theme-color("turquoise")!important;
 }
+.text-creme {
+  color:theme-color("creme")!important;
+}
 
 // Link Default Override
 a {
@@ -346,73 +349,27 @@ a {
   }
 }
 
-// Links Directly Inside Paragraphs [Revised]
-@media only screen and (max-width:768px) {//Down
-  p {
-    > a {
-      //color:theme-color("creme");
-      //text-decoration:underline;//NEW
-      @include box-shadow(inset 0 -1px 0 0 theme-color("turquoise"));//inset 0 -1.2rem 0 0//rgba(28,62,54,0.7)//theme-color("green-dark")//0 -0.4rem 0 0
-      @include transition(box-shadow 0.5s ease-in-out);//NEW
-      &:hover, &:active, &:focus {
-        //color:theme-color("creme");
-        //text-decoration:underline;//NEW
-        @include box-shadow(inset 0 -0.4rem 0 0 theme-color("green-light"));
-        //@include filter(opacity(0.7));
-      }
+// Links Directly Inside Paragraphs [Revised] [Revised And Changed Again 2024]
+p {
+  > a {
+    position:relative;
+    display:inline-block;
+    &::before {
+      content:"";
+      position:absolute;
+      //width:100%;
+      height:1px;//3px
+      right:0;
+      bottom:3px;//NEW 2024//4px//4.5px//5.5px//6.5px//1px//0//NEW//5.5px
+      left:0;
+      background-color:theme-color("turquoise");
+      //border-top:1px solid theme-color("creme");
+      //border-bottom:1px solid theme-color("creme");
     }
-  }
-}
-@media only screen and (min-width:768px) {//Up
-  p {
-    > a {
-      position:relative;
-      display:inline-block;
-      //text-decoration:none;//NEW//underline//New
-      //@include box-shadow(inset 0 0 0 0 transparent);
-      @include filter(opacity(1));
-      @include transition(box-shadow 0.5s ease-in-out);//NEW
-      &::before, &::after {
-        content:"";
-        position:absolute;
-        //width:100%;
-        height:1px;//3px
-        right:0;
-        bottom:4px;//4.5px//5.5px//6.5px//1px//0//NEW//5.5px
-        left:0;
-        background-color:theme-color("turquoise");//red
-        //border-top:1px solid theme-color("creme");//beige-old
-        //border-bottom:1px solid theme-color("creme");//beige-old
-        //pointer-events:none;
-        //@include filter(opacity(1));//0.7
-      }
-      &::before {//I'm using "&::before" now to hide the bottom extra part of the "box-shadow", below the "underline". As line-height is tall, otherwise I would need to mess with ALL line-heights and fonts to make it without an extra/overflow of the box-shadow in the bottom. The "underline" is made up with the "&::after"
-        height:4px;//4.5px//5.5px
-        bottom:0px;
-        background-color:theme-color("creme");//green-light
-        // mix-blend-mode:hard-light;//screen//difference//Sligh extra effect (if background is dark "screen" makes text slightly lighter)
-        // z-index:-1;//Would need "&::after" to have the content, and be on top or something. But can't print the content in "&::after". So not possible
-        // @include filter(opacity(0));//So it doesn't get on top of "&::after", so "&::after" can have its "0.7" transparency at first, and "&::before" gets slight filtering/fade-in transition when hover from "0" to "0.3", plus its height transition. Bottom line will then sum "0.7" + "0.3" = "1" (opacity) so it will have more contrast after hovering //This was using "theme-color("turquoise")", but I changed to "theme-color("creme")" with "darken" for the background
-        // @include transition(height 0.3s ease-in-out, filter 0.3s ease-in-out);
-      }
-      &::after {
-        @include filter(opacity(0.7));
-        @include transition(filter 0.5s ease-in-out);//NEW
-      }
-      &:hover, &:active, &:focus {
-        //text-decoration:none;//NEW//underline//New
-        /* offset-x | offset-y ("height" of "inset" shadow. With "+" it comes from top, with "-" it comes from below) | blur-radius | spread-radius ("offset" from opposite side. So in this case "height" of "inset" shadow is original "offset-y", minus this "spread-radius (offset)" from top in this case) | color */
-        /* Could make an "underline", instead of using the "&::after", leaving an offset like "inset 0 -0.9rem 0 -0.8rem". But then I would need to make all line-heights smaller, etc*/
-        @include box-shadow(inset 0 -0.85rem 0 0 theme-color("green-light"));//inset 0 -0.9rem 0 0 theme-color("green-light")//inset 0 -0.5em 0 0 #3CFFD0//inset 0 -2rem 0 -1rem//inset 0 -2rem 0 -1.55rem theme-color("green-light") 'OR' inset 0 -0.45rem 0 0 theme-color("green-light") [For Highlight Right Below The Underline]
-        //@include filter(opacity(0.8));
-        // &::before {
-        //   height:25%;//60%//55%//100%
-        //   @include filter(opacity(1));//0.5//0.3
-        //   //@include animation(underlineBackAnim 0.8s linear forwards);
-        // }
-        &::after {
-          @include filter(opacity(0));
-        }
+    &:hover, &:active, &:focus {
+      @include filter(opacity(0.8));
+      &::before {
+        @include animation(underlineBackAnim 0.8s linear forwards);
       }
     }
   }
@@ -468,6 +425,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       border:1px solid theme-color("creme");
     }
     &:hover, &:active, &:focus {
+      background-color:transparent;//NEW 2024 (Changing To "Dark" Mode) (To Be Turquoise)
       color:theme-color("creme");//transparent
       border-color:theme-color("creme");//lighten(theme-color("turquoise"),10)
       &::before {
@@ -522,7 +480,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   //   }
   // }
   &:hover, &:active, &:focus {
-    background-color:theme-color("turquoise")!important;//transparent!important
+    background-color:theme-color("turquoise");//!important//transparent!important
     color:theme-color("creme");//transparent
     border-color:theme-color("turquoise");//lighten(theme-color("turquoise"),10)
     //@include filter(opacity(0.8));
@@ -697,6 +655,9 @@ $btn-lg-padding:0.7rem 2.3rem;
         padding-bottom:0.9rem;//0
         border-bottom:none;
         //border-color:theme-color("turquoise");
+        .modal-title {
+          color:theme-color("creme");
+        }
       }
       .modal-body {
         padding-top:0;//0.9rem
@@ -924,7 +885,7 @@ nav.top-nav {
   top:0;
   right:0;
   left:0;
-  background-color:rgba(232,223,205,0.3);//theme-color("creme")//transparent
+  background-color:transparent;//rgba(232,223,205,0.3)//theme-color("creme")//transparent
   border-bottom:1px solid theme-color("turquoise");
   backdrop-filter:blur(7px);
   z-index:1030;//1040//Changed To "1030" After Adding Logo//"1040" Puts It Completelly Below Modals' Background//1050//Below ".modal(s)" Which Are "1060"//5000
@@ -1142,14 +1103,14 @@ section.homepage-skills-set-section {
         p {
           margin-bottom:15px;//1px
           //will-change:filter, transform;
-          @include transition(filter ease-out 0.7s, transform ease-out 0.7s);//color ease-out 0.7s
+          @include transition(filter ease-out 0.7s);//color ease-out 0.7s//transform ease-out 0.7s
           > strong {
           }
           > code {
             font-size:0.7rem;//Was Default 0.875em
             color:theme-color("grey-dark");//Was Default #D63384
             //word-wrap:break-word;//Was Default
-            @include filter(opacity(0.7));//0.5
+            @include filter(opacity(0.8));//0.5
             > strong {
             }
           }
@@ -1157,7 +1118,7 @@ section.homepage-skills-set-section {
             //color:lighten(theme-color("green-dark"),30);
             @include filter(opacity(0.8));
             //@include transform(translateX(10px));
-            @include transform(scale(1.03));//1.01
+            //@include transform(scale(1.01));//1.03
           }
           // &:not(:hover) {
           //   @include filter(opacity(0.7));
