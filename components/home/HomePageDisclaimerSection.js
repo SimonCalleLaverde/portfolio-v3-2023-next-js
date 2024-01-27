@@ -158,7 +158,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              In 2024 I will like to primarily pursue web & app UI design projects with a focus in delivering good design and a good user experience, with the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history, graphic design, brand positioning, visual semiotics, linguistics, psychology of persuation, sociology, as well as responsive and accessible web design and development, following UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
+              In 2024 I will like to primarily pursue web & app UI design projects with a focus in delivering good design and a good user experience, with the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history, graphic design, brand positioning, visual semiotics, linguistics, psychology of persuation, sociology, as well as responsive and accessible web design and development, following UI best practices to create impactful digital products for growing organizations and companies providing their brand with high value.
             </p>
           </div>
         </div>
