@@ -146,7 +146,7 @@ export default function HomePageDisclaimerSection() {
             {/* 2024 */}
 
             <p>
-              Hi, I&apos;m a Product Designer (UX/UI) & Front-end Developer with 6 years spent in the industry helping bring digital experiences to life. I also have a background in Marketing & Advertising obtaining a bachelor&apos;s degree as a Publicist after having undertaken a 5 year creative and design driven career.
+              I&apos;m a Product Designer (UX/UI) & Front-end Developer with 6 years spent in the industry helping bring digital experiences to life. I also have a background in Marketing & Advertising obtaining a bachelor&apos;s degree as a Publicist after having undertaken a 5 year creative and design driven career.
             </p>
 
             <p>
