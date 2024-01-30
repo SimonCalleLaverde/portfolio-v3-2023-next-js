@@ -52,7 +52,7 @@ export default function HomePageDisclaimerSection() {
             </p>*/}
 
             {/*<p>
-              Desktop's version due date for completion: Saturday 05.20.2023.
+              Desktop&apos;s version due date for completion: Saturday 05.20.2023.
             </p>*/}
 
             {/* Hidden */}
@@ -146,19 +146,19 @@ export default function HomePageDisclaimerSection() {
             {/* 2024 */}
 
             <p>
-              I&apos;m a Product Designer (UX/UI) & Front-end Developer with 6 years spent in the industry helping bring digital experiences to life. I also have a background in Marketing & Advertising with a 5 years creative career and bachelor&apos;s degree as a Publicist.
+              Hi, I&apos;m a Product Designer (UX/UI) & Front-end Developer with 6 years spent in the industry helping bring digital experiences to life. I also have a background in Marketing & Advertising obtaining a bachelor&apos;s degree as a Publicist after having undertaken a 5 year creative and design driven career.
             </p>
 
             <p>
-              I worked for over 4 years for a 5 star rated international digital agency based in Australia: Code Nation Australia, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together in Colombia or Australia.
+              After enrolling in a Web Design and Design for Mobile Devices continuing education program course in 2013 in another university, I then worked for over 4 years for a 5 star rated international digital agency based in Australia: Code Nation Australia helping them bring digital products life for their clients, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together in Colombia or Australia.
             </p>
 
             <p>
-              I also had a few entrepeneurships and trying to build my own path as an independent after that. I&apos;ve done real work in front-end, UI, UX, SEO, marketing, and even photography, and print.
+              I also then had a few entrepreneurship projects as well as trying to build my own path as an independent; I&apos;ve done real work in front-end, UI, UX, SEO, digital marketing, photography, and print. I recently completed in 2023 a in-person Product Design (including UX & UI) three-month intensive course at Experience Haus, London, UK.
             </p>
 
             <p>
-              In 2024 I will like to primarily pursue web & app UI design projects with a focus in delivering good design and a good user experience, with the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history, graphic design, brand positioning, visual semiotics, linguistics, psychology of persuation, sociology, as well as responsive and accessible web design and development, following UI best practices to create impactful digital products for growing organizations and companies providing their brand with high value.
+              In 2024 I would like to primarily pursue web & app UI design projects with a focus in delivering good design and a good user experience, placing the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history, graphic design, visual semiotics, linguistics, psychology of persuasion, sociology, brand positioning, art direction, as well as responsive and accessible web design and development, following UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
             </p>
           </div>
         </div>
