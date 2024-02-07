@@ -18,18 +18,19 @@ export default function Nav() {
           {/* Instead Of Classes "display-flex align-items-center justify-content-between" I'm Using "display:inline-block" Again In The "<li></li>". Otherwise Paddings Must Be Very Exact/Hard-Coded/Magic-Numbers So "<a></a>(s)" & "<button></button>(s)" Align. The "display:inline-block" Option Will Align Them Perfectly No Matter The Paddings, Or Margins, Or Height Of The "<a></a>". With The "Flexbox" Option It Requires Like 2px More Padding-Bottom For Links & Button To Align, But Then It Misses Like 2px Margin-Top To Be Fully Centered, And Then To Center Them Vertically Plus Fully Inline Them With The Button As Well, It Becomes More Messy */}
           {/* See Comments For "Option 2" In "theme.scss" */}
           <ul className="">{/*"justify-content-between" Won't Affect Unless "<ul></ul>" Has A Bigger Width Than Its Natural Sum-Of-Childs' Width*/}
-            {/*<li>
+            <li>
               <Link href="/">
                 Welcome
               </Link>
-            </li>*/}
+            </li>
 
             <li>
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here.">
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older 'Portfolio (Dev) 2021' with 30 real client projects I delivered">
                 {/*https://simoncallelaverde.github.io/about*/}
 
                 {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
                 {/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
+                {/*title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here."*/}
                 
                 {/*Relevant work*/}
                 {/*Other work*/}
@@ -40,6 +41,9 @@ export default function Nav() {
                 {/*Portfolio (Front-end) 2021*/}
 
                 {/*Portfolio 2021 (Front-end)*/}
+                {/*Portfolio 2021*/}
+
+                {/*Portfolio (Dev) 2021*/}
                 Portfolio 2021
               </Link>
             </li>
@@ -48,8 +52,16 @@ export default function Nav() {
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
 
-                UX & UI certificate
+                {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
+                UX & UI Certificate
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral">
+                {/*Work Referral*/}
+                Referral
               </Link>
             </li>
 
@@ -79,8 +91,9 @@ export default function Nav() {
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">
-                UX & UI certificate
+                {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
+                UX & UI Certificate
               </Link>
             </li>
 

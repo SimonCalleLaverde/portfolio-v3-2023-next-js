@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ModalCertificate() {
   return (
 
-    <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my most recent resume and giving the option to download" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
+    <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my Product Design inc. UX & UI. Certificate of Completion" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
       {/* Scrollable Body: "modal-dialog-scrollable" */}
       {/* Vertically Centered: "modal-dialog-centered" */}
       <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*modal-sm*/}{/*Default*/}{/*modal-lg*/}
@@ -22,7 +22,7 @@ export default function ModalCertificate() {
 
           {/* Option 2: "Simon Calle Laverde_Instagram.png" */}
           <div className="modal-body">
-            <img src="/Simon Calle Laverde_LinkedIn.png" alt="Product Design inc. UX & UI. Course Certificate of Completion" style={{ width:"100%" }}/>
+            <img src="/Simon Calle Laverde_LinkedIn.png" alt="Product Design inc. UX & UI. Certificate of Completion" style={{ width:"100%" }}/>
           </div>
 
           <div className="modal-footer">

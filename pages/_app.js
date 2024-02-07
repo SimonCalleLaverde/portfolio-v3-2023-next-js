@@ -5,6 +5,7 @@ import Nav from "../components/Nav.js";
 import UnderDevelopmentNote from "../components/UnderDevelopmentNote.js";
 import ModalResume from "../components/ModalResume.js";
 import ModalCertificate from "../components/ModalCertificate.js";
+import ModalReferral from "../components/ModalReferral.js";
 import Footer from "../components/Footer.js";
 import Script from "next/script"
 // Adding "main.scss" (Global Or General) CSS (Can Only Within This "_app.js")
@@ -25,6 +26,7 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
 
       <ModalResume/>
       <ModalCertificate/>
+      <ModalReferral/>
 
       <Component {...pageProps}/>
 

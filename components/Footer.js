@@ -89,8 +89,8 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-light">{/*font-ultra-light*/}
-            <br/>Contract {/*projects*/}work {/*or*/}{/*and/or*/}/
-            <br/>Full-time work
+            <br/>Full-time work {/*or*/}{/*and/or*/}/
+            <br/>Contract {/*projects*/}work
           </span>
         </div>
 
@@ -166,8 +166,9 @@ export default function Footer() {
                   {/*Drop me a line*/}
                   {/*Get in touch*/}
                   
-                  UX & UI certificate
+                  {/*UX & UI certificate*/}
                   {/*UX/UI certificate*/}
+                  UX & UI Certificate
                 </span>
               </Link>
             </li>
