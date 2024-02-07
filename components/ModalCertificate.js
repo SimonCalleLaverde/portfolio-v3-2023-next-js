@@ -12,7 +12,11 @@ export default function ModalCertificate() {
         {/* There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen" */}
         <div className="modal-content">
           <div className="modal-header">
-            <h3 className="modal-title" id="modalCertificateLabel">Product Design inc. UX & UI. certificate</h3>
+            <h3 className="modal-title" id="modalCertificateLabel">
+              {/*Product Design inc. UX & UI. certificate*/}
+              {/*Product Design inc. UX & UI. - Certificate of Completion*/}
+              Product Design inc. UX & UI.
+            </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 

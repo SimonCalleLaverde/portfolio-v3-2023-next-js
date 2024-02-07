@@ -11,7 +11,11 @@ export default function ModalResume() {
         {/*There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen"*/}
         <div className="modal-content">
           <div className="modal-header">
-            <h3 className="modal-title" id="modalResumeLabel">Resume (CV) 2023 (English)</h3>{/*Resume (CV) 2023*/}
+            <h3 className="modal-title" id="modalResumeLabel">
+              {/*Resume (CV) 2023*/}
+              {/*Resume (CV) 2023 (English)*/}
+              Resume (CV) 2024 (English)
+            </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
@@ -32,10 +36,10 @@ export default function ModalResume() {
             {/* For now I will use <object></object>. I also added extra "target='_blank'" button option. */}
 
             {/* Working Example */}
-            {/*<embed src="/Simon Calle Laverde CV 2023 (English).pdf" width="100%" height="475px"/>*/}{/*width="800px"*/}{/*height="2100px"*/}
+            {/*<embed src="/Simon Calle Laverde CV 2024 (English).pdf" width="100%" height="475px"/>*/}{/*width="800px"*/}{/*height="2100px"*/}
 
             {/* Working Example */}
-            {/*<iframe src="/Simon Calle Laverde CV 2023 (English).pdf" style={{ width:"100%", height:"475px", border:"none" }}></iframe>*/}
+            {/*<iframe src="/Simon Calle Laverde CV 2024 (English).pdf" style={{ width:"100%", height:"475px", border:"none" }}></iframe>*/}
             {/*height:"100%"*/}
 
             {/* Raw Example (With Google Docs Viewer, Needs The File To Be Available Online Wherever) */}
@@ -46,7 +50,7 @@ export default function ModalResume() {
             {/*https://developer.adobe.com/document-services/apis/pdf-embed/*/}
 
             {/* Working Example */}
-            <object data="/Simon Calle Laverde CV 2023 (English).pdf?#zoom=135.3&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*"zoom=92" (approx with "modal-lg")*/}{/*"zoom=138" (approx with "modal-xl")*/}
+            <object data="/Simon Calle Laverde CV 2024 (English).pdf?#zoom=85.9&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="475" type="application/pdf">{/*zoom=135.3 (Was For (Smaller) CV 2023)*/}{/*"zoom=92" (approx with "modal-lg")*/}{/*"zoom=138" (approx with "modal-xl")*/}
               {/*<p>Sorry :( the PDF cannot be displayed in this browser. Please consider downloading the PDF.</p>*/}
 
               {/* Hidden */}
@@ -61,7 +65,7 @@ export default function ModalResume() {
               </p>
               
               {/* Callback To Img */}
-              <img src="/Simon Calle Laverde CV 2023 (English).png" alt="Product Design inc. UX & UI. Course Certificate of Completion" style={{ width:"100%" }}/>
+              <img src="/Simon Calle Laverde CV 2024 (English).png" alt="Product Design inc. UX & UI. Course Certificate of Completion" style={{ width:"100%" }}/>
             </object>
 
             {/* Raw Example */}
@@ -74,11 +78,11 @@ export default function ModalResume() {
           </div>
 
           <div className="modal-footer">
-            {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" download>Download the PDF</Link>*/}
-            {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>*/}
-            {/*<Link className="btn" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer">Open and download</Link>*/}
+            {/*<Link className="btn" href="/Simon Calle Laverde CV 2024 (English).pdf" download>Download the PDF</Link>*/}
+            {/*<Link className="btn" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>*/}
+            {/*<Link className="btn" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer">Open and download</Link>*/}
             {/*Open to download in a new tab*/}
-            <Link className="btn btn-creme" href="/Simon Calle Laverde CV 2023 (English).pdf" target="_blank" rel="noreferrer" download>Download the PDF</Link>
+            <Link className="btn btn-creme" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer" download>Download the PDF</Link>
             <button className="btn btn-creme" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
