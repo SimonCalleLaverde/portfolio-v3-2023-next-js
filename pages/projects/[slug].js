@@ -204,7 +204,7 @@ export default function ProjectPage({ projectData }) {
       />
 
       <main>
-        <section className="project-page-section text-turquoise text-start">
+        <section className="project-page-section text-creme text-start">
           <div className="container">
             {/*{ projectData.webImages.map(image => (
               <div key={ image.url }>
@@ -450,7 +450,7 @@ export default function ProjectPage({ projectData }) {
             }
             {/*<Image src={ projectData.webImageFonts.url } alt="A display of the fonts used in the project" width="300" height="300"/>*/}
 
-            <div className="row page-content-last font-light text-turquoise">{/*font-ultra-light*/}{/*To Check Logic In (stuff/content_two_left_right.html)*/}
+            <div className="row page-content-last font-light text-creme">{/*font-ultra-light*/}{/*To Check Logic In (stuff/content_two_left_right.html)*/}
               {/* Desktop Lg | Screen Readers */}
               <div className="col-md-4 offset-md-2 d-none d-lg-block">
                 <div className="pe-4">

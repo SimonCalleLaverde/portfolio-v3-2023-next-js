@@ -66,7 +66,7 @@ export default function ProjectsPage({ allProjectsData }) {
 
             <div className="row">
               <div className="col-md-10 offset-md-1">
-                <h2 className="font-headline text-gigantic text-turquoise text-uppercase text-center mb-0">
+                <h2 className="font-headline text-gigantic text-creme text-uppercase text-center mb-0">
                   Recent
                   <br/>Independent
                   <br/>Projects

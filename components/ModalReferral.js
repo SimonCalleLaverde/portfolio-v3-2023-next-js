@@ -24,8 +24,8 @@ export default function ModalReferral() {
           </div>
 
           <div className="modal-footer">
-            <Link className="btn btn-creme" href="https://www.codenation.com/" target="_blank" rel="noreferrer">Visit Code Nation Australia</Link>
-            <button className="btn btn-creme" type="button" data-bs-dismiss="modal">Close</button>
+            <Link className="btn btn-chocolate" href="https://www.codenation.com/" target="_blank" rel="noreferrer">Visit Code Nation Australia</Link>
+            <button className="btn btn-chocolate" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

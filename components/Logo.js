@@ -20,7 +20,7 @@ export default function Logo() {
           {/*Creative Arts & Tech <span className="font-ultra-light">Studio</span>*/}
           {/*C.A.T. <span className="font-ultra-light">Studio</span>*/}
 
-          <span className="font-semi-bold">Simon</span> <span className="font-ultra-light">Calle Laverde</span>
+          <span className="font-ultra-light">Simon Calle</span> <span className="font-semi-bold">Laverde</span>
         </Link>
       </div>
     </>

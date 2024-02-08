@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <aside className="footer-aside-info-elements text-turquoise">
+      <aside className="footer-aside-info-elements">
         {/* Desktop | Screen Readers */}
         <div className="footer-email-or-call d-none d-md-block">
           {/*Or just email me or call me*/}

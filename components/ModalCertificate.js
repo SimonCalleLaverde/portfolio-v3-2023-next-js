@@ -26,8 +26,8 @@ export default function ModalCertificate() {
           </div>
 
           <div className="modal-footer">
-            <Link className="btn btn-creme" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the Experience Haus course</Link>
-            <button className="btn btn-creme" type="button" data-bs-dismiss="modal">Close</button>
+            <Link className="btn btn-chocolate" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the Experience Haus course</Link>
+            <button className="btn btn-chocolate" type="button" data-bs-dismiss="modal">Close</button>
             {/*<button className="btn" type="button" data-bs-dismiss="modal">Awesome! 🎉</button>*/}
             {/*Congratulations*/}{/*Nice! 🎉*/}
           </div>

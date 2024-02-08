@@ -7,7 +7,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
   return (
     <>
 
-      <header className="project-page-header text-turquoise text-start">
+      <header className="project-page-header text-start">
         <div className="container">
 
           {/*<h1 className="headline-hero">
@@ -36,7 +36,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                     </span>
                   </div>
 
-                  <h1 className="page-title headline-huge text-turquoise text-uppercase">
+                  <h1 className="page-title headline-huge text-uppercase">
                     { title }
                   </h1>
                 </div>
@@ -100,14 +100,14 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                 <div className="col-md-8 offset-md-2">
                   <div className="font-regular">
                     { webLaunchUrl &&
-                      <Link className="btn btn-xs btn-turquoise" href={ webLaunchUrl } target="_blank" rel="noreferrer">
+                      <Link className="btn btn-xs" href={ webLaunchUrl } target="_blank" rel="noreferrer">
                         {/*View the live site*/}
                         Launch the live site
                       </Link>
                     }
 
                     { prototypeLaunchUrl &&
-                      <Link className="btn btn-xs btn-turquoise" href={ prototypeLaunchUrl } target="_blank" rel="noreferrer">
+                      <Link className="btn btn-xs" href={ prototypeLaunchUrl } target="_blank" rel="noreferrer">
                         View the prototype
                       </Link>
                     }

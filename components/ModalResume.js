@@ -82,8 +82,8 @@ export default function ModalResume() {
             {/*<Link className="btn" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer">Open in a new tab</Link>*/}
             {/*<Link className="btn" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer">Open and download</Link>*/}
             {/*Open to download in a new tab*/}
-            <Link className="btn btn-creme" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer" download>Download the PDF</Link>
-            <button className="btn btn-creme" type="button" data-bs-dismiss="modal">Close</button>
+            <Link className="btn btn-chocolate" href="/Simon Calle Laverde CV 2024 (English).pdf" target="_blank" rel="noreferrer" download>Download the PDF</Link>
+            <button className="btn btn-chocolate" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
