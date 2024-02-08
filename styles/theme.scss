@@ -410,46 +410,17 @@ $btn-lg-padding:0.7rem 2.3rem;
 .btn {
   position:relative;
   padding:$btn-normal-padding;
-
-
-
   font-family:$font-regular;//$font-light
-  font-size:14px;//13px//11.5px
+  font-size:12px;//Same As Nav Liks & Buttons//13.5px//14px//13px//11.5px
+
+
+
   background-color:transparent;
   color:theme-color("creme");//transparent
   border:1px solid theme-color("creme");
   @include border-radius(1rem);
   @include filter(opacity(1));
   @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
-  &.btn-chocolate {
-    color:theme-color("chocolate");
-    border:1px solid theme-color("chocolate");
-    &::before {
-      border:1px solid theme-color("chocolate");
-    }
-    &:hover, &:active, &:focus {
-      background-color:transparent;//NEW 2024 (Changing To "Dark" Mode) (To Be Turquoise)
-      color:theme-color("chocolate");//transparent
-      border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
-      &::before {
-        border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
-      }
-    }
-  }
-  &.btn-aqua {
-    color:theme-color("aqua");
-    border:1px solid theme-color("aqua");
-    &::before {
-      border:1px solid theme-color("aqua");
-    }
-    &:hover, &:active, &:focus {
-      color:theme-color("aqua");//transparent
-      border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
-      &::before {
-        border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
-      }
-    }
-  }
   &::before {
     content:"";
     position:absolute;
@@ -467,6 +438,41 @@ $btn-lg-padding:0.7rem 2.3rem;
     @include transform(translate(3px,3px));
     @include transition(border-color ease-out 0.4s, transform ease-out 0.4s);
   }
+
+
+
+  &.btn-chocolate {
+    color:theme-color("chocolate");
+    border:1px solid theme-color("chocolate");
+    &::before {
+      border:1px solid theme-color("chocolate");
+    }
+    &:hover, &:active, &:focus {
+      background-color:transparent;//NEW 2024 (Changing To "Dark" Mode) (To Be Turquoise)
+      color:theme-color("chocolate");//transparent
+      border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
+      &::before {
+        border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
+      }
+    }
+  }
+  // &.btn-aqua {
+  //   color:theme-color("aqua");
+  //   border:1px solid theme-color("aqua");
+  //   &::before {
+  //     border:1px solid theme-color("aqua");
+  //   }
+  //   &:hover, &:active, &:focus {
+  //     color:theme-color("aqua");//transparent
+  //     border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
+  //     &::before {
+  //       border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
+  //     }
+  //   }
+  // }
+
+
+
   &:hover, &:active, &:focus {
     background-color:theme-color("creme");//!important//transparent!important
     color:theme-color("chocolate");//transparent
@@ -508,26 +514,25 @@ $btn-lg-padding:0.7rem 2.3rem;
   $btn-lg-padding:0.6rem 1.5rem;
   .btn {
     padding:$btn-normal-padding;
-    font-size:13px;
+    //font-size:13px;
     &::before {
-      padding:$btn-normal-padding;//Same As Button
+      padding:$btn-normal-padding;//Same As "btn"
     }
     &.btn-lg {
       padding:$btn-lg-padding;
+      &::before {
+        padding:$btn-lg-padding;//Same As "btn-lg"
+      }
+
+
+
       &.btn-longer {
         padding-right:2rem;
         padding-left:2rem;
       }
-    }
-  }
-  .custom-checkbox-squared {//Buttons With Double Line Using ::before, As Per Rest Of Site
-    > .custom-control {
-      &.custom-checkbox, &.custom-radio {
-        label.custom-control-label {
-          padding:$btn-normal-padding;
-          font-size:13px;//12px//13px
-        }
-      }
+
+
+
     }
   }
 }
@@ -1106,7 +1111,7 @@ section.homepage-skills-set-section {
             @include filter(opacity(0.8));
             @include transform(translateX(15px));//10px
             //@include transform(scale(1.01));//1.03
-            @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 1s);
+            @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 0.7s);
           }
           // &:not(:hover) {
           //   @include filter(opacity(0.7));

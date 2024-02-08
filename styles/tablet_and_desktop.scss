@@ -132,15 +132,19 @@
   $btn-lg-padding:1rem 2.6rem;
   .btn {
     padding:$btn-normal-padding;
+    font-size:13px;//Same As Nav Liks & Buttons
     &::before {
-      padding:$btn-normal-padding;//Same As Button
-    }
-    &.btn-60 {
-      width:60%;
+      padding:$btn-normal-padding;//Same As "btn"
     }
     &.btn-lg {
       padding:$btn-lg-padding;
+      &::before {
+        padding:$btn-lg-padding;//Same As "btn-lg"
+      }
     }
+    // &.btn-60 {
+    //   width:60%;
+    // }
   }
 
   // Cube 3D Scene Container
