@@ -619,7 +619,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &:hover, &:active, &:focus {
       //@include animation(cubeRotation 20s ease-in-out 1s 1 alternate);
       .face {
-        @include filter(opacity(75%) brightness(120%) sepia(20%));//opacity(90%)
+        @include filter(opacity(80%) brightness(120%) sepia(20%));//opacity(90%)
       }
     }
   }

@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="footer-availability">
           Available for
           <span className="font-light">{/*font-ultra-light*/}
-            <br/>Full-time work {/*or*/}{/*and/or*/}/
+            <br/>Full-time, {/*or*/}{/*and/or*/}Part-time,
             <br/>Contract {/*projects*/}work
           </span>
         </div>
@@ -115,8 +115,11 @@ export default function Footer() {
           Relevant work
           <span className="font-light">{/*font-ultra-light*/}
             {/*<br/>Visit also my older*/}
-            <br/>Visit also my {/*archaic*/}previous
-            <br/><Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="As it is with most movie sequels, the first one was even better!">Portfolio 2021</Link>
+            <br/>Also visit my {/*archaic*/}previous
+            <br/>
+            <Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects I helped deliver">{/*title="As it is with most movie sequels, the first one was even better!"*/}
+              Portfolio 2021
+            </Link>
           </span>
         </div>
 
@@ -142,10 +145,11 @@ export default function Footer() {
 
             <li className="footer-nav-li">{/*nav-item*/}
               {/*{% if page.slug == 'projects' %} active-link{% endif %}*/}
-              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here.">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
+              <Link className="footer-nav-link link-underline" href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects I helped deliver">{/*href="/projects"*/}{/*nav-link*/}{/*link*/}{/*link-page-load*/}
                 {/*https://simoncallelaverde.github.io/about*/}
                 {/*title="Sorry to take you temporarily to my Portfolio 2021, while I finish my new My Story page 2023."*/}
                 {/*Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there.*/}
+                {/*title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here."*/}
                 <span>
                   {/*Relevant work*/}
                   {/*Other work*/}

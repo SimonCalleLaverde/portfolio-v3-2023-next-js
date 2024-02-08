@@ -24,8 +24,9 @@ export default function Nav() {
               </Link>
             </li>
 
-            <li>
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older 'Portfolio (Dev) 2021' with 30 real client projects I delivered">
+            {/* Hidden */}
+            <li className="d-none">
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects I helped deliver">
                 {/*https://simoncallelaverde.github.io/about*/}
 
                 {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
@@ -60,8 +61,8 @@ export default function Nav() {
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral">
-                {/*Work Referral*/}
-                Referral
+                Work Referral
+                {/*Referral*/}
               </Link>
             </li>
 
