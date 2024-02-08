@@ -568,7 +568,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       border:1px solid theme-color("creme");
       @include box-shadow(inset 0 0 $size * 0.5);//inset 0 0 $size * 0.7
       @include filter(opacity(95%) brightness(100%) sepia(0));//opacity(90%)
-      @include transition(border-color ease-in-out 1s, filter ease-in-out 1s);//0.7s
+      @include transition(filter ease-in-out 1s);//border-color ease-in-out 1s//0.7s
       &.front {
         //background-color:#000;//teal
         @include transform(rotateX(0deg) translateZ($half-size));
@@ -604,7 +604,7 @@ $btn-lg-padding:0.7rem 2.3rem;
     &:hover, &:active, &:focus {
       //@include animation(cubeRotation 20s ease-in-out 1s 1 alternate);
       .face {
-        border-color:lightblue;
+        //border-color:lightblue;
         @include filter(opacity(80%) brightness(120%) sepia(20%));//opacity(90%)
       }
     }
@@ -745,10 +745,10 @@ article.project-card {
       div.project-thumbnail {//ALL
         border:1px solid theme-color("creme");
         @include border-radius(0.8rem);
-        @include transition(filter ease-out 0.7s, box-shadow ease-out 0.7s);//border-radius ease-out 0.7s
+        @include transition(filter ease-in-out 0.7s, box-shadow ease-in-out 0.7s);//border-color ease-in-out 0.7s//border-radius ease-in-out 0.7s
       }
       figcaption {//ALL
-        @include transition(filter ease-out 0.7s);
+        @include transition(filter ease-in-out 0.7s);
         .project-type-and-title, .project-description {
           line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
@@ -779,8 +779,9 @@ article.project-card {
       figure {//.FIGURE-ONE
         @include transform(scale(1.01));
         div.project-thumbnail {//ALL
+          //border-color:lightblue;
           @include filter(saturate(110%) brightness(110%));//saturate(200%) hue-rotate(90deg)
-          @include box-shadow(0 5px 15px rgba(0,0,0,0.3));
+          @include box-shadow(0 5px 15px rgba(0,0,0,0.4));
           //@include border-radius(0.4rem);//0.8rem
         }
         figcaption {
@@ -1089,7 +1090,7 @@ section.homepage-skills-set-section {
         p {
           margin-bottom:15px;//1px
           //will-change:filter, transform;
-          @include transition(filter ease-out 0.7s);//color ease-out 0.7s//transform ease-out 0.7s
+          @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 0s);//color ease-in-out 0.7s
           > strong {
           }
           > code {
@@ -1103,8 +1104,9 @@ section.homepage-skills-set-section {
           &:hover, &:active, &:focus {
             //color:lighten(theme-color("green-dark"),30);
             @include filter(opacity(0.8));
-            //@include transform(translateX(10px));
+            @include transform(translateX(15px));//10px
             //@include transform(scale(1.01));//1.03
+            @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 1s);
           }
           // &:not(:hover) {
           //   @include filter(opacity(0.7));
