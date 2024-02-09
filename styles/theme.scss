@@ -1374,7 +1374,7 @@ footer {
   }
   > aside.footer-aside-info-elements {
     @include filter(opacity(0.9));
-    .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+    .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-personal, .footer-social-media-business, .footer-copyright, .footer-created-by {
       position:absolute;
       font-size:12px;//13px//12px
     }
@@ -1395,7 +1395,7 @@ footer {
       text-align:center;
       @include transform(translateX(-50%));
     }
-    .footer-availability, .footer-office, .footer-social-media-business, .footer-copyright {
+    .footer-availability, .footer-office, .footer-social-media-personal, .footer-copyright {
       left:37px;
       text-align:start;//left
     }
@@ -1406,7 +1406,7 @@ footer {
     .footer-office {
       bottom:180px;
     }
-    .footer-credits, nav.footer-nav, .footer-social-media-personal, .footer-created-by {
+    .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-created-by {
       right:37px;
       text-align:end;//right
     }
@@ -1446,7 +1446,7 @@ footer {
         }
       }
     }
-    .footer-social-media-business {
+    .footer-social-media-personal {
       a {
         padding-right:3.7px;//New
         > span {
@@ -1456,7 +1456,7 @@ footer {
         }
       }
     }
-    .footer-social-media-personal {
+    .footer-social-media-business {
       a {
         padding-left:3.7px;//New
         > span {
@@ -1466,7 +1466,7 @@ footer {
         }
       }
     }
-    .footer-social-media-business, .footer-social-media-personal {
+    .footer-social-media-personal, .footer-social-media-business {
       padding:0 7px 5px;
       bottom:95px;
       overflow:hidden;
@@ -1505,10 +1505,19 @@ footer {
             > svg {
               width:14px;
               top:-1.5px;//-1.3px//-0.5px//Was "margin-top:-1px"
-              margin-left:2px;//Affects the others too
+              margin-left:2px;//Affects the others too//(This is still required, LinkedIn is weird so it doesn't center in circle unless this margin-left to balance, also LinkedIn was weirdly moved this 2px left (so that's why) and un-aligned from the rest of footer left items, so this fixes it)
             }
           }
-          &.icon-behance, &.icon-angel, &.icon-github {
+          &.icon-instagram, &.icon-pinterest, &.icon-dribbble {
+            > svg {
+            }
+          }
+          &.icon-facebook {
+            > svg {
+              width:15px;
+            }
+          }
+          &.icon-github, &.icon-behance, &.icon-angel {
             > svg {
               top:-0.4px;//-0.2px
             }
@@ -1521,16 +1530,8 @@ footer {
           &.icon-angel {
             > svg {
               width:14px;
-              margin-left:1px;//Affects githubs too
-            }
-          }
-          &.icon-dribbble, &.icon-pinterest, &.icon-instagram {
-            > svg {
-            }
-          }
-          &.icon-facebook {
-            > svg {
-              width:15px;
+              //margin-left:1px;//Affects github's too//Angel was 3th with Github as 4th, now Angel is 8th (last) and Github is 5th (now this margin-left is not as required, and if left it will space out Behance, Dribbble, and Github from Angel)
+              margin-right:2px//New 2024//Needed at least 1px as circle was being cut (by the overflow I think), but put 2px similar to LinkedIn in left side
             }
           }
         }
@@ -1547,10 +1548,10 @@ footer {
         }
       }
     }
-    .footer-social-media-business {
+    .footer-social-media-personal {
       left:30px;//37px
     }
-    .footer-social-media-personal {
+    .footer-social-media-business {
       right:30px;//37px
     }
   }
@@ -1558,7 +1559,7 @@ footer {
 @media only screen and (max-width:400px) {//Down
   footer {
     > aside.footer-aside-info-elements {
-      .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-business, .footer-social-media-personal, .footer-copyright, .footer-created-by {
+      .footer-email-or-call, .footer-availability, .footer-office, .footer-credits, nav.footer-nav, .footer-social-media-personal, .footer-social-media-business, .footer-copyright, .footer-created-by {
         font-size:11px;
       }
       nav.footer-nav {//nav.navbar

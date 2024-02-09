@@ -78,7 +78,7 @@ export default function Footer() {
           {/*Or just email me or call me*/}
           {/*Email me or call me*/}
           {/*Just email me or call me*/}
-          Please call me, drop me a line on WhatsApp, or email me at:
+          Please {/*call me, */}drop me a line on WhatsApp{/*,*/} or email me at:
           <span className="font-light">{/*font-ultra-light*/}
             <br/>+(57) 310 558 2638{/*{{ site.phone_number }}*/}
             <br/><Link className="link-underline" href="mailto:simoncallelaverde@gmail.com">simoncallelaverde@gmail.com</Link>{/*{{ site.email }}*/}
@@ -189,9 +189,9 @@ export default function Footer() {
         </nav>
 
         {/* Desktop | Mobile | Screen Readers */}
-        <div className="footer-social-media-business">
+        <div className="footer-social-media-personal">
           <span className="">{/*font-ultra-light*/}
-            Business Social Media
+            Personal Social Media
           </span>
 
           <div className="mt-1">
@@ -201,56 +201,62 @@ export default function Footer() {
                 <IconLinkedIn/>
               </span>
             </Link>
-            <Link className="me-3" href="https://www.behance.net/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-behance">
-                {/*{% include icon_behance.xml %}*/}
-                <IconBehance/>
+
+            <Link className="me-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-instagram">
+                {/*{% include icon_instagram.xml %}*/}
+                <IconInstagram/>
               </span>
             </Link>
-            <Link className="me-3" href="https://angel.co/u/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-angel">
-                {/*{% include icon_angel.xml %}*/}
-                <IconAngel/>
+
+            <Link className="me-3" href="https://www.facebook.com/simoncio/" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-facebook">
+                {/*{% include icon_facebook.xml %}*/}
+                <IconFacebook/>
               </span>
             </Link>
-            <Link className="" href="https://github.com/SimonCalleLaverde" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-github">
-                {/*{% include icon_github.xml %}*/}
-                <IconGithub/>
+
+            <Link className="" href="https://co.pinterest.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-pinterest">
+                {/*{% include icon_pinterest.xml %}*/}
+                <IconPinterest/>
               </span>
             </Link>
           </div>
         </div>
 
         {/* Desktop | Mobile | Screen Readers */}
-        <div className="footer-social-media-personal">
+        <div className="footer-social-media-business">
           <span className="">{/*font-ultra-light*/}
-            Personal Social Media
+            Business Social Media
           </span>
 
           <div className="mt-1">
-            <Link className="" href="https://dribbble.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
+            <Link className="" href="https://github.com/SimonCalleLaverde" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-github">
+                {/*{% include icon_github.xml %}*/}
+                <IconGithub/>
+              </span>
+            </Link>
+
+            <Link className="ms-3" href="https://dribbble.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
               <span className="icon-dribbble">
                 {/*{% include icon_dribbble.xml %}*/}
                 <IconDribbble/>
               </span>
             </Link>
-            <Link className="ms-3" href="https://co.pinterest.com/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-pinterest">
-                {/*{% include icon_pinterest.xml %}*/}
-                <IconPinterest/>
+
+            <Link className="ms-3" href="https://www.behance.net/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-behance">
+                {/*{% include icon_behance.xml %}*/}
+                <IconBehance/>
               </span>
             </Link>
-            <Link className="ms-3" href="https://www.instagram.com/simons_pic_tures/" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-instagram">
-                {/*{% include icon_instagram.xml %}*/}
-                <IconInstagram/>
-              </span>
-            </Link>
-            <Link className="ms-3" href="https://www.facebook.com/simoncio/" target="_blank" rel="noreferrer">{/*link*/}
-              <span className="icon-facebook">
-                {/*{% include icon_facebook.xml %}*/}
-                <IconFacebook/>
+
+            <Link className="ms-3" href="https://angel.co/u/simoncallelaverde" target="_blank" rel="noreferrer">{/*link*/}
+              <span className="icon-angel">
+                {/*{% include icon_angel.xml %}*/}
+                <IconAngel/>
               </span>
             </Link>
           </div>
