@@ -338,8 +338,8 @@ section.homepage-skills-set-section {
 
 // Link Default Override
 a {
-  color:darken(theme-color("creme"),5);
   background-color:transparent;//As Per B4
+  color:darken(theme-color("creme"),5);
   text-decoration:none;//As Per B4
   @include transition(all ease-in-out 0.5s);//ease//ease-out
   &:hover, &:active, &:focus {
@@ -411,88 +411,66 @@ $btn-lg-padding:0.7rem 2.3rem;
   position:relative;
   padding:$btn-normal-padding;
   font-family:$font-regular;//$font-light
-  font-size:12px;//Same As Nav Liks & Buttons//13.5px//14px//13px//11.5px
-
-
-
+  font-size:12px;//Same As Nav Links & Buttons//13.5px//14px//13px//11.5px
   background-color:transparent;
-  color:theme-color("creme");//transparent
+  color:theme-color("creme");
   border:1px solid theme-color("creme");
   @include border-radius(1rem);
-  @include filter(opacity(1));
-  @include transition(background-color ease-out 0.4s, color ease-out 0.4s, border-color ease-out 0.4s, transform ease-out 0.4s, box-shadow ease-out 0.4s);
+  @include transition(background-color ease-out 0.7s, color ease-out 0.7s, border-color ease-out 0.7s, transform ease-out 0.7s, box-shadow ease-out 0.7s);
   &::before {
     content:"";
     position:absolute;
-    padding:$btn-normal-padding;//Same As Button
+    padding:$btn-normal-padding;//Same As "btn"
     top:0;
-    right:-2px;
-    bottom:-2px;
+    right:-2px;//So It Really Matches "btn"
+    bottom:-2px;//So It Really Matches "btn"
     left:0;
-    color:transparent;//theme-color("creme")
+    background-color:rgba(232,223,205,0.1);//Creme//New
+    //color:theme-color("creme");
     border:1px solid theme-color("creme");
-    text-align:center;
-    white-space:nowrap;
-    pointer-events:none;
+    pointer-events:none;//Avoiding mini-glitch while hovering just "::before"
     @include border-radius(1rem);
     @include transform(translate(3px,3px));
-    @include transition(border-color ease-out 0.4s, transform ease-out 0.4s);
+    @include transition(background-color ease-out 0.7s, transform ease-out 0.7s);//border-color ease-out 0.7s
   }
-
-
-
-  &.btn-chocolate {
-    color:theme-color("chocolate");
-    border:1px solid theme-color("chocolate");
-    &::before {
-      border:1px solid theme-color("chocolate");
-    }
-    &:hover, &:active, &:focus {
-      background-color:transparent;//NEW 2024 (Changing To "Dark" Mode) (To Be Turquoise)
-      color:theme-color("chocolate");//transparent
-      border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
-      &::before {
-        border-color:theme-color("chocolate");//lighten(theme-color("creme"),10)
-      }
-    }
-  }
-  // &.btn-aqua {
-  //   color:theme-color("aqua");
-  //   border:1px solid theme-color("aqua");
-  //   &::before {
-  //     border:1px solid theme-color("aqua");
-  //   }
-  //   &:hover, &:active, &:focus {
-  //     color:theme-color("aqua");//transparent
-  //     border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
-  //     &::before {
-  //       border-color:theme-color("aqua");//lighten(theme-color("creme"),10)
-  //     }
-  //   }
-  // }
-
-
-
   &:hover, &:active, &:focus {
-    background-color:theme-color("creme");//!important//transparent!important
-    color:theme-color("chocolate");//transparent
-    border-color:theme-color("creme");//lighten(theme-color("creme"),10)
-    outline:none;
-    //@include filter(opacity(0.8));
-    //@include transform(scale(1.03));
-    @include transform(translate(1.5px,1.5px));
-    @include box-shadow(0 5px 15px rgba(0,0,0,0.4)!important);//@include box-shadow(none)//0 5px 15px rgba(24,16,8,0.4)
-    //@include box-shadow(none!important);
+    background-color:darken(theme-color("creme"),10);
+    color:darken(theme-color("creme"),50);//theme-color("chocolate")
+    //border-color:darken(theme-color("creme"),50);//theme-color("creme")
+    //outline:none;
+    //@include transform(translate(0,0));//1.5px,1.5px
+    @include box-shadow(3px 3px 10px rgba(232,223,205,0.2));//Creme
     &::before {
-      right:0;
-      bottom:0;
-      border-color:theme-color("creme");//lighten(theme-color("creme"),10)
+      right:0;//So It Matches "btn", Again
+      bottom:0;//So It Matches "btn", Again
+      background-color:transparent;//New
+      border-color:transparent;
       @include transform(translate(0,0));
     }
   }
-
-
-
+  &.btn-lg {
+    padding:$btn-lg-padding;
+    &::before {
+      padding:$btn-lg-padding;//Same As "btn-lg"
+    }
+  }
+  &.btn-chocolate {
+    color:theme-color("chocolate");
+    border-color:theme-color("chocolate");
+    &::before {
+      background-color:rgba(35,31,32,0.1);//Chocolate//New
+      border-color:theme-color("chocolate");
+    }
+    &:hover, &:active, &:focus {
+      background-color:lighten(theme-color("chocolate"),10);
+      color:lighten(theme-color("chocolate"),70);
+      //border-color:lighten(theme-color("chocolate"),70);//theme-color("chocolate")
+      @include box-shadow(3px 3px 10px rgba(35,31,32,0.2));//Chocolate
+      &::before {
+        //border-color:theme-color("chocolate");//lighten(theme-color("chocolate"),10)
+      }
+    }
+  }
   // &.btn-view-the-site {
   //   &::before {
   //     content:"View the site";
@@ -523,16 +501,6 @@ $btn-lg-padding:0.7rem 2.3rem;
       &::before {
         padding:$btn-lg-padding;//Same As "btn-lg"
       }
-
-
-
-      &.btn-longer {
-        padding-right:2rem;
-        padding-left:2rem;
-      }
-
-
-
     }
   }
 }
