@@ -416,7 +416,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   color:theme-color("creme");
   border:1px solid theme-color("creme");
   @include border-radius(1rem);
-  @include transition(background-color ease-out 0.7s, color ease-out 0.7s, border-color ease-out 0.7s, transform ease-out 0.7s, box-shadow ease-out 0.7s);
+  @include transition(background-color ease-out 0.5s, color ease-out 0.5s, border-color ease-out 0.5s, box-shadow ease-out 0.5s);//transform ease-out 0.5s
   &::before {
     content:"";
     position:absolute;
@@ -431,20 +431,20 @@ $btn-lg-padding:0.7rem 2.3rem;
     pointer-events:none;//Avoiding mini-glitch while hovering just "::before"
     @include border-radius(1rem);
     @include transform(translate(3px,3px));
-    @include transition(background-color ease-out 0.7s, transform ease-out 0.7s);//border-color ease-out 0.7s
+    @include transition(background-color ease-out 0.5s, border-color ease-out 0.5s, transform ease-out 0.5s);
   }
   &:hover, &:active, &:focus {
     background-color:darken(theme-color("creme"),10);
     color:darken(theme-color("creme"),50);//theme-color("chocolate")
-    //border-color:darken(theme-color("creme"),50);//theme-color("creme")
+    border-color:transparent;//darken(theme-color("creme"),50)//theme-color("creme")
     //outline:none;
-    //@include transform(translate(0,0));//1.5px,1.5px
     @include box-shadow(3px 3px 10px rgba(232,223,205,0.2));//Creme
+    //@include transform(translate(0,0));//1.5px,1.5px
     &::before {
       right:0;//So It Matches "btn", Again
       bottom:0;//So It Matches "btn", Again
       background-color:transparent;//New
-      border-color:transparent;
+      border-color:theme-color("creme");//darken(theme-color("creme"),50)//transparent
       @include transform(translate(0,0));
     }
   }
@@ -464,10 +464,10 @@ $btn-lg-padding:0.7rem 2.3rem;
     &:hover, &:active, &:focus {
       background-color:lighten(theme-color("chocolate"),10);
       color:lighten(theme-color("chocolate"),70);
-      //border-color:lighten(theme-color("chocolate"),70);//theme-color("chocolate")
+      border-color:transparent;//lighten(theme-color("chocolate"),70)//theme-color("chocolate")
       @include box-shadow(3px 3px 10px rgba(35,31,32,0.2));//Chocolate
       &::before {
-        //border-color:theme-color("chocolate");//lighten(theme-color("chocolate"),10)
+        border-color:theme-color("chocolate");//lighten(theme-color("chocolate"),70)//transparent
       }
     }
   }
