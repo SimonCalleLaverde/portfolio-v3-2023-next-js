@@ -17,7 +17,7 @@
         //overflow-x:hidden!important;//To Leave Only This
         //overflow-y:scroll!important;
         nav.top-nav {
-          padding-right:15px;
+          //padding-right:15px;
           > .container, > .container-fluid {
             > ul {
               //padding-right:35px;//(20px (From Nav Ul Padding Right/Left) + 15px (New To Replace Scrollbar))//!important (No Need, Just Used While Testing)//While "scrollbar" Is 'On' In HTML, And While Modal Adds Inline Style "overflow:none" To Body, Also "padding-right:15px;", And This ClassName ".modal-open"

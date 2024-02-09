@@ -94,9 +94,9 @@ html {
   -moz-osx-font-smoothing:grayscale;
   -webkit-text-size-adjust:100%;//As Per B4
   -webkit-tap-highlight-color:transparent;//As Per B4
-  // ::-webkit-scrollbar {//As Per B4
-  //   display:none;//As Per B4
-  // }
+  ::-webkit-scrollbar {//As Per B4
+    display:none;//As Per B4
+  }
 }
 body {
   position:relative;//As Per B4
