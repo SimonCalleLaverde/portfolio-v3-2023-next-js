@@ -150,7 +150,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              After enrolling in a Web Design and Design for Mobile Devices continuing education program course in 2013 in another university, I then worked for over 4 years for a 5 star rated international digital agency based in Australia: Code Nation Australia helping them bring digital products life for their clients, 2 years hybrid and later 2 years remote from the commodity of my beautiful country Colombia, and sometimes meeting together in Colombia or Australia.
+              After enrolling in a Web Design and Design for Mobile Devices continuing education program course in 2013 in another university, I then worked for over 4 years for a 5 star rated international digital agency based in Australia: Code Nation Australia helping them bring digital products life for their clients, 2 years hybrid and later 2 years remote from the comfort of my beautiful country Colombia, and sometimes meeting together in Colombia or Australia.
             </p>
 
             <p>
