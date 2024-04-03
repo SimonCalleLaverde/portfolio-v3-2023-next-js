@@ -31,7 +31,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
                       {% endfor %}*/}
 
                       <small className="font-ultra-light">
-                        {" "}/04{/*{{ projects_total_count }}*/}
+                        {" "}/05{/*{{ projects_total_count }}*/}
                       </small>
                     </span>
                   </div>
