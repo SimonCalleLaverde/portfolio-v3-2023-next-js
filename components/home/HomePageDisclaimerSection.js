@@ -20,7 +20,9 @@ export default function HomePageDisclaimerSection() {
               {/*Hi, it&apos;s nice to meet you!*/}
 
               {/*Hello there!*/}
-              Hi!
+              {/*Hi!*/}
+
+              Hey there!
             </h3>
 
             {/* Hidden */}

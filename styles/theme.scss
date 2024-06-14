@@ -538,7 +538,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       width:100%;
       height:100%;
       color:darken(theme-color("chocolate"),10);//teal
-      border:1px solid theme-color("creme");
+      //border:1px solid theme-color("creme");
       @include box-shadow(inset 0 0 $size * 0.5);//inset 0 0 $size * 0.7
       @include filter(opacity(95%) brightness(100%) sepia(0));//opacity(90%)
       @include transition(filter ease-in-out 1s);//border-color ease-in-out 1s//0.7s
@@ -716,7 +716,7 @@ article.project-card {
     figure {//.FIGURE-ONE
       @include transition(transform ease-out 0.7s);
       div.project-thumbnail {//ALL
-        border:1px solid theme-color("creme");
+        //border:1px solid theme-color("creme");
         @include border-radius(0.8rem);
         @include transition(filter ease-in-out 0.7s, box-shadow ease-in-out 0.7s);//border-color ease-in-out 0.7s//border-radius ease-in-out 0.7s
       }
