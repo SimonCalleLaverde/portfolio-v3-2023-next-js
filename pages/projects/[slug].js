@@ -199,7 +199,7 @@ export default function ProjectPage({ projectData }) {
         duration={ projectData.duration }
         webLaunchUrl={ projectData.webLaunchUrl }
         prototypeLaunchUrl={ projectData.prototypeLaunchUrl }
-        thumbnailImage={ projectData.thumbnailImage }
+        headerImage={ projectData.headerImage }
         content={ projectData.content }
       />
 

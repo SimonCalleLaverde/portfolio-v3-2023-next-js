@@ -137,7 +137,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
 
             <div className="row">
               <div className="col-md-6 offset-md-6 d-flex flex-column justify-content-end">{/*flex-row*/}{/*align-items-end*/}
-                <div className="page-image background-image-default" type="image" style={{ backgroundImage:`url(${ thumbnailImage.url })` }} title={`Main Image Case Study: ${ title }`}>
+                <div className="page-image background-image-default" type="image" style={{ backgroundImage:`url(${ headerImage.url })` }} title={`Main Image Case Study: ${ title }`}>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function ProjectPageHeader({ headerImage, order, title, client, r
         <div className="container d-block d-md-none mt-5 pt-3">
           <div className="row">
             <div className="col-12">
-              <img src={ thumbnailImage.url } alt={`Main Image Case Study: ${ title }`} style={{ width:"100%" }}/>
+              <img src={ headerImage.url } alt={`Main Image Case Study: ${ title }`} style={{ width:"100%" }}/>
             </div>
           </div>
         </div>
