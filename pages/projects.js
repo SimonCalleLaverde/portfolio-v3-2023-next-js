@@ -20,17 +20,17 @@ const graphCMSQueryProjects = gql`
 
       id
       slug
+
       order
       thumbnailImage {
         url
       }
+
       title
       nameForThumbnail
+
       type
-      roles2
-      year2
       category
-      platforms2
 
     }
   }
@@ -80,7 +80,7 @@ export default function ProjectsPage({ allProjectsData }) {
         {/* Mapping through "allProjectsData" and displaying each "project", in a "ProjectCard" component */}
         {/* Was {% include home/home_project_article.html %} */}
         { allProjectsData.map(project => (
-          <section className="homepage-projects-cards-section" id={ project.id } key={ project.id }>
+          <section className="homepage-projects-cards-section" key={ project.id } id={ project.id }>
             <div className="container">
 
               <div className="row">
@@ -88,15 +88,15 @@ export default function ProjectsPage({ allProjectsData }) {
 
                   <ProjectCard
                     slug={ project.slug }
+
                     order={ project.order }
                     thumbnailImage={ project.thumbnailImage }
+
                     title={ project.title }
                     nameForThumbnail={ project.nameForThumbnail }
+
                     type={ project.type }
-                    roles2={ project.roles2 }
-                    year2={ project.year2 }
                     category={ project.category }
-                    platforms2={ project.platforms2 }
                   />
 
                 </div>

@@ -21,9 +21,6 @@ const graphCMSQuery = gql`
     project(where: {slug: $slug}) {
 
       id
-      headerImage {
-        url
-      }
 
       order
       title
@@ -35,7 +32,7 @@ const graphCMSQuery = gql`
       webLaunchUrl
       prototypeLaunchUrl
 
-      thumbnailImage {
+      headerImage {
         url
       }
       content {
@@ -188,17 +185,19 @@ export default function ProjectPage({ projectData }) {
       />*/}
 
       <ProjectPageHeader
-        id={ projectData.id }
         key={ projectData.id }
-        headerImage={ projectData.headerImage }
+        id={ projectData.id }
+
         order={ projectData.order }
         title={ projectData.title }
         client={ projectData.client }
         roles2={ projectData.roles2 }
         year2={ projectData.year2 }
         duration={ projectData.duration }
+
         webLaunchUrl={ projectData.webLaunchUrl }
         prototypeLaunchUrl={ projectData.prototypeLaunchUrl }
+
         headerImage={ projectData.headerImage }
         content={ projectData.content }
       />

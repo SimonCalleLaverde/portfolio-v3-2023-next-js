@@ -4,7 +4,7 @@ import Image from "next/image";
 //import moment from "moment";
 
 // Project (Card) Component
-export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, year2, category }) {
+export default function ProjectCard({ slug, order, thumbnailImage, title, nameForThumbnail, type, category }) {
   return (
 
     <article className="project-card font-light">{/*font-ultra-light*/}
