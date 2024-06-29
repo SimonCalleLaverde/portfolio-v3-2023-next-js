@@ -507,11 +507,11 @@ $btn-lg-padding:0.7rem 2.3rem;
 
 // Selection Styles
 ::selection {//webkit, opera, IE9
-  background-color:transparent;//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("chocolate"),10)//#FFF//transparent//rgba(105,169,179,0.7)
+  background-color:lighten(theme-color("black"),10);//transparent//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("chocolate"),10)//#FFF//transparent//rgba(105,169,179,0.7)
   color:lighten(theme-color("green-dark"),30);//creme//20
 }
 ::-moz-selection {//mozilla firefox
-  background-color:transparent;//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("chocolate"),10)//#FFF//transparent//rgba(105,169,179,0.7)
+  background-color:lighten(theme-color("black"),10);//transparent//So it doesn't mess up with "links" hover effect//lighten(theme-color("green-light"),20);//lighten(theme-color("chocolate"),10)//#FFF//transparent//rgba(105,169,179,0.7)
   color:lighten(theme-color("green-dark"),30);//creme//20
 }
 
