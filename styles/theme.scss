@@ -1079,7 +1079,7 @@ section.homepage-skills-set-section {
             @include filter(opacity(0.8));
             @include transform(translateX(15px));//10px
             //@include transform(scale(1.01));//1.03
-            @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 0.7s);
+            @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 0.1s);
           }
           // &:not(:hover) {
           //   @include filter(opacity(0.7));

@@ -22,10 +22,10 @@ export default function HomePageHeader() {
             {/* Desktop | Screen Readers */}
             <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}<br/>
-              UX, UI, & Product<br/>
-              Designer with<br/>
-              experience in Front-<br/>
-              end—{/*Em Dash*/}graduated as a<br/>
+              UX, UI, & Product {/*<br/>*/}
+              Designer with 7+ yrs of {/*<br/>*/}
+              experience in Front- {/*<br/>*/}
+              end—{/*Em Dash*/}graduated as a {/*<br/>*/}
               creative Publicist.
             </h1>
 
@@ -33,7 +33,7 @@ export default function HomePageHeader() {
             <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}
               UX, UI, & Product
-              Designer with
+              Designer with 7+ yrs of
               experience in Front-
               end—{/*Em Dash*/}graduated as a
               creative Publicist.
