@@ -18,15 +18,15 @@ export default function Nav() {
           {/* Instead Of Classes "display-flex align-items-center justify-content-between" I'm Using "display:inline-block" Again In The "<li></li>". Otherwise Paddings Must Be Very Exact/Hard-Coded/Magic-Numbers So "<a></a>(s)" & "<button></button>(s)" Align. The "display:inline-block" Option Will Align Them Perfectly No Matter The Paddings, Or Margins, Or Height Of The "<a></a>". With The "Flexbox" Option It Requires Like 2px More Padding-Bottom For Links & Button To Align, But Then It Misses Like 2px Margin-Top To Be Fully Centered, And Then To Center Them Vertically Plus Fully Inline Them With The Button As Well, It Becomes More Messy */}
           {/* See Comments For "Option 2" In "theme.scss" */}
           <ul className="">{/*"justify-content-between" Won't Affect Unless "<ul></ul>" Has A Bigger Width Than Its Natural Sum-Of-Childs' Width*/}
-            <li>
+            {/* Hidden */}
+            <li className="d-none">
               <Link href="/">
                 Welcome
               </Link>
             </li>
 
-            {/* Hidden */}
-            <li className="d-none">
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects I helped deliver">
+            <li>
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and deliver">
                 {/*https://simoncallelaverde.github.io/about*/}
 
                 {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
@@ -45,7 +45,9 @@ export default function Nav() {
                 {/*Portfolio 2021*/}
 
                 {/*Portfolio (Dev) 2021*/}
-                Portfolio 2021
+                {/*Portfolio 2021*/}
+
+                Archaic Work 2021
               </Link>
             </li>
 
@@ -55,14 +57,17 @@ export default function Nav() {
 
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
-                UX & UI Certificate
+                {/*UX & UI Certificate*/}
+
+                Product Design Certificate
               </Link>
             </li>
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral">
-                Work Referral
                 {/*Referral*/}
+                {/*Work Referral*/}
+                Boss Referral Letter
               </Link>
             </li>
 

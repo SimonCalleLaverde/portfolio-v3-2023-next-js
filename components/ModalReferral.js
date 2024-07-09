@@ -14,7 +14,8 @@ export default function ModalReferral() {
           <div className="modal-header">
             <h3 className="modal-title" id="modalReferralLabel">
               {/*Code Nation Australia Work Referral Letter*/}
-              Work Referral Letter
+              {/*Work Referral Letter*/}
+              Boss Referral Letter
             </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
