@@ -8,7 +8,7 @@ export default function ModalCertificate() {
     <div className="modal fade" id="modalCertificate" tabIndex="-1" aria-labelledby="modalCertificateLabel" aria-describedby="Modal or popup showing my Product Design inc. UX & UI. Certificate of Completion" data-bs-backdrop="static" data-bs-keyboard="false" aria-hidden="true">
       {/* Scrollable Body: "modal-dialog-scrollable" */}
       {/* Vertically Centered: "modal-dialog-centered" */}
-      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">{/*modal-sm*/}{/*Default*/}{/*modal-lg*/}
+      <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">{/*modal-sm*/}{/*Default*/}{/*modal-xl*/}
         {/* There are a few classes for responsive Fullscreen, this is just one: "modal-fullscreen" */}
         <div className="modal-content">
           <div className="modal-header">
