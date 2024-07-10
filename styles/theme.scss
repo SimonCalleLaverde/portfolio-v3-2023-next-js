@@ -103,7 +103,7 @@ body {
   min-height:100vh;
   font-family:$font-regular;//$font-light
   //font-weight:400;//Temporary As Per B4
-  font-size:13.5px;//14px//√//15px//17px
+  font-size:14px;//13.5px//14px//√//15px//17px
   background-color:theme-color("chocolate");//beige-old
   color:theme-color("creme");//grey-dark
   line-height:1.4;//1.9//1.8
@@ -292,7 +292,10 @@ header.homepage-header {
     > .row {
       > div {
         p {
-          //letter-spacing:0.5px;//1px
+          font-family:$font-light!important;//New
+          font-size:13px;//New
+          letter-spacing:1.5px;//0.5px//1px
+          text-transform:uppercase;//New
         }
       }
     }
@@ -304,6 +307,7 @@ article.project-card {
       figcaption {//ALL
         .project-type-and-title {
           .project-type {
+            font-size:13px;//New//Now Similar To Nav
             letter-spacing:1.5px;//1px
           }
         }
@@ -320,7 +324,11 @@ section.homepage-skills-set-section {
       .skill-content {
         p {
           > strong {
-            letter-spacing:1px;
+            font-family:$font-light!important;//New
+            font-size:13px;//New
+            font-weight:lighter;//New
+            letter-spacing:1.5px;//1px
+            text-transform:uppercase;//New
           }
         }
       }
@@ -1028,7 +1036,7 @@ header.homepage-header {
 section.homepage-disclaimer-section {
   padding:20px 20px 35px;//20px 20px 50px//50px 20px//60px 20px 50px//70px 20px 50px//50px 20px 30px
   p {
-    font-size:15px;//Specific for this paragraph in Mobile, different/bigger than others
+    font-size:14px;//16px//TO MAKE WAY BIGGER SOON//15px//Specific for this paragraph in Mobile, different/bigger than others
   }
 }
 

@@ -4,7 +4,7 @@
 
   // General
   body {
-    font-size:15px;
+    font-size:16px;//15px
     line-height:1.9;//1.8
     // @media (pointer:none) {
     // }
@@ -309,7 +309,7 @@
         figcaption {//ALL
           .project-type-and-title {
             .project-type {
-              //font-size:13px;//"15px" Is Body
+              //font-size:13px;//"16px" Is Body
             }
           }
         }
@@ -392,7 +392,7 @@
           figcaption {//ALL
             .project-type-and-title {
               .project-type {
-                font-size:15px;//Same As Body
+                //font-size:13px;//Now Similar To Nav//16px//15px//Same As Body
               }
             }
           }
@@ -453,7 +453,7 @@
         padding-left:20px;//New (After Adding "container-fluid")
         > li {
           > a, > button {
-            font-size:13px;//"15px" Is Body
+            font-size:13px;//"16px" Is Body
           }
           > a {
             padding:21px 0;//21px 0 23px//Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
@@ -513,7 +513,7 @@
   section.homepage-disclaimer-section {
     padding:40px 0 97px;//60px 0 37px
     p {
-      font-size:17px;//Specific for this paragraph in Desktop, different/bigger than others
+      font-size:16px;//20px//TO MAKE WAY BIGGER SOON//17px//Specific for this paragraph in Desktop, different/bigger than others
     }
   }
   @media only screen and (min-width:992px) {//Up //@include media-breakpoint-up(lg) {//Up
@@ -931,7 +931,7 @@
   section.project-page-section {
     padding:65px 0 60px;
     .page-content-mid {
-      font-size:17px;//16px//18px//20px
+      font-size:16px;//17px//16px//18px//20px
       blockquote {
         margin-top:-30px;
         padding-right:0;
