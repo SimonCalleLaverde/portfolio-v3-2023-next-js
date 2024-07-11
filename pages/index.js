@@ -137,7 +137,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
                 <div className="skill-row" key={ skill.id }>
                   <div className="row">
                     <div className="col-md-3">{/*col-md-4*/}
-                      <h3 className="text-medium mb-4more mb-md-0">{/*headline-huge*/}
+                      <h3 className="skill-title text-medium mb-4more mb-md-0">{/*headline-huge*/}
                         {/* {{ skill.title }} */}
                         { skill.skillTitle }
                       </h3>

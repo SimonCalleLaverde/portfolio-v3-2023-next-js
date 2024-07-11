@@ -318,23 +318,6 @@ article.project-card {
     }
   }
 }
-section.homepage-skills-set-section {
-  .skills-set-table {
-    .skill-row {
-      .skill-content {
-        p {
-          > strong {
-            font-family:$font-light!important;//New
-            font-size:13px;//New
-            font-weight:lighter;//New
-            letter-spacing:1.5px;//1px
-            text-transform:uppercase;//New
-          }
-        }
-      }
-    }
-  }
-}
 
 // Website Colours
 .text-creme {
@@ -740,6 +723,7 @@ article.project-card {
             text-transform:uppercase;
           }
           .project-title {//h1, h2, h3, h4, h5, h6
+            font-size:1.75rem;//1.9rem
           }
         }
       }
@@ -1066,6 +1050,9 @@ section.homepage-skills-set-section {
       &:first-child {
         border-top:1px solid theme-color("creme");
       }
+      .skill-title {//NEW
+        font-size:1.75rem;//1.9rem//NEW
+      }
       .skill-content {
         //text-align:left;
         p {
@@ -1073,6 +1060,11 @@ section.homepage-skills-set-section {
           //will-change:filter, transform;
           @include transition(filter ease-in-out 0.7s, transform ease-in-out 0.7s 0s);//color ease-in-out 0.7s
           > strong {
+            font-family:$font-light!important;//New
+            font-size:13px;//New
+            font-weight:lighter;//New
+            letter-spacing:1.5px;//1px
+            text-transform:uppercase;//New
           }
           > code {
             font-size:0.7rem;//Was Default 0.875em
@@ -1313,23 +1305,23 @@ header.project-page-header {
     top:-60px;
     right:0;
     left:0;
-    font-size:22px;
+    font-size:1.75rem;//1.9rem//22px
     small {
-      font-size:13.5px;//Same As Body//13px
+      font-size:13px;//Similar To Nav, Aside, Subtitles, Etc//13.5px//Same As Body//13px
     }
   }
   .page-title {
     white-space:normal;
   }
   .page-client, .page-roles, .page-year, .page-duration {
-    font-size:12px;//"13.5px" Is Body//13px
+    font-size:14px;//13px//12px//"13.5px" Is Body//13px
     span.page-subtitles {//New ".page-subtitles" Class
       display:block;
-      font-size:11px;//"13.5px" Is Body
+      font-size:13px;//11px//"13.5px" Is Body
     }
   }
   .page-content {
-    font-size:17px;//18px//20px
+    font-size:16px;//17px//18px//20px
   }
 }
 

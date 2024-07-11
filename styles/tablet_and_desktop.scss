@@ -118,7 +118,7 @@
       font-size:3.85rem;
     }
     .text-medium {
-      font-size:1.9rem;//2.2rem//NEW
+      font-size:1.75rem;//NEW (For "project-title" & new "skill-title")//1.9rem//2.2rem//NEW
     }
 
 
@@ -901,9 +901,9 @@
       }
     }
     .page-client, .page-roles, .page-year, .page-duration {
-      font-size:13.5px;//Same As Body In Mobile//13px
+      //font-size:13px;//13.5px//Same As Body In Mobile//13px
       span.page-subtitles {//New ".page-subtitles" Class
-        font-size:12px;//"13.5px" Is Body//11px
+        //font-size:13px;//12px//"13.5px" Is Body//11px
       }
     }
     .page-content {
@@ -937,11 +937,11 @@
         padding-right:0;
         padding-bottom:30px;
         padding-left:30px;
-        font-size:15px;//Same As Body
+        font-size:14px;//Smaller Than Body//15px//Same As Body
       }
     }
     .page-content-last {
-      font-size:15px;//Same As Body
+      font-size:14px;//Smaller Than Body//15px//Same As Body
     }
   }
   @media only screen and (min-width:1200px) {//Up //@include media-breakpoint-up(lg) {

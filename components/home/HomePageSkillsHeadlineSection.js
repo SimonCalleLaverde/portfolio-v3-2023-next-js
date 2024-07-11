@@ -14,9 +14,11 @@ export default function HomePageSkillsHeadlineSection() {
               <br/>Skills Set*/}
               {/*<br/>Highlight*/}
               {/*<br/>Spotlight*/}
-              Skill
-              <br/>Set Stories
+              {/*Skill
+              <br/>Set Stories*/}
               {/*Skills*/}
+              Skill Set
+              {/*<br/>& Stories*/}
             </h3>
           </div>
         </div>
