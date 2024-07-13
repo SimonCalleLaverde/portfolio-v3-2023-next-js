@@ -714,7 +714,7 @@ article.project-card {
       figcaption {//ALL
         @include transition(filter ease-in-out 0.7s);
         .project-type-and-title, .project-description {
-          line-height:1.4;//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
+          line-height:1.9;//NEW//1.4//Very Important, General/Body's "line-height" Is "1.9", Here We Replace In Some Parts //Distance Between "Projects" Will Grow If Removed //Guess I'll Use "1.4" In Small Captions, Etc //Normal Paragraphs, And All The Rest Will Use "1.9" As Base
         }
         .project-type-and-title {
           .project-type {
