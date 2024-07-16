@@ -20,13 +20,14 @@ export default function ModalCertificate() {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
-          {/* Option 2: "Simon Calle Laverde_Instagram.png" */}
+          {/* Option 2: "Simon Calle Laverde_LinkedIn.png" */}
           <div className="modal-body">
-            <img src="/Simon Calle Laverde_LinkedIn.png" alt="Product Design inc. UX & UI. Certificate of Completion" style={{ width:"100%" }}/>
+            <img src="/Simon Calle Laverde_Instagram.png" alt="Product Design inc. UX & UI. Certificate of Completion" style={{ width:"100%" }}/>
           </div>
 
           <div className="modal-footer">
-            <Link className="btn btn-chocolate" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the Experience Haus course</Link>
+            <Link className="btn btn-chocolate" href="https://experiencehaus.com/" target="_blank" rel="noreferrer">Visit Experience Haus, London, UK</Link>
+            <Link className="btn btn-chocolate" href="https://experiencehaus.com/courses/product-design-inc-ux-ui/" target="_blank" rel="noreferrer">Visit the course</Link>
             <button className="btn btn-chocolate" type="button" data-bs-dismiss="modal">Close</button>
             {/*<button className="btn" type="button" data-bs-dismiss="modal">Awesome! 🎉</button>*/}
             {/*Congratulations*/}{/*Nice! 🎉*/}

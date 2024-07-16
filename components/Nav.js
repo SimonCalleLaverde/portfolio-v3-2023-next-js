@@ -58,7 +58,6 @@ export default function Nav() {
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
                 {/*UX & UI Certificate*/}
-
                 Product Design Certificate
               </Link>
             </li>
@@ -73,8 +72,8 @@ export default function Nav() {
 
             <li>
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
-                Resume
                 {/*CV/Resume*/}
+                Resume
               </button>
             </li>
           </ul>
@@ -99,14 +98,15 @@ export default function Nav() {
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
-                UX & UI Certificate
+                {/*UX & UI Certificate*/}
+                Product Design Certificate
               </Link>
             </li>
 
             <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalResume">
-                Resume
                 {/*CV/Resume*/}
+                Resume
               </Link>
             </li>
           </ul>

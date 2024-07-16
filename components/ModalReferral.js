@@ -15,7 +15,8 @@ export default function ModalReferral() {
             <h3 className="modal-title" id="modalReferralLabel">
               {/*Code Nation Australia Work Referral Letter*/}
               {/*Work Referral Letter*/}
-              Boss Referral Letter
+              {/*Boss Referral Letter*/}
+              Boss Referral Letter {"{"}Never Shown Before 2024{"}"}
             </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
@@ -25,7 +26,7 @@ export default function ModalReferral() {
           </div>
 
           <div className="modal-footer">
-            <Link className="btn btn-chocolate" href="https://www.codenation.com/" target="_blank" rel="noreferrer">Visit Code Nation Australia</Link>
+            <Link className="btn btn-chocolate" href="https://www.codenation.com/" target="_blank" rel="noreferrer">Visit Code Nation, Melbourne, Australia</Link>
             <button className="btn btn-chocolate" type="button" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
