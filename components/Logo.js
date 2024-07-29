@@ -24,7 +24,7 @@ export default function Logo() {
 
           {/*<span className="font-semi-bold">Simon {"{"} UX UI {"}"}</span> <span className="font-ultra-light">Web Studio</span>*/}
 
-          <span className="font-semi-bold">{/*Simon*/}{/* & His*/}The {"{"}WWW{/*Web*/}{"}"}</span> <span className="font-ultra-light">Studio</span>
+          <span className="font-semi-bold">{/*Simon*/}{/* & His*/}The {"{"} WWW{/*Web*/} {"}"}</span> <span className="font-ultra-light">Studio</span>
         </Link>
       </div>
     </>
