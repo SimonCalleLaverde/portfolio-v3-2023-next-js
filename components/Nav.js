@@ -58,7 +58,8 @@ export default function Nav() {
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
                 {/*UX & UI Certificate*/}
-                Product Design Certificate
+                {/*Product Design Certificate*/}
+                Product Design London
               </Link>
             </li>
 
@@ -99,7 +100,8 @@ export default function Nav() {
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
                 {/*UX & UI Certificate*/}
-                Product Design Certificate
+                {/*Product Design Certificate*/}
+                Product Design London
               </Link>
             </li>
 
