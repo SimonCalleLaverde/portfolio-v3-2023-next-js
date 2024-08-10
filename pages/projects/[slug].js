@@ -116,6 +116,69 @@ const graphCMSQuery = gql`
         html
       }
 
+      webImagesTwelfth {
+        url
+      }
+      captionTwelfth {
+        html
+      }
+
+      webImagesThirteenth {
+        url
+      }
+      captionThirteenth {
+        html
+      }
+
+      webImagesFourteenth {
+        url
+      }
+      captionFourteenth {
+        html
+      }
+
+      webImagesFifteenth {
+        url
+      }
+      captionFifteenth {
+        html
+      }
+
+      webImagesSixteenth {
+        url
+      }
+      captionSixteenth {
+        html
+      }
+
+      webImagesSeventeenth {
+        url
+      }
+      captionSeventeenth {
+        html
+      }
+
+      webImagesEighteenth {
+        url
+      }
+      captionEighteenth {
+        html
+      }
+
+      webImagesNineteenth {
+        url
+      }
+      captionNineteenth {
+        html
+      }
+
+      webImagesTwentieth {
+        url
+      }
+      captionTwentieth {
+        html
+      }
+
       webImageFonts {
         url
       }
@@ -435,6 +498,159 @@ export default function ProjectPage({ projectData }) {
               { (projectData.captionEleventh && projectData.captionEleventh.html !== "<p></p>") &&
                 <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
                   <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionEleventh.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesTwelfth && projectData.webImagesTwelfth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionTwelfth && projectData.captionTwelfth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionTwelfth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesThirteenth && projectData.webImagesThirteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionThirteenth && projectData.captionThirteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionThirteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesFourteenth && projectData.webImagesFourteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionFourteenth && projectData.captionFourteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionFourteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesFifteenth && projectData.webImagesFifteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionFifteenth && projectData.captionFifteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionFifteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesSixteenth && projectData.webImagesSixteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionSixteenth && projectData.captionSixteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionSixteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesSeventeenth && projectData.webImagesSeventeenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionSeventeenth && projectData.captionSeventeenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionSeventeenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesEighteenth && projectData.webImagesEighteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionEighteenth && projectData.captionEighteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionEighteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesNineteenth && projectData.webImagesNineteenth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionNineteenth && projectData.captionNineteenth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionNineteenth.html }}/>
+                  {/*font-ultra-light*/}
+                </div>
+              }
+            </div>
+
+            <div className="row page-content-mid">
+              <div className="col-md-12">{/*col-md-10 offset-md-1*/}
+                { projectData.webImagesTwentieth && projectData.webImagesTwentieth.map(image => (
+                  <div key={ image.url } className="mb-5">
+                    <img src={ image.url } alt={ `${ projectData.title } Case Study's Image` } style={{ width:"100%" }}/>
+                  </div>
+                ))}
+              </div>
+
+              { (projectData.captionTwentieth && projectData.captionTwentieth.html !== "<p></p>") &&
+                <div className="col-md-8 offset-md-2 mb-md-3">{/*col-md-6 offset-md-3*/}
+                  <div className="mt-1 mt-md-4more mb-md-5 pb-5 font-light" dangerouslySetInnerHTML={{ __html: projectData.captionTwentieth.html }}/>
                   {/*font-ultra-light*/}
                 </div>
               }
