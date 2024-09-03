@@ -115,6 +115,7 @@ body {
 }
 img {
   max-width:100%;//Important For Images
+  max-height:100%;//NEW 2024
 }
 .row > * {//Targeting All "col(s)". As Per B5 Targeting
   position:relative;//Important For Layout (E.g For Positioned 'Absolute' Stuff (Like In "About"), Etc). As Per B4 Was/Had
@@ -534,6 +535,11 @@ $btn-lg-padding:0.7rem 2.3rem;
       @include box-shadow(inset 0 0 $size * 0.5);//inset 0 0 $size * 0.7
       @include filter(opacity(95%) brightness(100%) sepia(0));//opacity(90%)
       @include transition(filter ease-in-out 1s);//border-color ease-in-out 1s//0.7s
+      > img {//NEW 2024
+        //max-width:100%;//Already In "General (img)" At The End//width:100%//Not Needed While Using "Image" Component "fill={ true }"
+        //max-height:100%;//Placed In "General (img)" At The End//height:100%//Not Needed While Using "Image" Component "fill={ true }"
+        object-fit:cover;
+      }
       &.front {
         //background-color:#000;//teal
         @include transform(rotateX(0deg) translateZ($half-size));
