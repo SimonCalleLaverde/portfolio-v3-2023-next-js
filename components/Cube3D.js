@@ -15,27 +15,27 @@ export default function Cube3D() {
 
     <div className="cube-3d-scene-container">
       <div className="cube">
-        <div className="face front">{/*background-image-default*/}
+        <div className="face front">
           <Image src={ frontImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur" priority={ true }/>{/*loading="eager"*/}{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
-        <div className="face top" aria-hidden="true">{/*background-image-default*/}
+        <div className="face top" aria-hidden="true">
           <Image src={ topImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur"/>{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
-        <div className="face right" aria-hidden="true">{/*background-image-default*/}
+        <div className="face right" aria-hidden="true">
           <Image src={ rightImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur"/>{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
-        <div className="face bottom" aria-hidden="true">{/*background-image-default*/}
+        <div className="face bottom" aria-hidden="true">
           <Image src={ bottomImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur"/>{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
-        <div className="face left" aria-hidden="true">{/*background-image-default*/}
+        <div className="face left" aria-hidden="true">
           <Image src={ leftImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur"/>{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
-        <div className="face back" aria-hidden="true">{/*background-image-default*/}
+        <div className="face back" aria-hidden="true">
           <Image src={ backImage } alt="Pure HTML & CSS 3D rotating cube featuring Simón, Ñeña, and Kiri" placeholder="blur"/>{/*loading="lazy"*/}{/*fill={ true }*/}
         </div>
 
