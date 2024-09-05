@@ -5,6 +5,7 @@ import { Html, Head, Main, NextScript } from "next/document"
 
 export default function Document() {
   return (
+
     <Html lang="en">
       {/*The <Head/> component used here should only be used for any <head> code that is common for all pages.
       For all other cases, such as <title> tags, we recommend using next/head in your pages or components.*/}
@@ -25,5 +26,6 @@ export default function Document() {
         <NextScript/>
       </body>
     </Html>
+
   )
-}
+};

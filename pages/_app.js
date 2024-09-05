@@ -15,6 +15,7 @@ import "../styles/main.scss";//import "../styles/globals.scss";
 export default function PortfolioV32023NextJS({ Component, pageProps }) {
   return (
     <>
+
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
       </Head>
@@ -38,6 +39,7 @@ export default function PortfolioV32023NextJS({ Component, pageProps }) {
       {/* ROLLY.JS */}
       {/*<Script type="text/javascript" src="/js/rolly.min.js"/>*/}
       {/*<Script type="text/javascript" src="/js/custom_javascripts.js"/>*/}
+
     </>
   )
 };
