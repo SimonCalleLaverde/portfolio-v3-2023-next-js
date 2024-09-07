@@ -26,7 +26,7 @@ export default function Nav() {
             </li>
 
             <li>
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and deliver">
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and I helped deliver">
                 {/*https://simoncallelaverde.github.io/about*/}
 
                 {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
@@ -47,32 +47,50 @@ export default function Nav() {
                 {/*Portfolio (Dev) 2021*/}
                 {/*Portfolio 2021*/}
 
-                Archaic Work 2021
+                {/*Archaic Work 2021*/}
+                Archaic Work{" "}
+                <small>
+                  {"{30}"}
+                </small>
               </Link>
             </li>
 
             <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate">{/*href="/get_in_touch"*/}
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the Product Design studio course that I enrolled in 2022 at Experience Haus, London, UK">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
 
                 {/*UX & UI certificate*/}
                 {/*UX/UI certificate*/}
                 {/*UX & UI Certificate*/}
                 {/*Product Design Certificate*/}
-                Product Design London
+
+                {/*Product Design London*/}
+                Product Design{" "}
+                <small>
+                  {/*{"{London}"}*/}
+                  {"{UK}"}
+                </small>
               </Link>
             </li>
 
             <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral">
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral" title="Check the Referral Letter an ex-boss wrote to me after working for 4+ years for them. I never showed it before anywhere until now in 2024">
                 {/*Referral*/}
                 {/*Work Referral*/}
-                Boss Referral Letter
+
+                {/*Boss Referral Letter*/}
+                {/*Ex-Boss Referral Letter*/}
+                {/*Ex-Boss Referral*/}
+                Referral Letter{" "}
+                <small>
+                  {/*{"{Ex-Boss}"}*/}
+                  {"{Boss}"}
+                </small>
               </Link>
             </li>
 
             <li>
-              <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume">{/*btn-primary*/}
+              <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="Check-out my latest Resume (CV) and download the PDF">{/*btn-primary*/}
                 {/*CV/Resume*/}
                 Resume
               </button>
@@ -101,7 +119,15 @@ export default function Nav() {
                 {/*UX/UI certificate*/}
                 {/*UX & UI Certificate*/}
                 {/*Product Design Certificate*/}
-                Product Design London
+
+                {/*Product Design London*/}
+                {/*Product Design {"{London}"}*/}
+                {/*Product Design*/}
+                {/*Product Design {"{UK}"}*/}
+                Product Design{" "}
+                <small>
+                  {"{UK}"}
+                </small>
               </Link>
             </li>
 

@@ -871,6 +871,11 @@ nav.top-nav {
           margin:0 15px;//Should Use "2px 15px 0" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           padding:13px 0;//21px 0//21px 0 23px//(For Desktop) Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           //line-height:66.5px;//Could Replace The "Padding"//1.9//Same As Body//Was 1.8
+          > small {
+            position:relative;
+            top:-5px;
+            font-size:10px;
+          }
           &:hover, &:active, &:focus {//&.active-link
             @include filter(opacity(0.8));
           }
