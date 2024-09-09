@@ -12,7 +12,7 @@ export default function HeadConfig({ title }) {
 
       <title>Simón Calle Laverde - Portfolio V3 2023 NextJS</title>{/*{ title }*/}
       <meta name="description" content="For modern web design and web development check out my custom hand-crafted Portfolio 2023 made in NextJS + HygraphCMS"/>
-      <meta name="keywords" content="web design, web development, modern web design, custom web development, fine web design, web design colombia, web design bogota, modern web design colombia, modern web design bogota, modern web design latam, modern web design latin america, web design nextjs, web development nextjs, nextjs bogota, nextjs colombia"/>{/*NEW 2024*/}
+      <meta name="keywords" content="web design, web development, modern web design, custom web development, fine web design, web design colombia, web design bogota, modern web design colombia, modern web design bogota, modern web design latam, modern web design latin america, web design nextjs, web development nextjs, nextjs bogota, nextjs colombia, ux ui bogota, ux ui colombia, product design bogota, product design colombia, product design latin america"/>{/*NEW 2024*/}
       <link rel="icon" href="/favicon.png"/>{/*favicon.ico*/}
 
       {/* TERMINAL's WARNING/STEPS-FOLLOWED */}
