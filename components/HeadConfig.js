@@ -11,7 +11,8 @@ export default function HeadConfig({ title }) {
       {/* To add meta-tags, etc. <Head/> builds lots of stuff already like "<meta charset='utf-8'>", "<meta name='viewport' content='width=device-width'>", some "<script></script>", "<noscript></noscript>", "<style></style>", and so. So to be careful for not repeated stuff */}
 
       <title>Simón Calle Laverde - Portfolio V3 2023 NextJS</title>{/*{ title }*/}
-      <meta name="description" content="Portfolio V3 2023 NextJS using GraphCMS."/>
+      <meta name="description" content="For modern web design and web development check out my custom hand-crafted Portfolio 2023 made in NextJS + HygraphCMS"/>
+      <meta name="keywords" content="web design, web development, modern web design, custom web development, fine web design, web design colombia, web design bogota, modern web design colombia, modern web design bogota, modern web design latam, modern web design latin america, web design nextjs, web development nextjs, nextjs bogota, nextjs colombia"/>{/*NEW 2024*/}
       <link rel="icon" href="/favicon.png"/>{/*favicon.ico*/}
 
       {/* TERMINAL's WARNING/STEPS-FOLLOWED */}

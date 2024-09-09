@@ -125,10 +125,11 @@ export default function Nav() {
                 {/*Product Design {"{London}"}*/}
                 {/*Product Design*/}
                 {/*Product Design {"{UK}"}*/}
-                Product Design{" "}
+                {/*Product Design{" "}
                 <small>
                   {"{UK}"}
-                </small>
+                </small>*/}
+                Product Design
               </Link>
             </li>
 
