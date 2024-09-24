@@ -84,8 +84,8 @@ export default function Nav() {
                 Referral Letter{" "}
                 <small>
                   {/*{"{Ex-Boss}"}*/}
-                  {/*{"{AU}"}*/}
-                  {"{AUS}"}
+                  {/*{"{AUS}"}*/}
+                  {"{AU}"}
                 </small>
               </Link>
             </li>
