@@ -26,34 +26,6 @@ export default function Nav() {
             </li>
 
             <li>
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and I helped deliver">
-                {/*https://simoncallelaverde.github.io/about*/}
-
-                {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
-                {/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
-                {/*title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here."*/}
-                
-                {/*Relevant work*/}
-                {/*Other work*/}
-                {/*More work*/}
-                {/*Development work*/}
-                
-                {/*About me (2021)*/}
-                {/*Portfolio (Front-end) 2021*/}
-
-                {/*Portfolio 2021 (Front-end)*/}
-                {/*Portfolio 2021*/}
-
-                {/*Portfolio (Dev) 2021*/}
-                {/*Portfolio 2021*/}
-
-                {/*Archaic Work 2021*/}
-                Archaic Work{" "}
-                <small>30</small>
-              </Link>
-            </li>
-
-            <li>
               <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the Product Design studio course that I enrolled in 2022 at Experience Haus, London, UK">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
 
@@ -85,6 +57,34 @@ export default function Nav() {
                   {/*{"{AUS}"}*/}
                   AU
                 </small>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and I helped deliver">
+                {/*https://simoncallelaverde.github.io/about*/}
+
+                {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
+                {/*title="Like with every movie sequel, my first Portfolio 2021 was way better! See 30 more Front-end Development projects there."*/}
+                {/*title="Visit my older Front-end Development 'Portfolio 2021' with 30 real client projects, while I finish a new 'My Story (About Me)' page 2023 in here."*/}
+                
+                {/*Relevant work*/}
+                {/*Other work*/}
+                {/*More work*/}
+                {/*Development work*/}
+                
+                {/*About me (2021)*/}
+                {/*Portfolio (Front-end) 2021*/}
+
+                {/*Portfolio 2021 (Front-end)*/}
+                {/*Portfolio 2021*/}
+
+                {/*Portfolio (Dev) 2021*/}
+                {/*Portfolio 2021*/}
+
+                {/*Archaic Work 2021*/}
+                Archaic Work{" "}
+                <small>30</small>
               </Link>
             </li>
 
