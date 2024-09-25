@@ -25,7 +25,9 @@ export default function HomePageDisclaimerSection() {
               {/*Hey there!*/}
               {/*Nice to meet you!*/}
 
-              A little bit about me
+              {/*A little bit about me*/}
+
+              At-a-glance.
             </h3>
 
             {/* Hidden */}
@@ -168,8 +170,10 @@ export default function HomePageDisclaimerSection() {
 
             {/* SEP 24, 2024 */}
 
-            <p>
-              Hello again.
+            <p className="d-none">
+              {/*Hello again.*/}
+              {/*At-a-glance.*/}
+              A little bit about me.
             </p>
 
             <p>
@@ -181,7 +185,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I wanted to bring high-level knowledge in graphic design, history of design, semiotics, linguistics, psychology, sociology, art direction, branding and identity, brand positioning, marketing, and campaigning, among many other of my expertise subjects that I studied in a daily basis for 5 whole years and more, to modern digital products and experiences—I wanted to even bring photography which I studied in a weekly course for 6 entire years of my life, plus I worked in a photography studio as well.
+              I wanted to bring high-level knowledge in graphic design, history of design, semiotics, linguistics, psychology, sociology, art direction, branding and identity, brand positioning, marketing, and campaigning, among many other of my expertise subjects that I studied in a daily basis for 5 whole years and more, to modern digital products and experiences—I even wanted to bring my knowledge in photography which I studied in a weekly course for 6 entire years of my life, plus I worked in a photography studio as well.
             </p>
 
             <p>
