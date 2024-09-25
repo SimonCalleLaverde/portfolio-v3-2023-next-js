@@ -26,7 +26,7 @@ export default function Nav() {
             </li>
 
             <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the Product Design studio course that I enrolled in 2022 at Experience Haus, London, UK">{/*href="/get_in_touch"*/}
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the in-person Product Design studio course that I enrolled in 2022 at Experience Haus, London, UK">{/*href="/get_in_touch"*/}
                 {/*Get in touch*/}
 
                 {/*UX & UI certificate*/}
