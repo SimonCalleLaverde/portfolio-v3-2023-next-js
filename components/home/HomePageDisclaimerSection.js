@@ -10,7 +10,7 @@ export default function HomePageDisclaimerSection() {
 
         {/* A Creative Classic Publicist made Responsive Web Designer and UI Designer (2013), made Front-end Developer (2015), made UI/UX and Product Designer (2023) */}
         <div className="row">
-          <div className="col-md-10">
+          <div className="col-md-8">{/*col-md-10*/}
             <h3 className="mb-3">
               {/*Disclaimer*/}
               {/*Welcome*/}
@@ -22,7 +22,10 @@ export default function HomePageDisclaimerSection() {
               {/*Hello there!*/}
               {/*Hi!*/}
 
-              Hey there!
+              {/*Hey there!*/}
+              {/*Nice to meet you!*/}
+
+              A little bit about me
             </h3>
 
             {/* Hidden */}
@@ -147,21 +150,45 @@ export default function HomePageDisclaimerSection() {
 
             {/* 2024 */}
 
-            <p>
+            <p className="d-none">
               I&apos;m a Product Designer (UX/UI) & Front-end Developer with 6 years spent in the industry helping bring digital experiences to life. I also have a background in Marketing & Advertising obtaining a bachelor&apos;s degree as a Publicist after having undertaken a 5 year creative and design driven career.
             </p>
 
-            <p>
+            <p className="d-none">
               After enrolling in a Web Design and Design for Mobile Devices continuing education program course in 2013 in another university, I then worked for over 4 years for a 5 star rated international digital agency based in Australia: Code Nation Australia helping them bring digital products life for their clients, 2 years hybrid and later 2 years remote from the comfort of my beautiful country Colombia, and sometimes meeting together in Colombia or Australia.
             </p>
 
-            <p>
+            <p className="d-none">
               I also then had a few entrepreneurship projects as well as trying to build my own path as an independent; I&apos;ve done real work in front-end, UI, UX, SEO, digital marketing, photography, and print. I recently completed in 2023 a in-person Product Design (including UX & UI) three-month intensive course at Experience Haus, London, UK.
             </p>
 
-            <p>
+            <p className="d-none">
               In 2024 I would like to primarily pursue web & app UI design projects with a focus in delivering good design and a good user experience, placing the business goals as a first priority, where I can apply my knowledge in product design, UX research, UX design, UI design, design history, graphic design, visual semiotics, linguistics, psychology of persuasion, sociology, brand positioning, art direction, as well as responsive and accessible web design and development, following UI best practices to create impactful digital products for growing organizations and companies providing them with high value.
             </p>
+
+            {/* SEP 24, 2024 */}
+
+            <p>
+              Hello again.
+            </p>
+
+            <p>
+              I&apos;m a <em>Digital Product Designer</em> & <em>Web Designer</em> with experience in <em>UX</em>, <em>UI</em>, & <em>Front-end Development</em>.
+            </p>
+
+            <p>
+              With a title{/*Raised*/} as a creative and classic <em>Publicist</em>, I studied <em><span>Web Design & Design For Mobile Devices</span> {"{"}i.e. Responsive Web Design{"}"}</em> in 2013 after graduating from my 5 year persuation-driven, conceptual-driven, and design-driven career.
+            </p>
+
+            <p>
+              I wanted to bring high-level knowledge in graphic design, history of design, semiotics, linguistics, psychology, sociology, art direction, branding and identity, brand positioning, marketing, and campaigning, among many other of my expertise subjects that I studied in a daily basis for 5 whole years and more, to modern digital products and experiences—I wanted to even bring photography which I studied in a weekly course for 6 entire years of my life, plus I worked in a photography studio as well.
+            </p>
+
+            <p>
+              In 2015 I started working for an Australian based digital-agency where I worked for 4+ years helping bring websites, platforms, and digital products to life. Most of them were campaign-driven websites, some with millions of live members and users.
+            </p>
+
+            {/* The pandemic ruined all my plans 4 years ago, but I'm trying to putting them together once again (as-my/for Project 2025) */}
           </div>
         </div>
 

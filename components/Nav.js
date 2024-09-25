@@ -49,9 +49,7 @@ export default function Nav() {
 
                 {/*Archaic Work 2021*/}
                 Archaic Work{" "}
-                <small>
-                  {"{30}"}
-                </small>
+                <small>30</small>
               </Link>
             </li>
 
@@ -68,13 +66,13 @@ export default function Nav() {
                 Product Design{" "}
                 <small>
                   {/*{"{London}"}*/}
-                  {"{UK}"}
+                  UK
                 </small>
               </Link>
             </li>
 
             <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral" title="Check the Referral Letter an ex-boss wrote to me after working for 4+ years for them. I never showed it before anywhere until now in 2024">
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral" title="This is a Referral Letter an ex boss wrote to me after working for 4+ years for them. I never showed this letter before anywhere, until now in 2024">
                 {/*Referral*/}
                 {/*Work Referral*/}
 
@@ -85,7 +83,7 @@ export default function Nav() {
                 <small>
                   {/*{"{Ex-Boss}"}*/}
                   {/*{"{AUS}"}*/}
-                  {"{AU}"}
+                  AU
                 </small>
               </Link>
             </li>
@@ -93,7 +91,8 @@ export default function Nav() {
             <li>
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="Check-out my latest Resume (CV) and download the PDF">{/*btn-primary*/}
                 {/*CV/Resume*/}
-                Resume
+                {/*Resume*/}
+                CV
               </button>
             </li>
           </ul>
