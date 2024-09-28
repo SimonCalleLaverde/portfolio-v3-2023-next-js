@@ -84,7 +84,10 @@ export default function Nav() {
 
                 {/*Archaic Work 2021*/}
                 Archaic Work{" "}
-                <small>30</small>
+                <small>
+                  {/*30*/}
+                  {"{30}"}
+                </small>
               </Link>
             </li>
 
