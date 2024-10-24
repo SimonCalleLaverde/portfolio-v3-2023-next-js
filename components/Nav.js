@@ -94,9 +94,9 @@ export default function Nav() {
             <li>
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="Check-out my latest Resume (CV) and download the PDF">{/*btn-primary*/}
                 {/*CV/Resume*/}
-                {/*Resume*/}
                 {/*CV*/}
-                Resume {"{CV}"}
+                {/*Resume {"{CV}"}*/}
+                Resume
               </button>
             </li>
           </ul>
