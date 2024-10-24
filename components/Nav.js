@@ -85,8 +85,8 @@ export default function Nav() {
                 {/*Archaic Work 2021*/}
                 Archaic Work{" "}
                 <small>
-                  {/*30*/}
-                  {"{30}"}
+                  {/*{"{30}"}*/}
+                  30
                 </small>
               </Link>
             </li>
@@ -95,7 +95,8 @@ export default function Nav() {
               <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="Check-out my latest Resume (CV) and download the PDF">{/*btn-primary*/}
                 {/*CV/Resume*/}
                 {/*Resume*/}
-                CV
+                {/*CV*/}
+                Resume {"{CV}"}
               </button>
             </li>
           </ul>

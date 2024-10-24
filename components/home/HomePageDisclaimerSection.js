@@ -185,7 +185,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I wanted to bring high-level knowledge in graphic design, history of design, semiotics, linguistics, psychology, sociology, art direction, branding and identity, brand positioning, marketing, and campaigning, among many other of my expertise subjects that I studied in a daily basis for 5 whole years and more, to modern digital products and experiences—I even wanted to bring my knowledge in photography which I studied in a weekly course for 6 entire years of my life, plus I worked in a photography studio as well.
+              At-the-time I wanted to bring my high-level knowledge in graphic design, history of design, semiotics, linguistics, art direction, psychology and persuation, sociology, brand positioning, branding and identity, marketing, campaigning, among other subjects of my expertise that I studied in a daily basis for over 5 years, to modern digital products and experiences—I even wanted to bring my knowledge in photography to digital media, which I studied in a weekly course for 6 entire years of my early life, plus I worked in a photography studio as well.
             </p>
 
             <p>
