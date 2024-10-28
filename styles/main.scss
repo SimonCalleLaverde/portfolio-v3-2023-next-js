@@ -1,6 +1,6 @@
 // NEXTJS WILL RENDER ALL STYLES AS "<style></style>" WITHIN THE "<head></head>"
 
-//----------------------------------Brand Colors Variables----------------------------------//
+//----------------------------------Brand Colors (Variables)----------------------------------//
 
 // Black & White Colors
 $theme-color-black:#000000;
@@ -19,18 +19,19 @@ $theme-color-creme:rgba(232,223,205,1);//#E8DFCD//Creme NEW ............ rgba(26
 $theme-color-green-dark:rgba(28,62,54,1);//#1C3E36//Favicon Green-Dark
 $theme-color-green-light:rgba(113,184,167,1);//#71B8A7//Favicon Green-Light
 
-// Third Party Companies' Brand Colors (https://brandcolors.net/)
+// Third Party Companies' Brand Colors (https://brandcolors.net)
 $theme-color-facebook:#3B5998;//Facebook Official
 $theme-color-instagram:#E1306C;//Instagram Official
 $theme-color-whatsapp:#075E54;//WhatsApp Official
 $theme-color-youtube:#FF0000;//Youtube Official
-$theme-color-twitter:#1DA1F2;//Twitter Official
 $theme-color-linkedin:#8D6CAB;//LinkedIn Official//Option 2 #0077B5
-$theme-color-behance:#1769FF;//Behance Official
 $theme-color-pinterest:#BD081C;//Pinterest Official
+$theme-color-behance:#1769FF;//Behance Official
+$theme-color-dribbble:#EA4C89;//Dribbble Official
+$theme-color-twitter:#1DA1F2;//Twitter Official
 $theme-color-google-plus:#DD4B39;//Google Plus Official
 
-//----------------------------------Theme Colors Map----------------------------------//
+//----------------------------------Theme Colors (Map)----------------------------------//
 
 // Mapping Colors
 $theme-colors: (
@@ -51,10 +52,11 @@ $theme-colors: (
   "instagram":$theme-color-instagram,
   "whatsapp":$theme-color-whatsapp,
   "youtube":$theme-color-youtube,
-  "twitter":$theme-color-twitter,
   "linkedin":$theme-color-linkedin,
-  "behance":$theme-color-behance,
   "pinterest":$theme-color-pinterest,
+  "behance":$theme-color-behance,
+  "dribbble":$theme-color-dribbble,
+  "twitter":$theme-color-twitter,
   "google-plus":$theme-color-google-plus
 );
 
@@ -63,13 +65,13 @@ $theme-colors: (
   @return map-get($theme-colors, $key);
 }
 
-//----------------------------------General/Base Styles----------------------------------//
-
-// Mixins Styles
-@import "styles/mixins";
+//----------------------------------General/Base Styles (Imports)----------------------------------//
 
 // Fonts Styles
 @import "styles/fonts";
+
+// Mixins Styles
+@import "styles/mixins";
 
 // Utility Classes Styles
 @import "styles/utility_classes";
