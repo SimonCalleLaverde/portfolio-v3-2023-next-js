@@ -83,11 +83,9 @@ export default function Nav() {
                 {/*Portfolio 2021*/}
 
                 {/*Archaic Work 2021*/}
-                Archaic Work{" "}
-                <small>
-                  {/*{"{30}"}*/}
-                  30
-                </small>
+                Archaic Work
+                {/*{"{30}"}*/}
+                {/*30*/}
               </Link>
             </li>
 

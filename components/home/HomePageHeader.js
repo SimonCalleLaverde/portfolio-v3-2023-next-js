@@ -17,7 +17,8 @@ export default function HomePageHeader() {
               {/*It&apos;s nice to meet you!*/}
               {/*Nice to meet you!*/}
               {/*Welcome*/}
-              Welcome, nice to meet you!
+              {/*Welcome, nice to meet you!*/}
+              Nice to meet you!
             </p>
 
             {/* Desktop | Screen Readers */}

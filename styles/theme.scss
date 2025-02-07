@@ -879,7 +879,7 @@ nav.top-nav {
           > small {
             position:relative;
             top:-5px;
-            font-size:10px;
+            font-size:8px;//10px
           }
           &:hover, &:active, &:focus {//&.active-link
             @include filter(opacity(0.8));
