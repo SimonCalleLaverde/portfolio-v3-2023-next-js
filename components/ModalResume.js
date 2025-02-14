@@ -15,7 +15,7 @@ export default function ModalResume() {
               {/*Resume (CV) 2023*/}
               {/*Resume (CV) 2023 (English)*/}
               {/*Resume (CV) 2024 (English)*/}
-              Resume 2024 (English)
+              Resume 2025 (English)
             </h3>
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>

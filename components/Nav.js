@@ -26,42 +26,7 @@ export default function Nav() {
             </li>
 
             <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the in-person Product Design studio course that I enrolled in 2022 at Experience Haus, London, UK">{/*href="/get_in_touch"*/}
-                {/*Get in touch*/}
-
-                {/*UX & UI certificate*/}
-                {/*UX/UI certificate*/}
-                {/*UX & UI Certificate*/}
-                {/*Product Design Certificate*/}
-
-                {/*Product Design London*/}
-                Product Design{" "}
-                <small>
-                  {/*{"{London}"}*/}
-                  UK
-                </small>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral" title="This is a Referral Letter an ex boss wrote to me after working for 4+ years for them. I never showed this letter before anywhere, until now in 2024">
-                {/*Referral*/}
-                {/*Work Referral*/}
-
-                {/*Boss Referral Letter*/}
-                {/*Ex-Boss Referral Letter*/}
-                {/*Ex-Boss Referral*/}
-                Referral Letter{" "}
-                <small>
-                  {/*{"{Ex-Boss}"}*/}
-                  {/*{"{AUS}"}*/}
-                  AU
-                </small>
-              </Link>
-            </li>
-
-            <li>
-              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and I helped deliver">
+              <Link href="https://simoncallelaverde.github.io" target="_blank" rel="noreferrer" title="Visit my (older) Portfolio 2021 with 30 real client projects which I helped bring to life — I helped to develop and deliver for clients at Code Nation Australia">
                 {/*https://simoncallelaverde.github.io/about*/}
 
                 {/*title="Sorry to temporarily redirect you to my Portfolio 2021, while I finish my new 'My Story' page 2023."*/}
@@ -90,7 +55,42 @@ export default function Nav() {
             </li>
 
             <li>
-              <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="Check-out my latest Resume (CV) and download the PDF">{/*btn-primary*/}
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalCertificate" title="Visit the in-person Product Design (including UX & UI) studio course that I enrolled at Experience Haus, London, UK, in 2022">{/*href="/get_in_touch"*/}
+                {/*Get in touch*/}
+
+                {/*UX & UI certificate*/}
+                {/*UX/UI certificate*/}
+                {/*UX & UI Certificate*/}
+                {/*Product Design Certificate*/}
+
+                {/*Product Design London*/}
+                Product Design{" "}
+                <small>
+                  {/*{"{London}"}*/}
+                  UK
+                </small>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#" data-bs-toggle="modal" data-bs-target="#modalReferral" title="This is a Referral Letter my Australian ex-boss wrote for me after working for them for 4+ years. [I never showed this letter before anywhere, until now in 2024]">
+                {/*Referral*/}
+                {/*Work Referral*/}
+
+                {/*Boss Referral Letter*/}
+                {/*Ex-Boss Referral Letter*/}
+                {/*Ex-Boss Referral*/}
+                Referral Letter{" "}
+                <small>
+                  {/*{"{Ex-Boss}"}*/}
+                  {/*{"{AUS}"}*/}
+                  AU
+                </small>
+              </Link>
+            </li>
+
+            <li>
+              <button className="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalResume" title="See my latest Resume (CV) or download the PDF">{/*btn-primary*/}
                 {/*CV/Resume*/}
                 {/*CV*/}
                 {/*Resume {"{CV}"}*/}

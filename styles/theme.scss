@@ -298,7 +298,7 @@ header.homepage-header {
           font-family:$font-light!important;//New
           font-size:13px;//New
           letter-spacing:1.2px;//NEW 2024//1.5px//0.5px//1px
-          text-transform:uppercase;//New
+          //text-transform:uppercase;//New
         }
       }
     }
@@ -412,7 +412,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   @include border-radius(1rem);
   @include transition(background-color ease-out 0.5s, color ease-out 0.5s, border-color ease-out 0.5s, box-shadow ease-out 0.5s);//transform ease-out 0.5s
   &::before {
-    content:"";
+    //content:"";//Removed For Now (2025)
     position:absolute;
     padding:$btn-normal-padding;//Same As "btn"
     top:0;
