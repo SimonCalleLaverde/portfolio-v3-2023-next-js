@@ -12,8 +12,10 @@ export default function HomePageProjectsHeadlineSection() {
             <h3 className="font-headline headline-huge text-start text-uppercase mb-0">{/*text-gigantic*/}{/*text-center*/}
               {/*Featured
               <br/>Projects*/}
-              Featured
-              <br/>Case Studies
+              {/*Featured
+              <br/>Case Studies*/}
+              Most Recent
+              <br/>Projects
             </h3>
           </div>
         </div>

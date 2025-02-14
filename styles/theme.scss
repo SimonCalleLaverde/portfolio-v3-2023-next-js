@@ -603,7 +603,7 @@ $btn-lg-padding:0.7rem 2.3rem;
       background-color:rgba(232,223,205,0.9);//lighten(rgba(232,223,205,0.7),5)//theme-color("chocolate")
       border:none;
       backdrop-filter:blur(7px);//5px//10px
-      @include border-radius(0.8rem);
+      @include border-radius(0.3rem);//0.8rem
       .modal-header, .modal-body, .modal-footer {
         padding:1.7rem;//Was ".modal-header, .modal-body" 1rem//Was ".modal-footer" 0.75rem
       }
@@ -716,7 +716,7 @@ article.project-card {
       @include transition(transform ease-out 0.7s);
       div.project-thumbnail {//ALL
         //border:1px solid theme-color("creme");
-        @include border-radius(0.8rem);
+        @include border-radius(0.3rem);//0.8rem
         @include transition(filter ease-in-out 0.7s, box-shadow ease-in-out 0.7s);//border-color ease-in-out 0.7s//border-radius ease-in-out 0.7s
       }
       figcaption {//ALL
@@ -817,7 +817,7 @@ article.project-card {
 // Contact Card
 .contact-card {
   border:1px theme-color("creme") solid;
-  @include border-radius(0.8rem);
+  @include border-radius(0.3rem);//0.8rem
 }
 
 //----------------------------------Aside Styles----------------------------------//
@@ -1354,7 +1354,7 @@ section.project-page-section {
     img {
       border:0.5px rgba(26,42,55,0.3) solid;//1px//theme-color("creme")////
       @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));
-      @include border-radius(0.8rem);
+      @include border-radius(0.3rem);//0.8rem
     }
     blockquote {
       margin-top:-5px;//-10px//NEW 2024//-25px//-20px//-30px
