@@ -181,11 +181,11 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              After graduating with a {/*title*/}bachelor's degree as a creative{/* and classic*/} <em>Publicist</em> from my 5 year persuation, conceptual, and design driven career{/*Raised*/} from Universidad Jorge Tadeo Lozano, I then studied a Continuing Education Program course in <em><span>Web Design and Design For Mobile Devices</span></em> (i.e. <em>Responsive Web Design</em>) in 2013 at Pontificia Universidad Javeriana.
+              After graduating with a {/*title*/}bachelor&apos;s degree as a creative{/* and classic*/} <em>Publicist</em> from my 5 year persuation, conceptual, and design driven career{/*Raised*/} from Universidad Jorge Tadeo Lozano, I then studied a Continuing Education Program course in <em><span>Web Design and Design For Mobile Devices</span></em> (i.e. <em>Responsive Web Design</em>) in 2013 at Pontificia Universidad Javeriana.
             </p>
 
             <p>
-              At-the-time I wanted to bring my high-level knowledge in history of design, graphic design, semiotics (which involves aspects of human-behavior towards graphic design), linguistics, art direction, psychology and persuation, sociology, color psychology and color theory, brand positioning, branding and identity, marketing, campaigning, among other subjects of my expertise that I studied in a daily basis for over 5 years, to modern digital products and experiences—I even wanted to bring my knowledge in photography to digital media, which I studied in a weekly course for 6 entire years of my early life, plus I also worked in a photography studio.
+              At-the-time I wanted to bring my high-level knowledge in history of design, graphic design, semiotics (which involves aspects of human-behavior towards graphic design), linguistics, art direction, psychology and persuation, sociology, color psychology and color theory, brand positioning, branding and identity, marketing, campaigning, among other subjects of my expertise that I studied in a daily basis for over 5 years, to modern digital products and experiences — I even wanted to bring my knowledge in photography to digital media, which I studied in a weekly course for 6 entire years of my early life, plus I also worked in a photography studio.
             </p>
 
             <p>
