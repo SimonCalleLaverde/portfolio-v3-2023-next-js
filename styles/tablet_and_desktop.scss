@@ -437,7 +437,7 @@
   .logo {
     > a {
       //height:65px;
-      padding:21px 35px;//"21px" (From Nav Links Padding Top/Bottom) & "35px" ("20px" (From Nav New Ul Padding Right/Left) + "15px" (From "container-fluid's" Padding Right/Left))
+      padding:17px 35px;//NEW 2025//21px 35px//"21px" (From Nav Links Padding Top/Bottom) & "35px" ("20px" (From Nav New Ul Padding Right/Left) + "15px" (From "container-fluid's" Padding Right/Left))
       font-size:13px;//Same As Nav Links
       &:hover, &:active, &:focus {
         @include filter(opacity(0.8));
@@ -456,7 +456,7 @@
             font-size:13px;//"16px" Is Body
           }
           > a {
-            padding:21px 0;//21px 0 23px//Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
+            padding:17px 0;//NEW 2025//21px 0//21px 0 23px//Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
             &::before {
               content:"";
               position:absolute;
