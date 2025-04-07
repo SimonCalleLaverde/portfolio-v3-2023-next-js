@@ -409,7 +409,7 @@ $btn-lg-padding:0.7rem 2.3rem;
   background-color:transparent;
   color:theme-color("creme");
   border:1px solid theme-color("creme");
-  @include border-radius(1rem);
+  @include border-radius(1.5rem);//NEW 2025//1rem
   @include transition(background-color ease-out 0.5s, color ease-out 0.5s, border-color ease-out 0.5s, box-shadow ease-out 0.5s);//transform ease-out 0.5s
   &::before {
     //content:"";//Removed For Now (2025)
@@ -888,6 +888,7 @@ nav.top-nav {
         > button {
           //margin-top:2px;//Should Use (This Enabled) "2px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           margin-left:15px;
+          line-height:1.5;//NEW 2025 (Making Button Smaller Again)
         }
       }
     }
