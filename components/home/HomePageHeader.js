@@ -11,13 +11,14 @@ export default function HomePageHeader() {
       <div className="container">
 
         <div className="row mt-md-5 pt-md-3 pt-lg-4 pt-xl-4more pt-xxl-5">{/*d-flex flex-column flex-md-row justify-content-between*/}
-          <div className="col-md-6 d-flex flex-column align-items-center align-items-md-start">{/*"d-flex flex-column align-items-center align-items-md-start" For Mobile, In Portrait*/}
+          <div className="col-md-6 offset-md-1 order-md-2 d-flex flex-column align-items-center align-items-md-start">{/*"d-flex flex-column align-items-center align-items-md-start" For Mobile, In Portrait*/}
             <p className="mb-3 mb-md-4">
               {/*Hello*/}
               {/*It&apos;s nice to meet you!*/}
               {/*Nice to meet you!*/}
               {/*Welcome*/}
-              Welcome, nice to meet you!
+              {/*Welcome, nice to meet you!*/}
+              Welcome!
             </p>
 
             {/* Desktop | Screen Readers */}
@@ -69,7 +70,7 @@ export default function HomePageHeader() {
             {/*<p>I&apos;m a UX/UI Product Designer & Front-end Developer</p>*/}
           </div>
 
-          <div className="col-md-5 offset-md-1">
+          <div className="col-md-5 order-md-1">
             {/*<img src="/home-page-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML & CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
 
             <Cube3D/>
