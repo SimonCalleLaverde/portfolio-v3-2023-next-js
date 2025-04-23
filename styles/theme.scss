@@ -1355,7 +1355,7 @@ section.project-page-section {
     img {
       border:0.5px rgba(26,42,55,0.3) solid;//1px//theme-color("creme")////
       @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));
-      @include border-radius(0.3rem);//0.8rem
+      @include border-radius(15px);//NEW 2025//WAS 2024 "0.3rem"//0.8rem
     }
     blockquote {
       margin-top:-5px;//-10px//NEW 2024//-25px//-20px//-30px
