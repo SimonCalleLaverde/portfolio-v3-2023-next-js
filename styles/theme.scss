@@ -1089,6 +1089,7 @@ section.homepage-skills-set-section {
             text-transform:uppercase;//New
           }
           > code {
+            display:none;//HIDDEN (For Now)//NEW 2025
             font-size:0.7rem;//Was Default 0.875em
             color:theme-color("grey-dark");//Was Default #D63384
             //word-wrap:break-word;//Was Default
