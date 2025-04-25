@@ -1,6 +1,6 @@
 // Imports
 
-// Since1988 (HomePage) Component
+// Since1988 (Sitewide) Component
 export default function Since1988() {
   return (
 

@@ -2,6 +2,7 @@
 import Cube3D from "/components/Cube3D.js";
 import MadeIn from "/components/MadeIn.js";
 import Since1988 from "/components/Since1988.js";
+import Copyright from "/components/Copyright.js";
 
 // Home Page (Header) Component
 export default function HomePageHeader() {
@@ -23,34 +24,35 @@ export default function HomePageHeader() {
 
             {/* Desktop | Screen Readers */}
             <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
-              I&apos;m Simón Calle—{/*Em Dash*/}<br/>
-              Web, UX, UI, & Product {/*<br/>*/}
-              Designer with 5+ yrs of {/*<br/>*/}
-              experience in Front- {/*<br/>*/}
-              end—{/*Em Dash*/}graduated as a {/*<br/>*/}
-              creative Publicist.
+              I&apos;m Simón Calle—{/*Em Dash*/}
+              <br/>Web, UX, UI, & Product
+              {/*<br/>*/} Designer with 5+ years
+              {/*<br/>*/} of experience in Front-
+              {/*<br/>*/} end—{/*Em Dash*/}graduated as a
+              {/*<br/>*/} creative Publicist{/*.*/}
             </h1>
 
             {/* Mobile */}
             <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}
               Web, UX, UI, & Product
-              Designer with 5+ yrs of
-              experience in Front-
+              Designer with 5+ years
+              of experience in Front-
               end—{/*Em Dash*/}graduated as a
-              creative Publicist.
+              creative Publicist{/*.*/}
             </h1>
+
 
 
 
             {/* HIDDEN | TO TEST SOON */}
             {/* Desktop | Screen Readers */}
             <h1 className="headline-hero   d-none   mb-md-0">{/*d-none d-md-block*/}
-              I&apos;m Simón Calle—{/*Em Dash*/}<br/>
-              Digital Product Designer with {/*<br/>*/}
-              experience in UX, UI, {/*<br/>*/}
-              & Front-end—{/*Em Dash*/}graduated as a {/*<br/>*/}
-              {/*creative */}Publicist.
+              I&apos;m Simón Calle—{/*Em Dash*/}
+              <br/>Digital Product Designer with
+              {/*<br/>*/} experience in UX, UI,
+              {/*<br/>*/} & Front-end—{/*Em Dash*/}graduated as a
+              {/*<br/>*/} {/*creative */}Publicist{/*.*/}
             </h1>
 
             {/* HIDDEN | TO TEST SOON */}
@@ -60,10 +62,16 @@ export default function HomePageHeader() {
               Digital Product Designer with
               experience in UX, UI,
               & Front-end—{/*Em Dash*/}graduated as a
-              {/*creative */}Publicist.
+              {/*creative*/} Publicist{/*.*/}
             </h1>
 
 
+
+
+            <p className="slogan mt-2">
+              Bringing exciting new projects to life.
+              {/*<br/>Getting the ball rolling back in 2025.*/}
+            </p>
 
             {/* Work on your work, until your work, gets you work — Chris do */}
             {/*<p>A designer who codes</p>*/}
@@ -72,7 +80,6 @@ export default function HomePageHeader() {
 
           <div className="col-md-5 order-md-1">
             {/*<img src="/home-page-images/home-header-picture-i-(cropped).jpg" alt="Simón Calle Laverde and his cat Ñeña in a pure HTML & CSS 3D rotating cube" style={{ width:"100%" }}/>*/}
-
             <Cube3D/>
           </div>
         </div>
@@ -82,6 +89,8 @@ export default function HomePageHeader() {
       {/*<MadeIn/>
 
       <Since1988/>*/}
+
+      <Copyright/>
     </header>
 
   )

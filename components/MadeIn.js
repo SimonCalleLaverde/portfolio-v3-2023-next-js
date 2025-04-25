@@ -1,6 +1,6 @@
 // Imports
 
-// MadeIn (HomePage) Component
+// MadeIn (Sitewide) Component
 export default function MadeIn() {
   return (
 
