@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 // ".headline-hero" Checked √. Was Checking ".headline-huge" Next Which Is The Second Largest Font I'm Using, In "Footer" And "Project Pages", And Should Use It In The Two Main "Section" Headings In "Home Page", Instead Of Current ".text-gigantic"
 .headline-hero {
   font-size:2.1rem;////New
-  line-height:1.15;
+  line-height:3.3rem;//3rem//1//3.45rem//NEW 2025//WAS 2024 "1.15"
 }
 
 
@@ -357,9 +357,10 @@ p {
       background-color:theme-color("creme");
       //border-top:1px solid theme-color("chocolate");
       //border-bottom:1px solid theme-color("chocolate");
+      @include filter(opacity(0.7));//NEW 2025
     }
     &:hover, &:active, &:focus {
-      @include filter(opacity(0.8));
+      @include filter(opacity(0.7));//NEW 2025//WAS 2024 "0.8"
       &::before {
         @include animation(underlineBackAnim 0.8s linear forwards);
       }
@@ -1350,7 +1351,8 @@ header.project-page-header {
 section.project-page-section {
   padding:25px 20px 20px;//25px 20px 50px
   .page-content-mid {
-    font-size:15px;//18px//20px
+    font-size:16px;//NEW 2025//15px//18px//20px
+    line-height:auto;//NEW 2025
     img {
       border:0.5px rgba(26,42,55,0.3) solid;//1px//theme-color("creme")////
       @include box-shadow(5px 5px 15px rgba(0,0,0,0.3));

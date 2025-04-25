@@ -12,7 +12,7 @@ export default function HomePageHeader() {
 
         <div className="row mt-md-5 pt-md-3 pt-lg-4 pt-xl-4more pt-xxl-5">{/*d-flex flex-column flex-md-row justify-content-between*/}
           <div className="col-md-6 offset-md-1 order-md-2 d-flex flex-column align-items-center align-items-md-start">{/*"d-flex flex-column align-items-center align-items-md-start" For Mobile, In Portrait*/}
-            <p className="mb-3 mb-md-4">
+            <p className="mb-3">{/*mb-3 mb-md-4*/}
               {/*Hello*/}
               {/*It&apos;s nice to meet you!*/}
               {/*Nice to meet you!*/}
