@@ -40,7 +40,9 @@ export default function Footer() {
 
               {/*Drop me a line*/}
 
-              Get in touch
+              {/*Get in touch*/}
+
+              Let&apos;s work together!
             </h2>
 
             <p className="font-light">{/*font-ultra-light*/}
@@ -49,8 +51,14 @@ export default function Footer() {
 
               {/*Drop me a line*/}
 
-              Let&apos;s work together,
-              <br/>let&apos;s talk!
+              {/*Let&apos;s work together,
+              <br/>let&apos;s talk!*/}
+
+              {/*Want to create a Website project
+              <br/>with me?*/}
+
+              Do you want to create a Website
+              <br/>project with me?
             </p>
           </div>
         </div>
@@ -65,8 +73,14 @@ export default function Footer() {
             </h2>
 
             <p className="font-light">{/*font-ultra-light*/}
-              Let&apos;s work together,
-              <br/>let&apos;s talk!
+              {/*Let&apos;s work together,
+              <br/>let&apos;s talk!*/}
+
+              {/*Want to create a Website project
+              <br/>with me?*/}
+
+              Do you want to create a Website
+              <br/>project with me?
             </p>
           </div>
         </div>
@@ -115,7 +129,7 @@ export default function Footer() {
           Relevant work
           <span className="font-light">{/*font-ultra-light*/}
             {/*<br/>Visit also my older*/}
-            <br/>Also visit my {/*archaic*/}previous
+            <br/>Visit also my {/*archaic*/}previous
             <br/>
             <Link className="link-underline" href="https://simoncallelaverde.github.io/" target="_blank" rel="noreferrer" title="Visit my older Portfolio 2021 with 30 real client projects which I helped bring to life and deliver">{/*title="As it is with most movie sequels, the first one was even better!"*/}
               Portfolio 2021

@@ -292,13 +292,13 @@ header.homepage-header {
   > .container {
     > .row {
       > div {
-        p {
+        p, strong, em {
           font-family:$font-light!important;//New
           font-size:13px;//New
           letter-spacing:1.2px;//NEW 2024//1.5px//0.5px//1px
           //text-transform:uppercase;//New
           &.slogan {//NEW 2025
-            font-size:16px;//NEW 2025
+            font-size:20px;//18px//16px//NEW 2025
             letter-spacing:1.2px;//1.5px//NEW 2025
           }
         }
@@ -880,11 +880,11 @@ nav.top-nav {
           margin:0 15px;//Should Use "2px 15px 0" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           padding:13px 0;//21px 0//21px 0 23px//(For Desktop) Should Use "19px 0 21px" If Using The "Option 2" With "Flexbox" To Have Exact Same Result. See Comments About "Option 2" In "Nav.js"
           //line-height:66.5px;//Could Replace The "Padding"//1.9//Same As Body//Was 1.8
-          > small {
+          > small, > strong {
             position:relative;
-            top:-5px;
-            color:darken(#5BDE8A,20);//Green Leaf Café's (Green)
-            font-size:8px;//10px
+            top:-7px;//NEW 2025//WAS 2024 "-5px"
+            color:darken(#5BDE8A,35);//Green Leaf Café's (Green)
+            font-size:9px;//NEW 2025//WAS 2024 "8px"//10px
           }
           &:hover, &:active, &:focus {//&.active-link
             @include filter(opacity(0.8));

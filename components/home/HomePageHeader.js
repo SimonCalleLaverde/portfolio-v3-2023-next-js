@@ -19,7 +19,8 @@ export default function HomePageHeader() {
               {/*Nice to meet you!*/}
               {/*Welcome*/}
               {/*Welcome, nice to meet you!*/}
-              Welcome!
+              {/*Welcome!*/}
+              Welcome
             </p>
 
             {/* Desktop | Screen Readers */}
@@ -68,8 +69,8 @@ export default function HomePageHeader() {
 
 
 
-            <p className="slogan mt-2">
-              Bringing exciting new projects to life.
+            <p className="slogan mt-3">
+              Bringing exciting new projects to life!
               {/*<br/>Getting the ball rolling back in 2025.*/}
             </p>
 
