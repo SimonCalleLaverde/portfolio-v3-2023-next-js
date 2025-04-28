@@ -299,7 +299,7 @@ header.homepage-header {
           //text-transform:uppercase;//New
           &.slogan {//NEW 2025
             font-size:16px;//NEW 2025
-            letter-spacing:1.5px;//NEW 2025
+            letter-spacing:1.2px;//1.5px//NEW 2025
           }
         }
       }
@@ -883,6 +883,7 @@ nav.top-nav {
           > small {
             position:relative;
             top:-5px;
+            color:darken(#5BDE8A,20);//Green Leaf Café's (Green)
             font-size:8px;//10px
           }
           &:hover, &:active, &:focus {//&.active-link
