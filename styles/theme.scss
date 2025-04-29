@@ -843,6 +843,11 @@ article.project-card {
     line-height:1.9;//Same As Nav Links
     //letter-spacing:1px;
     text-transform:uppercase;
+    // > span {
+    //   &:last-child {//&:nth-child(2)//&:first-child
+    //     color:darken(#5BDE8A,20);//30//Green Leaf Café's (Green)
+    //   }
+    // }
     &:hover, &:active, &:focus {
       @include filter(opacity(0.8));
     }
@@ -885,7 +890,7 @@ nav.top-nav {
           > small, > strong {
             position:relative;
             top:-7px;//NEW 2025//WAS 2024 "-5px"
-            color:darken(#5BDE8A,35);//Green Leaf Café's (Green)
+            color:darken(#5BDE8A,30);//Green Leaf Café's (Green)
             font-size:9px;//NEW 2025//WAS 2024 "8px"//10px
           }
           &:hover, &:active, &:focus {//&.active-link
