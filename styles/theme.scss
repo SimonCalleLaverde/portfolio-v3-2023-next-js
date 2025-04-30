@@ -108,7 +108,7 @@ body {
   font-size:14px;//13.5px//14px//√//15px//17px
   background-color:theme-color("chocolate");//beige-old
   color:theme-color("creme");//grey-dark
-  line-height:1.4;//1.9//1.8
+  line-height:1.9;//NEW 2025//WAS 2024 "1.4"//1.9//1.8
   //letter-spacing:0.5px;
   .text-italic {
     font-family:$font-regular-italic!important;//$font-light-italic!important
@@ -800,7 +800,7 @@ article.project-card {
         }
         figcaption {
           .project-type-and-title, .project-description {
-            width:60%;//70%//50%
+            width:100%;//NEW 2025//WAS 2024 "60%"//70%//50%
           }
         }
       }
@@ -1411,13 +1411,14 @@ footer {
     //flex-grow:1;//Was Starting With NextJS
     min-height:100vh;
     > div {
-      pointer-events:none;//From "row", To All Elements Inside <a>
+      //pointer-events:none;//From "row", To All Elements Inside <a>
       h1, h2, h3, h4, h5, h6 {
         margin-top:30px;//New
       }
       p {
-        font-size:20px;//18px//23px
-        line-height:1.4;//1.2
+        font-size:16px;//As Per "Slogan"//NEW 2025//WAS 2024 "20px"//18px//23px
+        line-height:1.5;//As Per "Slogan"//NEW 2025//WAS 2024 "1.4"//1.2
+        //letter-spacing:1.2px;//As Per "Slogan"//NEW 2025//In "Slogan" But Not Here
       }
     }
   }

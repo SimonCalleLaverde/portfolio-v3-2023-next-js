@@ -68,8 +68,10 @@ export default function Footer() {
       <div className="container d-flex d-md-none justify-content-center align-items-start text-center" aria-hidden="true">
         <div className="row mt-5 pt-2">
           <div className="col-12">
-            <h2 className="headline-huge mb-0">{/*text-uppercase*/}
-              Get in touch
+            <h2 className="headline-huge mt-5 mb-0">{/*text-uppercase*/}
+              {/*Get in touch*/}
+
+              Let&apos;s work together!
             </h2>
 
             <p className="font-light">{/*font-ultra-light*/}

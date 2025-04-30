@@ -959,6 +959,15 @@
 
   // Footer
   footer {
+    > .container {//Desktop
+      > div {
+        h1, h2, h3, h4, h5, h6 {
+        }
+        p {
+          font-size:20px;//As Per "Slogan"//NEW 2025//Was "20px" In Mobile & Desktop But Now Is "16px" In Mobile
+        }
+      }
+    }
     > aside.footer-aside-info-elements {
       .footer-availability, .footer-credits {
         bottom:370.5px;//To be 370px
