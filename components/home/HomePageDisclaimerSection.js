@@ -27,7 +27,8 @@ export default function HomePageDisclaimerSection() {
 
               {/*A little bit about me*/}
 
-              At-a-glance.
+              {/*At-a-glance.*/}
+              At-a-glance
             </h3>
 
             {/* Hidden */}

@@ -796,7 +796,7 @@ article.project-card {
     a {
       figure {//.FIGURE-ONE
         div.project-thumbnail {
-          height:200px;//To Revise These Two
+          height:180px;//NEW 2025//WAS 2024 "200px"//To Revise These Two
         }
         figcaption {
           .project-type-and-title, .project-description {
@@ -807,19 +807,19 @@ article.project-card {
     }
   }
 }
-@media only screen and (max-width:400px) {//Down
-  article.project-card {
-    a {
-      figure {//.FIGURE-ONE
-        div.project-thumbnail {
-          height:180px;//To Revise These Two
-        }
-        figcaption {
-        }
-      }
-    }
-  }
-}
+// @media only screen and (max-width:400px) {//Down
+//   article.project-card {
+//     a {
+//       figure {//.FIGURE-ONE
+//         div.project-thumbnail {
+//           height:180px;//To Revise These Two
+//         }
+//         figcaption {
+//         }
+//       }
+//     }
+//   }
+// }
 
 // Contact Card
 .contact-card {
