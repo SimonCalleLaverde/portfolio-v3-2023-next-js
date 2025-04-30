@@ -177,23 +177,57 @@ export default function HomePageDisclaimerSection() {
               A little bit about me.
             </p>
 
-            <p>
+            <p className="d-none">
               I&apos;m a <em>(Digital) Product Designer</em>, <em>Web Designer</em>, and <em>Web Developer</em> with experience in <em>UX</em>, <em>UI</em>, & <em>Front-end Development</em>.
             </p>
 
-            <p>
+            <p className="d-none">
               After graduating with a {/*title*/}bachelor&apos;s degree as a creative{/* and classic*/} <em>Publicist</em> from my 5 year persuation, conceptual, and design driven career{/*Raised*/} from Universidad Jorge Tadeo Lozano, I then studied a Continuing Education Program course in <em><span>Web Design and Design For Mobile Devices</span></em> (i.e. <em>Responsive Web Design</em>) in 2013 at Pontificia Universidad Javeriana.
             </p>
 
-            <p>
+            <p className="d-none">
               At-the-time I wanted to bring my high-level knowledge in history of design, graphic design, semiotics (which involves aspects of human-behavior towards graphic design), linguistics, art direction, psychology and persuation, sociology, color psychology and color theory, brand positioning, branding and identity, marketing, campaigning, among other subjects of my expertise that I studied in a daily basis for over 5 years, to modern digital products and experiences — I even wanted to bring my knowledge in photography to digital media, which I studied in a weekly course for 6 entire years of my early life, plus I also worked in a photography studio.
             </p>
 
-            <p>
+            <p className="d-none">
               In 2015 I started working for an Australian based digital-agency where I worked for 4+ years helping to bring websites, campaigning platforms, infographics, and digital products to life. Most of them were campaign-driven websites, some with millions of live members and users.
             </p>
 
             {/* The pandemic ruined all my plans 4 years ago, but I'm trying to putting them together once again (as-my/for Project 2025) */}
+            
+            {/* ABR 29, 2025 */}
+
+            <p>
+              Hello, nice to meet you!
+            </p>
+
+            <p>
+              I&apos;m a <em>(Digital) Product Designer</em> and a <em>Responsive Web Designer and Developer</em> with experience also in <em>Art Direction</em>, <em>Product Management</em>, <em>User Experience Strategy</em> (<em>UX</em>), <em>User Interface Design</em> (<em>UI</em>), <em>SEO</em>, <em>Accessibility</em>, and <em>Front-end Development</em>.
+            </p>
+
+            <p>
+              I studied <em><strong>Web Design and Design for Mobile Devices</strong></em> in a continuing education program university course in 2013 at <Link href="https://www.javeriana.edu.co/inicio" target="_blank" rel="noreferrer"><em>Pontificia Universidad Javeriana</em></Link> after graduating as a creative and classic <em><strong>Publicist</strong></em> with a bachelor&apos;s degree from a 5 years persuation and design driven career at <Link href="https://www.utadeo.edu.co/es" target="_blank" rel="noreferrer"><em>Universidad Jorge Tadeo Lozano</em></Link>.
+            </p>
+
+            <p>
+              In 2015 I started working for an <em>Australian based digital-agency</em> where I worked for over 4 years helping them to bring responsive websites, campaigning platforms, infographic or event leading landing pages, content management systems (CMS), and digital products to life. Most of them were focused around campaign driven websites, some with millions of live members and users.
+            </p>
+
+            <p>
+              Since 2013 I always wanted to bring my high-level knowledge in design, graphic design, history of design, art direction, linguistics, semiology (involving aspects of {/*significants (as of Me)*/}{/*signs, signifiers, and signified (as of Google)*/}human-behavior and communication in graphic design, signs, and significants), psychology, sociology, brand positioning{/*, branding and identity*/}, marketing, and campaigning to modern digital products and experiences.
+            </p>
+
+            {/*<p>
+              I even wanted to bring my knowledge in photography to digital media, which I studied in a weekly course for 6 full years of my early life, plus I also worked in a photography studio.
+            </p>*/}
+
+            <p>
+              I&apos;m again since 2024 coming back to the digital work-forces{/* after some print and varied work*/}.
+            </p>
+
+            <p>
+              I&apos;ll be exploring with <Link href="https://www.upwork.com" target="_blank" rel="noreferrer"><em>Upwork</em></Link> in 2025!
+            </p>
           </div>
         </div>
 
