@@ -24,7 +24,7 @@ export default function HomePageHeader() {
             </p>
 
             {/* Desktop | Screen Readers */}
-            <h1 className="headline-hero d-none d-md-block mb-md-0">{/*text-start*/}
+            <h1 className="headline-hero d-none d-md-block">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}
               <br/>Web, UX, UI, & Product
               {/*<br/>*/} Designer with 5+ years
@@ -34,7 +34,7 @@ export default function HomePageHeader() {
             </h1>
 
             {/* Mobile */}
-            <h1 className="headline-hero d-block d-md-none mb-5" aria-hidden="true">{/*text-start*/}
+            <h1 className="headline-hero d-block d-md-none" aria-hidden="true">{/*text-start*/}
               I&apos;m Simón Calle—{/*Em Dash*/}
               Web, UX, UI, & Product
               Designer with 5+ years
@@ -69,9 +69,16 @@ export default function HomePageHeader() {
 
 
 
-            <p className="slogan mt-3">
+            {/* Desktop | Screen Readers */}
+            <p className="slogan d-none d-md-block mt-3">
               Bringing exciting new projects to life!
               {/*<br/>Getting the ball rolling back in 2025.*/}
+            </p>
+
+            {/* Mobile */}
+            <p className="slogan d-block d-md-none mt-3 mb-5" aria-hidden="true">
+              Bringing exciting new
+              <br/>projects to life!
             </p>
 
             {/* Work on your work, until your work, gets you work — Chris do */}

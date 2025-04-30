@@ -36,7 +36,7 @@
   // Headline, Title, Subtitle (Font-Sizes)
   .headline-hero {
     font-size:2.4rem;////New
-    //line-height:1.15;
+    line-height:3.3rem;//3rem//1//3.45rem//NEW 2025//WAS 2024 "1.15" (Commented Here)
   }
 
 
@@ -487,6 +487,17 @@
   // HomePage Header
   header.homepage-header {
     padding:90px 0;//New
+    > .container {
+      > .row {
+        > div {
+          p, strong, em {
+            &.slogan {//NEW 2025
+              font-size:20px;//18px//16px//NEW 2025
+            }
+          }
+        }
+      }
+    }
   }
   @media only screen and (max-width:992px) {//Down
     @media (orientation:landscape) {//Trying To Target "Mobile" Between "768px" & "992px" Only, When On "landscape"

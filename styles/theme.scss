@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 // ".headline-hero" Checked √. Was Checking ".headline-huge" Next Which Is The Second Largest Font I'm Using, In "Footer" And "Project Pages", And Should Use It In The Two Main "Section" Headings In "Home Page", Instead Of Current ".text-gigantic"
 .headline-hero {
   font-size:2.1rem;////New
-  line-height:3.3rem;//3rem//1//3.45rem//NEW 2025//WAS 2024 "1.15"
+  line-height:1.15;
 }
 
 
@@ -300,7 +300,8 @@ header.homepage-header {
           letter-spacing:1.2px;//NEW 2024//1.5px//0.5px//1px
           //text-transform:uppercase;//New
           &.slogan {//NEW 2025
-            font-size:20px;//18px//16px//NEW 2025
+            font-size:16px;//NEW 2025
+            line-height:1.5;//WAS 2024 "1.9"
             letter-spacing:1.2px;//1.5px//NEW 2025
           }
         }
