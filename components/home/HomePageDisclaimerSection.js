@@ -214,7 +214,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              Since 2013 I always wanted to bring my high-level knowledge in design, graphic design, history of design, art direction, linguistics, semiology (involving aspects of {/*significants (as of Me)*/}{/*signs, signifiers, and signified (as of Google)*/}human-behavior and communication in graphic design, signs, and significants), psychology, sociology, brand positioning{/*, branding and identity*/}, marketing, and campaigning to modern digital products and experiences.
+              Since 2013 I always wanted to bring my high-level knowledge in design, graphic design, history of design, art direction, linguistics, semiology (involving aspects of {/*significants (as of Me)*/}{/*signs, signifiers, and signified (as of Google)*/}human-behavior towards graphic design, signs, and significants in communication), psychology, sociology, brand positioning{/*, branding and identity*/}, marketing, and campaigning to modern digital products and experiences.
             </p>
 
             {/*<p>
