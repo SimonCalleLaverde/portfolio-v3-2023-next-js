@@ -226,7 +226,7 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I&apos;ll be exploring with <Link href="https://www.upwork.com" target="_blank" rel="noreferrer"><em>Upwork</em></Link> in 2025!
+              I&apos;ll be exploring with <Link href="https://www.upwork.com/freelancers/1988webstudio" target="_blank" rel="noreferrer"><em>Upwork</em></Link> in 2025!
             </p>
           </div>
         </div>
