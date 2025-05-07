@@ -350,7 +350,7 @@ a {
 }
 
 // Links Directly Inside Paragraphs [Revised] [Revised And Changed Again 2024]
-p {
+p, blockquote {
   > a {
     position:relative;
     display:inline-block;
@@ -1387,6 +1387,9 @@ section.project-page-section {
       padding-left:20px;//10px
       font-size:13.5px;//Same As Body//15px//18px
       @include filter(opacity(0.8));//0.7
+      > a {
+        //Done Above In "p" + "blockquote"
+      }
     }
     // Removing This Styles Back, As I Didn't Like To Do This (Specific Styles) Still, And As I Just Figured I Can Just 'Add Classes' Within Hygraph CMS WYSIWYG, That Wraps The "h1, h2, h3, h4, h5, h6".
     // Also If I Wanted An "h5/h6" At The Top After A Blockquote, It Was Going To Have More Spacing. So I Wasn't Going To Be Able To Add "h5/h6" At The Top. Giving Classes I Can Control This Headings Individualy From The CMS.
