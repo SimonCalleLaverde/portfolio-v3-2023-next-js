@@ -17,7 +17,10 @@ export default function HeadConfig({ title, type, category, client, roles2 }) {
 
 
 
-      <meta name="keywords" content="web design, web development, website design, website development, modern web design, custom web design, web design colombia, web design bogota, web design latam, web design latin america, web design figma, web development nextjs, nextjs bogota, nextjs colombia, product design, product design bogota, product design colombia, product design latam, product design latin america, ux design, ux design bogota, ux design colombia, ui design, ui design bogota, ui design colombia"/>{/*NEW 2025*/}
+      {/* Should I Create A New "Keywords" Field-Type For 'Per-Project' Page, Just For Keywords? */}
+      {/* To Avoid The "·" Divisions From "type" & "roles2" */}
+      {/* I Added Some 'Hard-Coded' Keywords At The End Replacing For "type" & "roles2" (For Now) */}
+      <meta name="keywords" content={ `${ title }, ${ title } Project, ${ title } Case Study, ${ category }, Web Design, Web Development, Product Design, UX Design, UI Design` }/>{/*${ type }, ${ roles2 }*/}{/*NEW 2025*/}
 
 
 
