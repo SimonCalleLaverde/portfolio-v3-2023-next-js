@@ -2,7 +2,7 @@
 import Head from "next/head";
 
 // Head Config (Sitewide) Component
-export default function HeadConfig({ title }) {
+export default function HeadConfig({ title, type, category, client, roles2 }) {
   return (
 
     <Head>
@@ -10,8 +10,8 @@ export default function HeadConfig({ title }) {
       {/* To Revise Styles And Add To Document Instead, As Per Warning/Docs */}
       {/* To add meta-tags, etc. <Head/> builds lots of stuff already like "<meta charset='utf-8'>", "<meta name='viewport' content='width=device-width'>", some "<script></script>", "<noscript></noscript>", "<style></style>", and so. So to be careful for not repeated stuff */}
 
-      <meta name="description" content="For modern web design and web development check out my custom hand-crafted Portfolio 2023 made in NextJS + HygraphCMS"/>
-      <meta name="keywords" content="web design, web development, modern web design, custom web development, fine web design, web design colombia, web design bogota, modern web design colombia, modern web design bogota, modern web design latam, modern web design latin america, web design nextjs, web development nextjs, nextjs bogota, nextjs colombia, ux ui bogota, ux ui colombia, product design bogota, product design colombia, product design latin america"/>{/*NEW 2024*/}
+      <meta name="description" content="Simón Calle Laverde - Portfolio 2025 of Web Design, Web Development, Product Design, User Experience Design (UX), User Interface Design (UI) - Made in NextJS + Hygraph Studio CMS"/>{/*NEW 2025*/}
+      <meta name="keywords" content="web design, web development, website design, website development, modern web design, custom web design, web design colombia, web design bogota, web design latam, web design latin america, web design figma, web development nextjs, nextjs bogota, nextjs colombia, product design, product design bogota, product design colombia, product design latam, product design latin america, ux design, ux design bogota, ux design colombia, ui design, ui design bogota, ui design colombia"/>{/*NEW 2025*/}
       <link rel="icon" href="/favicon.png"/>{/*favicon.ico*/}
 
       {/* TERMINAL's WARNING/STEPS-FOLLOWED */}

@@ -1,8 +1,8 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import TitleConfig from "../components/projects/TitleConfig.js";//NEW 2025//Per-Page
 import HeadConfig from "../components/HeadConfig.js";//Site-Wide
+import TitleConfig from "../components/projects/TitleConfig.js";//NEW 2025//Per-Page
 import ProjectsPageHeader from "../components/projects/ProjectsPageHeader.js";
 import ProjectCard from "../components/ProjectCard.js";
 import Footer from "../components/Footer.js";
@@ -57,8 +57,8 @@ export default function ProjectsPage({ allProjectsData }) {
 	return (
 		<>
 
-      <TitleConfig/>
       <HeadConfig/>
+      <TitleConfig/>
 
       <ProjectsPageHeader/>
 

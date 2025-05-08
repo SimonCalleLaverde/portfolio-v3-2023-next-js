@@ -4,8 +4,8 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import TitleConfig from "../../components/project/TitleConfig.js";//NEW 2025//Per-Page
 import HeadConfig from "../../components/HeadConfig.js";//Site-Wide
+import TitleConfig from "../../components/project/TitleConfig.js";//NEW 2025//Per-Page
 import ProjectPageHeader from "../../components/project/ProjectPageHeader.js";
 import Footer from "../../components/Footer.js";
 import { GraphQLClient, gql } from "graphql-request";
@@ -29,6 +29,9 @@ const graphCMSQuery = gql`
       roles2
       year2
       duration
+
+      type
+      category
 
       webLaunchUrl
       prototypeLaunchUrl
@@ -239,11 +242,19 @@ export default function ProjectPage({ projectData }) {
   return (
     <>
 
-      <TitleConfig
-        title={ projectData.title }
-      />
       <HeadConfig
         title={ projectData.title }
+        type={ projectData.type }
+        category={ projectData.category }
+        client={ projectData.client }
+        roles2={ projectData.roles2 }
+      />
+      <TitleConfig
+        title={ projectData.title }
+        type={ projectData.type }
+        category={ projectData.category }
+        client={ projectData.client }
+        roles2={ projectData.roles2 }
       />
 
       {/*<ProjectPageHeader
