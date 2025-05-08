@@ -1,7 +1,8 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadConfig from "../components/HeadConfig.js";
+import TitleConfig from "../components/about/TitleConfig.js";//NEW 2025//Per-Page
+import HeadConfig from "../components/HeadConfig.js";//Site-Wide
 import AboutPageHeader from "../components/about/AboutPageHeader.js";
 import AboutPageMyselfSection from "../components/about/AboutPageMyselfSection.js";
 import AboutPageLetsWorkSection from "../components/about/AboutPageLetsWorkSection.js";

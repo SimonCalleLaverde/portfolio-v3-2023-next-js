@@ -1,7 +1,8 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadConfig from "../components/HeadConfig.js";
+import TitleConfig from "../components/contact/TitleConfig.js";//NEW 2025//Per-Page
+import HeadConfig from "../components/HeadConfig.js";//Site-Wide
 import ContactPageHeader from "../components/contact/ContactPageHeader.js";
 
 // Contact (Page) Component

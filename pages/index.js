@@ -1,7 +1,8 @@
 // Imports
 import Link from "next/link";
 import Image from "next/image";
-import HeadConfig from "../components/HeadConfig.js";
+import TitleConfig from "../components/home/TitleConfig.js";//NEW 2025//Per-Page
+import HeadConfig from "../components/HeadConfig.js";//Site-Wide
 import HomePageHeader from "../components/home/HomePageHeader.js";
 import HomePageDisclaimerSection from "../components/home/HomePageDisclaimerSection.js";
 import HomePageProjectsHeadlineSection from "../components/home/HomePageProjectsHeadlineSection.js";
