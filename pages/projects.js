@@ -57,6 +57,7 @@ export default function ProjectsPage({ allProjectsData }) {
 	return (
 		<>
 
+      <TitleConfig/>
       <HeadConfig/>
 
       <ProjectsPageHeader/>

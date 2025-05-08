@@ -88,6 +88,7 @@ export default function HomePage({ allProjectsData, allSkillsData }) {
   return (
     <>
 
+      <TitleConfig/>
       <HeadConfig/>
 
       <HomePageHeader/>

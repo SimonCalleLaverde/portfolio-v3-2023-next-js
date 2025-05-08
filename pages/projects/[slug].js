@@ -239,6 +239,9 @@ export default function ProjectPage({ projectData }) {
   return (
     <>
 
+      <TitleConfig
+        title={ projectData.title }
+      />
       <HeadConfig
         title={ projectData.title }
       />

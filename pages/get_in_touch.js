@@ -10,6 +10,7 @@ export default function ContactPage() {
   return (
     <>
 
+      <TitleConfig/>
       <HeadConfig/>
 
       <ContactPageHeader/>

@@ -13,6 +13,7 @@ export default function AboutPage() {
   return (
     <>
 
+      <TitleConfig/>
       <HeadConfig/>
 
       <AboutPageHeader/>
