@@ -202,19 +202,23 @@ export default function HomePageDisclaimerSection() {
             </p>
 
             <p>
-              I&apos;m a <em>(Digital) Product Designer</em> and a <em>Responsive Web Designer and Developer</em> with experience also in <em>Art Direction</em>, <em>Product Management</em>, <em>User Experience Strategy</em> (<em>UX</em>), <em>User Interface Design</em> (<em>UI</em>), <em>SEO</em>, <em>Accessibility</em>, and <em>Front-end Development</em>.
+              I&apos;m a <em>(Digital) Product Designer</em> and a <em>(Responsive) Web Designer and Web Developer</em> with experience{/* also*/} in <em>Art Direction</em>, <em>Web Design</em>, <em>Product Design</em>, <em>Product Management</em>, <em>User Experience Strategy</em> (<em>UX</em>), <em>User Interface Design</em> (<em>UI</em>), <em>Front-end Development</em>, <em>Accessibility</em>, and <em>Search Engine Optimization</em> (<em>SEO</em>).
             </p>
 
             <p>
-              I studied <em><strong>Web Design and Design for Mobile Devices</strong></em> in a continuing education program university course in 2013 at <Link href="https://www.javeriana.edu.co/inicio" target="_blank" rel="noreferrer"><em>Pontificia Universidad Javeriana</em></Link> after graduating as a creative and classic <em><strong>Publicist</strong></em> with a bachelor&apos;s degree from a 5 years persuation and design driven career at <Link href="https://www.utadeo.edu.co/es" target="_blank" rel="noreferrer"><em>Universidad Jorge Tadeo Lozano</em></Link>.
+              In 2013-2014 I studied <em><strong>Web Design and Design for Mobile Devices</strong></em> in a continuing education program university course at <Link href="https://www.javeriana.edu.co/inicio" target="_blank" rel="noreferrer"><em>Pontificia Universidad Javeriana</em></Link> after graduating as a creative and classic <em><strong>Publicist</strong></em> with a bachelor&apos;s degree {/*from*/}completing a 5 years persuation-driven and design-driven <em><strong>Advertising</strong></em> career at <Link href="https://www.utadeo.edu.co/es" target="_blank" rel="noreferrer"><em>Universidad Jorge Tadeo Lozano</em></Link>.
             </p>
 
             <p>
-              In 2015 I started working for an <em>Australian based digital-agency</em> where I worked for over 4 years helping them to bring responsive websites, campaigning platforms, infographic or event leading landing pages, content management systems (CMS), and digital products to life. Most of them were focused around campaign driven websites, some with millions of live members and users.
+              In 2015 I started working for a <em>Melbourne-Australia</em> based <em>digital agency</em> where I worked for over 4 years helping them to bring responsive websites, campaigning platforms, infographic or event leading landing pages, content management systems (CMS), and digital products to life. Most of them were focused around campaign-driven websites, some with millions of live members and users.
             </p>
 
             <p>
-              Since 2013 I always wanted to bring my high-level knowledge in design, graphic design, history of design, art direction, linguistics, semiology (involving aspects of {/*significants (as of Me)*/}{/*signs, signifiers, and signified (as of Google)*/}human-behavior towards graphic design, signs, and significants in communication), psychology, sociology, brand positioning{/*, branding and identity*/}, marketing, and campaigning to modern digital products and experiences.
+              In 2022-2023 I enrolled in an in-person 3 months {/*long*/}of duration <em><strong>Product Design inc. UX & UI.</strong></em> course at <Link href="https://experiencehaus.com" target="_blank" rel="noreferrer"><em>Experience Haus</em></Link>, <em>London</em>, <em>United Kingdom</em>.
+            </p>
+
+            <p>
+              Since 2013 I always wanted to bring my high-level knowledge in design, graphic design, history of design, art direction, linguistics, semiology (involving aspects of {/*significants (as of Me)*/}{/*signs, signifiers, and signified (as of Google)*/}human-behavior towards graphic design, signs, and significants in communication), psychology, sociology, branding and brand positioning{/*, branding and identity*/}, marketing, advertising, and campaigning to modern digital products and experiences.
             </p>
 
             {/*<p>
@@ -222,7 +226,7 @@ export default function HomePageDisclaimerSection() {
             </p>*/}
 
             <p>
-              I&apos;m again since 2024 coming back to the digital work-forces{/* after some print and varied work*/}.
+              Since 2024 I&apos;m again coming back to the digital work-forces{/* after some print and varied work*/}.
             </p>
 
             <p>
