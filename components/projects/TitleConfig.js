@@ -4,7 +4,7 @@
 import Head from "next/head";
 
 // Head Config (Sitewide) Component
-export default function HeadConfig({ title }) {
+export default function HeadConfig() {
   return (
 
     <Head>
