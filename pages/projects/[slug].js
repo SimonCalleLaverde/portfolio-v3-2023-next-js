@@ -30,11 +30,11 @@ const graphCMSQuery = gql`
       year2
       duration
 
-      type
-      category
-
       webLaunchUrl
       prototypeLaunchUrl
+
+      seoDescription
+      seoKeywords
 
       headerImage {
         url
@@ -242,19 +242,11 @@ export default function ProjectPage({ projectData }) {
   return (
     <>
 
-      <HeadConfig
-        title={ projectData.title }
-        type={ projectData.type }
-        category={ projectData.category }
-        client={ projectData.client }
-        roles2={ projectData.roles2 }
-      />
+      <HeadConfig/>
       <TitleConfig
         title={ projectData.title }
-        type={ projectData.type }
-        category={ projectData.category }
-        client={ projectData.client }
-        roles2={ projectData.roles2 }
+        seoDescription={ projectData.seoDescription }
+        seoKeywords={ projectData.seoKeywords }
       />
 
       {/*<ProjectPageHeader
