@@ -245,6 +245,7 @@ export default function ProjectPage({ projectData }) {
       <HeadConfig/>
       <TitleConfig
         title={ projectData.title }
+        client={ projectData.client }
         seoDescription={ projectData.seoDescription }
         seoKeywords={ projectData.seoKeywords }
       />
