@@ -11,22 +11,9 @@ export default function HeadConfig({ title, seoDescription, seoKeywords }) {
       {/* To Later Revise <Head/> As I Was Doing In My "portfolio-V3-2022-next-js" In GitHub */}
       {/* To add meta-tags, etc. <Head/> builds lots of stuff already like "<meta charset='utf-8'>", "<meta name='viewport' content='width=device-width'>", some "<script></script>", "<noscript></noscript>", "<style></style>", and so. So to be careful for not repeated stuff */}
 
-      <title>{ `${ title } | (Per)-Project Page | Simón Calle Laverde | Portfolio 2025 | Web Design and Web Development | Digital Product Design | UX Design and UI Design | Chía, Cundinamarca, Colombia` }</title>
-
-
-
-      {/* TO REVISE | TO CREATE UNIQUE FIELD-TYPE */}
-      {/* COMMENTED TEMPORARY BELOW */}
-      {/*<meta name="description" content={ `Simón Calle Laverde | ${ title } Project | Case Study | Type: ${ type } | Category: ${ category } | Roles: ${ roles2 } | Client: ${ client }` }/>*/}{/*NEW 2025*/}
-
-      {/* TO REVISE | TO CREATE UNIQUE FIELD-TYPE */}
-      {/* Should I Create A New "Keywords" Field-Type For 'Per-Project' Page, Just For Keywords? */}
-      {/* To Avoid The "·" Divisions From "type" & "roles2" */}
-      {/* I Added Some 'Hard-Coded' Keywords At The End Replacing For "type" & "roles2" (For Now) */}
-      {/* COMMENTED TEMPORARY BELOW */}
-      {/*<meta name="keywords" content={ `${ title }, ${ title } Project, ${ title } Case Study, ${ category }, Web Design, Web Development, Product Design, UX Design, UI Design` }/>*/}{/*${ type }, ${ roles2 }*/}{/*NEW 2025*/}
-
-
+      <title>{ `${ title } | Project Page | Simón Calle Laverde | Portfolio 2025 | Web Design and Web Development | Digital Product Design | UX Design and UI Design | Chía, Cundinamarca, Colombia` }</title>{/*NEW 2025*/}
+      <meta name="description" content={ seoDescription }/>{/*NEW 2025*/}
+      <meta name="keywords" content={ seoKeywords }/>{/*NEW 2025*/}
 
       {/* TERMINAL's WARNING/STEPS-FOLLOWED */}
       {/* No Stylesheets/Fonts Should Go Here. Use Document Instead. */}
