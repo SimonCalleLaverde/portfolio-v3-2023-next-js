@@ -230,8 +230,8 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       projectData
-    }//,
-    //revalidate: 10
+    },
+    revalidate: 10
   }
 };
 
